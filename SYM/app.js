@@ -21,7 +21,18 @@ insuranceRouter.route('/single')
     res.send('Hello Insurance single');
 });
 
+
+app.get('/Three',function(req,res){
+    res.render('Three');
+});
+
+app.get('/Bike',function(req,res){
+    res.render('Bike');
+});
+
 app.use('/Bike',insuranceRouter);
+
+
 
 app.get('/',function(req,res){
     res.render('index',{
@@ -30,16 +41,15 @@ app.get('/',function(req,res){
             Link: '/Bike',
             Text: 'Bike'
         },{
-            Link: '/Three-wheel',
-            Text:'Three-wheel'}]
-
+            Link: '/Three',
+            Text:'Three'}]
     });
 
 });
 
-app.get('/Bike',function(req,res){
-    res.send('Hello Bike Insurance.')
-});
+//app.get('/Bike',function(req,res){
+//    res.send('Hello Bike Insurance.')
+//});
 
 //app.get('/home',function(req,res){
 //    res.send('Hello Home');
