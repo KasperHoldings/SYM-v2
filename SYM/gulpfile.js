@@ -10,4 +10,4 @@ gulp.task('style',function(){
         .pipe(jshint.reporter('jshint-stylish',{
             verbose:true
         }));
-})
+});
