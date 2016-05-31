@@ -5,9 +5,15 @@ var insuranceRouter = express.Router();
 
 var router = function(nav){
 
+
     insuranceRouter.route('/')
-        .get(function(req,res){
-            res.send('Hello Bike from Router');
+        .get(function (req,res){
+            //res.send('formSampleOne');
+
+            res.render('index',{
+                title:'Home',
+                nav : nav
+            });
         });
 
     insuranceRouter.route('/single')
@@ -15,6 +21,31 @@ var router = function(nav){
             //res.send('Hello Insurance single');
             res.render('Three',{
                 title:'Hello from render single',
+                nav : nav
+            });
+        });
+
+    insuranceRouter.route('/Bike')
+        .get(function (req,res){
+            res.render('Bike',{
+                title:'Bike',
+                nav : nav
+            });
+        });
+
+    insuranceRouter.route('/formSampleOne')
+        .get(function (req,res){
+            res.render('formSampleOne',{
+                title:'Form One',
+                nav : nav
+            });
+        });
+
+
+    insuranceRouter.route('/three')
+        .get(function (req,res){
+            res.render('three',{
+                title:'Three',
                 nav : nav
             });
         });
