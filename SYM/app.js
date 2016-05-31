@@ -5,13 +5,22 @@ var app = express();
 
 var port = process.env.PORT || 5000;
 
-var mysql      = require('mysql');
-var connection = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'root',
-    password : '123',
-    database : 'dbsym'
-});
+var connection = require('./src/config/dbconfig');
+
+var nav = [{
+    Link: '/Bike',
+    Text: 'Bike'
+},{
+    Link: '/Three',
+    Text:'Three'
+},{
+    Link: '/formSampleOne',
+    Text:'Sample Form'
+}
+];
+
+
+var insuranceRouter = require('./src/routes/insuranceRouter')(nav);
 
 connection.connect();
 
@@ -20,29 +29,16 @@ connection.query('SELECT * From sampleTable', function(err, rows, fields) {
 
     console.log('The solution is: ', rows[0]);
 
-
 });
 
 connection.end();
 
-var nav = [{
-    Link: '/Bike',
-    Text: 'Bike'
-    },{
-    Link: '/Three',
-    Text:'Three'
-    },{
-    Link: '/formSampleOne',
-    Text:'Sample Form'
-    }
-];
 
-var insuranceRouter = require('./src/routes/insuranceRouter')(nav);
+
 
 app.use(express.static('public'));
 app.set('views','./src/views');
 app.set('view engine','ejs');
-
 
 app.use('/',insuranceRouter);
 
