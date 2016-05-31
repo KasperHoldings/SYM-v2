@@ -5,6 +5,26 @@ var app = express();
 
 var port = process.env.PORT || 5000;
 
+var mysql      = require('mysql');
+var connection = mysql.createConnection({
+    host     : 'localhost',
+    user     : 'root',
+    password : '123',
+    database : 'dbsym'
+});
+
+connection.connect();
+
+connection.query('SELECT * From sampleTable', function(err, rows, fields) {
+    if (err) throw err;
+
+    console.log('The solution is: ', rows[0]);
+
+    
+});
+
+connection.end();
+
 var nav = [{
     Link: '/Bike',
     Text: 'Bike'
