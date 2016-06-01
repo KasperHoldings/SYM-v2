@@ -13,9 +13,12 @@ var nav = [{
 },{
     Link: '/Three',
     Text:'Three'
-},{
+}, {
     Link: '/formSampleOne',
-    Text:'Sample Form'
+    Text: 'Sample Form'
+},{
+    Link: '/sampleUsers',
+    Text:'Sample User Form'
 }
 ];
 
