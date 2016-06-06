@@ -23,7 +23,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "watchify src/lib/main.jsx -v -t [ babelify --presets [ react ] ] -o public/js/main.js"
   },
   "author": "",
   "license": "ISC"
