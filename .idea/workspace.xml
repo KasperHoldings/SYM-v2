@@ -26,8 +26,8 @@
       <file leaf-file-name="formSampleOne.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SYM/src/views/formSampleOne.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21841542">
-              <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.29122055">
+              <caret line="8" column="75" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -401,7 +401,13 @@
       <option name="project" value="LOCAL" />
       <updated>1465210710334</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="react dependencies and necessary files added">
+      <created>1465210726191</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1465210726191</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -694,8 +700,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/views/formSampleOne.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21841542">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.29122055">
+          <caret line="8" column="75" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
           <folding />
         </state>
       </provider>
