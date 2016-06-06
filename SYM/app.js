@@ -7,6 +7,7 @@ var port = process.env.PORT || 5000;
 
 var connection = require('./src/config/dbconfig');
 
+
 var nav = [{
     Link: '/Bike',
     Text: 'Bike'
@@ -16,27 +17,32 @@ var nav = [{
 }, {
     Link: '/formSampleOne',
     Text: 'Sample Form'
-},{
-    Link: '/sampleUsers',
-    Text:'Sample User Form'
 }
+//    ,{
+//    Link: '/sampleUsers',
+//    Text:'Sample User Form'
+//}
 ];
-
-
-var insuranceRouter = require('./src/routes/insuranceRouter')(nav);
 
 connection.connect();
 
-connection.query('SELECT * From sampleTable', function(err, rows, fields) {
-    if (err) throw err;
+var insuranceRouter = require('./src/routes/insuranceRouter')(nav);
+var sampleForm = require('./src/routes/sampleFormRouter')(nav);
 
-    console.log('The solution is: ', rows[0]);
-
-});
-
-connection.end();
+//Database Connection Sample
+{
 
 
+    connection.query('SELECT * From sampleTable', function (err, rows, fields) {
+        if (err) throw err;
+
+        console.log('The solution is: ', rows[0]);
+
+    });
+
+    //connection.end();
+
+}
 
 
 app.use(express.static('public'));
@@ -44,6 +50,7 @@ app.set('views','./src/views');
 app.set('view engine','ejs');
 
 app.use('/',insuranceRouter);
+app.use('/',sampleForm);
 
 app.get('/',function(req,res){
     res.render('index',{
