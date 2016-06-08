@@ -19695,5 +19695,7 @@ var ReactDom = require('react-dom');
 var Text = require('./../components/Text.jsx');
 
 ReactDom.render(React.createElement(Text, null), document.getElementById('name'));
+ReactDom.render(React.createElement(Text, null), document.getElementById('email'));
+ReactDom.render(React.createElement(Text, null), document.getElementById('address'));
 
 },{"./../components/Text.jsx":168,"react":166,"react-dom":1}]},{},[169]);
