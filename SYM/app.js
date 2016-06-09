@@ -5,7 +5,10 @@ var app = express();
 var port = process.env.PORT || 5000;
 
 
+
 var connection = require("./src/config/dbconfig");
+
+var bodyParser = require('body-parser');
 
 
 var nav = [{
@@ -32,6 +35,10 @@ app.use(express.static('public'));
 app.set('views', './src/views');
 //app.set('views', './src/views/userRegistrations');
 app.set('view engine', 'ejs');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
+//app.use(bodyParser.methodOverride());
 
 
 

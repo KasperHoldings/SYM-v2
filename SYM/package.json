@@ -6,6 +6,7 @@
   "dependencies": {
     "babel-preset-react": "^6.5.0",
     "babelify": "^7.3.0",
+    "body-parser": "^1.15.1",
     "express": "^4.13.4",
     "express-myconnection": "^1.0.4",
     "mysql": "^2.11.1",
