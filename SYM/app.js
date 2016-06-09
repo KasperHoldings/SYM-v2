@@ -43,7 +43,7 @@ app.use('/', sampleForm);
 
 app.get('/list', userRouter.list);
 app.get('/users/create', userRouter.add);
-app.get('/users/create', userRouter.save);
+app.post('/users/create', userRouter.save);
 app.get('/', function (req, res) {
     res.render('index', {
         title: 'Home',
