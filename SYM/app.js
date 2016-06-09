@@ -5,11 +5,7 @@ var app = express();
 
 var port = process.env.PORT || 5000;
 
-var connection  = require('express-myconnection');
-var mysql = require('mysql');
-
-
-
+var connection = require("./src/config/dbconfig");
 
 var nav = [{
     Link: '/Bike',
@@ -36,19 +32,7 @@ app.set('views','./src/views');
 app.set('view engine','ejs');
 
 
-app.use(
-
-    connection(mysql,{
-
-        host: 'localhost',
-        user: 'root',
-        password : '123',
-        port : 3306, //port mysql
-        database:'dbsym'
-
-    },'pool') //or single
-
-);
+app.use(connection);
 
 app.use('/',insuranceRouter);
 app.use('/',sampleForm);
