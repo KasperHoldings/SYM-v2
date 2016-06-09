@@ -53,6 +53,9 @@ app.use('/', sampleForm);
 app.get('/list', userRouter.list);
 app.get('/users/create', userRouter.add);
 app.post('/users/create', userRouter.save);
+app.get('/users/delete/:id', userRouter.delete);
+app.get('/users/edit/:id', userRouter.edit);
+app.post('/users/edit/:id',userRouter.save_edit);
 app.get('/', function (req, res) {
     res.render('index', {
         title: 'Home',

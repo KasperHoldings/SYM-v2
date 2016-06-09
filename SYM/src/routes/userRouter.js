@@ -13,7 +13,7 @@ exports.list = function(req, res){
             if(err)
                 console.log("Error Selecting : %s ",err );
 
-            res.render('userList',{page_title:"SELECT Template",data:rows});
+            res.render('listUsers',{page_title:"SELECT Template",data:rows});
 
 
         });
@@ -29,7 +29,7 @@ exports.add = function(req, res){
     res.render('userregistrations/create',{page_title:"Register User"});
 };
 
-/*
+
 
 exports.edit = function(req, res){
 
@@ -37,13 +37,13 @@ exports.edit = function(req, res){
 
     req.getConnection(function(err,connector){
 
-        var query = connector.query('SELECT * FROM customer WHERE id = ?',[id],function(err,rows)
+        var query = connector.query('SELECT * FROM user WHERE id = ?',[id],function(err,rows)
         {
 
             if(err)
                 console.log("Error Selecting : %s ",err );
 
-            res.render('edit_customer',{page_title:"Edit Customers - Node.js",data:rows});
+            res.render('userregistrations/create',{page_title:"Edit Customers - Node.js",data:rows});
 
 
         });
@@ -52,7 +52,7 @@ exports.edit = function(req, res){
     });
 };
 
-*/
+
 /*Save the customer*/
 
 exports.save = function(req,res){
@@ -114,24 +114,24 @@ exports.save_edit = function(req,res){
     });
 };
 
-/*
-exports.delete_customer = function(req,res){
+
+exports.delete = function(req,res){
 
     var id = req.params.id;
 
     req.getConnection(function (err, connector) {
 
-        connector.query("DELETE FROM customer  WHERE id = ? ",[id], function(err, rows)
+        connector.query("DELETE FROM user  WHERE id = ? ",[id], function(err, rows)
         {
 
             if(err)
                 console.log("Error deleting : %s ",err );
 
-            res.redirect('/customers');
+            res.redirect('/list');
 
         });
 
     });
 };
-*/
+
 
