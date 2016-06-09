@@ -37853,6 +37853,7 @@ var ReactDom = require('react-dom');
 
 var Text = require('../components/Text.jsx');
 var ButtonInstance = require('../components/Buttons.jsx');
+var SampleForm = require('../components/Buttons.jsx');
 
 ReactDom.render(React.createElement(Text, null), document.getElementById('name'));
 ReactDom.render(ButtonInstance, document.getElementById('address'));
