@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53c7c294-451c-447e-b739-72a3303b12a7" name="Default" comment="userRegistration.ejs Added">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/userRegistration.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="53c7c294-451c-447e-b739-72a3303b12a7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/app.js" afterPath="$PROJECT_DIR$/SYM/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/components/SampleForm.jsx" afterPath="$PROJECT_DIR$/SYM/src/components/SampleForm.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/routes/userRouter.js" afterPath="$PROJECT_DIR$/SYM/src/routes/userRouter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/views/userRegistration.ejs" afterPath="$PROJECT_DIR$/SYM/src/views/userRegistration.ejs" />
     </list>
     <ignored path="SYM-v2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,8 +47,8 @@
       <file leaf-file-name="userRegistration.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SYM/src/views/userRegistration.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46272492">
-              <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6503856">
+              <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -476,7 +472,13 @@
       <option name="project" value="LOCAL" />
       <updated>1465458507320</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="userRegistration.ejs Added">
+      <created>1465460293682</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1465460293682</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -519,7 +521,8 @@
     <MESSAGE value="components rendered are working" />
     <MESSAGE value="installed react-bootstrap" />
     <MESSAGE value="got react-bootstrap to work with jsx files" />
-    <option name="LAST_COMMIT_MESSAGE" value="got react-bootstrap to work with jsx files" />
+    <MESSAGE value="userRegistration.ejs Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="userRegistration.ejs Added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -912,8 +915,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/views/userRegistration.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46272492">
-          <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6503856">
+          <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
           <folding />
         </state>
       </provider>
