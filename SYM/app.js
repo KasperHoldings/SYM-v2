@@ -10,6 +10,8 @@ var connection = require("./src/config/dbconfig");
 
 var bodyParser = require('body-parser');
 
+var methodOverride = require('method-override');
+
 
 var nav = [{
     Link: '/Bike',
@@ -38,7 +40,7 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
-//app.use(bodyParser.methodOverride());
+app.use(methodOverride('X-HTTP-Method-Override'));
 
 
 
