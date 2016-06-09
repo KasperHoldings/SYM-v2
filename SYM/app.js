@@ -30,6 +30,7 @@ var userRouter = require('./src/routes/userRouter');
 
 app.use(express.static('public'));
 app.set('views', './src/views');
+//app.set('views', './src/views/userRegistrations');
 app.set('view engine', 'ejs');
 
 
@@ -41,8 +42,8 @@ app.use('/', insuranceRouter);
 app.use('/', sampleForm);
 
 app.get('/list', userRouter.list);
-app.get('/register', userRouter.add);
-app.get('/register', userRouter.save);
+app.get('/users/create', userRouter.add);
+app.get('/users/create', userRouter.save);
 app.get('/', function (req, res) {
     res.render('index', {
         title: 'Home',

@@ -26,7 +26,7 @@ exports.list = function(req, res){
 
 
 exports.add = function(req, res){
-    res.render('userRegistration',{page_title:"Register User"});
+    res.render('userregistrations/create',{page_title:"Register User"});
 };
 
 /*
