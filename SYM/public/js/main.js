@@ -37752,50 +37752,135 @@ process.umask = function() { return 0; };
 },{}],433:[function(require,module,exports){
 var React = require('react');
 var ReactBootstrap = require('react-bootstrap');
-var ButtonToolbar = ReactBootstrap.ButtonToolbar;
+var FormGroup = ReactBootstrap.FormGroup;
+var FormControl = ReactBootstrap.FormControl;
+var ControlLabel = ReactBootstrap.ControlLabel;
+var ButtonGroup = ReactBootstrap.ButtonGroup;
 var Button = ReactBootstrap.Button;
 
-const ButtonsInstance = React.createElement(
-        ButtonToolbar,
-        null,
-        React.createElement(
-                Button,
-                null,
-                'Default'
-        ),
-        React.createElement(
-                Button,
-                { bsStyle: 'primary' },
-                'Primary'
-        ),
-        React.createElement(
-                Button,
-                { bsStyle: 'success' },
-                'Success'
-        ),
-        React.createElement(
-                Button,
-                { bsStyle: 'info' },
-                'Info'
-        ),
-        React.createElement(
-                Button,
-                { bsStyle: 'warning' },
-                'Warning'
-        ),
-        React.createElement(
-                Button,
-                { bsStyle: 'danger' },
-                'Danger'
-        ),
-        React.createElement(
-                Button,
-                { bsStyle: 'link' },
-                'Link'
-        )
-);
+const SampleForm = React.createClass({
+    displayName: 'SampleForm',
 
-module.exports = ButtonsInstance;
+    //getInitialState() {
+    //    return {
+    //        value: ''
+    //    };
+    //},
+    //
+    //getValidationState() {
+    //    const length = this.state.value.length;
+    //    if (length > 10) return 'success';
+    //    else if (length > 5) return 'warning';
+    //    else if (length > 0) return 'error';
+    //},
+    //
+    //handleChange(e) {
+    //    this.setState({ value: e.target.value });
+    //},
+
+    render() {
+        return React.createElement(
+            'form',
+            { action: '/users/create', method: 'POST' },
+            React.createElement(
+                FormGroup,
+                {
+                    controlId: 'formBasicText'
+                    //validationState={this.getValidationState()}
+                },
+                React.createElement(
+                    ControlLabel,
+                    null,
+                    'Name'
+                ),
+                React.createElement(FormControl, {
+                    type: 'text'
+                    //value={this.state.value}
+                    //placeholder="Enter text"
+                    //onChange={this.handleChange}
+                    , name: 'name'
+                }),
+                React.createElement(FormControl.Feedback, null)
+            ),
+            React.createElement(
+                FormGroup,
+                {
+                    controlId: 'address'
+                    //validationState={this.getValidationState()}
+                },
+                React.createElement(
+                    ControlLabel,
+                    null,
+                    'Address'
+                ),
+                React.createElement(FormControl, {
+                    type: 'text'
+                    //value={this.state.value}
+                    //placeholder="Enter text"
+                    //onChange={this.handleChange}
+                    , name: 'address'
+                }),
+                React.createElement(FormControl.Feedback, null)
+            ),
+            React.createElement(
+                FormGroup,
+                {
+                    controlId: 'phone'
+                    //validationState={this.getValidationState()}
+                },
+                React.createElement(
+                    ControlLabel,
+                    null,
+                    'Phone'
+                ),
+                React.createElement(FormControl, {
+                    type: 'text'
+                    //value={this.state.value}
+                    //placeholder="Enter text"
+                    //onChange={this.handleChange}
+                    , name: 'phone'
+                }),
+                React.createElement(FormControl.Feedback, null)
+            ),
+            React.createElement(
+                FormGroup,
+                {
+                    controlId: 'email'
+                    //validationState={this.getValidationState()}
+                },
+                React.createElement(
+                    ControlLabel,
+                    null,
+                    'Email'
+                ),
+                React.createElement(FormControl, {
+                    type: 'text'
+                    //value={this.state.value}
+                    //placeholder="Enter text"
+                    //onChange={this.handleChange}
+                    , name: 'email'
+                }),
+                React.createElement(FormControl.Feedback, null)
+            ),
+            React.createElement(
+                ButtonGroup,
+                null,
+                React.createElement(
+                    Button,
+                    { type: 'submit', bsStyle: 'primary' },
+                    'Create User'
+                ),
+                React.createElement(
+                    Button,
+                    { type: 'submit', bsStyle: 'warning' },
+                    'Cancel'
+                )
+            )
+        );
+    }
+});
+
+module.exports = SampleForm;
 
 },{"react":431,"react-bootstrap":92}],434:[function(require,module,exports){
 var React = require('react');
@@ -37852,10 +37937,8 @@ var React = require('react');
 var ReactDom = require('react-dom');
 
 var Text = require('../components/Text.jsx');
-var ButtonInstance = require('../components/Buttons.jsx');
-var SampleForm = require('../components/Buttons.jsx');
+var SampleForm = require('../components/SampleForm.jsx');
 
-ReactDom.render(React.createElement(Text, null), document.getElementById('name'));
-ReactDom.render(ButtonInstance, document.getElementById('address'));
+ReactDom.render(React.createElement(SampleForm, null), document.getElementById('users-create-form'));
 
-},{"../components/Buttons.jsx":433,"../components/Text.jsx":434,"react":431,"react-dom":266}]},{},[435]);
+},{"../components/SampleForm.jsx":433,"../components/Text.jsx":434,"react":431,"react-dom":266}]},{},[435]);

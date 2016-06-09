@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53c7c294-451c-447e-b739-72a3303b12a7" name="Default" comment="userRegistration.ejs Added">
+    <list default="true" id="53c7c294-451c-447e-b739-72a3303b12a7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/app.js" afterPath="$PROJECT_DIR$/SYM/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/views/userList.ejs" afterPath="$PROJECT_DIR$/SYM/src/views/userList.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/package.json" afterPath="$PROJECT_DIR$/SYM/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/js/main.js" afterPath="$PROJECT_DIR$/SYM/public/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/components/SampleForm.jsx" afterPath="$PROJECT_DIR$/SYM/src/components/SampleForm.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/lib/main.jsx" afterPath="$PROJECT_DIR$/SYM/src/lib/main.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/views/userRegistrations/create.ejs" afterPath="$PROJECT_DIR$/SYM/src/views/userRegistrations/create.ejs" />
     </list>
     <ignored path="SYM-v2.iws" />
@@ -26,21 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Text.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SYM/src/components/Text.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SampleForm.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SampleForm.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SYM/src/components/SampleForm.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+            <state vertical-scroll-proportion="3.0065503">
+              <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -49,8 +41,8 @@
       <file leaf-file-name="create.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SYM/src/views/userRegistrations/create.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.472727">
-              <caret line="113" column="81" selection-start-line="113" selection-start-column="81" selection-end-line="113" selection-end-column="81" />
+            <state vertical-scroll-proportion="-3.9272728">
+              <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#li#0;n#ul#1;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -58,14 +50,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userList.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="userList.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SYM/src/views/userList.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26337448">
-              <caret line="111" column="26" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
+            <state vertical-scroll-proportion="-3.5272727">
+              <caret line="229" column="0" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#li#0;n#ul#1;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SYM/src/lib/main.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/SYM/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -105,8 +107,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SYM/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9230769">
-              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+            <state vertical-scroll-proportion="-9.884615">
+              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -161,16 +163,16 @@
         <option value="$PROJECT_DIR$/SYM/src/components/TextArea.jsx" />
         <option value="$PROJECT_DIR$/SYM/src/components/Buttons.jsx" />
         <option value="$PROJECT_DIR$/SYM/src/components/Text.jsx" />
-        <option value="$PROJECT_DIR$/SYM/src/lib/main.jsx" />
         <option value="$PROJECT_DIR$/SYM/package.json" />
-        <option value="$PROJECT_DIR$/SYM/src/components/SampleForm.jsx" />
         <option value="$PROJECT_DIR$/SYM/src/routes/userRouter.js" />
         <option value="$PROJECT_DIR$/SYM/src/views/userRegistration.ejs" />
         <option value="$PROJECT_DIR$/SYM/src/config/dbconfig.js" />
         <option value="$PROJECT_DIR$/SYM/src/views/userRegistrations/edit.ejs" />
-        <option value="$PROJECT_DIR$/SYM/src/views/userRegistrations/create.ejs" />
         <option value="$PROJECT_DIR$/SYM/app.js" />
         <option value="$PROJECT_DIR$/SYM/src/views/userList.ejs" />
+        <option value="$PROJECT_DIR$/SYM/src/views/userRegistrations/create.ejs" />
+        <option value="$PROJECT_DIR$/SYM/src/lib/main.jsx" />
+        <option value="$PROJECT_DIR$/SYM/src/components/SampleForm.jsx" />
       </list>
     </option>
   </component>
@@ -309,8 +311,26 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="SYM-v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SYM-v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SYM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -329,6 +349,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -523,21 +547,27 @@
       <option name="project" value="LOCAL" />
       <updated>1465460341817</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Changes in ejs files">
+      <created>1465463066633</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1465463066633</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46644846" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20458265" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -567,7 +597,8 @@
     <MESSAGE value="installed react-bootstrap" />
     <MESSAGE value="got react-bootstrap to work with jsx files" />
     <MESSAGE value="userRegistration.ejs Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="userRegistration.ejs Added" />
+    <MESSAGE value="Changes in ejs files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes in ejs files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -883,26 +914,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/lib/main.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/components/Text.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/components/SampleForm.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -936,7 +951,7 @@
     <entry file="file://$PROJECT_DIR$/SYM/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -949,31 +964,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/views/userList.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5272727">
+          <caret line="229" column="0" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#li#0;n#ul#1;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SYM/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
-          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        <state vertical-scroll-proportion="-9.884615">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/lib/main.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/views/userRegistrations/create.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.472727">
-          <caret line="113" column="81" selection-start-line="113" selection-start-column="81" selection-end-line="113" selection-end-column="81" />
+        <state vertical-scroll-proportion="-3.9272728">
+          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#ul#0;n#li#0;n#ul#1;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/views/userList.ejs">
+    <entry file="file://$PROJECT_DIR$/SYM/src/components/SampleForm.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26337448">
-          <caret line="111" column="26" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#li#0;n#ul#1;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="3.0065503">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

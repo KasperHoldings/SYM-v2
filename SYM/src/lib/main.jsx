@@ -2,8 +2,6 @@ var React = require('react');
 var ReactDom = require('react-dom');
 
 var Text = require('../components/Text.jsx');
-var ButtonInstance = require('../components/Buttons.jsx');
-var SampleForm = require('../components/Buttons.jsx');
+var SampleForm = require('../components/SampleForm.jsx');
 
-ReactDom.render(<Text/>, document.getElementById('name'));
-ReactDom.render(ButtonInstance, document.getElementById('address'));
+ReactDom.render(<SampleForm/>, document.getElementById('users-create-form'));
