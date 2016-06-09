@@ -1,20 +1,45 @@
 var React = require('react');
+var ReactBootstrap = require('react-bootstrap');
+var FormGroup = ReactBootstrap.FormGroup;
+var ControlLabel = ReactBootstrap.ControlLabel;
+var FormControl = ReactBootstrap.FormControl;
 
-var Text = React.createClass({
-    getInitialState: function() {
-        return {value: 'Hello!'};
+
+const Text = React.createClass({
+    getInitialState() {
+        return {
+            value: ''
+        };
     },
-    handleChange: function(event) {
-        this.setState({value: event.target.value});
+
+    getValidationState() {
+        const length = this.state.value.length;
+        if (length > 10) return 'success';
+        else if (length > 5) return 'warning';
+        else if (length > 0) return 'error';
     },
-    render: function() {
+
+    handleChange(e) {
+        this.setState({ value: e.target.value });
+    },
+
+    render() {
         return (
-            <input
-                type="text"
-                className="form-control"
-                value={this.state.value}
-                onChange={this.handleChange}
-            />
+
+                <FormGroup
+                    controlId="formBasicText"
+                    validationState={this.getValidationState()}
+                >
+                    <ControlLabel>Working example with validation</ControlLabel>
+                    <FormControl
+                        type="text"
+                        value={this.state.value}
+                        placeholder="Enter text"
+                        onChange={this.handleChange}
+                    />
+                    <FormControl.Feedback />
+                </FormGroup>
+
         );
     }
 });

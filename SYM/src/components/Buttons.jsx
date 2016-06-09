@@ -1,8 +1,9 @@
-var React = require('react-bootstrap');
-var ButtonToolbar = React.ButtonToolbar;
-var Button = React.Button;
+var React = require('react');
+var ReactBootstrap = require('react-bootstrap');
+var ButtonToolbar = ReactBootstrap.ButtonToolbar;
+var Button = ReactBootstrap.Button;
 
-const buttonsInstance = (
+const ButtonsInstance = (
     <ButtonToolbar>
         {/* Standard button */}
         <Button>Default</Button>
@@ -27,4 +28,4 @@ const buttonsInstance = (
     </ButtonToolbar>
 );
 
-module.exports = buttonsInstance;
+module.exports = ButtonsInstance;
