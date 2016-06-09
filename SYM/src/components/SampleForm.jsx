@@ -39,6 +39,7 @@ const SampleForm = React.createClass({
                 />
                 <FormControl.Feedback />
             </FormGroup>
+
             <FormGroup
                 controlId="formBasicText"
                 validationState={this.getValidationState()}

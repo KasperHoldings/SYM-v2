@@ -22,6 +22,8 @@ exports.list = function(req, res){
     });
 
 };
+
+
 /*
 exports.add = function(req, res){
     res.render('add_customer',{page_title:"Add Customers - Node.js"});
