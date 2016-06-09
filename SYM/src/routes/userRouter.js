@@ -24,10 +24,12 @@ exports.list = function(req, res){
 };
 
 
-/*
+
 exports.add = function(req, res){
-    res.render('add_customer',{page_title:"Add Customers - Node.js"});
+    res.render('userRegistration',{page_title:"Register User"});
 };
+
+/*
 
 exports.edit = function(req, res){
 
@@ -52,7 +54,7 @@ exports.edit = function(req, res){
 
 */
 /*Save the customer*/
-/*
+
 exports.save = function(req,res){
 
     var input = JSON.parse(JSON.stringify(req.body));
@@ -68,13 +70,13 @@ exports.save = function(req,res){
 
         };
 
-        var query = connector.query("INSERT INTO customer set ? ",data, function(err, rows)
+        var query = connector.query("INSERT INTO user set ? ",data, function(err, rows)
         {
 
             if (err)
                 console.log("Error inserting : %s ",err );
 
-            res.redirect('/customers');
+            res.redirect('/list');
 
         });
 
@@ -99,20 +101,20 @@ exports.save_edit = function(req,res){
 
         };
 
-        connector.query("UPDATE customer set ? WHERE id = ? ",[data,id], function(err, rows)
+        connector.query("UPDATE user set ? WHERE id = ? ",[data,id], function(err, rows)
         {
 
             if (err)
                 console.log("Error Updating : %s ",err );
 
-            res.redirect('/customers');
+            res.redirect('/list');
 
         });
 
     });
 };
 
-
+/*
 exports.delete_customer = function(req,res){
 
     var id = req.params.id;

@@ -41,6 +41,8 @@ app.use('/', insuranceRouter);
 app.use('/', sampleForm);
 
 app.get('/list', userRouter.list);
+app.get('/register', userRouter.add);
+app.get('/register', userRouter.save);
 app.get('/', function (req, res) {
     res.render('index', {
         title: 'Home',
