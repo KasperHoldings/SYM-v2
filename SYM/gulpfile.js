@@ -31,7 +31,7 @@ gulp.task('inject',function(){
         bowerJson : require('./bower.json'),
         directory : './public/lib',
         ignorePath:'../../public'
-    }
+    };
 
     return gulp.src('./src/views/*.html')
         .pipe(wiredep(options))
@@ -47,7 +47,7 @@ gulp.task('serve',['style','inject'],function(){
             'PORT':3000
         },
         watch:jsFiles
-    }
+    };
     return nodemon(options)
         .on('restart',function(ev){
             console.log('Restarting super server...');

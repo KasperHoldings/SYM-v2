@@ -10,10 +10,10 @@ exports.list = function(req, res){
         var listQuery = connection.query('SELECT * FROM user',function(err,rows)
         {
 
-            if(err)
-                console.log("Error Selecting : %s ",err );
-
-            res.render('listUsers',{page_title:"SELECT Template",data:rows});
+            if(err) {
+                console.log('Error Selecting : %s ', err);
+            }
+            res.render('listUsers',{pageTitle:'SELECT Template',data:rows});
 
 
         });
@@ -23,13 +23,9 @@ exports.list = function(req, res){
 
 };
 
-
-
 exports.add = function(req, res){
-    res.render('userregistrations/create',{page_title:"Register User"});
+    res.render('userregistrations/create',{pageTitle:'Register User'});
 };
-
-
 
 exports.edit = function(req, res){
 
@@ -40,10 +36,10 @@ exports.edit = function(req, res){
         var query = connector.query('SELECT * FROM user WHERE id = ?',[id],function(err,rows)
         {
 
-            if(err)
-                console.log("Error Selecting : %s ",err );
-
-            res.render('userregistrations/create',{page_title:"Edit Customers - Node.js",data:rows});
+            if(err) {
+                console.log('Error Selecting : %s ', err);
+            }
+            res.render('userregistrations/create',{pageTitle:'Edit Customers - Node.js',data:rows});
 
 
         });
@@ -51,7 +47,6 @@ exports.edit = function(req, res){
         //console.log(query.sql);
     });
 };
-
 
 /*Save the customer*/
 
@@ -70,12 +65,12 @@ exports.save = function(req,res){
 
         };
 
-        var query = connector.query("INSERT INTO user set ? ",data, function(err, rows)
+        var query = connector.query('INSERT INTO user set ? ',data, function(err, rows)
         {
 
-            if (err)
-                console.log("Error inserting : %s ",err );
-
+            if(err) {
+                console.log('Error Selecting : %s ', err);
+            }
             res.redirect('/list');
 
         });
@@ -85,7 +80,7 @@ exports.save = function(req,res){
     });
 };
 
-exports.save_edit = function(req,res){
+exports.saveEdit = function(req,res){
 
     var input = JSON.parse(JSON.stringify(req.body));
     var id = req.params.id;
@@ -101,12 +96,12 @@ exports.save_edit = function(req,res){
 
         };
 
-        connector.query("UPDATE user set ? WHERE id = ? ",[data,id], function(err, rows)
+        connector.query('UPDATE user set ? WHERE id = ? ',[data,id], function(err, rows)
         {
 
-            if (err)
-                console.log("Error Updating : %s ",err );
-
+            if(err) {
+                console.log('Error Selecting : %s ', err);
+            }
             res.redirect('/list');
 
         });
@@ -121,12 +116,12 @@ exports.delete = function(req,res){
 
     req.getConnection(function (err, connector) {
 
-        connector.query("DELETE FROM user  WHERE id = ? ",[id], function(err, rows)
+        connector.query('DELETE FROM user  WHERE id = ? ',[id], function(err, rows)
         {
 
-            if(err)
-                console.log("Error deleting : %s ",err );
-
+            if(err) {
+                console.log('Error Selecting : %s ', err);
+            }
             res.redirect('/list');
 
         });

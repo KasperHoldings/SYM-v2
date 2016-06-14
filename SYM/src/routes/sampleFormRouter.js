@@ -12,12 +12,11 @@ var router = function(nav){
 
             req.getConnection(function(err,connection){
 
-                var query = connection.query('SELECT * FROM sampleTable',function(err,rows)
-                {
+                var query = connection.query('SELECT * FROM sampleTable',function(err,rows) {
 
-                    if(err)
-
-                        console.log("Error Selecting : %s ",err );
+                    if (err) {
+                        console.log('Error Selecting : %s ', err);
+                     }
 
                     //res.render('customers',{page_title:"Customers - Node.js",data:rows});
 
@@ -38,6 +37,6 @@ var router = function(nav){
 
 
     return sampleFormRouter;
-}
+};
 
 module.exports = router;

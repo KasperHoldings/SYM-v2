@@ -1,12 +1,11 @@
+
 var express = require('express');
 
 var app = express();
 
 var port = process.env.PORT || 5000;
 
-
-
-var connection = require("./src/config/dbconfig");
+var connection = require('./src/config/dbconfig');
 
 var bodyParser = require('body-parser');
 
@@ -16,16 +15,15 @@ var methodOverride = require('method-override');
 var nav = [{
     Link: '/Bike',
     Text: 'Bike'
-}, {
+    }, {
     Link: '/Three',
     Text: 'Three'
-}, {
+    }, {
     Link: '/formSampleOne',
     Text: 'Sample Form'
-}
-    , {
-        Link: '/list',
-        Text: 'Sample Select Template'
+    }, {
+    Link: '/list',
+    Text: 'Sample Select Template'
     }
 ];
 
@@ -46,7 +44,6 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 
 app.use(connection);
 
-
 app.use('/', insuranceRouter);
 app.use('/', sampleForm);
 
@@ -55,7 +52,7 @@ app.get('/users/create', userRouter.add);
 app.post('/users/create', userRouter.save);
 app.get('/users/delete/:id', userRouter.delete);
 app.get('/users/edit/:id', userRouter.edit);
-app.post('/users/edit/:id',userRouter.save_edit);
+app.post('/users/edit/:id',userRouter.saveEdit);
 app.get('/', function (req, res) {
     res.render('index', {
         title: 'Home',

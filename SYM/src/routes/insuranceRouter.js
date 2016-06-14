@@ -48,6 +48,6 @@ var router = function(nav){
             });
         });
     return insuranceRouter;
-}
+};
 
 module.exports = router;
