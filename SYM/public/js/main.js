@@ -37886,6 +37886,139 @@ module.exports = SampleForm;
 var React = require('react');
 var ReactBootstrap = require('react-bootstrap');
 var FormGroup = ReactBootstrap.FormGroup;
+var FormControl = ReactBootstrap.FormControl;
+var ControlLabel = ReactBootstrap.ControlLabel;
+var ButtonGroup = ReactBootstrap.ButtonGroup;
+var Button = ReactBootstrap.Button;
+
+const SampleForm = React.createClass({
+    displayName: 'SampleForm',
+
+    //getInitialState() {
+    //    return {
+    //        value: ''
+    //    };
+    //},
+    //
+    //getValidationState() {
+    //    const length = this.state.value.length;
+    //    if (length > 10) return 'success';
+    //    else if (length > 5) return 'warning';
+    //    else if (length > 0) return 'error';
+    //},
+    //
+    //handleChange(e) {
+    //    this.setState({ value: e.target.value });
+    //},
+
+    render() {
+        return React.createElement(
+            'form',
+            { action: '/users/create', method: 'POST' },
+            React.createElement(
+                FormGroup,
+                {
+                    controlId: 'formBasicText'
+                    //validationState={this.getValidationState()}
+                },
+                React.createElement(
+                    ControlLabel,
+                    null,
+                    'Name'
+                ),
+                React.createElement(FormControl, {
+                    type: 'text'
+                    //value=
+                    //placeholder="Enter text"
+                    //onChange={this.handleChange}
+                    , name: 'name'
+                }),
+                React.createElement(FormControl.Feedback, null)
+            ),
+            React.createElement(
+                FormGroup,
+                {
+                    controlId: 'address'
+                    //validationState={this.getValidationState()}
+                },
+                React.createElement(
+                    ControlLabel,
+                    null,
+                    'Address'
+                ),
+                React.createElement(FormControl, {
+                    type: 'text'
+                    //value={this.state.value}
+                    //placeholder="Enter text"
+                    //onChange={this.handleChange}
+                    , name: 'address'
+                }),
+                React.createElement(FormControl.Feedback, null)
+            ),
+            React.createElement(
+                FormGroup,
+                {
+                    controlId: 'phone'
+                    //validationState={this.getValidationState()}
+                },
+                React.createElement(
+                    ControlLabel,
+                    null,
+                    'Phone'
+                ),
+                React.createElement(FormControl, {
+                    type: 'text'
+                    //value={this.state.value}
+                    //placeholder="Enter text"
+                    //onChange={this.handleChange}
+                    , name: 'phone'
+                }),
+                React.createElement(FormControl.Feedback, null)
+            ),
+            React.createElement(
+                FormGroup,
+                {
+                    controlId: 'email'
+                    //validationState={this.getValidationState()}
+                },
+                React.createElement(
+                    ControlLabel,
+                    null,
+                    'Email'
+                ),
+                React.createElement(FormControl, {
+                    type: 'text'
+                    //value={this.state.value}
+                    //placeholder="Enter text"
+                    //onChange={this.handleChange}
+                    , name: 'email'
+                }),
+                React.createElement(FormControl.Feedback, null)
+            ),
+            React.createElement(
+                ButtonGroup,
+                null,
+                React.createElement(
+                    Button,
+                    { type: 'submit', bsStyle: 'primary' },
+                    'Update User'
+                ),
+                React.createElement(
+                    Button,
+                    { type: 'submit', bsStyle: 'warning' },
+                    'Cancel'
+                )
+            )
+        );
+    }
+});
+
+module.exports = SampleForm;
+
+},{"react":431,"react-bootstrap":92}],435:[function(require,module,exports){
+var React = require('react');
+var ReactBootstrap = require('react-bootstrap');
+var FormGroup = ReactBootstrap.FormGroup;
 var ControlLabel = ReactBootstrap.ControlLabel;
 var FormControl = ReactBootstrap.FormControl;
 
@@ -37932,13 +38065,19 @@ const Text = React.createClass({
 
 module.exports = Text;
 
-},{"react":431,"react-bootstrap":92}],435:[function(require,module,exports){
+},{"react":431,"react-bootstrap":92}],436:[function(require,module,exports){
 var React = require('react');
 var ReactDom = require('react-dom');
 
 var Text = require('../components/Text.jsx');
 var SampleForm = require('../components/SampleForm.jsx');
+var SampleFormEdit = require('../components/SampleFormEdit.jsx');
 
-ReactDom.render(React.createElement(SampleForm, null), document.getElementById('users-create-form'));
+if (document.body.contains(document.getElementById('users-create-form'))) {
+    ReactDom.render(React.createElement(SampleForm, null), document.getElementById('users-create-form'));
+} else {
+    ReactDom.render(React.createElement(SampleFormEdit, null), document.getElementById('users-edit-form'));
+    console.log("Hi");
+}
 
-},{"../components/SampleForm.jsx":433,"../components/Text.jsx":434,"react":431,"react-dom":266}]},{},[435]);
+},{"../components/SampleForm.jsx":433,"../components/SampleFormEdit.jsx":434,"../components/Text.jsx":435,"react":431,"react-dom":266}]},{},[436]);

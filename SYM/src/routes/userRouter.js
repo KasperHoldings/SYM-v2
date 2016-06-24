@@ -39,7 +39,9 @@ exports.edit = function(req, res){
             if(err) {
                 console.log('Error Selecting : %s ', err);
             }
-            res.render('userregistrations/create',{pageTitle:'Edit Customers - Node.js',data:rows});
+
+            //console.log(rows[0]);
+            res.render('userregistrations/edit',{pageTitle:'Edit Customers - Node.js',data:rows[0],id:id});
 
 
         });
