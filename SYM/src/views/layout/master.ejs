@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SYM</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.fullPage.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/animations.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="../../css/videobackground.css" />-->
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/format.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/custom.css"/>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="fix_hd">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle  collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="../../images/logo.png"/></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul id="menu" class="nav navbar-nav">
+                    <li class="active" data-menuanchor="firstPage"><a href="#firstPage">First section</a></li>
+                    <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+                    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
+                    <li data-menuanchor="4thPage"><a href="#4thPage">Fourth section</a></li>
+                    <li data-menuanchor="5thPage"><a href="#5thPage">Fifth section</a></li>
+                    <li data-menuanchor="6thPage"><a href="#6thPage">Sixth section</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="fullpage">
+        <div class="section landingScreen active" id="section0">
+            <div class="container menu_wrp_cont">
+                <div class="fix_hd2">
+                    <%include nav.ejs %>
+                </div>
+            </div>
+            <div class="op_blue"></div>
+            <div class="row">
+                <div class="container">
+                    <div class="col-md-12 mrnone">
+                        <!--                                <h1 class="bestSite_text">India's Best  <strong>Financial Website</strong></h1>
+                                                        <h3>Compare, Buy &amp; Save on all your Insurance needs</h3>-->
+                        <!--   <div class="all_service_tab">
+                            <a class="circleTab v3term" href="javascript:void(0);"><span>Term Life</span></a>
+                            <a class="circleTab v3health" href="javascript:void(0);"><span>Health</span></a>
+                            <a class="circleTab v3investment" href="javascript:void(0);"><span>Investment</span></a>
+                            <a class="circleTab v3car" href="javascript:void(0);"><span>Car</span></a>
+                            <a class="circleTab v3twowheeler" href="javascript:void(0);"><span>Two Wheeler</span></a>
+                            <a class="circleTab v3travel" href="javascript:void(0);"><span>Travel</span></a>
+                            <a class="circleTab v3taxsaving" href="javascript:void(0);" ><span>Tax Saving</span></a>
+                            <a class="circleTab v3child" href="javascript:void(0);" ><span>Child</span></a>
+                            <a class="circleTab v3retirement" href="javascript:void(0);"><span>Retirement</span></a>
+                            <a class="circleTab v3cancercare" href="javascript:void(0);"><span>Cancer Insurance</span></a>
+                            <a class="circleTab v3criticalillness" href="javascript:void(0);"><span>Critical Illness</span></a>
+                            <a class="circleTab v3home" href="javascript:void(0);"><span>Home</span></a>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="hidden_loder animatedParent">
+                <div class="container">
+                    <div class="formarea repeat0 animated fadeInUp">
+                        <div class="indicator">
+                            <div class="moscot"></div>
+                            <div class="moscot_hand"></div>
+                        </div>
+                        <%include forms/forms.ejs %>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <ul class="cate">
+                    <li><a class="cc" href="#"><span>Cancer Insurance</span></a></li>
+                    <li><a class="hi" href="#"><span>Home Insurance</span></a></li>
+                    <li><a class="ci" href="#"><span>Critical Illness</span></a></li>
+                    <li><a class="tx" href="#"><span>Tax Saving</span></a></li>
+                    <li><a class="re" href="#"><span>Retirement</span></a></li>
+                    <li><a class="ch" href="#"><span>Child</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section made_easy" id="section1">
+            <%include section1.ejs %>
+        </div>
+        <div class="section animatedParent" id="section2">
+            <%include section2.ejs %>
+        </div>
+        <div class="section" id="section3">
+            <%include section3.ejs %>
+        </div>
+        <div class="section animatedParent" id="section4">
+            <%include section4.ejs %>
+        </div>
+        <div class="section animatedParent" id="section5">
+            <%include section5.ejs %>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../../js/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+<!--<script type="text/javascript" src="../../js/videobackground.js"></script>-->
+<script type="text/javascript" src="../../js/jquery.fullPage.js"></script>
+<script type="text/javascript" src="../../js/css3-animate-it.js"></script>
+<script type="text/javascript" src="../../js/script.js"></script>
+</body>
+</html>

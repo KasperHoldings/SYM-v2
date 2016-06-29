@@ -9,7 +9,7 @@ var router = function(nav){
         .get(function (req,res){
             //res.send('formSampleOne');
 
-            res.render('index',{
+            res.render('layout/master',{
                 title:'Home',
                 nav : nav
             });

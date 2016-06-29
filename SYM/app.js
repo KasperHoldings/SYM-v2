@@ -54,7 +54,7 @@ app.get('/users/delete/:id', userRouter.delete);
 app.get('/users/edit/:id', userRouter.edit);
 app.post('/users/edit/:id',userRouter.saveEdit);
 app.get('/', function (req, res) {
-    res.render('index', {
+    res.render('layout/master', {
         title: 'Home',
         nav: nav
     });
