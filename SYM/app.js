@@ -27,9 +27,13 @@ var nav = [{
     }
 ];
 
+
+//Routers
 var insuranceRouter = require('./src/routes/insuranceRouter')(nav);
 var sampleForm = require('./src/routes/sampleFormRouter')(nav);
 var userRouter = require('./src/routes/userRouter');
+var vehicleRegRouter = require('./src/routes/vehicleRegRouter');
+var vehicleDetailsRouter = require('./src/routes/vehicleDetailsRouter');
 
 app.use(express.static('public'));
 app.set('views', './src/views');
@@ -53,8 +57,27 @@ app.post('/users/create', userRouter.save);
 app.get('/users/delete/:id', userRouter.delete);
 app.get('/users/edit/:id', userRouter.edit);
 app.post('/users/edit/:id',userRouter.saveEdit);
+
+//Vehicle Router - Vehicle Registration
+app.get('/vehicle/car/vehicleReg/create', vehicleRegRouter.add);
+app.post('/vehicle/car/vehicleReg/create', vehicleRegRouter.save);
+app.get('/vehicle/car/vehicleReg/delete/:id', vehicleRegRouter.delete);
+app.get('/vehicle/car/vehicleReg/edit/:id', vehicleRegRouter.edit);
+app.post('/vehicle/car/vehicleReg/edit/:id',vehicleRegRouter.saveEdit);
+
+//Vehicle Router - Vehicle details
+app.get('/vehicle/car/vehicleDetails/create', vehicleDetailsRouter.add);
+app.post('/vehicle/car/vehicleDetails/create', vehicleDetailsRouter.save);
+app.get('/vehicle/car/vehicleDetails/delete/:id', vehicleDetailsRouter.delete);
+app.get('/vehicle/car/vehicleDetails/edit/:id', vehicleDetailsRouter.edit);
+app.post('/vehicle/car/vehicleDetails/edit/:id',vehicleDetailsRouter.saveEdit);
+
+//Vehicle Router - Vehicle details
+
+
+//Index
 app.get('/', function (req, res) {
-    res.render('layout/master', {
+    res.render('index', {
         title: 'Home',
         nav: nav
     });
