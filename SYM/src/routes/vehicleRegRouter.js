@@ -5,6 +5,8 @@
 
 exports.list = function(req, res){
 
+    res.render('layout/forms/cars/form1');
+
     req.getConnection(function(err,connection){
 
         var listQuery = connection.query('SELECT * FROM user',function(err,rows)
@@ -24,7 +26,9 @@ exports.list = function(req, res){
 };
 
 exports.add = function(req, res){
-    res.render('userregistrations/create',{pageTitle:'Register User'});
+    res.render('layout/forms/cars/form1');
+
+    //res.render('userregistrations/create',{pageTitle:'Register User'});
 };
 
 exports.edit = function(req, res){
@@ -54,32 +58,35 @@ exports.edit = function(req, res){
 
 exports.save = function(req,res){
 
-    var input = JSON.parse(JSON.stringify(req.body));
+    //Temporary
+    res.render('layout/forms/cars/form2');
 
-    req.getConnection(function (err, connector) {
-
-        var data = {
-
-            name    : input.name,
-            address : input.address,
-            email   : input.email,
-            phone   : input.phone
-
-        };
-
-        var query = connector.query('INSERT INTO user set ? ',data, function(err, rows)
-        {
-
-            if(err) {
-                console.log('Error Selecting : %s ', err);
-            }
-            res.redirect('/list');
-
-        });
+    //var input = JSON.parse(JSON.stringify(req.body));
+    //
+    //req.getConnection(function (err, connector) {
+    //
+    //    var data = {
+    //
+    //        name    : input.name,
+    //        address : input.address,
+    //        email   : input.email,
+    //        phone   : input.phone
+    //
+    //    };
+    //
+    //    var query = connector.query('INSERT INTO user set ? ',data, function(err, rows)
+    //    {
+    //
+    //        if(err) {
+    //            console.log('Error Selecting : %s ', err);
+    //        }
+    //        res.redirect('/list');
+    //
+    //    });
 
         // console.log(query.sql); get raw query
 
-    });
+    //});
 };
 
 exports.saveEdit = function(req,res){

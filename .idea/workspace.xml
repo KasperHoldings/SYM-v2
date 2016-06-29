@@ -1,105 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53c7c294-451c-447e-b739-72a3303b12a7" name="Default" comment="Edit option completed">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/RobotoLight.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/RobotoLight.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/RobotoLight.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/RobotoLight.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/RobotoRegular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/RobotoRegular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/RobotoRegular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/RobotoRegular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/fontawesomewebfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/fontawesomewebfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/fontawesomewebfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/fontawesomewebfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/pertibd.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/pertibd.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/pertibd.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/pertibd.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/family1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/girl-with-father.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_anchorfree1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_cisco.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_delonghi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_fastweb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_federated_media.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_fineco1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_intesa_sanpaolo1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_parmalat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_swatch1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_theneeds1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_valentino.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_vodafone1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/so1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/so11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/so2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/so22.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/so3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/so33.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/so4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/so44.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/social.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/sprite_img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/animate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/animations.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/format.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/jquery.fullPage.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/videobackground.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/RobotoLight.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/RobotoRegular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/fontawesomewebfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/fonts/pertibd.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/js/css3-animate-it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/js/jquery-ui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/js/jquery.fullPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/js/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/js/videobackground.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/index.ejs.bkp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/layout/forms/cars/form1.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/layout/forms/cars/form2.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/layout/forms/cars/form3.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/layout/forms/forms.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/layout/forms/forms1.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/layout/master.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/layout/nav.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/layout/section1.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/layout/section2.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/layout/section3.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/layout/section4.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/layout/section5.ejs" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SYM/src/Routes.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SYM/src/components/Base.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SYM/src/components/Buttons.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SYM/src/components/Label.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SYM/src/components/Page1.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SYM/src/components/Page2.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SYM/src/components/SampleForm.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SYM/src/components/SampleFormEdit.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SYM/src/components/Text.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SYM/src/components/TextArea.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SYM/src/lib/main.jsx" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="53c7c294-451c-447e-b739-72a3303b12a7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/partials/styles.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/app.js" afterPath="$PROJECT_DIR$/SYM/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/package.json" afterPath="$PROJECT_DIR$/SYM/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/SYM/public/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/SYM/public/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/routes/insuranceRouter.js" afterPath="$PROJECT_DIR$/SYM/src/routes/insuranceRouter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/views/index.ejs" afterPath="$PROJECT_DIR$/SYM/src/views/index.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/routes/vehicleRegRouter.js" afterPath="$PROJECT_DIR$/SYM/src/routes/vehicleRegRouter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/views/layout/forms/cars/form1.ejs" afterPath="$PROJECT_DIR$/SYM/src/views/layout/forms/cars/form1.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/views/layout/forms/cars/form2.ejs" afterPath="$PROJECT_DIR$/SYM/src/views/layout/forms/cars/form2.ejs" />
     </list>
     <ignored path="SYM-v2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,26 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="insuranceRouter.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SYM/src/routes/insuranceRouter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ejs.bkp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs.bkp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
@@ -150,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="master.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="master.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SYM/src/views/layout/master.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5079681">
-              <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="33" />
+            <state vertical-scroll-proportion="-4.576923">
+              <caret line="7" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -167,8 +54,8 @@
       <file leaf-file-name="forms.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SYM/src/views/layout/forms/forms.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.076923">
-              <caret line="1417" column="33" selection-start-line="1417" selection-start-column="33" selection-end-line="1417" selection-end-column="33" />
+            <state vertical-scroll-proportion="-55.576923">
+              <caret line="1419" column="6" selection-start-line="1419" selection-start-column="6" selection-end-line="1419" selection-end-column="6" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
@@ -192,11 +79,55 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SYM/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="62" column="60" selection-start-line="62" selection-start-column="60" selection-end-line="62" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vehicleRegRouter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SYM/src/routes/vehicleRegRouter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="88" column="9" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ejs.bkp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs.bkp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="53" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="form1.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SYM/src/views/layout/forms/cars/form1.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.076923">
-              <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+            <state vertical-scroll-proportion="-6.5384617">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="17" selection-end-column="66" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SYM/src/views/partials/styles.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.25813448">
+              <caret line="7" column="62" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -205,8 +136,8 @@
       <file leaf-file-name="form2.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SYM/src/views/layout/forms/cars/form2.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5">
-              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -217,26 +148,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-5.8846154">
               <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms1.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SYM/src/views/layout/forms/forms1.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SYM/src/views/layout/nav.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="34" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -287,7 +198,6 @@
         <option value="$PROJECT_DIR$/SYM/src/views/userRegistrations/edit.ejs" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/SYM/package.json" />
-        <option value="$PROJECT_DIR$/SYM/app.js" />
         <option value="$PROJECT_DIR$/SYM/src/routes/insuranceRouter.js" />
         <option value="$PROJECT_DIR$/SYM/src/views/index.ejs" />
         <option value="$PROJECT_DIR$/SYM/src/views/layout/section1.ejs" />
@@ -297,9 +207,13 @@
         <option value="$PROJECT_DIR$/SYM/src/views/layout/section5.ejs" />
         <option value="$PROJECT_DIR$/SYM/src/views/layout/nav.ejs" />
         <option value="$PROJECT_DIR$/SYM/src/views/layout/forms.ejs" />
-        <option value="$PROJECT_DIR$/SYM/src/views/layout/forms/cars/form1.ejs" />
         <option value="$PROJECT_DIR$/SYM/src/views/layout/forms/forms.ejs" />
         <option value="$PROJECT_DIR$/SYM/src/views/layout/master.ejs" />
+        <option value="$PROJECT_DIR$/SYM/app.js" />
+        <option value="$PROJECT_DIR$/SYM/src/routes/vehicleRegRouter.js" />
+        <option value="$PROJECT_DIR$/SYM/src/views/layout/forms/cars/form2.ejs" />
+        <option value="$PROJECT_DIR$/SYM/src/views/layout/forms/cars/form1.ejs" />
+        <option value="$PROJECT_DIR$/SYM/src/views/partials/styles.ejs" />
       </list>
     </option>
   </component>
@@ -431,71 +345,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cars" />
+              <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -556,6 +406,46 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SYM-v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SYM-v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SYM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SYM-v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SYM-v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SYM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DB Dumps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -565,7 +455,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="termina&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
@@ -584,6 +474,116 @@
       <recent name="D:\Node Projects\SYM-v2\SYM\src\views" />
       <recent name="D:\Node Projects\SYM-v2\SYM\public" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/SYM/DB Dumps/dbsym.sql</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -730,30 +730,36 @@
       <option name="project" value="LOCAL" />
       <updated>1466780667797</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added new theme">
+      <created>1467198566528</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1467198566528</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20461309" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20163691" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41830066" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09150327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-1382" y="449" width="1344" height="311" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15711948" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20130932" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-1382" y="449" width="1344" height="311" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -797,35 +803,14 @@
     <MESSAGE value="userRegistration.ejs Added" />
     <MESSAGE value="Changes in ejs files" />
     <MESSAGE value="Edit option completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit option completed" />
+    <MESSAGE value="Added new theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new theme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SYM/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs.bkp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/routes/insuranceRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/views/formSampleOne.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1001,14 +986,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/views/userRegistrations/create.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="130" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.93079585">
@@ -1045,14 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.115385">
           <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1097,14 +1066,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs.bkp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/views/layout/section5.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1112,14 +1073,6 @@
           <folding>
             <element signature="n#div#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1165,10 +1118,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/views/userRegistrations/create.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.036876354">
+          <caret line="130" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="60" selection-start-line="62" selection-start-column="60" selection-end-line="62" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/views/layout/forms/cars/form2.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/views/layout/master.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="7" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/views/layout/forms/forms.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.076923">
-          <caret line="1417" column="33" selection-start-line="1417" selection-start-column="33" selection-end-line="1417" selection-end-column="33" />
+        <state vertical-scroll-proportion="-55.576923">
+          <caret line="1419" column="6" selection-start-line="1419" selection-start-column="6" selection-end-line="1419" selection-end-column="6" />
           <folding>
             <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
@@ -1191,31 +1188,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/views/layout/forms/cars/form2.ejs">
+    <entry file="file://$PROJECT_DIR$/SYM/src/routes/vehicleRegRouter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="9" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs.bkp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/public/lib/bootstrap/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/views/layout/forms/cars/form1.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.076923">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/views/layout/master.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5079681">
-          <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="33" />
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="17" selection-end-column="66" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/views/partials/styles.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25813448">
+          <caret line="7" column="62" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
