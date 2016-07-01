@@ -26,7 +26,7 @@ exports.list = function(req, res){
 };
 
 exports.add = function(req, res){
-    res.render('layout/forms/cars/form1');
+    res.render('cars/cars_1.ejs');
 
     //res.render('userregistrations/create',{pageTitle:'Register User'});
 };
@@ -59,34 +59,34 @@ exports.edit = function(req, res){
 exports.save = function(req,res){
 
     //Temporary
-    res.render('layout/forms/cars/form2');
+    res.render('layout/forms/cars/form1');
 
-    //var input = JSON.parse(JSON.stringify(req.body));
-    //
-    //req.getConnection(function (err, connector) {
-    //
-    //    var data = {
-    //
-    //        name    : input.name,
-    //        address : input.address,
-    //        email   : input.email,
-    //        phone   : input.phone
-    //
-    //    };
-    //
-    //    var query = connector.query('INSERT INTO user set ? ',data, function(err, rows)
-    //    {
-    //
-    //        if(err) {
-    //            console.log('Error Selecting : %s ', err);
-    //        }
-    //        res.redirect('/list');
-    //
-    //    });
+    var input = JSON.parse(JSON.stringify(req.body));
+
+    req.getConnection(function (err, connector) {
+
+        var data = {
+
+            name    : input.name,
+            address : input.address,
+            email   : input.email,
+            phone   : input.phone
+
+        };
+
+        var query = connector.query('INSERT INTO user set ? ',data, function(err, rows)
+        {
+
+            if(err) {
+                console.log('Error Selecting : %s ', err);
+            }
+            res.redirect('/list');
+
+        });
 
         // console.log(query.sql); get raw query
 
-    //});
+    });
 };
 
 exports.saveEdit = function(req,res){

@@ -48,8 +48,8 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 
 app.use(connection);
 
-app.use('/', insuranceRouter);
-app.use('/', sampleForm);
+//app.use('/', insuranceRouter);
+//app.use('/', sampleForm);
 
 app.get('/list', userRouter.list);
 app.get('/users/create', userRouter.add);
@@ -78,8 +78,8 @@ app.post('/vehicle/car/vehicleDetails/edit/:id',vehicleDetailsRouter.saveEdit);
 //Index
 app.get('/', function (req, res) {
     res.render('index', {
-        title: 'Home',
-        nav: nav
+        form:'vehicleReg',
+        nav:nav
     });
 
 });

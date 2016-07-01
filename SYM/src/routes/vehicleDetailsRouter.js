@@ -24,7 +24,9 @@ exports.list = function(req, res){
 };
 
 exports.add = function(req, res){
-    res.render('userregistrations/create',{pageTitle:'Register User'});
+    res.render('index',{
+        form:'vehicleDetails'
+    });
 };
 
 exports.edit = function(req, res){
