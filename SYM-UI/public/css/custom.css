@@ -963,7 +963,7 @@ h1.uk-text-primary{
     margin-bottom: 30px;
 }
 .topMainPadding{
-    margin-top: 218px important;
+    margin-top: 200px important;
 }
 .topMainPaddingVideo{
     margin-top: 92px;
@@ -1030,8 +1030,8 @@ h1.uk-text-primary{
 .insurance_info{
     display: block;
     padding-bottom: 100px;
-    padding-left: 33%;
-    padding-right: 33%;
+    padding-left: 25%;
+    padding-right: 25%;
     width: 100%;
     clear: both;
     background-color: #f5f5f5;
@@ -1042,7 +1042,7 @@ h1.uk-text-primary{
     font-size: 25px;
     margin-bottom: 15px;
 }
-.insurance_info .breadcrumb{
+.insurance_info .breadcrumbc{
     margin-top: 1em;
     list-style-type: none;
     margin: 0;
@@ -1071,13 +1071,32 @@ h1.uk-text-primary{
 .breadcrumb__item:last-child::after {
     display: none;
 }
-.breadcrumb > li + li::before{
-     content: "";
-     padding: 0px;
-}
-.breadcrumb{
+.breadcrumbc{
     background: none;
     border-radius: 0px;
+}
+
+.radiotype{
+    margin-top: 10px;
+    display: inline-block;
+}
+.radiotype .control.text{
+    padding-top: 9px;
+}
+.radio .outer{
+    border: 1px solid #3b73e2;
+}
+.radio input:focus + .outer .inner,.radio .inner{
+    background-color:#3b73e2;
+}
+
+.radio input:checked + .outer{
+    border: 1px solid #3b73e2;
+}
+.field__input:focus,.insurance_info .textbox:focus{
+    box-shadow:0 0 0 2px #3b73e2;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 .insurance_logo_info .navbar-brand{
     padding: 0px;
@@ -1086,7 +1105,7 @@ h1.uk-text-primary{
 .insurance_logo_info .navbar-brand img{
     padding: 0px;
 }
-.breadcrumb > li{
+.breadcrumbc > li{
     font-size: 15px;
 }
 .vehicle_detail_bg{
@@ -1095,6 +1114,7 @@ h1.uk-text-primary{
 }
 .vehicle_detail_bg label{
     font-size: 15px;
+    float: left;
 }
 .bootstrap-select .text{
     color: #000;
@@ -1108,13 +1128,19 @@ h1.uk-text-primary{
     width: 45%;
 }
 .vehicle_detail_bg .textbox{
-    background: #fff none repeat scroll 0 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    background-color: white;
+    color: #333333;
+    border: medium none;
     margin-bottom: 10px;
-    padding: 10px;
+    color: #333;    
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    padding: 0.94em 0.8em;
     width: 100%;
-    color: #333;
+    word-break: normal;
+    transition: all 0.2s ease-out 0s;
+    box-shadow: 0 0 0 1px #d9d9d9;
 }
 .vehicle_detail_bg select{
     -moz-appearance: none;
@@ -1135,6 +1161,7 @@ h1.uk-text-primary{
     line-height: normal;
     margin: 0;
     padding: 0;
+    -webkit-appearance:none;
 }
 .vehicle_detail_bg .field__input-wrapper--select::before{
     background-image: url("../images/Artboard 1.svg"), none;
@@ -1172,7 +1199,7 @@ h1.uk-text-primary{
 .field__label {
     -moz-user-select: none;
     box-sizing: border-box;
-    font-size: 0.85714em;
+    font-size: 0.85714em !important;
     font-weight: normal;
     margin-top: 0.3em;
     opacity: 0;
@@ -1187,12 +1214,34 @@ h1.uk-text-primary{
     width: 100%;
     z-index: 1;
 }
+.field__input-wrapper input{
+  margin-bottom: 10px;
+    border: medium none;  
+}
+.field__input-wrapper.field--show-floating-label  .field__input {
+    padding-bottom: 0.38em;
+    padding-top: 1.5em;
+}
+.field__input-wrapper{
+    position:relative;
+}
 .field--show-floating-label .field__input {
     color: #333;
-    font-size: 16px;
     padding-bottom: 0.38em;
     padding-left: 20px;
     padding-top: 1.5em;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.vehicle_detail_bg #personal_detail_id .field{
+    padding: 0px;
+    margin-bottom: 10px;
+}
+.vehicle_detail_bg .upload-drop-zone{
+    background: #fff;
+}
+.vehicle_detail_bg .js-upload-finished li{
+    background: #fff;
 }
 .field__input {
     box-shadow: 0 0 0 1px #d9d9d9;
@@ -1242,6 +1291,54 @@ label.error {
 }
 select.error {
     box-shadow: 0 0 0 2px #ff6d6d;
+}
+
+.Plan-cardRate-percent {
+    color: #035162;
+    display: inline-block;
+    font-size: 3em;
+    letter-spacing: -0.05em;
+    line-height: 60px;
+    vertical-align: middle;
+}
+.Plan-cardRate-fixed, .Plan-cardRate-plus {
+    display: inline-block;
+    line-height: 60px;
+    vertical-align: middle;
+}
+.Plan-cardRate-plus {
+    background: rgba(0, 0, 0, 0) url("../images/cardRate-plus.svg") repeat scroll 0 0;
+    height: 12px;
+    margin: 0 10px;
+    overflow: hidden;
+    text-indent: 100%;
+    width: 12px;
+}
+.Plan-cardRate-fixed {
+    color: #035162;
+    font-size: 1em;
+    font-weight: 500;
+}
+.Plan-cardRate-fixed, .Plan-cardRate-plus {
+    display: inline-block;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+.Plan-list {
+    color: #045768;
+    font-size: 1em;
+    line-height: 1.55em;
+    list-style: outside none none;
+    margin: 8px 0 0;
+    max-width: 390px;
+}
+.Plan-listItem {
+    margin-bottom: 5px;
+    position: relative;
+}
+.successful_charge{
+    font-size: 13px;
 }
 @media(max-width : 1700px){
     #section1 .card{
@@ -1549,7 +1646,7 @@ select.error {
     .insurance_info{
         padding: 50px 10% 100px;
     }
-    .breadcrumb > li{
+    .breadcrumbc > li{
         font-size: 11px;
     }
     .testimonials h4{

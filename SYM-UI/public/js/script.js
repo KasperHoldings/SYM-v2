@@ -1,4 +1,16 @@
 jQuery(document).ready(function () {
+    jQuery("#name").keypress(function () {
+        jQuery('#shownamelabel').addClass('field--show-floating-label');
+    });
+    jQuery("#email").keypress(function () {
+        jQuery('#showemaillabel').addClass('field--show-floating-label');
+    });
+    jQuery("#mobile").keypress(function () {
+        jQuery('#showmobilelabel').addClass('field--show-floating-label');
+    });
+    jQuery("#nic").keypress(function () {
+        jQuery('#showniclabel').addClass('field--show-floating-label');
+    });
     jQuery('#nav-full-toggle').click(function () {
         jQuery('#nav-full').toggle();
         if (jQuery('#nav-full:visible').size() != 0)
@@ -208,21 +220,32 @@ jQuery(document).ready(function () {
             return false;
         }
     }
-    $.validator.setDefaults({
+    jQuery.validator.setDefaults({
         submitHandler: function () {
-            $("#vehicle_detail_id").submit(function (event) {
+            jQuery("#vehicle_detail_id").submit(function (event) {
                 showPersonalDetail();
                 event.preventDefault();
             });
-            $("#personal_detail_id").submit(function (event) {
+            jQuery("#personal_detail_id").submit(function (event) {
                 showInsuranceDetail();
+                event.preventDefault();
+            });
+            jQuery("#insurance_detail_id").submit(function (event) {
+                showQuotationDetail();
+                event.preventDefault();
+            });
+            jQuery("#quotation_detail_id").submit(function (event) {
+                showVehicleDetail();
                 event.preventDefault();
             });
         }
     });
-    $("#vehicle_detail_id").validate();
-    $("#personal_detail_id").validate();    
-    $("#insurance_detail_id").validate();
+    jQuery("#vehicle_detail_id").validate();
+    jQuery("#personal_detail_id").validate();
+    jQuery("#insurance_detail_id").validate();
+    jQuery("#quotation_detail_id").validate();
+    jQuery("#further_vehicle_information_id").validate();
+
 });
 
 
@@ -234,4 +257,12 @@ function showPersonalDetail() {
 function showInsuranceDetail() {
     jQuery('#personal_detail').hide();
     jQuery('#insurance_detail').show();
+}
+function showQuotationDetail() {
+    jQuery('#insurance_detail').hide();
+    jQuery('#quotation_detail').show();
+}
+function showVehicleDetail() {
+    jQuery('#quotation_detail').hide();
+    jQuery('#further_vehicle_information').show();
 }
