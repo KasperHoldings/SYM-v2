@@ -78,7 +78,7 @@ app.post('/vehicle/car/vehicleDetails/edit/:id',vehicleDetailsRouter.saveEdit);
 //Index
 app.get('/', function (req, res) {
     res.render('index', {
-        form:'vehicleReg',
+        form:'insuranceInfo',
         nav:nav
     });
 
