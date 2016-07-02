@@ -156,15 +156,15 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div id="shownamelabel" class="field__input-wrapper">
+                            <div id="showfirstnamelabel" class="field__input-wrapper">
                                 <label for="checkout_name" class="field__label">First Name</label>
-                                <input id="name" name="first_name" type="text" placeholder="First Name" class="field__input" required />
+                                <input id="firstname" name="first_name" type="text" placeholder="First Name" class="field__input" required />
                             </div>
                         </div>
                         <div class="row">
-                            <div id="shownamelabel" class="field__input-wrapper">
+                            <div id="showlastnamelabel" class="field__input-wrapper">
                                 <label for="checkout_name" class="field__label">Last Name</label>
-                                <input id="name" name="last_name" type="text" placeholder="Last Name" class="field__input" required />
+                                <input id="lastname" name="last_name" type="text" placeholder="Last Name" class="field__input" required />
                             </div>
                         </div>
                         <div class="row">
@@ -221,14 +221,14 @@
                         <div class="row">
                             <div class="field field--required field--three-eights field--show-floating-label">
                                 <div class="field__input-wrapper field__input-wrapper--select">
-                                    <label for="checkout_shipping_address_country" class="field__label">Cover Type Required</label>
+                                    <label for="checkout_shipping_address_country" class="field__label">Current Insurer</label>
                                     <select id="covertyperequired" class="field__input field__input--select" required>
                                         <option value="">Select Cover Type Required</option>
                                         <option value="Ketchup">Ketchup</option>
                                         <option value="Relish">Relish</option>
-                                    </select>
+                                    </select>  
                                 </div>
-                            </div>
+                            </div>                            
                         </div>
                         <div class="row">
                             <div class="field field--required field--three-eights field--show-floating-label">
@@ -295,9 +295,11 @@
                             <div class="col-md-3" style="padding-left: 0px;">
                                 <div class="row">
                                     <img src="../../images/credit.png" width="100%"/>
-                                    <div class="Plan-cardRate-percent"> 2.9% </div>
-                                    <div class="Plan-cardRate-plus">+</div>
-                                    <div class="Plan-cardRate-fixed"> 30¢ </div>
+                                    <a id="nextPage" class="nextPage" href="javascript:showVehicleDetail()">
+                                        <div class="Plan-cardRate-percent"> 2.9% </div>
+                                        <div class="Plan-cardRate-plus">+</div>
+                                        <div class="Plan-cardRate-fixed"> 30¢ </div>
+                                    </a>
                                     <div class="successful_charge">Per successful card charge</div>
                                 </div>
                             </div>
@@ -331,9 +333,11 @@
                             <div class="col-md-3" style="padding-left: 0px;">
                                 <div class="row">
                                     <img src="../../images/credit.png" width="100%"/>
-                                    <div class="Plan-cardRate-percent"> 2.9% </div>
-                                    <div class="Plan-cardRate-plus">+</div>
-                                    <div class="Plan-cardRate-fixed"> 30¢ </div>
+                                    <a id="nextPage" class="nextPage" href="javascript:showVehicleDetail()">
+                                        <div class="Plan-cardRate-percent"> 2.9% </div>
+                                        <div class="Plan-cardRate-plus">+</div>
+                                        <div class="Plan-cardRate-fixed"> 30¢ </div>
+                                    </a>
                                     <div class="successful_charge">Per successful card charge</div>
                                 </div>
                             </div>
@@ -360,16 +364,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row"> 
-                                <button class="step__footer__continue-btn btn " type="submit" name="button">
-                                    <span class="btn__content">Process</span>
-                                </button>
+                        <div class="row" style="text-align: center;"> 
+                            <button class="step__footer__continue-btn btnnew " type="submit" name="button">
+                                <span class="btn__content">Load More</span>
+                            </button>
                         </div>
                     </div>
                 </form>
             </div>
             <div id="further_vehicle_information" class="vehicle_detail_bg" style="display: none;">
-                <form id="further_vehicle_information_id" name="personal_detail" action="">
+                <form id="further_vehicle_information_id" name="personal_detail" action="shipping.html">
                     <div class="row">
                         <div id="shownamelabel" class="field__input-wrapper">
                             <label for="checkout_name" class="field__label">Engine Number</label>

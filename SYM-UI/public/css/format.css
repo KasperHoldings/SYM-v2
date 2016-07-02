@@ -588,7 +588,7 @@ input[type="checkbox"]:checked:not(old) + label > span {
 }
 input[type="checkbox"]:checked:not(old) + label > span::before {
     color: #ffffff;
-    content: "?";
+    content: '\f00c';
     display: block;
     font-size: 10px;
     font-weight: bold;
@@ -597,6 +597,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
     position: absolute;
     top: 4px;
     width: 11px;
+    font-family: FontAwesome;
 }
 .mr35 {
     margin-top: -35px !important;
@@ -986,7 +987,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
 .landingScreen .formarea .leftTab ul li a.car, .disForm .leftContent ul li a.car {
     background-color: #759d12;
 }
-.landingScreen .formarea .leftTab ul li a.car:hover, .disForm .leftContent ul li a.car:hover, .landingScreen .formarea .leftTab ul li a.car .active, .disForm .leftContent ul li a.car .active {
+.landingScreen .formarea .leftTab ul li a.car:hover, .disForm .leftContent ul li a.car:hover, .landingScreen .formarea .leftTab ul li a.car.active, .disForm .leftContent ul li a.car.active {
     color: #ffffff; background: #1f222d;
 }
 .landingScreen .formarea .leftTab ul li a.car::before, .disForm .leftContent ul li a.car::before {
@@ -1004,7 +1005,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
 .landingScreen .formarea .leftTab ul li a.term, .disForm .leftContent ul li a.term {
     background-color: #759d12;
 }
-.landingScreen .formarea .leftTab ul li a.term:hover, .disForm .leftContent ul li a.term:hover, .landingScreen .formarea .leftTab ul li a.term .active, .disForm .leftContent ul li a.term .active {
+.landingScreen .formarea .leftTab ul li a.term:hover, .disForm .leftContent ul li a.term:hover, .landingScreen .formarea .leftTab ul li a.term.active, .disForm .leftContent ul li a.term.active {
     color: #ffffff; background: #1f222d;
 }
 .landingScreen .formarea .leftTab ul li a.term::before, .disForm .leftContent ul li a.term::before {
@@ -1020,9 +1021,9 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
     width: 100%;
 }
 .landingScreen .formarea .leftTab ul li a.health, .disForm .leftContent ul li a.health {
-    background-color: #1f222d;
+    background-color: #759d12;
 }
-.landingScreen .formarea .leftTab ul li a.health:hover, .disForm .leftContent ul li a.health:hover, .landingScreen .formarea .leftTab ul li a.health .active, .disForm .leftContent ul li a.health .active {
+.landingScreen .formarea .leftTab ul li a.health:hover, .disForm .leftContent ul li a.health:hover, .landingScreen .formarea .leftTab ul li a.health.active, .disForm .leftContent ul li a.health.active {
     color: #ffffff; background: #1f222d;
 }
 .landingScreen .formarea .leftTab ul li a.health::before, .disForm .leftContent ul li a.health::before {
@@ -1040,7 +1041,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
 .landingScreen .formarea .leftTab ul li a.investment, .disForm .leftContent ul li a.investment {
     background-color: #759d12;
 }
-.landingScreen .formarea .leftTab ul li a.investment:hover, .disForm .leftContent ul li a.investment:hover, .landingScreen .formarea .leftTab ul li a.investment .active, .disForm .leftContent ul li a.investment .active {
+.landingScreen .formarea .leftTab ul li a.investment:hover, .disForm .leftContent ul li a.investment:hover, .landingScreen .formarea .leftTab ul li a.investment.active, .disForm .leftContent ul li a.investment.active {
     color: #ffffff; background: #1f222d;
 }
 .landingScreen .formarea .leftTab ul li a.investment::before, .disForm .leftContent ul li a.investment::before {
@@ -1058,7 +1059,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
 .landingScreen .formarea .leftTab ul li a.travel, .disForm .leftContent ul li a.travel {
     background-color: #759d12;
 }
-.landingScreen .formarea .leftTab ul li a.travel:hover, .disForm .leftContent ul li a.travel:hover, .landingScreen .formarea .leftTab ul li a.travel .active, .disForm .leftContent ul li a.travel .active {
+.landingScreen .formarea .leftTab ul li a.travel:hover, .disForm .leftContent ul li a.travel:hover, .landingScreen .formarea .leftTab ul li a.travel.active, .disForm .leftContent ul li a.travel.active {
     color: #ffffff; background: #1f222d;
 }
 .landingScreen .formarea .leftTab ul li a.travel::before, .disForm .leftContent ul li a.travel::before {
@@ -1076,7 +1077,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
 .landingScreen .formarea .leftTab ul li a.twowheeler, .disForm .leftContent ul li a.twowheeler {
     background-color: #759d12;
 }
-.landingScreen .formarea .leftTab ul li a.twowheeler:hover, .disForm .leftContent ul li a.twowheeler:hover, .landingScreen .formarea .leftTab ul li a.twowheeler .active, .disForm .leftContent ul li a.twowheeler .active {
+.landingScreen .formarea .leftTab ul li a.twowheeler:hover, .disForm .leftContent ul li a.twowheeler:hover, .landingScreen .formarea .leftTab ul li a.twowheeler.active, .disForm .leftContent ul li a.twowheeler.active {
     color: #ffffff; background: #1f222d;
 }
 .landingScreen .formarea .leftTab ul li a.twowheeler::before, .disForm .leftContent ul li a.twowheeler::before {
@@ -1258,7 +1259,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
     width: 40px;
 }
 .car-bg .process {
-    background: #f9774d none repeat scroll 0 0;
+    background: transparent;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     color: #ffffff;
@@ -1286,7 +1287,6 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
     margin: 13% auto 0;
 }
 .term-bg .process, .health-bg .process, .travel-bg .process, .investment-bg .process, .car-bg .process {
-    background: #fa774d none repeat scroll 0 0;
     border-radius: 4px;
     bottom: 0;
     clear: both;
@@ -3804,7 +3804,7 @@ div.play-button {
     width: 100%;
 }
 .car-bg {
-    margin-top: 35px;
+    margin-top: 20px;
 }
 .radio {
     font-size: 16px;

@@ -244,7 +244,7 @@ img.full {
 }
 .site-footer {
     float: left;
-    padding: 13% 0;
+    padding: 10% 0;
     width: 100%;
     background: #394156;
     height: 90%;
@@ -629,7 +629,7 @@ img.full {
     margin: 0 auto;
     max-width: 87.5%;
 }
-.term-bg, .investment-bg, .travel-bg, .car-bg{
+.term-bg, .investment-bg, .travel-bg, .box_value{
     display:none
 }
 .content_box{
@@ -963,7 +963,7 @@ h1.uk-text-primary{
     margin-bottom: 30px;
 }
 .topMainPadding{
-    margin-top: 200px important;
+    padding-top: 200px !important;
 }
 .topMainPaddingVideo{
     margin-top: 92px;
@@ -1262,7 +1262,7 @@ h1.uk-text-primary{
     word-break: normal;
 }
 .insurance_info .btn {
-    background: #3b73e2 none repeat scroll 0 0;
+    background: #759d12 none repeat scroll 0 0;
     border-radius: 4px;
     box-sizing: border-box;
     color: white;
@@ -1277,8 +1277,27 @@ h1.uk-text-primary{
     width: 200px;
     margin-top: 10px;
 }
+#quotation_detail_id .btnnew {
+    background: #759d12 none repeat scroll 0 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    padding: 1.4em 1.7em;
+    position: relative;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out 0s, color 0.2s ease-in-out 0s;
+    width: 200px;
+    margin-top: 25px;
+    border: none;
+}
+#quotation_detail_id .btnnew:hover{
+    background: #478e2d none repeat scroll 0 0;   
+}
 .insurance_info .btn:hover{
-    background: #1e58cc none repeat scroll 0 0;   
+    background: #478e2d none repeat scroll 0 0;   
 }
 .vehicle_detail_bg .row{
     margin: 0px;
@@ -1339,6 +1358,716 @@ select.error {
 }
 .successful_charge{
     font-size: 13px;
+}
+#quotation_detail_id .step__footer__continue-btn{
+    
+}
+.order-summary__section:first-child {
+    padding-top: 0;
+}
+.order-summary__section:first-child {
+    border-top: medium none;
+}
+.order-summary__section {
+    border-color: #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+}
+
+#shipping_detail table {
+    width: 100%;
+}
+#shipping_detail table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1em;
+}
+.visually-hidden {
+    border: 0 none;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 2px;
+    margin: -2px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 2px;
+}
+
+#shipping_detail .sidebar th {
+    color: #323232;
+}
+#shipping_detail td:first-child, #shipping_detail th:first-child {
+    padding-left: 0;
+    text-align: left;
+}
+#shipping_detail th {
+    font-weight: 600;
+}
+#shipping_detail .product:first-child td {
+    padding-top: 0;
+}
+#shipping_detail .product td {
+    padding-top: 1em;
+}
+#shipping_detail td:first-child,#shipping_detail th:first-child {
+    padding-left: 0;
+    text-align: left;
+}
+#shipping_detail .product__description {
+    width: 100%;
+}
+#shipping_detail .product__price {
+    white-space: nowrap;
+}
+
+#shipping_detail .order-summary__emphasis {
+    color: #4b4b4b;
+    font-weight: 600;
+}
+#shipping_detail .product__description__name {
+    min-width: 100%;
+    width: 1em;
+}
+#shipping_detail .product__description__name,#shipping_detail .product__description__variant,#shipping_detail .product__description__property {
+    display: block;
+}
+#shipping_detail .order-summary__emphasis {
+    color: #4b4b4b;
+    font-weight: 600;
+}
+#shipping_detail .product__description__name,#shipping_detail .product__description__variant,#shipping_detail .product__description__property {
+    display: block;
+}
+#shipping_detail .order-summary__small-text {
+    color: #969696;
+    font-size: 0.85714em;
+}
+#shipping_detail .product-thumbnail::after {
+    border-radius: 8px;
+    bottom: 0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#shipping_detail .product-thumbnail {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 8px;
+    height: 4.6em;
+    position: relative;
+    width: 4.6em;
+}
+#shipping_detail .product-thumbnail__wrapper {
+    border-radius: 8px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+#shipping_detail .product-thumbnail__quantity {
+    background-color: rgba(153, 153, 153, 0.9);
+    border-radius: 2em;
+    color: #fff;
+    font-size: 0.85714em;
+    font-weight: 600;
+    padding: 0.15em 0.65em;
+    position: absolute;
+    right: -0.75em;
+    top: -0.75em;
+    white-space: nowrap;
+    z-index: 2;
+}
+#shipping_detail td, #shipping_detail th {
+    padding-left: 1em;
+}
+#shipping_detail .fieldset::after,#shipping_detail .fieldset::before {
+    content: "";
+    display: table;
+}
+#shipping_detail .fieldset::after {
+    clear: both;
+}
+#shipping_detail .fieldset::after, .fieldset::before {
+    content: "";
+    display: table;
+}
+#shipping_detail .fieldset {
+    margin: -0.45em;
+}
+
+.field {
+    box-sizing: border-box;
+    float: left;
+    padding: 0.45em;
+    width: 100%;
+}
+.flexbox .field__input-btn-wrapper {
+    display: flex;
+}
+.flexbox .field__input-btn-wrapper .field__input-wrapper {
+    
+}
+#checkout_reduction_code_id input.field__input{
+    width: 300px;
+}
+.field__input-wrapper {
+    position: relative;
+}
+.btn--disabled {
+    background: #c8c8c8 none repeat scroll 0 0 !important;
+    box-shadow: none;
+    cursor: default;
+}
+.flexbox .field__input-btn {
+    margin-left: 0.9em;
+    padding-bottom: 0;
+    padding-top: 0;
+    white-space: nowrap;
+    width: auto;
+}
+.btn__content {
+    transition: opacity 0.3s ease-in-out 0s;
+}
+#checkout_reduction_code_id .btn{
+    margin-bottom: 10px;
+    margin-top: 0;
+    transition: all 0.2s ease-out 0s;
+}
+.order-summary__section {
+    border-color: #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+}
+
+.order-summary__section table {
+    width: 100%;
+}
+.order-summary__section table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1em;
+}
+
+.total-line:first-child td {
+    padding-top: 0;
+}
+.total-line td {
+    padding-top: 0.75em;
+}
+
+.total-line:first-child td {
+    padding-top: 0;
+}
+.total-line td {
+    padding-top: 0.75em;
+}
+.total-line td:last-child, .total-line th:last-child {
+    text-align: right;
+}
+.total-line__price {
+    padding-left: 1.5em;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.order-summary__emphasis {
+    color: #4b4b4b;
+    font-weight: 600;
+}
+.total-line-table__footer .total-line td::before {
+    background-color: #e1e1e1;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 1.5em;
+    width: 100%;
+}
+.total-line-table__footer .total-line td {
+    padding-top: 3em;
+    position: relative;
+}
+
+.payment-due-label__total {
+    color: #4b4b4b;
+    font-size: 1.14286em;
+}
+
+.payment-due__currency {
+    color: #969696;
+    font-size: 0.85714em;
+    margin-right: 0.5em;
+    vertical-align: 0.2em;
+}
+
+.payment-due__price {
+    color: #4b4b4b;
+    font-size: 1.71429em;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    line-height: 1em;
+}
+.section {
+    padding-top: 2em;
+    position: relative;
+}
+.section__header {
+    margin-bottom: 1.5em;
+    position: relative;
+}
+
+.section__header h2 {
+    color: #333333;
+    font-size: 1.28571em;
+    text-align: left;
+}
+.section__content label{
+    margin-bottom: 0px;
+    font-weight: normal;
+    display: table-cell;
+    width: 100%;
+    float: none;
+}
+.section__content::after, .section__content::before {
+    content: "";
+    display: table;
+}
+.section__content::after {
+    clear: both;
+}
+.content-box:first-child, .content-box-spacing:first-child {
+    margin-top: 0;
+}
+.content-box {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #737373;
+}
+.content-box {
+    box-shadow: 0 0 0 1px #d9d9d9;
+}
+.content-box, .content-box-spacing {
+    margin-top: 1em;
+}
+.content-box__row::after {
+    clear: both;
+}
+.content-box__row {
+    border-top: 1px solid #d9d9d9;
+    padding: 1.3em;
+}
+.content-box__row:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.display-table .content-box__row {
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+}
+.content-box__row:first-child {
+    border-top: medium none;
+}
+.content-box__row:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.radio-wrapper {
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+}
+.radio__input{
+    display: table-cell;
+}
+.radio__input {
+    padding-right: 0.75em;
+    white-space: nowrap;
+}
+.radio__label {
+    display: table-cell;
+    width: 100%;
+    text-align: left;
+}
+.radio__input input[type="radio"]{
+    margin: 0px;
+}
+.radio__accessory {
+    display: table-cell;
+}
+.radio__accessory {
+    padding-left: 0.75em;
+    white-space: nowrap;
+}
+.content-box__emphasis {
+    color: #4d4d4d;
+    font-weight: 600;
+}
+
+.radio-wrapper::after, .radio-wrapper::before, .checkbox-wrapper::after, .checkbox-wrapper::before {
+    content: "";
+    display: table;
+}
+.radio-wrapper::after, .checkbox-wrapper::after {
+    clear: both;
+}
+.radio-wrapper::after, .radio-wrapper::before, .checkbox-wrapper::after, .checkbox-wrapper::before {
+    content: "";
+    display: table;
+}
+.input-radio:checked::after {
+    opacity: 1;
+    transform: scale(1);
+}
+.input-radio::after {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 4px;
+    margin-left: -2px;
+    margin-top: -2px;
+    width: 4px;
+}
+.input-radio::after {
+    content: "";
+    display: block;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: scale(0.2);
+    transition: all 0.2s ease-in-out 0.1s;
+}
+.input-radio:checked {
+    border: medium none;
+    box-shadow: 0 0 0 10px #3b73e2 inset;
+}
+.input-radio {
+    border: 1px solid;
+    box-shadow: 0 0 0 0 #3b73e2 inset;
+    cursor: pointer;
+    height: 18px;
+    outline: 0 none;
+    position: relative;
+    transition: all 0.2s ease-in-out 0s;
+    vertical-align: -4px;
+    width: 18px;
+}
+.content-box__row .radio{
+    margin: 0px;
+    padding: 0px;
+    float:left;
+}
+.section--shipping-address .field__input{
+    display: inline-block;
+    
+}
+.section--shipping-address .field__label{
+    text-align: left;
+}
+.section--shipping-address .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.paddleftzero{
+    padding-left: 0px;
+}
+.paddrightzero{
+    padding-right: 0px;
+}
+.paddzero{
+    margin: 0px;
+    padding: 0px !important;
+}
+.section--shipping-address .field--show-floating-label .field__input{
+    padding-bottom: 0.28em;
+}
+.section__header {
+    margin-bottom: 1.5em;
+}
+.section--payment-method{
+    float: left;
+    width:100%;
+}
+
+.section__text {
+    font-size: 1em;
+    margin-top: 0.25em;
+    text-align: left;
+}
+.content-box__row:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.radio__accessory {
+    display: table-cell;
+}
+
+.radio__accessory .payment-icon {
+    margin: -2px 0 -6px;
+}
+.payment-icon--visa {
+    background-image: url("../images/visa.svg"), none;
+}
+.payment-icon {
+    display: inline-block;
+    height: 24px;
+    transition: opacity 0.5s cubic-bezier(0.3, 0, 0, 1) 0s;
+    width: 38px;
+}
+.payment-icon--master {
+    background-image: url("../images/master.svg"), none;
+}
+.payment-icon--american-express {
+    background-image: url("../images/american-express.svg"), none;
+}
+.payment-icon--discover {
+    background-image: url("../images/discover.svg"), none;
+}
+.payment-icon-list__more {
+    display: inline-block;
+    margin-left: 0.25em;
+    margin-top: -2px;
+    vertical-align: middle;
+}
+.payment-method-wrapper .checkbox__label {
+    display: table-cell;
+    width: 100%;
+}
+.icon--lock {
+    background-image: url("../images/lock-dark.svg"), none;
+}
+
+.content-box .icon--question {
+    background-image: url("../images/question-dark.svg"), none;
+}
+.field__icon {
+    height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    right: 0.2em;
+    top: 50%;
+    width: 40px;
+}
+#credit_card_number_tooltip.icon,#credit_card_verification_value_tooltip.icon {
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.content-box__row--secondary {
+    background-color: #fafafa;
+}
+
+.offsite-payment-gateway-logo {
+    height: 24px;
+    margin-top: -2px;
+}
+.content-box__row .input-radio{
+    float: left;
+}
+
+.tooltip {
+    background-color: rgba(51, 51, 51, 0.9);
+    border-radius: 4px;
+    bottom: 80%;
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    font-size: 0.85714em;
+    font-style: normal;
+    margin: 0 0 5px;
+    opacity: 0;
+    padding: 0.75em 1em;
+    position: absolute;
+    right: -0.33333em;
+    text-align: center;
+    transform: rotateX(20deg) scale(0.8);
+    transform-origin: 90% 120% 0;
+    transition: all 0.3s cubic-bezier(0.3, 0, 0, 1) 0s;
+    visibility: hidden;
+    white-space: normal;
+    width: 180px;
+    z-index: 200;
+}
+
+.tooltip::after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: rgba(51, 51, 51, 0.9) transparent transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 6px;
+    content: "";
+    position: absolute;
+    right: 18px;
+    top: 100%;
+    width: 0;
+}
+.tooltip {
+    margin-right: -90px;
+    right: 50%;
+    transform-origin: center 120% 0;
+}
+.has-tooltip:hover .tooltip, .has-tooltip:focus .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+    transform: rotateX(0deg) scale(1);
+    visibility: visible;
+}
+.tooltip::after {
+    margin-right: -6px;
+    right: 50%;
+}
+
+.blank-slate__icon {
+    margin-bottom: 1em;
+}
+.icon--offsite {
+    background-image: url("../images/offsite.svg"), none;
+    height: 81px;
+    width: 163px;
+}
+.section--payment-method .icon {
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.section--payment-method .content-box__row--secondary p {
+    line-height: 1.5em;
+    margin: 0;
+    font-size: 1em;
+}
+.section--optional{
+    float:left;
+    width:100%;
+}
+.section--optional .checkbox__input {
+    display: table-cell;
+}
+.section--optional .checkbox__label {
+    display: table-cell;
+    width: 100%;
+}
+.section--optional .checkbox__label {
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 13px;
+    padding-left: 5px;
+}
+.section--optional .input-checkbox:checked::after, .input-radio:checked::after {
+    opacity: 1;
+    transform: scale(1);
+}
+.section--optional .input-checkbox::after {
+    background-image: url("../images/checkbox-tick.svg"), none;
+    height: 8px;
+    margin-left: -5px;
+    margin-top: -4px;
+    width: 10px;
+}
+.section--optional .input-checkbox {
+    border: 1px solid;
+    box-shadow: 0 0 0 0 #3b73e2 inset;
+    cursor: pointer;
+    height: 18px;
+    outline: 0 none;
+    position: relative;
+    transition: all 0.2s ease-in-out 0s;
+    vertical-align: -4px;
+    width: 18px;
+}
+.section--optional .input-checkbox {
+    border-radius: 4px;
+}
+.section--optional input[type="checkbox"]:not(old){
+    opacity: 1;
+}
+.checkout_detail td{
+    width: auto !important;
+}
+.checkout_detail input[type="checkbox"]:not(old){
+    opacity: 1;
+}
+.checkout_detail .product__description__name{
+    width: auto !important;
+}
+a.step__footer__previous-link {
+    color: #3b73e2;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out 0s;
+}
+a.step__footer__previous-link:hover{
+    color: #205ed9;
+}
+.step__footer__previous-link {
+    flex: 1 1 auto;
+    margin-right: 1em;
+}
+.previous-link__icon {
+    fill: #3b73e2;
+    margin-right: 0.25em;
+    transition: all 0.2s cubic-bezier(0.3, 0, 0, 1) 0s;
+}
+.previous-link__icon.icon {
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+     float: left;
+    margin-top: 4px;
+}
+.step__footer__previous-link {
+    float: left;
+    display: block;
+}
+.step__footer::after, .step__footer::before {
+    content: "";
+    display: table;
+}
+.step__footer::after {
+    clear: both;
+}
+.step__footer::after, .step__footer::before {
+    content: "";
+    display: table;
+}
+.step__footer {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.step__footer .btn{
+    margin-top: 0px;
+}
+#shipping_footer .section{
+    padding: 0px;
+    margin: 0px;
+}
+#vehicle_detail_id .product td{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.vehicle_detail_bg .product label{
+    float: none;
+}
+.vehicle_detail_bg .product input[type="checkbox"]:not(old){
+    opacity: 0;
+}
+.vehicle_detail_bg input[type="checkbox"]:checked:not(old) + label > span::before{
+    z-index: 10;
+}
+.vehicle_detail_bg input[type="checkbox"]:not(old){
+    position: relative;
+    z-index: 10000;
+}
+.vehicle_detail_bg input[type="checkbox"]:checked:not(old) + label > span{
+    background: #3b73e2 none repeat scroll 0 0;
 }
 @media(max-width : 1700px){
     #section1 .card{
@@ -1458,6 +2187,9 @@ select.error {
 @media(max-width : 768px){
     .topMainPadding {
     margin-top: 120px;
+}
+.insurance_info{
+    padding: 200px 10% 100px;
 }
 .topMainPaddingVideo{
     height: 100%;
@@ -1643,6 +2375,35 @@ select.error {
 }
 }
 @media(max-width : 480px){
+    .insurance_info.topMainPadding{
+        padding-top: 50px !important;
+    }
+    #checkout_reduction_code_id input.field__input{
+        width:200px;
+    }
+    .section--shipping-address .col-md-6,.section--shipping-address .col-md-8,.section--shipping-address .col-md-4{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    #payment-gateway-subfields-18551425 .col-md-8,#payment-gateway-subfields-18551425 .col-md-4,#payment-gateway-subfields-18551425 .col-md-2{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .offsite-payment-gateway-logo{
+        width:60px;
+    }
+    .insurance_info .btn{
+        width:120px;
+        font-size: 13px;
+        padding:1.2em 1em;
+    }
+    #quotation_detail_id .col-md-3,#quotation_detail_id .col-md-9,#quotation_detail_id .col-md-12,#quotation_detail_id .col-md-2,#quotation_detail_id .col-md-8{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    #quotation_detail_id img{
+        width: auto !important;
+    }
     .insurance_info{
         padding: 50px 10% 100px;
     }
