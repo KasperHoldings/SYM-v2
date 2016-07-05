@@ -67,7 +67,7 @@
                 <div class="insurance_text">
                     Car Insurance
                 </div>
-                <ul class="breadcrumb ">
+                <ul class="breadcrumbc">
                     <li class="breadcrumb__item breadcrumb__item--current">
                         Vehicle Details
                     </li>
@@ -76,6 +76,12 @@
                     </li>
                     <li class="breadcrumb__item breadcrumb__item--blank">
                         Insurance Info
+                    </li>
+                    <li class="breadcrumb__item breadcrumb__item--blank">
+                        Quotation
+                    </li>
+                    <li class="breadcrumb__item breadcrumb__item--blank">
+                        Further Vehicle Information
                     </li>
                 </ul>
                 <div id="vehicle_detail" class="vehicle_detail_bg">
@@ -138,16 +144,46 @@
                 <div id="personal_detail" class="vehicle_detail_bg" style="display: none;">
                     <form id="personal_detail_id" name="personal_detail" action="">
                         <div class="row">
-                            <input id="name" name="name" type="text" placeholder="Name" class="textbox" required />
+                            <div class="field field--required field--three-eights field--show-floating-label">
+                                <div class="field__input-wrapper field__input-wrapper--select">
+                                    <label for="checkout_shipping_address_country" class="field__label">Title</label>
+                                    <select name="title" class="field__input field__input--select" required>
+                                        <option value="">Select Title</option>
+                                        <option value="Ketchup">Mr</option>
+                                        <option value="Relish">Mrs</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                         <div class="row">
-                            <input id="email" name="email" type="text" placeholder="Email" class="textbox" required />
+                            <div id="showfirstnamelabel" class="field__input-wrapper">
+                                <label for="checkout_name" class="field__label">First Name</label>
+                                <input id="firstname" name="first_name" type="text" placeholder="First Name" class="field__input" required />
+                            </div>
                         </div>
                         <div class="row">
-                            <input id="mobile" name="mobile" type="text" placeholder="Mobile" class="textbox" required />
+                            <div id="showlastnamelabel" class="field__input-wrapper">
+                                <label for="checkout_name" class="field__label">Last Name</label>
+                                <input id="lastname" name="last_name" type="text" placeholder="Last Name" class="field__input" required />
+                            </div>
                         </div>
                         <div class="row">
-                            <input id="nic" name="nic" type="text" placeholder="NIC" class="textbox" required />
+                            <div id="showemaillabel" class="field__input-wrapper">
+                                <label for="checkout_email" class="field__label">Email</label>
+                                <input id="email" name="email" type="text" placeholder="Email" class="field__input" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="showmobilelabel" class="field__input-wrapper">
+                                <label for="checkout_mobile" class="field__label">Mobile</label>
+                                <input id="mobile" name="mobile" type="text" placeholder="Mobile" class="field__input" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="showniclabel" class="field__input-wrapper">
+                                <label for="checkout_nic" class="field__label">NIC</label>
+                                <input id="nic" name="nic" type="text" placeholder="NIC" class="field__input" required />
+                            </div>
                         </div>
                         <div class="row"> 
                             <button class="step__footer__continue-btn btn " type="submit" name="button">
@@ -185,14 +221,14 @@
                         <div class="row">
                             <div class="field field--required field--three-eights field--show-floating-label">
                                 <div class="field__input-wrapper field__input-wrapper--select">
-                                    <label for="checkout_shipping_address_country" class="field__label">Cover Type Required</label>
+                                    <label for="checkout_shipping_address_country" class="field__label">Current Insurer</label>
                                     <select id="covertyperequired" class="field__input field__input--select" required>
                                         <option value="">Select Cover Type Required</option>
                                         <option value="Ketchup">Ketchup</option>
                                         <option value="Relish">Relish</option>
-                                    </select>
+                                    </select>  
                                 </div>
-                            </div>
+                            </div>                            
                         </div>
                         <div class="row">
                             <div class="field field--required field--three-eights field--show-floating-label">
@@ -231,17 +267,146 @@
                             </div>
                         </div>
                         <div class="row">
-                            Autorise Agent Repair: 
-                            <input type="radio" name="Yes" value="1" /> Yes
-                            <input type="radio" name="Yes" value="0" /> No
-                        </div>
-                        <div class="row"> 
-                            <button class="step__footer__continue-btn btn " type="submit" name="button">
-                                <span class="btn__content">Process</span>
-                            </button>
-                        </div>
+
+                            <div class="radiotype">
+                                <label class="control text">Autorise Agent Repair:</label> 
+                                <label class="radio">
+                                    <input type="radio" class="rad" name="termSmoke" value="1">
+                                    <span class="outer"><span class="inner"></span></span>Yes </label>
+                                <label class="radio">
+                                    <input type="radio" class="rad" name="termSmoke" checked="" value="0">
+                                    <span class="outer"><span class="inner"></span></span>No</label>
+                            </div>
+                            <div class="row"> 
+                                <button class="step__footer__continue-btn btn " type="submit" name="button">
+                                    <span class="btn__content">Process</span>
+                                </button>
+                            </div>
                     </form>
                 </div>
+            </div>
+            <div id="quotation_detail" class="vehicle_detail_bg" style="display: none;">
+                <form id="quotation_detail_id" name="personal_detail" action="">
+                    <div class="row">
+                        <h3 class="uk-h3">Payment Method</h3>
+                        <h4 class="uk-h4">All transactions are secure and encrypted Credit Card information is never stored.</h4>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-3" style="padding-left: 0px;">
+                                <div class="row">
+                                    <img src="../../images/credit.png" width="100%"/>
+                                    <a id="nextPage" class="nextPage" href="javascript:showVehicleDetail()">
+                                        <div class="Plan-cardRate-percent"> 2.9% </div>
+                                        <div class="Plan-cardRate-plus">+</div>
+                                        <div class="Plan-cardRate-fixed"> 30¢ </div>
+                                    </a>
+                                    <div class="successful_charge">Per successful card charge</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <h4>Credit & debit cards</h4>
+                                    <div>
+                                        We charge a percentage-based fee each time you accept a credit or debit card payment. The price is the same for all major cards, including American Express. There’s no additional fee for international cards, failed charges, or refunds. 
+                                    </div>
+                                    <ul class="Plan-list">
+                                        <li class="Plan-listItem">
+                                          <img width="26" height="26" alt="fees icon" src="../../images/plan-star.svg">
+                                          No setup, monthly, or hidden fees
+                                        </li>
+                                        <li class="Plan-listItem">
+                                          <img width="26" height="26" alt="pay icon" src="../../images/plan-receive.svg">
+                                          Pay only for what you use
+                                        </li>
+                                        <li class="Plan-listItem">
+                                          <img width="26" height="26" alt="reporting icon" src="../../images/plan-measure.svg">
+                                          Real-time fee reporting
+                                        </li>
+                                      </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-3" style="padding-left: 0px;">
+                                <div class="row">
+                                    <img src="../../images/credit.png" width="100%"/>
+                                    <a id="nextPage" class="nextPage" href="javascript:showVehicleDetail()">
+                                        <div class="Plan-cardRate-percent"> 2.9% </div>
+                                        <div class="Plan-cardRate-plus">+</div>
+                                        <div class="Plan-cardRate-fixed"> 30¢ </div>
+                                    </a>
+                                    <div class="successful_charge">Per successful card charge</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <h4>ACH and Bitcoin payments</h4>
+                                    <div>
+                                        ACH and Bitcoin fees are capped at $5—payments above $625 cost $5. We also provide tools to verify customers’ bank accounts at no additional cost. We charge $4 for failed ACH payments.                                     
+                                    </div>
+                                    <ul class="Plan-list">
+                                        <li class="Plan-listItem">
+                                          <img width="26" height="26" alt="fees icon" src="../../images/plan-star.svg">
+                                          No setup, monthly, or hidden fees
+                                        </li>
+                                        <li class="Plan-listItem">
+                                          <img width="26" height="26" alt="pay icon" src="../../images/plan-receive.svg">
+                                          Pay only for what you use
+                                        </li>
+                                        <li class="Plan-listItem">
+                                          <img width="26" height="26" alt="reporting icon" src="../../images/plan-measure.svg">
+                                          Real-time fee reporting
+                                        </li>
+                                      </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="text-align: center;"> 
+                            <button class="step__footer__continue-btn btnnew " type="submit" name="button">
+                                <span class="btn__content">Load More</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="further_vehicle_information" class="vehicle_detail_bg" style="display: none;">
+                <form id="further_vehicle_information_id" name="personal_detail" action="shipping.html">
+                    <div class="row">
+                        <div id="shownamelabel" class="field__input-wrapper">
+                            <label for="checkout_name" class="field__label">Engine Number</label>
+                            <input id="name" name="engine_number" type="text" placeholder="Engine Number" class="field__input" required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="shownamelabel" class="field__input-wrapper">
+                            <label for="checkout_name" class="field__label">Chassis No</label>
+                            <input id="name" name="chassis_no" type="text" placeholder="Chassis No" class="field__input" required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="upload-drop-zone" id="drop-zone">
+                            Just drag and drop files here
+                        </div>
+
+                        <!-- Upload Finished -->
+                        <div class="js-upload-finished">
+                            <ul class="list-group">
+                                <li><img src="../../images/home_warp-logo.svg"/></li>
+                                <li><img src="../../images/home_warp-logo.svg"/></li>
+                                <li><img src="../../images/home_warp-logo.svg"/></li>
+                                <li><img src="../../images/home_warp-logo.svg"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <button class="step__footer__continue-btn btn " type="submit" name="button">
+                            <span class="btn__content">Process</span>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
         <div id="te">                

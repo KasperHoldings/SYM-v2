@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>SYM</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../../css/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-select.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../../css/animations.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/uikit.min.css" />
+        <!--<link rel="stylesheet" type="text/css" href="../../css/videobackground.css" />-->
+        <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/format.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/custom.css" />
+
+
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="fix_hd">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><img src="../../images/logo.svg"/></a>
+                    </div>
+                    <a id="nav-full-toggle" class="nav-hamburger" href="#">
+                        <span></span>
+                    </a>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul id="menu" class="nav navbar-nav">
+                            <li class="active" data-menuanchor="firstPage">                                
+                                <a href="#firstPage">
+                                    <i class="icon icon-block icon-48 first-section-image"></i>
+                                    <span>First</span>
+                                </a>
+                            </li>
+                            <li data-menuanchor="secondPage"><a href="#secondPage"><i class="icon icon-block icon-48 first-section-image"></i><span>Second</span></a></li>
+                            <li data-menuanchor="3rdPage"><a href="#3rdPage"><i class="icon icon-block icon-48 first-section1-image"></i><span>Third</span></a></li>
+                            <li data-menuanchor="4thPage"><a href="#4thPage"><i class="icon icon-block icon-48 first-section2-image"></i><span>Fourth</span></a></li>
+                            <li data-menuanchor="5thPage"><a href="#5thPage"><i class="icon icon-block icon-48 first-section-image"></i><span>Fifth</span></a></li>
+                            <li data-menuanchor="6thPage"><a href="#6thPage"><i class="icon icon-block icon-48 first-section1-image"></i><span>Sixth</span></a></li>
+                        </ul>                        
+                    </div>
+
+                </nav>
+            </div>
+            <nav id="nav-full" class="layer-change" style="display: none;">
+                <ul style="margin-top: 90px;">
+                    <li class="mobile-tablet-true" data-menuanchor="firstPage">                                
+                        <a href="#firstPage">
+                            <i class="icon icon-block icon-48 first-section-image"></i>
+                            <span>First</span>
+                        </a>
+                    </li>
+                    <li class="mobile-tablet-true" data-menuanchor="secondPage"><a href="#secondPage"><i class="icon icon-block icon-48 first-section-image"></i><span>Second</span></a></li>
+                    <li class="mobile-tablet-true" data-menuanchor="3rdPage"><a href="#3rdPage"><i class="icon icon-block icon-48 first-section1-image"></i><span>Third</span></a></li>
+                    <li class="mobile-tablet-true" data-menuanchor="4thPage"><a href="#4thPage"><i class="icon icon-block icon-48 first-section2-image"></i><span>Fourth</span></a></li>
+                    <li class="mobile-tablet-true" data-menuanchor="5thPage"><a href="#5thPage"><i class="icon icon-block icon-48 first-section-image"></i><span>Fifth</span></a></li>
+                    <li class="mobile-tablet-true" data-menuanchor="6thPage"><a href="#6thPage"><i class="icon icon-block icon-48 first-section1-image"></i><span>Sixth</span></a></li>
+                </ul>
+            </nav>
+            <div class="insurance_info topMainPadding">
+                <div class="insurance_text">
+                    Shipping
+                </div>
+                <div id="shipping_detail" class="vehicle_detail_bg">
+                    <form id="shipping_detail_id" name="vehicle_detail" action="checkout.html">
+                        <div class="row">
+                            <div class="order-summary__section order-summary__section--product-list">
+                                <table class="product-table">
+                                    <caption class="visually-hidden">Shopping cart</caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"><span class="visually-hidden">Product image</span></th>
+                                            <th scope="col"><span class="visually-hidden">Description</span></th>
+                                            <th scope="col"><span class="visually-hidden">Quantity</span></th>
+                                            <th scope="col"><span class="visually-hidden">Price</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-product-type="Clothing" data-variant-id="22897477895" data-product-id="7203460999" class="product">
+                                            <td class="product__image">
+                                                <div class="product-thumbnail">
+                                                    <div class="product-thumbnail__wrapper">
+                                                        <img src="../../images/aialogo.png" class="product-thumbnail__image" alt="Sri Lanka Insurance">
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                            <td class="product__description">
+                                                <span class="product__description__name order-summary__emphasis">Sri Lanka Insurance</span>
+                                                <span class="product__description__variant order-summary__small-text"></span>
+
+                                            </td>
+                                            <td class="product__quantity visually-hidden">
+                                                1
+                                            </td>
+                                            <td class="product__price">
+                                                <span class="order-summary__emphasis">$45.00</span>
+                                            </td>
+                                        </tr>                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="order-summary__section order-summary__section--discount">
+                                <div class="fieldset flexbox">
+                                    <div id="checkout_reduction_code_id" class="field">
+                                        <div class="field__input-btn-wrapper">
+                                            <div class="field__input-wrapper"><label for="checkout_reduction_code" class="field__label">Gift card or discount code</label>
+                                                <input type="text" id="checkout_reduction_code" name="checkout[reduction_code]" size="30" aria-labelledby="error-for-reduction_code" autocomplete="off" data-discount-field="true" class="field__input" placeholder="Gift card or discount code">
+                                            </div>
+
+                                            <button class="field__input-btn btn btn--default btn--disabled" type="submit">
+                                                <span class="btn__content visually-hidden-on-mobile">Apply</span>
+                                                <i class="btn__content shown-on-mobile icon icon--arrow"></i>
+                                                <i class="btn__spinner icon icon--button-spinner"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-order-summary-section="payment-lines" class="order-summary__section order-summary__section--total-lines">
+                                <table class="total-line-table">
+                                    <caption class="visually-hidden">Cost summary</caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"><span class="visually-hidden">Description</span></th>
+                                            <th scope="col"><span class="visually-hidden">Price</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="total-line total-line--subtotal">
+                                            <td class="total-line__name">Subtotal</td>
+                                            <td class="total-line__price">
+                                                <span data-checkout-subtotal-price-target="20800" class="order-summary__emphasis">$208.00</span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="total-line total-line--shipping">
+                                            <td class="total-line__name">Shipping</td>
+                                            <td class="total-line__price">
+                                                <span data-checkout-total-shipping-target="4900" class="order-summary__emphasis">$49.00</span>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                    <tfoot class="total-line-table__footer">
+                                        <tr class="total-line">
+                                            <td class="total-line__name payment-due-label">
+                                                <span class="payment-due-label__total">Total</span>
+                                                <span data-checkout-taxes="" class="payment-due-label__taxes hidden">
+                                                    Including <span data-checkout-total-taxes-target="0">$0.00</span> in taxes
+                                                </span>
+                                            </td>
+                                            <td class="total-line__price payment-due">
+                                                <span class="payment-due__currency">USD</span>
+                                                <span data-checkout-payment-due-target="25700" class="payment-due__price">$257.00</span>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="section section--shipping-method">
+                                <div class="section__header">
+                                    <h2 class="section__title">Shipping method</h2>
+                                </div>
+                                <div class="section__content">
+                                    <div data-shipping-methods="" class="content-box">
+                                        <div class="content-box__row">
+                                            <div class="radio-wrapper">
+                                                <div class="radio__input">
+                                                    <label class="radio">
+                                                        <input type="radio" value="1" name="termSmoke" class="rad">
+                                                        <span class="outer"><span class="inner"></span></span>                                                         
+                                                    </label>
+                                                </div>
+                                                <label for="checkout_shipping_rate_id_shopify-usps20first20class20international-4900">
+                                                    <span class="radio__label">
+                                                        USPS First Class International
+                                                    </span>
+                                                    <span class="radio__accessory content-box__emphasis">$49.00</span>
+                                                </label>        
+                                            </div> <!-- /radio-wrapper-->
+                                        </div>
+
+                                        <div class="content-box__row">
+                                            <div class="radio-wrapper">
+                                                <div class="radio__input">
+                                                    <label class="radio">
+                                                        <input type="radio" value="1" name="termSmoke" class="rad">
+                                                        <span class="outer"><span class="inner"></span></span> 
+                                                    </label>
+                                                </div>
+                                                <label for="checkout_shipping_rate_id_shopify-usps20priority20mail20international-5000">
+                                                    <span class="radio__label">
+                                                        USPS Priority Mail International
+                                                    </span>
+                                                    <span class="radio__accessory content-box__emphasis">$50.00</span>
+                                                </label>        
+                                            </div> <!-- /radio-wrapper-->
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="section section--shipping-address">
+                                <div class="section__header">
+                                    <h2 class="section__title">
+                                        Shipping address
+                                    </h2>
+                                </div>
+                                <div class="col-md-6 paddleftzero">
+                                    <div id="showfirstnamelabel" class="field__input-wrapper">
+                                        <label for="checkout_name" class="field__label">First Name</label>
+                                        <input id="firstname" name="first_name" type="text" placeholder="First Name" class="field__input" required />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 paddrightzero">
+                                    <div id="showlastnamelabel" class="field__input-wrapper">
+                                        <label for="checkout_name" class="field__label">Last Name</label>
+                                        <input id="lastname" name="last_name" type="text" placeholder="Last Name" class="field__input" required />
+                                    </div>
+                                </div>
+                                <div class="col-md-12 paddrightzero paddleftzero">
+                                    <div id="showcompanylabel" class="field__input-wrapper">
+                                        <label for="checkout_name" class="field__label">Company</label>
+                                        <input id="company" name="company" type="text" placeholder="Company" class="field__input" required />
+                                    </div>
+                                </div>
+                                <div class="col-md-8 paddleftzero">
+                                    <div id="showaddresslabel" class="field__input-wrapper">
+                                        <label for="checkout_name" class="field__label">Address</label>
+                                        <input id="address" name="address" type="text" placeholder="Address" class="field__input" required />
+                                    </div>
+                                </div>
+                                <div class="col-md-4 paddrightzero">
+                                    <div id="showaptsuitlabel" class="field__input-wrapper">
+                                        <label for="checkout_name" class="field__label">Apt, Suit etc</label>
+                                        <input id="altsuit" name="alt_suit" type="text" placeholder="Apt, Suit etc" class="field__input" required />
+                                    </div>
+                                </div>
+                                <div class="col-md-12 paddrightzero paddleftzero">
+                                    <div id="showcitylabel" class="field__input-wrapper">
+                                        <label for="checkout_name" class="field__label">City</label>
+                                        <input id="city" name="city" type="text" placeholder="City" class="field__input" required />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 paddleftzero">
+                                    <div class="field field--required field--three-eights field--show-floating-label paddzero">
+                                        <div class="field__input-wrapper field__input-wrapper--select">
+                                            <label for="checkout_shipping_address_country" class="field__label">Country</label>
+                                            <select name="country" class="field__input field__input--select" required>
+                                                <option value="">Select Country</option>
+                                                <option value="Ketchup">US</option>
+                                                <option value="Relish">Mrs</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 paddrightzero">
+                                    <div id="showpostalcodelabel" class="field__input-wrapper">
+                                        <label for="checkout_name" class="field__label">Postal Code</label>
+                                        <input id="postalcode" name="postal_code" type="text" placeholder="Postal Code" class="field__input" required />
+                                    </div>
+                                </div>
+                                <div class="col-md-12 paddrightzero paddleftzero">
+                                    <div id="showphonelabel" class="field__input-wrapper">
+                                        <label for="checkout_name" class="field__label">Phone</label>
+                                        <input id="phone" name="phone" type="text" placeholder="Phone" class="field__input" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-payment-method="" class="section section--payment-method">
+                                <div class="section__header">
+                                    <h2 class="section__title">Payment method</h2>
+                                    <p class="section__text">
+                                        All transactions are secure and encrypted. Credit card information is never stored.
+                                    </p>
+                                </div>
+
+                                <div class="section__content">
+                                    <div data-payment-subform="required">
+                                        <div class="content-box">
+                                            <div data-select-gateway="18551425" data-gateway-group="direct" class="radio-wrapper content-box__row ">
+                                                <div class="radio__input">
+                                                    <label class="radio">
+                                                        <input type="radio" name="checkout" checked="checked" value="18551425" id="checkout_payment_gateway_18551425" class="rad">
+                                                        <span class="outer"><span class="inner"></span></span>                                                         
+                                                    </label>
+                                                </div>
+                                                <label for="checkout_payment_gateway_18551425" class="radio__label content-box__emphasis payment-method-wrapper">
+                                                    <div class="radio-wrapper">
+                                                        <div class="checkbox__label">
+                                                            Credit card
+                                                        </div>
+                                                        <div class="radio__accessory">
+                                                            <span class="visually-hidden">Pay with:</span>
+                                                            <ul data-brand-icons-for-gateway="18551425">
+                                                                <li class="payment-icon payment-icon--visa" data-payment-icon="visa">
+                                                                    <span class="visually-hidden">Visa</span>
+                                                                </li>
+                                                                <li class="payment-icon payment-icon--master" data-payment-icon="master">
+                                                                    <span class="visually-hidden">MasterCard</span>
+                                                                </li>
+                                                                <li class="payment-icon payment-icon--american-express" data-payment-icon="american-express">
+                                                                    <span class="visually-hidden">American Express</span>
+                                                                </li>
+                                                                <li class="payment-icon payment-icon--discover" data-payment-icon="discover">
+                                                                    <span class="visually-hidden">Discover</span>
+                                                                </li>
+                                                                <li class="payment-icon-list__more">
+                                                                    <span class="content-box__small-text">
+                                                                        and more…
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </label>          
+                                            </div>
+
+                                            <div id="payment-gateway-subfields-18551425" data-subfields-for-gateway="18551425" class="radio-wrapper content-box__row content-box__row--secondary">
+                                                <div dir="ltr" data-credit-card-fields="" class="fieldset ">
+                                                    <div class="field field--required">
+                                                        <div id="showcardnumberlabel" class="field__input-wrapper">
+                                                            <label for="checkout_name" class="field__label">Card number</label>
+                                                            <input id="cardnumber" name="card_number" type="text" placeholder="Card number" class="field__input" required />
+                                                            <span class="field__icon icon icon--lock" id="credit_card_number_tooltip">
+                                                                <span class="visually-hidden">Secure field</span>
+                                                            </span>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="col-md-8 paddleftzero">
+                                                        <div data-credit-card-name="true" class="field--half field field--required">
+                                                            <div id="shownameoncardlabel" class="field__input-wrapper">
+                                                                <label for="checkout_name" class="field__label">Name on card</label>
+                                                                <input id="nameoncard" name="name_on_card" type="text" placeholder="Name on card" class="field__input" required />
+                                                            </div>                                     
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-md-2 paddleftzero">
+                                                        <div data-debit-card-alternative-text="Expiry (MM / YY)" class="field--quarter field field--required">
+                                                            <div id="showmmyylabel" class="field__input-wrapper">
+                                                                <label for="checkout_name" class="field__label">MM / YY</label>
+                                                                <input id="mmyy" name="mm_yy" type="text" placeholder="MM / YY" class="field__input" required />
+                                                            </div>                                        
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-md-2 paddrightzero paddleftzero">
+                                                        <div class="field--quarter field field--required">
+                                                            <div id="showcvvlabel" class="field__input-wrapper">
+                                                                <label for="checkout_name" class="field__label">CVV</label>
+                                                                <input id="cvv" name="cvv" type="text" placeholder="CVV" class="field__input" required />
+                                                                <span role="tooltip" class="field__icon icon icon--question has-tooltip" tabindex="0" id="credit_card_verification_value_tooltip">
+                                                                    <span class="tooltip">
+                                                                        <span data-cvv-tooltip="unknown">
+                                                                            3-digit security code usually found on the back of your card. American Express cards have a 4-digit code located on the front.
+                                                                        </span>
+                                                                        <span class="hidden" data-cvv-tooltip="amex">
+                                                                            4-digit security code on the front of your card
+                                                                        </span>
+                                                                        <span class="hidden" data-cvv-tooltip="other">
+                                                                            3-digit security code on the back of your card
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                            </div>                                                         
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-select-gateway="6692801" data-gateway-group="express" class="radio-wrapper content-box__row ">
+                                                <div class="radio__input">
+                                                    <label class="radio">
+                                                        <input type="radio" name="checkout" value="6692801" id="checkout_payment_gateway_6692801" class="rad">
+                                                        <span class="outer"><span class="inner"></span></span>                                                         
+                                                    </label>
+                                                </div>
+                                                <label for="checkout_payment_gateway_6692801" class="radio__label content-box__emphasis ">
+                                                    <div class="radio-wrapper">
+                                                        <div class="checkbox__label">
+                                                            <img src="//cdn.shopify.com/s/assets/checkout_v2/offsite-gateway-logos/paypal@2x-2cabd13111981089fdf7f9faee0ef21550690cd2d380dede9fb7bc8c1253b3c6.png" class="offsite-payment-gateway-logo" alt="PayPal">
+                                                            <span class="visually-hidden">PayPal</span>
+                                                        </div>
+
+                                                        <div class="radio__accessory">
+                                                            <span class="visually-hidden">Pay with:</span>
+
+                                                            <ul data-brand-icons-for-gateway="6692801">
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div id="payment-gateway-subfields-6692801" data-subfields-for-gateway="6692801" class="radio-wrapper content-box__row content-box__row--secondary hidden">
+                                                <div class="blank-slate">
+                                                    <i class="blank-slate__icon icon icon--offsite"></i>
+                                                    <p>You will be redirected to PayPal to complete your purchase securely.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                     
+                                </div> 
+                            </div>
+                            <div class="section section--optional">
+                                <div class="section__content">
+                                    <div class="checkbox-wrapper">
+                                        <div class="checkbox__input">
+                                            <input type="hidden" value="0" name="checkout[buyer_accepts_marketing]"><input type="checkbox" id="checkout_buyer_accepts_marketing" name="checkout[buyer_accepts_marketing]" checked="checked" value="1" aria-labelledby="error-for-buyer_accepts_marketing" data-backup="buyer_accepts_marketing" class="input-checkbox">
+                                        </div>
+                                        <label for="checkout_buyer_accepts_marketing" class="checkbox__label">
+                                            Subscribe to our newsletter
+                                        </label>            
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="float: left;width: 100%;" class="row step__footer">
+                                
+                                <button class="step__footer__continue-btn btn " type="submit" name="button">
+                                    <span class="btn__content">Complete Order</span>
+                                </button>
+                                <a class="step__footer__previous-link" href="insurance.html">
+                                    <svg viewBox="0 0 6.7 11.3" height="11.3" width="6.7" xmlns="http://www.w3.org/2000/svg" class="previous-link__icon icon--chevron icon">
+                                        <path d="M6.7 1.1l-1-1.1-4.6 4.6-1.1 1.1 1.1 1 4.6 4.6 1-1-4.6-4.6z"/>
+                                    </svg>
+                                    Return to Previous Page
+                                </a>
+                            </div>
+                        </div>                        
+                    </form>
+                </div>                
+            </div>
+            <div id="shipping_footer">                
+                <div class="section animatedParent">
+                    <div class="container-fluid">
+                        <div class="site-footer ">
+                            <div class="grid-row">
+                                <header class="col-md-4">
+                                    <div class="site-footer__logo">
+                                        <img style='' src="../../images/logo-footer.png"/>
+                                    </div>
+                                </header>
+
+                                <div class="col-md-2">
+                                    <h3 class="site-footer__block-title">Company</h3>
+
+                                    <nav class="nav nav--secondary">
+                                        <ul class="nav__items">
+                                            <li class="nav__item"><a href="#">Who We Are</a></li>
+                                            <li class="nav__item"><a href="#">What We Do</a></li>
+                                            <li class="nav__item"><a href="#">Our Journal</a></li>
+                                            <li class="nav__item"><a href="#">Get In Touch</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-md-2">
+                                    <h3 class="site-footer__block-title">Our Work</h3>
+
+                                    <nav class="nav nav--secondary">
+                                        <ul class="nav__items">
+                                            <li class="nav__item"><a href="#">Motion Array</a></li>
+                                            <li class="nav__item"><a href="#">Herself</a></li>
+                                            <li class="nav__item"><a href="#">Five Simple Steps</a></li>
+                                            <li class="nav__item"><a href="#">Tribal</a></li>
+                                            <li class="nav__item"><a href="#">oozled</a></li>
+                                            <li class="nav__item"><a href="#">PH Museum</a></li>
+                                            <li class="nav__item"><a href="#">Charity Bank</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-md-2 add_cmn">
+                                    <h3 class="site-footer__block-title">Our Details</h3>
+                                    <p class="site-footer__contact-details">
+
+                                        <span id="sproutencodeemail-5763af77a11b4-1"><a href="mailto:hello@nodividestudio.com">hello@nodividestudio.com</a></span>
+                                        +44 (0) 203 290 1337
+                                    </p>
+
+                                    <p><span class="icon icon--location"></span> We're based in the UK.</p>
+                                </div>
+                                <div class="col-md-4">
+
+                                    <ul class="social">
+                                        <li class="social__item"><a title="Follow on Twitter" target="_blank" href="#"><span class="icon icon--twitter"></span></a></li>
+                                        <li class="social__item"><a title="Like on Facebook" target="_blank" href="#"><span class="icon icon--facebook"></span></a></li>
+                                        <li class="social__item"><a title="Design snippets on Dribbble" target="_blank" href="#"><span class="icon icon--dribbble"></span></a></li>
+                                        <li class="social__item"><a title="Photos on Instagram" target="_blank" href="#"><span class="icon icon--instagram"></span></a></li>
+                                    </ul>                
+                                    <!--<a href="#" class="js-hidden">Google +</a>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="site-footer__company-info">
+                            <p>&copy; Copyright 2015 - 2016 All Right Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="../../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../../js/uikit.min.js"></script>
+        <!--<script type="text/javascript" src="../../js/videobackground.js"></script>-->
+        <script type="text/javascript" src="../../js/jquery.fullPage.js"></script>
+        <script type="text/javascript" src="../../js/css3-animate-it.js"></script>
+        <script type="text/javascript" src="../../js/jquery.validate.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+        <script type="text/javascript" src="../../js/script.js"></script>
+        <script>
+            $('.selectpicker').selectpicker();
+        </script>
+    </body>
+</html>
