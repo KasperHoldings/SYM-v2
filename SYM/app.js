@@ -34,6 +34,9 @@ var sampleForm = require('./src/routes/sampleFormRouter')(nav);
 var userRouter = require('./src/routes/userRouter');
 var vehicleRegRouter = require('./src/routes/vehicleRegRouter');
 var vehicleDetailsRouter = require('./src/routes/vehicleDetailsRouter');
+var personalDetailsRouter = require('./src/routes/personalDetailsRouter');
+var insuranceDetailsRouter = require('./src/routes/insuranceDetailsRouter');
+
 
 app.use(express.static('public'));
 app.set('views', './src/views');
@@ -43,7 +46,6 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(methodOverride('X-HTTP-Method-Override'));
-
 
 
 app.use(connection);
@@ -72,7 +74,20 @@ app.get('/vehicle/car/vehicleDetails/delete/:id', vehicleDetailsRouter.delete);
 app.get('/vehicle/car/vehicleDetails/edit/:id', vehicleDetailsRouter.edit);
 app.post('/vehicle/car/vehicleDetails/edit/:id',vehicleDetailsRouter.saveEdit);
 
-//Vehicle Router - Vehicle details
+//Vehicle Router - Personal Details
+app.get('/vehicle/car/personalDetails/create', personalDetailsRouter.add);
+app.post('/vehicle/car/personalDetails/create', personalDetailsRouter.save);
+app.get('/vehicle/car/personalDetails/delete/:id', personalDetailsRouter.delete);
+app.get('/vehicle/car/personalDetails/edit/:id', personalDetailsRouter.edit);
+app.post('/vehicle/car/personalDetails/edit/:id',personalDetailsRouter.saveEdit);
+
+//Vehicle Router - Insurance Details
+app.get('/vehicle/car/insuranceDetails/create', insuranceDetailsRouter.add);
+app.post('/vehicle/car/insuranceDetails/create', insuranceDetailsRouter.save);
+app.get('/vehicle/car/insuranceDetails/delete/:id', insuranceDetailsRouter.delete);
+app.get('/vehicle/car/insuranceDetails/edit/:id', insuranceDetailsRouter.edit);
+app.post('/vehicle/car/insuranceDetails/edit/:id',insuranceDetailsRouter.saveEdit);
+
 
 
 //Index
