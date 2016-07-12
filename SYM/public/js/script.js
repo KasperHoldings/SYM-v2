@@ -1,4 +1,54 @@
 jQuery(document).ready(function () {
+    jQuery("#firstname").keypress(function () {
+        jQuery('#showfirstnamelabel').addClass('field--show-floating-label');
+    });
+    jQuery("#lastname").keypress(function () {
+        jQuery('#showlastnamelabel').addClass('field--show-floating-label');
+    });
+    jQuery("#email").keypress(function () {
+        jQuery('#showemaillabel').addClass('field--show-floating-label');
+    });
+    jQuery("#mobile").keypress(function () {
+        jQuery('#showmobilelabel').addClass('field--show-floating-label');
+    });
+    jQuery("#nic").keypress(function () {
+        jQuery('#showniclabel').addClass('field--show-floating-label');
+    });
+    
+    jQuery("#company").keypress(function () {
+        jQuery('#showcompanylabel').addClass('field--show-floating-label');
+    });
+    jQuery("#address").keypress(function () {
+        jQuery('#showaddresslabel').addClass('field--show-floating-label');
+    });
+    jQuery("#altsuit").keypress(function () {
+        jQuery('#showaptsuitlabel').addClass('field--show-floating-label');
+    });
+    jQuery("#city").keypress(function () {
+        jQuery('#showcitylabel').addClass('field--show-floating-label');
+    });
+    jQuery("#checkout_reduction_code").keypress(function () {
+        jQuery('#checkout_reduction_code_id').addClass('field--show-floating-label');
+    });
+    jQuery("#checkout_reduction_code").keyup(function () {
+        var inp = jQuery("#checkout_reduction_code").val();
+        if(jQuery.trim(inp).length > 0)
+        {
+           jQuery('#checkout_reduction_code_id button').removeClass('btn--disabled');
+        }else{
+            jQuery('#checkout_reduction_code_id button').addClass('btn--disabled');
+        }        
+    });
+    jQuery('input:radio[name="checkout"]').change(
+        function(){
+            if (this.checked && this.value == '18551425') {
+                jQuery('#payment-gateway-subfields-18551425').removeClass('hidden');
+                jQuery('#payment-gateway-subfields-6692801').addClass('hidden');
+            }else if(this.checked && this.value == '6692801'){
+                jQuery('#payment-gateway-subfields-18551425').addClass('hidden');
+                jQuery('#payment-gateway-subfields-6692801').removeClass('hidden');
+            }
+    });
     jQuery('#nav-full-toggle').click(function () {
         jQuery('#nav-full').toggle();
         if (jQuery('#nav-full:visible').size() != 0)
@@ -102,7 +152,8 @@ jQuery(document).ready(function () {
         jQuery('.travel_bg').fadeOut('slow');
         jQuery('.twowheeler_bg').fadeOut('slow');
         jQuery('.health_bg').fadeIn('slow');
-
+        jQuery(".leftTab>ul>li>a.active").removeClass("active");
+        jQuery(this).addClass('active');
     });
     jQuery('.leftTab .term').on('click', function () {
         jQuery('.rightTab .box_value').css('display', 'none');
@@ -118,7 +169,8 @@ jQuery(document).ready(function () {
         jQuery('.travel_bg').fadeOut('slow');
         jQuery('.twowheeler_bg').fadeOut('slow');
         jQuery('.health_bg').fadeOut('slow');
-
+        jQuery(".leftTab>ul>li>a.active").removeClass("active");
+        jQuery(this).addClass('active');
     });
     jQuery('.leftTab .investment').on('click', function () {
         jQuery('.rightTab .box_value').css('display', 'none');
@@ -134,7 +186,8 @@ jQuery(document).ready(function () {
         jQuery('.travel_bg').fadeOut('slow');
         jQuery('.twowheeler_bg').fadeOut('slow');
         jQuery('.health_bg').fadeOut('slow');
-
+        jQuery(".leftTab>ul>li>a.active").removeClass("active");
+        jQuery(this).addClass('active');
     });
     jQuery('.leftTab .car').on('click', function () {
         jQuery('.rightTab .box_value').css('display', 'none');
@@ -150,7 +203,8 @@ jQuery(document).ready(function () {
         jQuery('.travel_bg').fadeOut('slow');
         jQuery('.twowheeler_bg').fadeOut('slow');
         jQuery('.health_bg').fadeOut('slow');
-
+        jQuery(".leftTab>ul>li>a.active").removeClass("active");
+        jQuery(this).addClass('active');
     });
     jQuery('.leftTab .travel').on('click', function () {
         jQuery('.rightTab .box_value').css('display', 'none');
@@ -166,7 +220,8 @@ jQuery(document).ready(function () {
         jQuery('.travel_bg').fadeIn('slow');
         jQuery('.twowheeler_bg').css('display', 'none');
         jQuery('.health_bg').css('display', 'none');
-
+        jQuery(".leftTab>ul>li>a.active").removeClass("active");
+        jQuery(this).addClass('active');
     });
     jQuery('.leftTab .twowheeler').on('click', function () {
         jQuery('.rightTab .box_value').css('display', 'none');
@@ -182,7 +237,8 @@ jQuery(document).ready(function () {
         jQuery('.travel_bg').css('display', 'none');
         jQuery('.twowheeler_bg').css('display', 'block');
         jQuery('.health_bg').css('display', 'none');
-
+        jQuery(".leftTab>ul>li>a.active").removeClass("active");
+        jQuery(this).addClass('active');
     });
 
     var dropZone = document.getElementById('drop-zone');
@@ -208,21 +264,56 @@ jQuery(document).ready(function () {
             return false;
         }
     }
-    $.validator.setDefaults({
-        submitHandler: function () {
-            $("#vehicle_detail_id").submit(function (event) {
+
+    jQuery("#vehicle_detail_id").validate({
+        submitHandler: function (form) {
+            if (jQuery(form).valid()){
                 showPersonalDetail();
-                event.preventDefault();
-            });
-            $("#personal_detail_id").submit(function (event) {
-                showInsuranceDetail();
-                event.preventDefault();
-            });
+                return false; // prevent normal form posting
+            }else{
+                return false; // prevent normal form posting
+            }
         }
     });
-    $("#vehicle_detail_id").validate();
-    $("#personal_detail_id").validate();    
-    $("#insurance_detail_id").validate();
+    
+    jQuery("#personal_detail_id").validate({
+        submitHandler: function (form) {
+            if (jQuery(form).valid()){
+                showInsuranceDetail();
+                return false; // prevent normal form posting
+            }else{
+                return false; // prevent normal form posting
+            }
+        }
+    });
+    
+    jQuery("#insurance_detail_id").validate({
+        submitHandler: function (form) {
+            if (jQuery(form).valid()){
+                showQuotationDetail();
+                return false; // prevent normal form posting
+            }else{
+                return false; // prevent normal form posting
+            }
+        }
+    });
+    
+    jQuery("#further_vehicle_information_id").validate({
+        submitHandler: function (form) {
+            if (jQuery(form).valid())
+                form.submit();
+            return false; // prevent normal form posting
+        }
+    });
+    
+     jQuery("#shipping_detail_id").validate({
+        submitHandler: function (form) {
+            if (jQuery(form).valid())
+                form.submit();
+            return false; // prevent normal form posting
+        }
+    });
+
 });
 
 
@@ -234,4 +325,12 @@ function showPersonalDetail() {
 function showInsuranceDetail() {
     jQuery('#personal_detail').hide();
     jQuery('#insurance_detail').show();
+}
+function showQuotationDetail() {
+    jQuery('#insurance_detail').hide();
+    jQuery('#quotation_detail').show();
+}
+function showVehicleDetail() {
+    jQuery('#quotation_detail').hide();
+    jQuery('#further_vehicle_information').show();
 }

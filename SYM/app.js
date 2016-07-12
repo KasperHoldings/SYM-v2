@@ -11,6 +11,7 @@ var bodyParser = require('body-parser');
 
 var methodOverride = require('method-override');
 
+var session = require('express-session');
 
 var nav = [{
     Link: '/Bike',
@@ -45,8 +46,9 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
-app.use(methodOverride('X-HTTP-Method-Override'));
 
+app.use(methodOverride('X-HTTP-Method-Override'));
+app.use(session({secret: 'session'}));
 
 app.use(connection);
 
@@ -73,6 +75,8 @@ app.post('/vehicle/car/vehicleDetails/create', vehicleDetailsRouter.save);
 app.get('/vehicle/car/vehicleDetails/delete/:id', vehicleDetailsRouter.delete);
 app.get('/vehicle/car/vehicleDetails/edit/:id', vehicleDetailsRouter.edit);
 app.post('/vehicle/car/vehicleDetails/edit/:id',vehicleDetailsRouter.saveEdit);
+app.post('/vehicle/car/vehicleDetails/getVehicleModel',vehicleDetailsRouter.getVehicleModel);
+
 
 //Vehicle Router - Personal Details
 app.get('/vehicle/car/personalDetails/create', personalDetailsRouter.add);

@@ -15,7 +15,6 @@ exports.list = function(req, res){
             }
             res.render('listUsers',{pageTitle:'SELECT Template',data:rows});
 
-
         });
 
         //console.log(query.sql);

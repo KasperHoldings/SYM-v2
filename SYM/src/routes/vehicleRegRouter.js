@@ -13,8 +13,7 @@ exports.list = function (req, res) {
             if (err) {
                 console.log('Error Selecting : %s ', err);
             }
-            res.render('listUsers', {pageTitle: 'SELECT Template', data: rows});
-
+            return res.render('listUsers', {pageTitle: 'SELECT Template', data: rows});
 
         });
 
@@ -59,13 +58,15 @@ exports.save = function (req, res) {
     var input = JSON.parse(JSON.stringify(req.body));
 
     req.getConnection(function (err, connector) {
-
+        var vehicle_quotation;
+        vehicle_quotation = req.session;
+        vehicle_quotation.id = Math.random();
         var data = {
 
             v_province: input.v_province,
             v_letters : input.v_letters,
             v_number  : input.v_number,
-            insurance_quotation_id : Math.random()
+            insurance_quotation_id : vehicle_quotation.id
 
         };
 
@@ -74,6 +75,7 @@ exports.save = function (req, res) {
             if (err) {
                 console.log('Error Selecting : %s ', err);
             }
+
             res.redirect('/vehicle/car/vehicleDetails/create');
 
         });
