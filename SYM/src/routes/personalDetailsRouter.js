@@ -25,7 +25,8 @@ exports.list = function(req, res){
 
 exports.add = function(req, res){
     res.render('forms',{
-        form:'personalDetails'
+        form:'personalDetails',
+        hidden: req.session.id
     });
 };
 
@@ -62,20 +63,19 @@ exports.save = function(req,res){
 
         var data = {
 
-            name    : input.name,
-            address : input.address,
+            name    : input.title + ' ' + input.first_name + ' ' + input.last_name,
             email   : input.email,
-            phone   : input.phone
+            mobile  : input.mobile,
+            nic   : input.nic
 
         };
 
-        var query = connector.query('INSERT INTO user set ? ',data, function(err, rows)
-        {
+        var query = connector.query('UPDATE insurance_quotation set ? WHERE insurance_quotation_id = ? ', [data, input.insurance_quotation], function (err, rows) {
 
-            if(err) {
+            if (err) {
                 console.log('Error Selecting : %s ', err);
             }
-            res.redirect('/list');
+            res.redirect('/vehicle/car/personalDetails/create');
 
         });
 

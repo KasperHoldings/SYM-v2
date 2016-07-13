@@ -53,7 +53,6 @@ exports.edit = function (req, res) {
 /*Save the customer*/
 
 exports.save = function (req, res) {
-    console.log("Hello");
 
     var input = JSON.parse(JSON.stringify(req.body));
 
