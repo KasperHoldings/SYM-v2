@@ -1,4 +1,13 @@
 jQuery(document).ready(function () {
+    jQuery("#valueInput").keypress(function () {
+        jQuery('#showValuelabel').addClass('field--show-floating-label');
+    });
+    jQuery("#startDateInsurance").keypress(function () {
+        jQuery('#showstartdatelabel').addClass('field--show-floating-label');
+    });
+    jQuery("#showstartdatelabel .input-group-addon").click(function () {
+        jQuery('#showstartdatelabel').addClass('field--show-floating-label');
+    });
     jQuery("#firstname").keypress(function () {
         jQuery('#showfirstnamelabel').addClass('field--show-floating-label');
     });
@@ -14,7 +23,7 @@ jQuery(document).ready(function () {
     jQuery("#nic").keypress(function () {
         jQuery('#showniclabel').addClass('field--show-floating-label');
     });
-    
+
     jQuery("#company").keypress(function () {
         jQuery('#showcompanylabel').addClass('field--show-floating-label');
     });
@@ -32,23 +41,23 @@ jQuery(document).ready(function () {
     });
     jQuery("#checkout_reduction_code").keyup(function () {
         var inp = jQuery("#checkout_reduction_code").val();
-        if(jQuery.trim(inp).length > 0)
+        if (jQuery.trim(inp).length > 0)
         {
-           jQuery('#checkout_reduction_code_id button').removeClass('btn--disabled');
-        }else{
+            jQuery('#checkout_reduction_code_id button').removeClass('btn--disabled');
+        } else {
             jQuery('#checkout_reduction_code_id button').addClass('btn--disabled');
-        }        
+        }
     });
     jQuery('input:radio[name="checkout"]').change(
-        function(){
-            if (this.checked && this.value == '18551425') {
-                jQuery('#payment-gateway-subfields-18551425').removeClass('hidden');
-                jQuery('#payment-gateway-subfields-6692801').addClass('hidden');
-            }else if(this.checked && this.value == '6692801'){
-                jQuery('#payment-gateway-subfields-18551425').addClass('hidden');
-                jQuery('#payment-gateway-subfields-6692801').removeClass('hidden');
-            }
-    });
+            function () {
+                if (this.checked && this.value == '18551425') {
+                    jQuery('#payment-gateway-subfields-18551425').removeClass('hidden');
+                    jQuery('#payment-gateway-subfields-6692801').addClass('hidden');
+                } else if (this.checked && this.value == '6692801') {
+                    jQuery('#payment-gateway-subfields-18551425').addClass('hidden');
+                    jQuery('#payment-gateway-subfields-6692801').removeClass('hidden');
+                }
+            });
     jQuery('#nav-full-toggle').click(function () {
         jQuery('#nav-full').toggle();
         if (jQuery('#nav-full:visible').size() != 0)
@@ -61,6 +70,35 @@ jQuery(document).ready(function () {
             jQuery('#nav-full').removeClass('active');
         }
     });
+    jQuery('.investment_first').click(function () {
+        jQuery('.investmentBox_first').show();
+        jQuery('.investmentBox_second').hide();
+    });
+    jQuery('.investment_second').click(function () {
+        jQuery('.investmentBox_second').show();
+        jQuery('.investmentBox_first').hide();
+    });
+    jQuery('.term_first').click(function () {
+        jQuery('.termBox_first').show();
+        jQuery('.termBox_second').hide();
+    });
+    jQuery('.term_second').click(function () {
+        jQuery('.termBox_second').show();
+        jQuery('.termBox_first').hide();
+    });
+    jQuery('.familyTravel').click(function () {
+        jQuery('.familyTravel_first').show();
+        jQuery('.familyTravel_second').hide();
+    });
+    jQuery('.singleTravel').click(function () {
+        jQuery('.familyTravel_second').show();
+        jQuery('.familyTravel_first').hide();
+    });
+
+    jQuery('#insuranceDetailDatePicker').datetimepicker({
+                 format: 'DD/MM/YYYY'
+           });
+
     jQuery('#fullpage').fullpage({
         afterLoad: function (anchorLink, index) {
             var loadedSection = $(this);
@@ -267,37 +305,37 @@ jQuery(document).ready(function () {
 
     jQuery("#vehicle_detail_id").validate({
         submitHandler: function (form) {
-            if (jQuery(form).valid()){
+            if (jQuery(form).valid()) {
                 showPersonalDetail();
                 return false; // prevent normal form posting
-            }else{
+            } else {
                 return false; // prevent normal form posting
             }
         }
     });
-    
+
     jQuery("#personal_detail_id").validate({
         submitHandler: function (form) {
-            if (jQuery(form).valid()){
+            if (jQuery(form).valid()) {
                 showInsuranceDetail();
                 return false; // prevent normal form posting
-            }else{
+            } else {
                 return false; // prevent normal form posting
             }
         }
     });
-    
+
     jQuery("#insurance_detail_id").validate({
         submitHandler: function (form) {
-            if (jQuery(form).valid()){
+            if (jQuery(form).valid()) {
                 showQuotationDetail();
                 return false; // prevent normal form posting
-            }else{
+            } else {
                 return false; // prevent normal form posting
             }
         }
     });
-    
+
     jQuery("#further_vehicle_information_id").validate({
         submitHandler: function (form) {
             if (jQuery(form).valid())
@@ -305,8 +343,8 @@ jQuery(document).ready(function () {
             return false; // prevent normal form posting
         }
     });
-    
-     jQuery("#shipping_detail_id").validate({
+
+    jQuery("#shipping_detail_id").validate({
         submitHandler: function (form) {
             if (jQuery(form).valid())
                 form.submit();
