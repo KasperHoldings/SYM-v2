@@ -1310,7 +1310,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
     left: -63px !important;
     top: -68px !important;
 }
-.investment-bg {
+.investment-bg, .term-bg{
     margin-top: -38px;
 }
 .health-bg .countryCode_formobile {
@@ -1326,12 +1326,6 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
 }
 .health-bg .select30_per {
     width: 30%;
-}
-.health-bg .input_field {
-    margin: 10px 0 !important;
-}
-.health-bg .input_field:first-child {
-    margin: 10px 0 !important;
 }
 .health-bg .input_field:last-child {
     margin: 0 0 10px !important;
@@ -1729,9 +1723,6 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
 }
 .landingScreen .formarea .rightTab .box_value, .disForm .rightContent .box_value {
     background: #eeeeee;
-    left: 0;
-    padding: 0 45px;
-    position: absolute;
     width: 100%;
     z-index: 999;
 }
