@@ -1401,7 +1401,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
 .travel-bg .dates, .health-bg .dates, .healthMember_add .dates {
     width: 22% !important;
 }
-.travel-bg .dates label, .health-bg .dates label, .healthMember_add .dates label {
+.travel-bg .dates label, .health-bg .dates label, .healthMember_add .dates label, .investmentBox_second .dates label {
     color: #d0d0d0;
     font-size: 11px;
     font-weight: 400;
@@ -1409,7 +1409,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
     position: absolute;
     top: 10px;
 }
-.travel-bg .dates input, .health-bg .dates input, .healthMember_add .dates input {
+.travel-bg .dates input, .health-bg .dates input, .healthMember_add .dates input, .investmentBox_second .dates input {
     font: 400 12px/16px "SYM";
     height: 20px !important;
     margin-top: 21px;
@@ -1808,7 +1808,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
     position: relative;
     width: 55%;
 }
-.landingScreen .formarea .rightTab .input_field .inputBox input, .disForm .rightContent .input_field .inputBox input {
+.landingScreen .formarea .rightTab .input_field .inputBox input, .disForm .rightContent .input_field .inputBox input,.investmentBox_second .inputBox input {
     border: medium none;
     box-sizing: border-box;
     display: table-cell;

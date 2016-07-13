@@ -16,6 +16,7 @@
         <link rel="stylesheet" type="text/css" href="../../css/style.css" />
         <link rel="stylesheet" type="text/css" href="../../css/format.css" />
         <link rel="stylesheet" type="text/css" href="../../css/custom.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/flexslider.css" />
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap-datetimepicker.css" />
     </head>
     <body>
@@ -260,7 +261,14 @@
                                             <div class="input_field growth_f invForm">
                                                 <div class="lable cover"><i class="fa fa-inr iconpos "></i></div>
                                                 <div id="invLabel" class="info"><span class="b">Down Payment</span><span> (Rs)</span> </div>
-                                                <div class="inputBox"><input type="text" maxlength="11" value="" placeholder="Amount" data-msg="Amount should be between " data-max="200000" data-min="10000" id="invamount" name="invamount"> <span class="fig_lbl none" id="inv_lbl"></span></div>
+                                                <div class="inputBox has-tooltip">
+                                                    <input type="text" maxlength="11" value="" placeholder="Amount" data-msg="Amount should be between " data-max="200000" data-min="10000" id="invamount" name="invamount"> <span class="fig_lbl none" id="inv_lbl"></span>
+                                                    <span class="tooltip">
+                                                        <span data-cvv-tooltip="unknown">
+                                                            30% of value
+                                                        </span>                                    
+                                                    </span>
+                                                </div>
                                                 <div id="inverr" class="err"></div>
                                             </div>
 
@@ -285,13 +293,13 @@
                                         <form name="frmInv" id="frmInv">  
                                             <div class="tabs">    
                                                 <div class="tab investment_first">
-                                                    <input type="radio" checked="" value="1" name="tab-group-1" id="tab-1">
-                                                    <label for="tab-1">FD</label>
+                                                    <input type="radio" checked="" value="1" name="investmentType1" id="investmentType1">
+                                                    <label for="investmentType1">FD</label>
                                                 </div>
 
                                                 <div class="tab investment_second">
-                                                    <input type="radio" value="3" name="tab-group-1" id="tab-3">
-                                                    <label for="tab-3">Savings</label>
+                                                    <input type="radio" value="3" name="investmentType1" id="investmentType2">
+                                                    <label for="investmentType2">Savings</label>
                                                 </div>
                                             </div>
                                             <div class="investmentBox_first">                        
@@ -342,12 +350,17 @@
                                                     <div id="inverr" class="err"></div>
                                                 </div>
 
-                                                <div class="input_field invForm" id="invTermSelect">
+                                                <div class="input_field invForm periodbox" id="invTermSelect">
                                                     <div class="lable dob"><i class="fa fa-calendar iconpos "></i></div>
                                                     <div class="info"><span class="b">Period</span></div>
-                                                    <div class="inputBox periodBox">                                	
-                                                        <select id="invTerm" name="invTerm"><option value="">From</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
-                                                        <select id="invTerm" name="invTerm"><option value="">To</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+                                                    <div class="inputBox dates">  
+                                                        <label>From</label>
+                                                        <input id="fromDate" name="fromDate" type='text' placeholder="From" required/>    
+
+                                                    </div>
+                                                    <div class="inputBox dates">      
+                                                        <label>To</label>
+                                                        <input id="toDate" name="toDate" type='text' placeholder="To" required/>
 
                                                     </div>
                                                     <div id="invdoberr" class="err"></div>
@@ -445,12 +458,12 @@
                                                     <div class="lable"><i class="fa fa-calendar iconpos"></i></div>
                                                     <div class="info"><span class="b">Length of travel</span></div>
                                                     <div class="inputBox dates"> 
-                                                        <label>Departure</label>                                  	
-                                                        <input type="text" placeholder="23-06-2016" value="23-06-2016" default-date="23-06-2016" id="startdate"> 
+                                                        <label>Departure</label>    
+                                                        <input id="startdate" name="startdate" type='text' placeholder="Departure" required/>                                                                                                               
                                                     </div>
                                                     <div class="inputBox dates"> 
-                                                        <label>Arrival</label>                               	
-                                                        <input type="text" placeholder="02-07-2016" value="02-07-2016" default-date="02-07-2016" id="enddate">
+                                                        <label>Arrival</label>            
+                                                        <input id="enddate" name="enddate" type='text' placeholder="Arrival" required/>
                                                         <span class="fig_lbl days" id="traveldate_lbl">10<p>Days</p></span> 
                                                     </div>
                                                     <div id="invdoberr" class="err"></div>
@@ -505,11 +518,11 @@
                                                     <div class="info"><span class="b">Length of travel</span></div>
                                                     <div class="inputBox dates"> 
                                                         <label>Departure</label>                                  	
-                                                        <input type="text" placeholder="23-06-2016" value="23-06-2016" default-date="23-06-2016" id="startdate"> 
+                                                        <input id="startdate1" name="startdate1" type='text' placeholder="Departure" required/> 
                                                     </div>
                                                     <div class="inputBox dates"> 
                                                         <label>Arrival</label>                               	
-                                                        <input type="text" placeholder="02-07-2016" value="02-07-2016" default-date="02-07-2016" id="enddate">
+                                                        <input id="enddate1" name="enddate1" type='text' placeholder="Arrival" required/>
                                                         <span class="fig_lbl days" id="traveldate_lbl">10<p>Days</p></span> 
                                                     </div>
                                                     <div id="invdoberr" class="err"></div>
@@ -688,7 +701,7 @@
                                     <h4 class="repeatl21 animated fadeInRight block">Save Your Monkey</h4>
                                 </div>
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-md-12" style="margin-bottom: 20px;">
                                 <div class="col-md-6 testimonialPaddingBottom repeatl6 animated fadeInLeft">
                                     <div class="col-sm-12" style="clear:both;">
                                         <div class="col-sm-3">
@@ -773,13 +786,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--                            <div class="uk-text-center uk-margin-large" id="home-more-button" aria-hidden="false">
-                                                            <button data-uk-toggle="{target:'#home-more-user,#home-more-button'}" class="uk-button uk-button-primary uk-button-large">
-                                                                Show More
-                                                            </button>
-                                                        </div>-->
                             <div class="uk-text-center uk-margin-large" aria-hidden="false">
-                                <button class="uk-button uk-button-primary uk-button-large">
+                                <button class="uk-button uk-button-primary uk-button-large brandbuttonlarge" style="display: inline-block;">
                                     Show More
                                 </button>
                             </div>
@@ -789,48 +797,70 @@
                 </div>
                 <div class="section animatedParent" id="section4">
                     <div class="container topMainPadding">
-                        <h1 class="repeatl4 animated fadeInLeft block">
-                            Brands We've Worked For
-                        </h1>
-                        <h4 class="repeatl5 animated fadeInRight block">Save Your Monkey</h4>
-                        <ul class="row brands-list repeat5 animated growIn" id="brand-list-about">
-                            <li class="col-md-3 col-sm-3 col-xs-6">
-                                <img width="160" alt="AnchorFree" src="../../images/logos/logo_anchorfree1.png">
+                        <h1 class="repeatl animated fadeInLeft block go" id="made_easy">Value Added Services</h1>
+                        <h4 class="repeatll animated fadeInRight block go">Save Your Monkey</h4>
+                        <ul id="core-card-hp" class="core-cards animatedParent">
+                            <li class="card">
+                                <a class="comp" href="#">
+                                    <div style="display: block;" data-id="1" class="repeat animated growIn slow go">
+                                        <img src="../../images/home_warp-logo.svg">
+                                    </div>
+                                    <h3 data-id="1" class="repeat  animated fadeIn slow go"> Compare 250+ plans </h3>
+                                    <p data-id="1" class="repeat animated fadeIn slow go">to save upto 30%</p>                                   
+                                </a>
                             </li> 
-                            <li class="col-md-3 col-sm-3 col-xs-6">
-                                <img width="160" alt="Federated Media" src="../../images/logos/logo_federated_media.png">
+                            <li class="card">
+                                <a class="supp" href="#">
+                                    <div style="display: block;" data-id="2" class="repeat animated growIn slow go">
+                                        <img src="../../images/home_uikit-logo.svg">
+                                    </div>
+                                    <h3 data-id="2" class="repeat animated fadeIn slow go">Always at your service</h3>
+                                    <p data-id="2" class="repeat animated fadeIn slow go">Toll Free - 1800-103-3999</p>                                   
+                                </a>
                             </li> 
-                            <li class="col-md-3 col-sm-3 col-xs-6">
-                                <img width="160" alt="Fastweb" src="../../images/logos/logo_fastweb.png">
+                            <li class="card">
+                                <a class="target" href="#">
+                                    <div style="display: block;" data-id="3" class="repeat animated growIn slow go">
+                                        <img src="../../images/home_pagekit-logo.svg">
+                                    </div>
+                                    <h3 data-id="3" class="repeat animated fadeIn slow go">Over 10L Crore</h3>
+                                    <p data-id="3" class="repeat animated fadeIn slow go"> Cover provided.</p>                                   
+                                </a>
                             </li> 
-                            <li class="col-md-3 col-sm-3 col-xs-6">
-                                <img width="160" alt="Swatch" src="../../images/logos/logo_swatch1.png">
+                            <li class="card">
+                                <a class="moneyback" href="#">
+                                    <div style="display: block;" data-id="4" class="repeat animated growIn slow go">
+                                        <img src="../../images/home_warp-logo.svg">
+                                    </div>
+                                    <h3 data-id="4" class="repeat animated fadeIn slow go">Cancellation Support</h3>
+                                    <p data-id="4" class="repeat animated fadeIn slow go">Full support for cancellations and endorsements</p>                                  
+                                </a>
                             </li> 
-                            <li class="col-md-3 col-sm-3 col-xs-6">
-                                <img width="160" alt="Vodafone" src="../../images/logos/logo_vodafone1.png">
+                            <li class="card">
+                                <a class="people" href="#">
+                                    <div style="display: block;" data-id="5" class="repeat animated growIn slow go">
+                                        <img src="../../images/home_uikit-logo.svg">
+                                    </div>
+                                    <h3 data-id="5" class="repeat animated fadeIn slow go">962 People</h3>
+                                    <p data-id="5" class="repeat animated fadeIn slow go">Currently comparing online</p>                                   
+                                </a>
                             </li> 
-                            <li class="col-md-3 col-sm-3 col-xs-6">
-                                <img width="160" alt="Cisco" src="../../images/logos/logo_cisco.png">
-                            </li> 
-                            <li class="col-md-3 col-sm-3 col-xs-6">
-                                <img width="160" alt="The Needs" src="../../images/logos/logo_theneeds1.png">
-                            </li> 
-                            <li class="col-md-3 col-sm-3 col-xs-6">
-                                <img width="160" alt="Parmalat" src="../../images/logos/logo_parmalat.png">
-                            </li> 
-                            <li class="col-md-3 col-sm-3 col-xs-6">
-                                <img width="160" alt="Fineco" src="../../images/logos/logo_fineco1.png">
-                            </li> 
-                            <li class="col-md-3 col-sm-3 col-xs-6">
-                                <img width="160" alt="Intesa Sanpaolo" src="../../images/logos/logo_intesa_sanpaolo1.png">
-                            </li> 
-                            <li class="col-md-3 col-sm-3 col-xs-6">
-                                <img width="160" alt="Valentino" src="../../images/logos/logo_valentino.png">
-                            </li> 
-                            <li class="col-md-3 col-sm-3 col-xs-6">
-                                <img width="160" alt="DeLonghi" src="../../images/logos/logo_delonghi.png">
-                            </li> 
+                            <li class="card">
+                                <a class="finance" href="#">
+                                    <div data-id="6" class="repeat animated growIn slow go">
+                                        <img src="../../images/home_pagekit-logo.svg">
+                                    </div>
+                                    <h3 data-id="6" class="repeat animated fadeIn slow go">IAMAI'S best financial </h3>
+                                    <p data-id="6" class="repeat animated fadeIn slow go">Website award, 2013-14</p>                                   
+                                </a>
+                            </li>
+
                         </ul>
+                        <div aria-hidden="false" class="uk-text-center uk-margin-large">
+                            <a class="uk-button uk-button-primary uk-button-large brandbuttonlarge" href="brand.html">
+                                View More
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="section animatedParent" id="section5">
@@ -912,6 +942,7 @@
         <script type="text/javascript" src="../../js/css3-animate-it.js"></script>
         <script type="text/javascript" src="../../js/moment-with-locales.js"></script>
         <script type="text/javascript" src="../../js/bootstrap-datetimepicker.js"></script>
+        <script type="text/javascript" src="../../js/jquery.flexslider.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
         <script type="text/javascript" src="../../js/script.js"></script>
     </body>

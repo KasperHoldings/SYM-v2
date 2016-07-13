@@ -423,10 +423,10 @@ img.full {
 	text-transform: capitalize;
 	text-align: center;
 }
-#section1 .card {
+#section1 .card ,#section4 .card{
 	float: left;
 	height: auto;
-	margin-bottom: 5% !important;
+	margin-bottom: 4% !important;
 	overflow: hidden;
 	padding: 10px 60px;
 	position: relative;
@@ -2109,8 +2109,8 @@ a.step__footer__previous-link:hover {
 .dobBox select{
     width: 33% !important;
 }
-.periodBox select{
-    width: 50% !important;
+.periodbox .inputBox{
+    width: 22% !important;
 }
 .householdIncome input,.householdIncome select{
     width: 50% !important;
@@ -2149,15 +2149,44 @@ a.step__footer__previous-link:hover {
 .position_none .field__label{
     z-index: 0;
 }
+#startdateDiv{
+    margin-top: 21px;
+}
+#startdateDiv input{
+    margin-top: 0px;
+}
+.brandPage{
+    padding-bottom: 200px;
+    background: rgb(236, 236, 236);
+}
+.slides li{
+    text-align: center;
+}
+.flex-direction-nav{
+    display: none;
+}
+#brand-list-about{
+    margin-bottom: 20px;
+}
+.table-condensed td.active{
+    display: table-cell !important;
+}
+.brandbuttonlarge{
+    font-size: 16px;
+    padding: 10px 65px;
+}
  @media(max-width : 1700px) {
-#section1 .card {
+#section1 .card,#section4 .card {
 	margin-bottom: 0px !important;
 }
-.topMainPadding {
+}
+@media(max-width : 1400px) {
+    .topMainPadding {
 	padding-top: 120px !important;
 }
 }
 @media(max-width : 1230px) {
+    
 .formarea.repeat0 {
 	max-width: 95%;
 }
@@ -2177,7 +2206,7 @@ a.step__footer__previous-link:hover {
 	padding-right: 0;
 	width: 78%;
 }
-#section1 .card {
+#section1 .card,#section4 .card {
 	min-height: 225px;
 }
 .col-md-12.test_list {
@@ -2210,13 +2239,13 @@ a.step__footer__previous-link:hover {
 .container {
 	width: 100%;
 }
-#section1 .card {
+#section1 .card,#section4 .card {
 	padding: 10px 20px;
 }
 .repeatll.animated.fadeInRight.block {
 	margin-bottom: 10px;
 }
-#section1 .card {
+#section1 .card,#section4 .card {
 	min-height: 235px;
 	margin-bottom: 10px!important;
 }
@@ -2396,7 +2425,7 @@ a.step__footer__previous-link:hover {
 	margin-top: 112px;
 }
 .navbar-brand > img {
-	width: 150px;
+	width: 170px;
 	margin-top: 10px;
 }
 .testimonial-hero-text {
@@ -2611,7 +2640,7 @@ a.step__footer__previous-link:hover {
 .testimonials h4 {
 	margin: 0 0 10px;
 }
-#section1 .card img {
+#section1 .card img,#section4 .card img {
 	width: 35%;
 }
 .testimonial-image {
@@ -2677,7 +2706,7 @@ a.step__footer__previous-link:hover {
 	float: left;
 	width: 100%;
 }
-#section1 .card {
+#section1 .card , #section4 .card {
 	padding: 8px;
 	width: 50%;
 }
@@ -2713,7 +2742,7 @@ a.step__footer__previous-link:hover {
 	margin-bottom: 15px;
 	width: 90px;
 }
-#section1 .card {
+#section1 .card ,#section4 .card{
 	height: auto;
 	margin-bottom: 0 !important;
 	min-height: 120px;

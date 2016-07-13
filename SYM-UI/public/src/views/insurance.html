@@ -17,6 +17,7 @@
         <link rel="stylesheet" type="text/css" href="../../css/style.css" />
         <link rel="stylesheet" type="text/css" href="../../css/format.css" />
         <link rel="stylesheet" type="text/css" href="../../css/custom.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/flexslider.css" />
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap-datetimepicker.css" />
 
     </head>
@@ -652,8 +653,13 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="upload-drop-zone" id="drop-zone">
+                        <div class="upload-drop-zone has-tooltip" id="drop-zone">
                             Just drag and drop files here
+                            <span class="tooltip">
+                                <span data-cvv-tooltip="unknown">
+                                    Upload a scanned image or a photograph of document requested
+                                </span>                                    
+                            </span>
                         </div>
 
                         <!-- Upload Finished -->
@@ -766,6 +772,7 @@
     <script type="text/javascript" src="../../js/jquery.validate.js"></script>
     <script type="text/javascript" src="../../js/moment-with-locales.js"></script>
     <script type="text/javascript" src="../../js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="../../js/jquery.flexslider.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
     <script type="text/javascript" src="../../js/script.js"></script>
     <script>

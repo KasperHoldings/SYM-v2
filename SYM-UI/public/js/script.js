@@ -1,4 +1,9 @@
 jQuery(document).ready(function () {
+    jQuery('.flexslider').flexslider({
+        animation: "slide",
+        controlsContainer: jQuery(".custom-controls-container"),
+        customDirectionNav: jQuery(".custom-navigation a")
+    });
     jQuery("#valueInput").keypress(function () {
         jQuery('#showValuelabel').addClass('field--show-floating-label');
     });
@@ -96,9 +101,26 @@ jQuery(document).ready(function () {
     });
 
     jQuery('#insuranceDetailDatePicker').datetimepicker({
-                 format: 'DD/MM/YYYY'
-           });
-
+        format: 'DD/MM/YYYY'
+    });
+    jQuery('#startdate').datetimepicker({
+        format: 'DD/MM/YYYY'
+    });
+    jQuery('#enddate').datetimepicker({
+        format: 'DD/MM/YYYY'
+    });
+    jQuery('#startdate1').datetimepicker({
+        format: 'DD/MM/YYYY'
+    });
+    jQuery('#enddate1').datetimepicker({
+        format: 'DD/MM/YYYY'
+    });
+    jQuery('#fromDate').datetimepicker({
+        format: 'DD/MM/YYYY'
+    });
+    jQuery('#toDate').datetimepicker({
+        format: 'DD/MM/YYYY'
+    });
     jQuery('#fullpage').fullpage({
         afterLoad: function (anchorLink, index) {
             var loadedSection = $(this);
