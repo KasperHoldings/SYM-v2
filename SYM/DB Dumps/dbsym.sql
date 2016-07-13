@@ -44,6 +44,84 @@ LOCK TABLES `aditional_covers` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `cover_types`
+--
+
+DROP TABLE IF EXISTS `cover_types`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `cover_types` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `cover_type` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cover_types`
+--
+
+LOCK TABLES `cover_types` WRITE;
+/*!40000 ALTER TABLE `cover_types` DISABLE KEYS */;
+/*!40000 ALTER TABLE `cover_types` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `insurance_companies`
+--
+
+DROP TABLE IF EXISTS `insurance_companies`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `insurance_companies` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `insurance_name` varchar(100) DEFAULT NULL,
+  `calculation` varchar(100) DEFAULT NULL,
+  `status` int(11) DEFAULT '1',
+  `path` varchar(5000) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `insurance_companies`
+--
+
+LOCK TABLES `insurance_companies` WRITE;
+/*!40000 ALTER TABLE `insurance_companies` DISABLE KEYS */;
+INSERT INTO `insurance_companies` VALUES (1,'Asian Alliance','2.25',1,NULL),(2,'Janashakthi','2.35',1,NULL),(3,'Sri Lanka Insurance','2.30',1,NULL),(4,'Allianz','2.20',1,NULL),(5,'Continental Insurance','2.25',0,NULL),(6,'AIG','3.22',0,NULL),(7,'Amana','2.86',0,NULL),(8,'Coop','2.34',0,NULL),(9,'HNB','2.30',0,NULL),(10,'LOLC','2.34',0,NULL),(11,'MBSL','2.23',0,NULL),(12,'NITF','2.45',0,NULL),(13,'Orient','2.44',0,NULL),(14,'People\'s Insurance','2.32',0,NULL),(15,'Union Assurance','2.12',0,NULL);
+/*!40000 ALTER TABLE `insurance_companies` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `insurance_features`
+--
+
+DROP TABLE IF EXISTS `insurance_features`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `insurance_features` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `insurance_id` int(11) DEFAULT NULL,
+  `feature` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `insurance_features_fk1_idx` (`insurance_id`),
+  CONSTRAINT `insurance_features_fk1` FOREIGN KEY (`insurance_id`) REFERENCES `insurance_companies` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `insurance_features`
+--
+
+LOCK TABLES `insurance_features` WRITE;
+/*!40000 ALTER TABLE `insurance_features` DISABLE KEYS */;
+INSERT INTO `insurance_features` VALUES (3,1,'Taxi allowance of Rs.2000/= per day '),(4,1,'Rs.1,000,000/= Personal Accident Cover '),(5,1,'Rs.10,000/= worth of free towing '),(6,2,'100% Air Bag Cover '),(7,2,'Rs.20,000/= worth of Hospitalisation Cover '),(8,2,'Taxi allowance of Rs.1000/= per day '),(11,3,'100% Air Bag Cover '),(12,3,'Rs.30,000/= worth of Hospitalisation Cover '),(13,3,'Taxi allowance of Rs.2000/= per day '),(16,4,'100% Air Bag Cover '),(17,4,'Rs.300,000/= worth of Hospitalisation Cover '),(18,4,'Taxi allowance of Rs.2000/= per day '),(21,5,'100% Air Bag Cover '),(22,5,'Rs.300,000/= worth of Hospitalisation Cover '),(23,5,'Taxi allowance of Rs.2000/= per day ');
+/*!40000 ALTER TABLE `insurance_features` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `insurance_quotation`
 --
 
@@ -56,7 +134,9 @@ CREATE TABLE `insurance_quotation` (
   `v_province` varchar(45) DEFAULT NULL,
   `v_letters` varchar(45) DEFAULT NULL,
   `v_number` varchar(45) DEFAULT NULL,
-  `name` varchar(100) DEFAULT NULL,
+  `title` varchar(45) DEFAULT NULL,
+  `first_name` varchar(100) DEFAULT NULL,
+  `last_name` varchar(45) DEFAULT NULL,
   `email` varchar(100) DEFAULT NULL,
   `mobile` varchar(45) DEFAULT NULL,
   `nic` varchar(45) DEFAULT NULL,
@@ -66,15 +146,21 @@ CREATE TABLE `insurance_quotation` (
   `value` double DEFAULT NULL,
   `no_claim_bonous` double DEFAULT NULL,
   `current_insurer` varchar(45) DEFAULT NULL,
-  `cover_type_required` int(11) DEFAULT NULL,
+  `cover_type_required` int(11) NOT NULL,
   `start_date` date DEFAULT NULL,
-  `voluntary_excess` varchar(45) DEFAULT NULL,
-  `purpose` varchar(100) DEFAULT NULL,
+  `voluntary_excess` int(11) NOT NULL,
+  `purpose` int(11) DEFAULT NULL,
   `authorise_agent_repair` int(11) DEFAULT NULL,
   `engine_no` varchar(45) DEFAULT NULL,
   `chassis_no` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`insurance_quotation_id`),
-  UNIQUE KEY `id_UNIQUE` (`id`)
+  UNIQUE KEY `id_UNIQUE` (`id`),
+  KEY `insurance_quotation_fk1_idx` (`cover_type_required`),
+  KEY `insurance_quotation_fk2_idx` (`voluntary_excess`),
+  KEY `insurance_quotation_fk3_idx` (`purpose`),
+  CONSTRAINT `insurance_quotation_fk3` FOREIGN KEY (`purpose`) REFERENCES `purpose` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `insurance_quotation_fk1` FOREIGN KEY (`cover_type_required`) REFERENCES `cover_types` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `insurance_quotation_fk2` FOREIGN KEY (`voluntary_excess`) REFERENCES `voluntary_excess` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -197,6 +283,32 @@ LOCK TABLES `sampletable` WRITE;
 /*!40000 ALTER TABLE `sampletable` DISABLE KEYS */;
 INSERT INTO `sampletable` VALUES (1,'Sample','12');
 /*!40000 ALTER TABLE `sampletable` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `service`
+--
+
+DROP TABLE IF EXISTS `service`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `service` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `service_id` varchar(45) NOT NULL,
+  `service` varchar(300) DEFAULT NULL,
+  `price` double DEFAULT NULL,
+  PRIMARY KEY (`service_id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `service`
+--
+
+LOCK TABLES `service` WRITE;
+/*!40000 ALTER TABLE `service` DISABLE KEYS */;
+/*!40000 ALTER TABLE `service` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -351,6 +463,30 @@ LOCK TABLES `vehicle_type` WRITE;
 INSERT INTO `vehicle_type` VALUES (1,'CAR');
 /*!40000 ALTER TABLE `vehicle_type` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `voluntary_excess`
+--
+
+DROP TABLE IF EXISTS `voluntary_excess`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `voluntary_excess` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `voluntary_excess` double DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `voluntary_excess`
+--
+
+LOCK TABLES `voluntary_excess` WRITE;
+/*!40000 ALTER TABLE `voluntary_excess` DISABLE KEYS */;
+/*!40000 ALTER TABLE `voluntary_excess` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -361,4 +497,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-07-05 13:23:53
+-- Dump completed on 2016-07-13 12:26:05
