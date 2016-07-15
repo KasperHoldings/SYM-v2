@@ -4,6 +4,14 @@ jQuery(document).ready(function () {
         controlsContainer: jQuery(".custom-controls-container"),
         customDirectionNav: jQuery(".custom-navigation a")
     });
+    jQuery("#showdateofarrivallabel .input-group-addon").click(function () {
+        jQuery('#showdateofarrivallabel').addClass('field--show-floating-label');
+    });
+    jQuery("#showdateofdeplabel .input-group-addon").click(function () {
+        jQuery('#showdateofdeplabel').addClass('field--show-floating-label');
+    }); 
+    
+    
     jQuery("#valueInput").keypress(function () {
         jQuery('#showValuelabel').addClass('field--show-floating-label');
     });
@@ -22,8 +30,14 @@ jQuery(document).ready(function () {
     jQuery("#email").keypress(function () {
         jQuery('#showemaillabel').addClass('field--show-floating-label');
     });
+    jQuery("#maximumConsecutiveDays").keypress(function () {
+        jQuery('#maximumConsecutiveDayslabel').addClass('field--show-floating-label');
+    });
     jQuery("#mobile").keypress(function () {
         jQuery('#showmobilelabel').addClass('field--show-floating-label');
+    });
+    jQuery("#passport").keypress(function () {
+        jQuery('#showpassportlabel').addClass('field--show-floating-label');
     });
     jQuery("#nic").keypress(function () {
         jQuery('#showniclabel').addClass('field--show-floating-label');
@@ -75,6 +89,14 @@ jQuery(document).ready(function () {
             jQuery('#nav-full').removeClass('active');
         }
     });
+    jQuery('.familyTravel_second .travelproceed').click(function () {
+        var val=jQuery( "#typeOfCover" ).val();
+        if(val==1){
+            window.location.href = "singletrip.html";
+        }else if(val==2){
+            window.location.href = "multitrip.html";
+        }
+    });
     jQuery('.investment_first').click(function () {
         jQuery('.investmentBox_first').show();
         jQuery('.investmentBox_second').hide();
@@ -100,6 +122,12 @@ jQuery(document).ready(function () {
         jQuery('.familyTravel_first').hide();
     });
 
+    jQuery('#dateOfDepartureDatePicker').datetimepicker({
+        format: 'DD/MM/YYYY'
+    });
+    jQuery('#dateOfArrivalDatePicker').datetimepicker({
+        format: 'DD/MM/YYYY'
+    });
     jQuery('#insuranceDetailDatePicker').datetimepicker({
         format: 'DD/MM/YYYY'
     });
@@ -188,7 +216,7 @@ jQuery(document).ready(function () {
                 });
             }
         },
-        sectionsColor: ['#1bbc9b', '#5ADBB5', '#1f1f1f', '#ffffff', '#ececec', '#fff'],
+        sectionsColor: ['#1bbc9b', '#f5f5f5', '#1f1f1f', '#f5f5f5', '#f5f5f5', '#fff'],
         anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
         menu: '#menu',
         css3: true,
@@ -373,11 +401,50 @@ jQuery(document).ready(function () {
             return false; // prevent normal form posting
         }
     });
+    
+    
+    jQuery("#single_trip_travel_info_id").validate({
+        submitHandler: function (form) {
+            if (jQuery(form).valid()) {
+                showSingleTripPersonalInfo();
+                return false; // prevent normal form posting
+            } else {
+                return false; // prevent normal form posting
+            }
+        },
+        errorPlacement: function(error, element) {
+            if (element.attr("name") == "dateOfDepartureSingleTrip" )
+                error.appendTo('#showdateofdeplabel');
+            else if  (element.attr("name") == "dateOfArrivalSingleTrip" )
+                error.appendTo('#showdateofarrivallabel');
+            else
+                error.insertAfter(element);
+            
+          }
+    });
 
+
+    jQuery("#single_trip_personal_info_id").validate({
+        submitHandler: function (form) {
+            if (jQuery(form).valid()) {
+                showSingleTripQuotationInfo();
+                return false; // prevent normal form posting
+            } else {
+                return false; // prevent normal form posting
+            }
+        }
+    });
 });
 
 
-
+function showSingleTripPersonalInfo() {
+    jQuery('#single_trip_travel_information').hide();
+    jQuery('#single_trip_personal_detail').show();
+}
+function showSingleTripQuotationInfo() {
+    jQuery('#single_trip_personal_detail').hide();
+    jQuery('#single_trip_quotation_detail').show();
+}
 function showPersonalDetail() {
     jQuery('#vehicle_detail').hide();
     jQuery('#personal_detail').show();

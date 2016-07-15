@@ -2110,7 +2110,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
     width: 90px;
 }
 .made_easy {
-    background: #ffffff !important;
+    /*background: #ffffff !important;*/
     height: auto;
     /*padding: 40px 0 0;*/
     position: relative;
@@ -2393,7 +2393,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
     border: 7px solid rgba(255, 255, 255, 0.5);
 }
 .testimonials {
-    background: #62caf4 url("../images/peoplebg.png") no-repeat scroll center bottom / 60% auto;
+    /*background: #62caf4 url("../images/peoplebg.png") no-repeat scroll center bottom / 60% auto;*/
     height: auto;
     padding: 0;
 }
