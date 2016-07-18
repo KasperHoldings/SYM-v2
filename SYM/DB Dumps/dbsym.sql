@@ -68,6 +68,35 @@ LOCK TABLES `cover_types` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `graphic_info`
+--
+
+DROP TABLE IF EXISTS `graphic_info`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `graphic_info` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` varchar(60) DEFAULT NULL,
+  `tooltip_msg` varchar(500) DEFAULT NULL,
+  `graphic_info` varchar(500) DEFAULT NULL,
+  `insurance_type_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`),
+  KEY `graphic_info_fk1_idx` (`insurance_type_id`),
+  CONSTRAINT `graphic_info_fk1` FOREIGN KEY (`insurance_type_id`) REFERENCES `insurance_types` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `graphic_info`
+--
+
+LOCK TABLES `graphic_info` WRITE;
+/*!40000 ALTER TABLE `graphic_info` DISABLE KEYS */;
+/*!40000 ALTER TABLE `graphic_info` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `insurance_companies`
 --
 
@@ -108,7 +137,7 @@ CREATE TABLE `insurance_features` (
   PRIMARY KEY (`id`),
   KEY `insurance_features_fk1_idx` (`insurance_id`),
   CONSTRAINT `insurance_features_fk1` FOREIGN KEY (`insurance_id`) REFERENCES `insurance_companies` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -158,9 +187,9 @@ CREATE TABLE `insurance_quotation` (
   KEY `insurance_quotation_fk1_idx` (`cover_type_required`),
   KEY `insurance_quotation_fk2_idx` (`voluntary_excess`),
   KEY `insurance_quotation_fk3_idx` (`purpose`),
-  CONSTRAINT `insurance_quotation_fk3` FOREIGN KEY (`purpose`) REFERENCES `purpose` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `insurance_quotation_fk1` FOREIGN KEY (`cover_type_required`) REFERENCES `cover_types` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `insurance_quotation_fk2` FOREIGN KEY (`voluntary_excess`) REFERENCES `voluntary_excess` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT `insurance_quotation_fk2` FOREIGN KEY (`voluntary_excess`) REFERENCES `voluntary_excess` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `insurance_quotation_fk3` FOREIGN KEY (`purpose`) REFERENCES `purpose` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -200,6 +229,30 @@ CREATE TABLE `insurance_quotation_aditional_covers` (
 LOCK TABLES `insurance_quotation_aditional_covers` WRITE;
 /*!40000 ALTER TABLE `insurance_quotation_aditional_covers` DISABLE KEYS */;
 /*!40000 ALTER TABLE `insurance_quotation_aditional_covers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `insurance_types`
+--
+
+DROP TABLE IF EXISTS `insurance_types`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `insurance_types` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `insurance_type` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `insurance_types`
+--
+
+LOCK TABLES `insurance_types` WRITE;
+/*!40000 ALTER TABLE `insurance_types` DISABLE KEYS */;
+/*!40000 ALTER TABLE `insurance_types` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -497,4 +550,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-07-13 12:26:05
+-- Dump completed on 2016-07-18 16:10:15
