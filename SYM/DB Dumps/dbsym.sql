@@ -232,6 +232,34 @@ LOCK TABLES `insurance_quotation_aditional_covers` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `insurance_type_insurance_company`
+--
+
+DROP TABLE IF EXISTS `insurance_type_insurance_company`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `insurance_type_insurance_company` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `insurance_type_id` int(11) NOT NULL,
+  `insurance_company_id` int(11) NOT NULL,
+  PRIMARY KEY (`insurance_type_id`,`insurance_company_id`),
+  UNIQUE KEY `id_UNIQUE` (`id`),
+  KEY `insurance_type_insurance_company_fk2_idx` (`insurance_company_id`),
+  CONSTRAINT `insurance_type_insurance_company_fk1` FOREIGN KEY (`insurance_type_id`) REFERENCES `vehicle_type` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `insurance_type_insurance_company_fk2` FOREIGN KEY (`insurance_company_id`) REFERENCES `insurance_companies` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `insurance_type_insurance_company`
+--
+
+LOCK TABLES `insurance_type_insurance_company` WRITE;
+/*!40000 ALTER TABLE `insurance_type_insurance_company` DISABLE KEYS */;
+/*!40000 ALTER TABLE `insurance_type_insurance_company` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `insurance_types`
 --
 
@@ -550,4 +578,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-07-18 16:10:15
+-- Dump completed on 2016-07-20 18:11:05
