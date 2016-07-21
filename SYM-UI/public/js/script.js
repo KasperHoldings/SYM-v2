@@ -434,6 +434,17 @@ jQuery(document).ready(function () {
             }
         }
     });
+    
+    jQuery("#travel_group_travel_info_id").validate({
+        submitHandler: function (form) {
+            if (jQuery(form).valid()) {
+                showTravelGroupQuotationInfo();
+                return false; // prevent normal form posting
+            } else {
+                return false; // prevent normal form posting
+            }
+        }
+    });
 });
 
 
@@ -444,6 +455,10 @@ function showSingleTripPersonalInfo() {
 function showSingleTripQuotationInfo() {
     jQuery('#single_trip_personal_detail').hide();
     jQuery('#single_trip_quotation_detail').show();
+}
+function showTravelGroupQuotationInfo() {
+    jQuery('#travel_group_travel_information').hide();
+    jQuery('#travel_group_quotation_detail').show();
 }
 function showPersonalDetail() {
     jQuery('#vehicle_detail').hide();

@@ -452,9 +452,17 @@
                                             <div class="familyTravel_first" style="display: none;">
                                                 <div class="input_field invForm" id="invTermSelect">
                                                     <div class="lable dob"><i class="fa fa-calendar iconpos "></i></div>
-                                                    <div class="info"><span class="b">No of people travelling </span></div>
+                                                    <div class="info"><span class="b">No of People </span></div>
                                                     <div class="inputBox">                                	
-                                                        <select id="invTerm" name="invTerm"><option value="">No of people travelling</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+                                                        <select id="invTerm" name="invTerm"><option value="">No of People</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+                                                    </div>
+                                                    <div id="invdoberr" class="err"></div>
+                                                </div>                                                
+                                                <div class="input_field invForm" id="invTermSelect">
+                                                    <div class="lable dob"><i class="fa fa-globe iconpos"></i></div>
+                                                    <div class="info"><span class="b">Email</span></div>
+                                                    <div class="inputBox">                                	
+                                                        <input id="email" name="email" type='text' placeholder="Email" required/> 
                                                     </div>
                                                     <div id="invdoberr" class="err"></div>
                                                 </div>
@@ -472,35 +480,46 @@
                                                     </div>
                                                     <div id="invdoberr" class="err"></div>
                                                 </div> 
+
+                                                <div class="input_field growth_f invForm">
+                                                    <div class="lable cover"><i class="fa fa-inr iconpos "></i></div>
+                                                    <div id="invLabel" class="info"><span class="b">Sum insured</span></div>
+                                                    <div class="inputBox sumassured"> 
+                                                        <label>Medical</label>    
+                                                        <select required="" name="country" aria-required="true">
+                                                            <option value="">Select</option>
+                                                            <option value="Ketchup">US</option>
+                                                            <option value="Relish">Mrs</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="inputBox sumassured"> 
+                                                        <label>Goods</label>            
+                                                        <select required="" name="country" aria-required="true">
+                                                            <option value="">Select</option>
+                                                            <option value="Ketchup">US</option>
+                                                            <option value="Relish">Mrs</option>
+                                                        </select>
+                                                    </div>                                                    
+                                                    <div id="inverr" class="err"></div>
+                                                </div>                                                
                                                 <div class="input_field ">
                                                     <div class="lable"><i class="fa fa-globe iconpos"></i></div>
-                                                    <div class="info"><span class="b">Destinations</span></div>
-                                                    <div class="inputBox"> 
+                                                    <div class="info"><span class="b">Regions</span></div>
+                                                    <div class="inputBox travel_region"> 
                                                         <div class="inputBox">
-                                                            <select id="invTerm" name="invTerm"><option value="">Destinations</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+                                                            <select id="invTerm" name="invTerm"><option value="">World Wide Excluding US/Asia</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+                                                            <div class="verysmall">*All Regions Excluding Sri Lanka</div>
                                                         </div>
                                                     </div>
                                                     <div class="err"></div>
-                                                </div> 
-                                                <div class="input_field growth_f invForm">
-                                                    <div class="lable cover"><i class="fa fa-inr iconpos "></i></div>
-                                                    <div id="invLabel" class="info"><span class="b">Sum insured for medical</span><span> (Rs)</span> </div>
-                                                    <div class="inputBox"><input type="text" maxlength="11" value="" placeholder="Amount" data-msg="Amount should be between " data-max="200000" data-min="10000" id="invamount" name="invamount"> <span class="fig_lbl none" id="inv_lbl"></span></div>
-                                                    <div id="inverr" class="err"></div>
                                                 </div>
-                                                <div class="input_field growth_f invForm">
-                                                    <div class="lable cover"><i class="fa fa-inr iconpos "></i></div>
-                                                    <div id="invLabel" class="info"><span class="b">Sum insured for loss of goods</span><span> (Rs)</span> </div>
-                                                    <div class="inputBox"><input type="text" maxlength="11" value="" placeholder="Amount" data-msg="Amount should be between " data-max="200000" data-min="10000" id="invamount" name="invamount"> <span class="fig_lbl none" id="inv_lbl"></span></div>
-                                                    <div id="inverr" class="err"></div>
-                                                </div>
-                                                <div class="input_field pro"> <a class="travelproceed proceed" href="javascript:void(0);">Proceed</a><div class="process"><span class="loading style-1"></span><span>Please Wait...</span></div></div>
+                                                <div class="input_field pro"> <a class="travelproceed proceed" href="travelgroup.html">Proceed</a><div class="process"><span class="loading style-1"></span><span>Please Wait...</span></div></div>
 
                                             </div>
                                             <div class="familyTravel_second" >
                                                 <div class="input_field invForm">
                                                     <div class="lable dob"><i class="fa fa-birthday-cake iconpos "></i></div>
-                                                    <div class="info"><span class="b">Date of Birth</span></div>
+                                                    <div class="info"><span class="b">DOB</span></div>
                                                     <div class="inputBox dobBox">                                	
                                                         <select id="invTerm" name="invTerm"><option value="">Date</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
                                                         <select id="invTerm" name="invTerm"><option value="">Month</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
@@ -517,7 +536,7 @@
                                                     </div>
                                                     <div id="invdoberr" class="err"></div>
                                                 </div>
-                                                
+
                                                 <div class="input_field invForm" id="invTermSelect">
                                                     <div class="lable dob"><i class="fa fa-calendar iconpos "></i></div>
                                                     <div class="info"><span class="b">Type of Cover</span></div>
@@ -530,7 +549,7 @@
                                                     </div>
                                                     <div id="invdoberr" class="err"></div>
                                                 </div>
-                                                
+
                                                 <div class="input_field pro"> <a class="travelproceed proceed" href="javascript:void(0);">Proceed</a><div class="process"><span class="loading style-1"></span><span>Please Wait...</span></div></div>
 
                                             </div>

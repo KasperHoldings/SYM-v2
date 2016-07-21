@@ -19,6 +19,7 @@
         <link rel="stylesheet" type="text/css" href="../../css/custom.css" />
         <link rel="stylesheet" type="text/css" href="../../css/flexslider.css" />
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap-datetimepicker.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/footable.core.css" />
 
     </head>
     <body>
@@ -66,150 +67,169 @@
             </nav>
             <div class="insurance_info topMainPadding">
                 <div class="insurance_text">
-                    Single Trip
+                    Family or Group Trip
                 </div>
                 <ul class="breadcrumbc">
                     <li class="breadcrumb__item breadcrumb__item--current">
-                        Travel Information
-                    </li>
-                    <li class="breadcrumb__item breadcrumb__item--blank">
-                        Personal Information
+                        Group Information
                     </li>
                     <li class="breadcrumb__item breadcrumb__item--blank">
                         Quotation
                     </li>
                 </ul>
-                <div id="single_trip_travel_information" class="vehicle_detail_bg">
-                    <form id="single_trip_travel_info_id" name="single_trip" action="checkout.html">
-                        <div class="row">                          
-                            <div class="section section--shipping-address">
-                                <div class="col-md-6 paddleftzero">
-                                    <div id="showdateofdeplabel" class="field__input-wrapper">
-                                        <label for="checkout_shipping_address_country" class="field__label">Date of Departure</label>
-                                        <div class='input-group date' id='dateOfDepartureDatePicker'>
-                                            <input id="dateOfDepartureSingleTrip" name="dateOfDepartureSingleTrip" type='text' class="field__input" placeholder="Date of Departure" required/>
-                                            <span class="input-group-addon">
-                                                <span class="glyphicon glyphicon-calendar"></span>
-                                            </span>
+                <div id="travel_group_travel_information" class="vehicle_detail_bg">
+                    <form id="travel_group_travel_info_id" name="travel_group" action="checkout.html">
+                        <table class="table footable">
+                            <thead>
+                                <tr>
+                                    <th data-toggle="true" class="footable-first-column">
+                                        Title
+                                    </th>
+                                    <th>
+                                        First Name
+                                    </th>
+                                    <th data-hide="phone">
+                                        Last Name
+                                    </th>
+                                    <th data-hide="phone">
+                                        Email
+                                    </th>
+                                    <th data-hide="phone">
+                                        Mobile
+                                    </th>
+                                    <th data-hide="phone">
+                                        DOB
+                                    </th>
+                                    <th data-hide="phone">
+                                        Passport No
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="selected">
+                                    <td>
+                                        <select name="title">
+                                            <option value="Mr">Mr</option>
+                                            <option value="Ms">Ms</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input id="first_name" name="first_name" type="text"  class="textbox"  required />
+                                    </td>
+                                    <td>
+                                        <input id="last_name" name="last_name" type="text"  class="textbox"  required />
+                                    </td>
+                                    <td>
+                                        <input id="email" name="email" type="text"  class="textbox" required />
+                                    </td>
+                                    <td>
+                                        <input id="mobile" name="mobile" type="text"  class="textbox" required />
+                                    </td>
+                                    <td>
+                                        <div style="position: relative">
+                                            <input id="startdate" name="startdate" type='text'  class="textbox" required/>    
                                         </div>
-                                    </div> 
-
-                                </div>
-                                <div class="col-md-6 paddrightzero">
-                                    <div id="showdateofarrivallabel" class="field__input-wrapper">
-                                        <label for="checkout_shipping_address_country" class="field__label">Date of Arrival</label>
-                                        <div class='input-group date' id='dateOfArrivalDatePicker'>
-                                            <input id="dateOfArrivalSingleTrip" name="dateOfArrivalSingleTrip" type='text' class="field__input" placeholder="Date of Arrival" required/>
-                                            <span class="input-group-addon">
-                                                <span class="glyphicon glyphicon-calendar"></span>
-                                            </span>
+                                    </td>
+                                    <td>
+                                        <input id="passport_no" name="passport_no" type="text"  class="textbox"  required />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="title">
+                                            <option value="Mr">Mr</option>
+                                            <option value="Ms">Ms</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input id="first_name1" name="first_name" type="text"  class="textbox"  required />
+                                    </td>
+                                    <td>
+                                        <input id="last_name2" name="last_name" type="text"  class="textbox"  required />
+                                    </td>
+                                    <td>
+                                        <input id="email2" name="email" type="text"  class="textbox" required />
+                                    </td>
+                                    <td>
+                                        <input id="mobile2" name="mobile" type="text"  class="textbox" required />
+                                    </td>
+                                    <td>
+                                        <div style="position: relative">
+                                            <input id="startdate2" name="startdate" type='text'  class="textbox" required/>    
                                         </div>
-                                    </div> 
-                                </div>                                
-                                <div class="col-md-12 paddleftzero paddrightzero marginBottom10 mobilecountry1">
-                                    <div class="field field--required field--three-eights field--show-floating-label paddzero">
-                                        <div class="field__input-wrapper field__input-wrapper--select">
-                                            <label for="checkout_shipping_address_country" class="field__label">Region</label>
-                                            <select name="country" class="field__input field__input--select" required>
-                                                <option value="">World wide excluding US/Asia </option>
-                                                <option value="Ketchup">US</option>
-                                                <option value="Relish">Mrs</option>
-                                            </select>                                            
+                                    </td>
+                                    <td>
+                                        <input id="passport_no2" name="passport_no" type="text"  class="textbox"  required />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="title">
+                                            <option value="Mr">Mr</option>
+                                            <option value="Ms">Ms</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input id="first_name3" name="first_name" type="text"  class="textbox"  required />
+                                    </td>
+                                    <td>
+                                        <input id="last_name3" name="last_name" type="text"  class="textbox"  required />
+                                    </td>
+                                    <td>
+                                        <input id="email3" name="email" type="text"  class="textbox" required />
+                                    </td>
+                                    <td>
+                                        <input id="mobile3" name="mobile" type="text"  class="textbox" required />
+                                    </td>
+                                    <td>
+                                        <div style="position: relative">
+                                            <input id="startdate3" name="startdate" type='text'  class="textbox" required/>    
                                         </div>
-                                        <div class="verysmall">*All Regions Excluding Sri Lanka</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 paddleftzero mobilecountry marginBottom10">
-                                    <div class="field field--required field--three-eights field--show-floating-label paddzero">
-                                        <div class="field__input-wrapper field__input-wrapper--select">
-                                            <label for="checkout_shipping_address_country" class="field__label">Medical</label>
-                                            <select name="medical" class="field__input field__input--select" required>
-                                                <option value="">Select Medical</option>
-                                                <option value="Ketchup">500</option>
-                                                <option value="Relish">1000</option>
-                                            </select>
+                                    </td>
+                                    <td>
+                                        <input id="passport_no3" name="passport_no" type="text"  class="textbox"  required />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="title">
+                                            <option value="Mr">Mr</option>
+                                            <option value="Ms">Ms</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input id="first_name4" name="first_name" type="text"  class="textbox"  required />
+                                    </td>
+                                    <td>
+                                        <input id="last_name4" name="last_name" type="text"  class="textbox"  required />
+                                    </td>
+                                    <td>
+                                        <input id="email4" name="email" type="text"  class="textbox" required />
+                                    </td>
+                                    <td>
+                                        <input id="mobile4" name="mobile" type="text"  class="textbox" required />
+                                    </td>
+                                    <td>
+                                        <div style="position: relative">
+                                            <input id="startdate4" name="startdate" type='text'  class="textbox" required/>    
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 paddrightzero mobilecountry marginBottom10">
-                                    <div class="field field--required field--three-eights field--show-floating-label paddzero">
-                                        <div class="field__input-wrapper field__input-wrapper--select">
-                                            <label for="checkout_shipping_address_country" class="field__label">Goods</label>
-                                            <select name="goods" class="field__input field__input--select" required>
-                                                <option value="">Select Goods</option>
-                                                <option value="Ketchup">500</option>
-                                                <option value="Relish">1000</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div style="float: left;width: 100%;" class="row step__footer">
-                                <button class="step__footer__continue-btn btn " type="submit" name="button">
-                                    <span class="btn__content">Proceed</span>
-                                </button>
-
-                            </div>
-                        </div>                        
+                                    </td>
+                                    <td>
+                                        <input id="passport_no4" name="passport_no" type="text"  class="textbox"  required />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row">
+                            <button class="step__footer__continue-btn btn " type="submit" name="button">
+                                <span class="btn__content">Process</span>
+                            </button>
+                        </div>
                     </form>
                 </div>    
-                <div id="single_trip_personal_detail" class="vehicle_detail_bg" style="display: none;">
-                    <form id="single_trip_personal_info_id" name="personal_detail" action="">
-                        <div class="row">
-                            <div class="marginBottom10 field field--required field--three-eights field--show-floating-label paddleftzero paddrightzero">
-                                <div class="field__input-wrapper field__input-wrapper--select">
-                                    <label for="checkout_shipping_address_country" class="field__label">Title</label>
-                                    <select name="title" class="field__input field__input--select" required>
-                                        <option value="">Select Title</option>
-                                        <option value="Ketchup">Mr</option>
-                                        <option value="Relish">Mrs</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div id="showfirstnamelabel" class="field__input-wrapper">
-                                <label for="checkout_name" class="field__label">First Name</label>
-                                <input id="firstname" name="first_name" type="text" placeholder="First Name" class="field__input" required />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div id="showlastnamelabel" class="field__input-wrapper">
-                                <label for="checkout_name" class="field__label">Last Name</label>
-                                <input id="lastname" name="last_name" type="text" placeholder="Last Name" class="field__input" required />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div id="showmobilelabel" class="field__input-wrapper">
-                                <label for="checkout_mobile" class="field__label">Mobile</label>
-                                <input id="mobile" name="mobile" type="text" placeholder="Mobile" class="field__input" required />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div id="showpassportlabel" class="field__input-wrapper">
-                                <label for="checkout_nic" class="field__label">Passport</label>
-                                <input id="passport" name="passport" type="text" placeholder="Passport" class="field__input" required />
-                            </div>
-                        </div>
-                        <div class="row insuranceButtonMarginTop"> 
-                            <div style="float: left;width: 100%;" class="row step__footer">
 
-                                <button class="step__footer__continue-btn btn " type="submit" name="button">
-                                    <span class="btn__content">Process</span>
-                                </button>
-                                <a class="step__footer__previous-link" href="insurance.html">
-                                    <svg viewBox="0 0 6.7 11.3" height="11.3" width="6.7" xmlns="http://www.w3.org/2000/svg" class="previous-link__icon icon--chevron icon">
-                                    <path d="M6.7 1.1l-1-1.1-4.6 4.6-1.1 1.1 1.1 1 4.6 4.6 1-1-4.6-4.6z"/>
-                                    </svg>
-                                    Return to Previous Page
-                                </a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div id="single_trip_quotation_detail" class="vehicle_detail_bg" style="display: none;">
-                    <form id="single_trip_quation_info_id" name="personal_detail" action="">
+                <div id="travel_group_quotation_detail" class="vehicle_detail_bg" style="display: none;">
+                    <form id="travel_group_quation_info_id" name="personal_detail" action="">
                         <div class="row quoteColor">
                             <div class="col-lg-3 quoteColor_wrapper">
                                 <select name="">
@@ -447,7 +467,7 @@
                         </div>
                         <div class="row insuranceButtonMarginTop"> 
                             <div style="float: left;width: 100%;" class="row step__footer">                            
-                                <a class="step__footer__previous-link" href="insurance.html">
+                                <a class="step__footer__previous-link" href="travelgroup.html">
                                     <svg viewBox="0 0 6.7 11.3" height="11.3" width="6.7" xmlns="http://www.w3.org/2000/svg" class="previous-link__icon icon--chevron icon">
                                     <path d="M6.7 1.1l-1-1.1-4.6 4.6-1.1 1.1 1.1 1 4.6 4.6 1-1-4.6-4.6z"/>
                                     </svg>
@@ -538,11 +558,14 @@
         <script type="text/javascript" src="../../js/jquery.validate.js"></script>
         <script type="text/javascript" src="../../js/moment-with-locales.js"></script>
         <script type="text/javascript" src="../../js/bootstrap-datetimepicker.js"></script>
+        <script type="text/javascript" src="../../js/footable.js"></script>
         <script type="text/javascript" src="../../js/jquery.flexslider.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
         <script type="text/javascript" src="../../js/script.js"></script>
         <script>
             $('.selectpicker').selectpicker();
+            $('.footable').footable();
+
         </script>
     </body>
 </html>
