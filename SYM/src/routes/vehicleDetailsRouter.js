@@ -72,7 +72,6 @@ exports.edit = function (req, res) {
             //console.log(rows[0]);
             res.render('userregistrations/edit', {pageTitle: 'Edit Customers - Node.js', data: rows[0], id: id});
 
-
         });
 
         //console.log(query.sql);
