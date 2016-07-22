@@ -134,8 +134,11 @@ CREATE TABLE `insurance_features` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `insurance_id` int(11) DEFAULT NULL,
   `feature` varchar(200) DEFAULT NULL,
+  `insurance_type` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `insurance_features_fk1_idx` (`insurance_id`),
+  KEY `insurance_features_fk2_idx` (`insurance_type`),
+  CONSTRAINT `insurance_features_fk2` FOREIGN KEY (`insurance_type`) REFERENCES `insurance_types` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `insurance_features_fk1` FOREIGN KEY (`insurance_id`) REFERENCES `insurance_companies` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -146,7 +149,7 @@ CREATE TABLE `insurance_features` (
 
 LOCK TABLES `insurance_features` WRITE;
 /*!40000 ALTER TABLE `insurance_features` DISABLE KEYS */;
-INSERT INTO `insurance_features` VALUES (3,1,'Taxi allowance of Rs.2000/= per day '),(4,1,'Rs.1,000,000/= Personal Accident Cover '),(5,1,'Rs.10,000/= worth of free towing '),(6,2,'100% Air Bag Cover '),(7,2,'Rs.20,000/= worth of Hospitalisation Cover '),(8,2,'Taxi allowance of Rs.1000/= per day '),(11,3,'100% Air Bag Cover '),(12,3,'Rs.30,000/= worth of Hospitalisation Cover '),(13,3,'Taxi allowance of Rs.2000/= per day '),(16,4,'100% Air Bag Cover '),(17,4,'Rs.300,000/= worth of Hospitalisation Cover '),(18,4,'Taxi allowance of Rs.2000/= per day '),(21,5,'100% Air Bag Cover '),(22,5,'Rs.300,000/= worth of Hospitalisation Cover '),(23,5,'Taxi allowance of Rs.2000/= per day ');
+INSERT INTO `insurance_features` VALUES (3,1,'Taxi allowance of Rs.2000/= per day ',1),(4,1,'Rs.1,000,000/= Personal Accident Cover ',1),(5,1,'Rs.10,000/= worth of free towing ',1),(6,2,'100% Air Bag Cover ',1),(7,2,'Rs.20,000/= worth of Hospitalisation Cover ',1),(8,2,'Taxi allowance of Rs.1000/= per day ',1),(11,3,'100% Air Bag Cover ',1),(12,3,'Rs.30,000/= worth of Hospitalisation Cover ',1),(13,3,'Taxi allowance of Rs.2000/= per day ',1),(16,4,'100% Air Bag Cover ',1),(17,4,'Rs.300,000/= worth of Hospitalisation Cover ',1),(18,4,'Taxi allowance of Rs.2000/= per day ',1),(21,5,'100% Air Bag Cover ',1),(22,5,'Rs.300,000/= worth of Hospitalisation Cover ',1),(23,5,'Taxi allowance of Rs.2000/= per day ',1);
 /*!40000 ALTER TABLE `insurance_features` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -243,7 +246,7 @@ CREATE TABLE `insurance_types` (
   `insurance_type` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -252,6 +255,7 @@ CREATE TABLE `insurance_types` (
 
 LOCK TABLES `insurance_types` WRITE;
 /*!40000 ALTER TABLE `insurance_types` DISABLE KEYS */;
+INSERT INTO `insurance_types` VALUES (1,'Vehicle'),(2,'Travel');
 /*!40000 ALTER TABLE `insurance_types` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -550,4 +554,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-07-18 16:10:15
+-- Dump completed on 2016-07-22 19:07:51
