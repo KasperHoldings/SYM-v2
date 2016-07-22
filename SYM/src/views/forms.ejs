@@ -17,8 +17,8 @@
     <link rel="stylesheet" type="text/css" href="../../../css/style.css"/>
     <link rel="stylesheet" type="text/css" href="../../../css/format.css"/>
     <link rel="stylesheet" type="text/css" href="../../../css/custom.css"/>
-
-
+    <link rel="stylesheet" type="text/css" href="../../../css/flexslider.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-datetimepicker.css"/>
 </head>
 <body>
 <div class="container-fluid">
@@ -131,9 +131,9 @@
                             <label for="year" class="field__label">Year</label>
                             <select name="year" class="field__input field__input--select" required>
                                 <option value="">Select Year</option>
-                                <%for(var x = 1910; x<= 2016; x++){%>
-                                <option value="<%= x %>"><%=x%></option>
-                                <%}%>
+                                <% for(var x = 1910; x <= 2016; x++){ %>
+                                <option value="<%= x %>"><%= x %></option>
+                                <% } %>
                             </select>
                         </div>
                     </div>
@@ -149,7 +149,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <input type="hidden" value="<%=hidden %>" name="insurance_quotation">
+                    <input type="hidden" value="<%= hidden %>" name="insurance_quotation">
                     <button class="step__footer__continue-btn btn " type="submit" name="button">
                         <span class="btn__content">Process</span>
                     </button>
@@ -206,7 +206,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <input type="hidden" value="<%=hidden %>" name="insurance_quotation">
+                    <input type="hidden" value="<%= hidden %>" name="insurance_quotation">
 
                     <button class="step__footer__continue-btn btn " type="submit" name="button">
                         <span class="btn__content">Process</span>
@@ -215,16 +215,17 @@
             </form>
         </div>
         <% } else if (form == 'insuranceDetails') { %>
-        <div class="vehicle_detail_bg" >
-            <form id="insurance_detail_id" name="insurance_detail" action="">
+        <div class="vehicle_detail_bg">
+            <form name="insurance_detail" action="" method="post">
                 <div class="row">
                     <div class="field field--required field--three-eights field--show-floating-label">
                         <div class="field__input-wrapper field__input-wrapper--select">
                             <label for="checkout_shipping_address_country" class="field__label">No Claims Bonus</label>
-                            <select name="noclaimbonus" class="field__input field__input--select" required>
+                            <select name="noclaim_bonus" class="field__input field__input--select" required>
                                 <option value="">Select No Claims Bonus</option>
-                                <option value="Ketchup">Ketchup</option>
-                                <option value="Relish">Relish</option>
+                                <% for(var x = 1; x < 5; x++) { %>
+                                <option value="<%= x %>"><%= x %> year</option>
+                                <% } %>
                             </select>
                         </div>
                     </div>
@@ -233,10 +234,11 @@
                     <div class="field field--required field--three-eights field--show-floating-label">
                         <div class="field__input-wrapper field__input-wrapper--select">
                             <label for="checkout_shipping_address_country" class="field__label">Current Insurer</label>
-                            <select id="currentinsurer" class="field__input field__input--select" required>
+                            <select name="insurance_company" class="field__input field__input--select" required>
                                 <option value="">Select Current Insurer</option>
-                                <option value="Ketchup">Ketchup</option>
-                                <option value="Relish">Relish</option>
+                                <% for(var y = 0; y < insurance_companies.length; y++) { %>
+                                <option value="<%= insurance_companies[y].id %>"><%= insurance_companies[y].insurance_name %></option>
+                                <% } %>
                             </select>
                         </div>
                     </div>
@@ -244,24 +246,25 @@
                 <div class="row">
                     <div class="field field--required field--three-eights field--show-floating-label">
                         <div class="field__input-wrapper field__input-wrapper--select">
-                            <label for="checkout_shipping_address_country" class="field__label">Current Insurer</label>
-                            <select id="covertyperequired" class="field__input field__input--select" required>
+                            <label for="checkout_shipping_address_country" class="field__label">Cover Type</label>
+                            <select class="field__input field__input--select" name="cover_type" required>
                                 <option value="">Select Cover Type Required</option>
-                                <option value="Ketchup">Ketchup</option>
-                                <option value="Relish">Relish</option>
+                                <% for(var z = 0; z < cover_types.length; z++) { %>
+                                <option value="<%= cover_types[z].id %>"><%= cover_types[z].cover_type %></option>
+                                <% } %>
                             </select>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="field field--required field--three-eights field--show-floating-label">
-                        <div class="field__input-wrapper field__input-wrapper--select">
+                        <div class="field__input-wrapper">
                             <label for="checkout_shipping_address_country" class="field__label">Start Date</label>
-                            <select id="startdate" class="field__input field__input--select" required>
-                                <option value="">Select Start Date</option>
-                                <option value="Ketchup">Ketchup</option>
-                                <option value="Relish">Relish</option>
-                            </select>
+                            <!--<select id="startdate" class="field__input field__input&#45;&#45;select" required>-->
+                            <!--<option value="">Select Start Date</option>-->
+                            <!---->
+                            <!--</select>-->
+                            <input type="date" name="start_date" class="field__input">
                         </div>
                     </div>
                 </div>
@@ -269,10 +272,11 @@
                     <div class="field field--required field--three-eights field--show-floating-label">
                         <div class="field__input-wrapper field__input-wrapper--select">
                             <label for="checkout_shipping_address_country" class="field__label">Voluntary Excess</label>
-                            <select id="vouluntaryexcess" class="field__input field__input--select" required>
+                            <select name="voluntary_excess" class="field__input field__input--select" required>
                                 <option value="">Select Voluntary Excess</option>
-                                <option value="Ketchup">Ketchup</option>
-                                <option value="Relish">Relish</option>
+                                <% for(var z = 0; z < voluntary_excess.length; z++) { %>
+                                <option value="<%= voluntary_excess[z].id %>"><%= voluntary_excess[z].voluntary_excess %></option>
+                                <% } %>
                             </select>
                         </div>
                     </div>
@@ -281,10 +285,11 @@
                     <div class="field field--required field--three-eights field--show-floating-label">
                         <div class="field__input-wrapper field__input-wrapper--select">
                             <label for="checkout_shipping_address_country" class="field__label">Purpose</label>
-                            <select id="purpose" class="field__input field__input--select" required>
+                            <select name="purpose" class="field__input field__input--select" required>
                                 <option value="">Select Purpose</option>
-                                <option value="Ketchup">Ketchup</option>
-                                <option value="Relish">Relish</option>
+                                <% for(var z = 0; z < purposes.length; z++) { %>
+                                <option value="<%= purposes[z].id %>"><%= purposes[z].purpose %></option>
+                                <% } %>
                             </select>
                         </div>
                     </div>
@@ -292,22 +297,118 @@
                 <div class="row">
 
                     <div class="radiotype">
-                        <label class="control text">Autorise Agent Repair:</label>
+                        <label class="control text">Authorize Agent Repair:</label>
                         <label class="radio">
-                            <input type="radio" class="rad" name="termSmoke" value="1">
+                            <input type="radio" class="rad" name="authorise_agent_repair" value="1">
                             <span class="outer"><span class="inner"></span></span>Yes </label>
                         <label class="radio">
-                            <input type="radio" class="rad" name="termSmoke" checked="" value="0">
+                            <input type="radio" class="rad" name="authorise_agent_repair" checked="" value="0">
                             <span class="outer"><span class="inner"></span></span>No</label>
                     </div>
-                    <div class="row">
-                        <button class="step__footer__continue-btn btn " type="submit" name="button">
-                            <span class="btn__content">Process</span>
-                        </button>
-                    </div>
+                </div>
+                <div class="row">
+                    <button class="step__footer__continue-btn btn " type="submit" name="button">
+                        <span class="btn__content">Process</span>
+                    </button>
+                </div>
             </form>
         </div>
         <% } %>
+        <% if (form === 'quotation') { %>
+        <div id="quotation_detail" class="vehicle_detail_bg">
+            <form id="quotation_detail_id" name="personal_detail" action="">
+                <div class="row quoteColor">
+                    <div class="col-lg-3 quoteColor_wrapper">
+                        <select name="">
+                            <option selected="">Select Insurance ...</option>
+                            <% if(typeof companies !== 'undefined'){ %>
+                            <% for(var j = 0; j < companies.length; j++) { %>
+
+                            <option value="<%= companies[j].id %>"><%= companies[j].insurance_name %></option>
+
+                            <% } %>
+                            <% } %>
+
+                        </select>
+                    </div>
+
+                    <% for(var q = 0 ; q < quotations.length; q++) { %>
+
+                    <div class="col-lg-1">
+                        <span id="credit_card_verification_value_tooltip" tabindex="0"
+                              class="field__icon icon icon--question has-tooltip" role="tooltip">
+                            <img src="../../../images/<%= quotations[q].graphic_info %>"/>
+                            <span class="tooltip">
+                                <span data-cvv-tooltip="unknown">
+                                    3-digit security code usually found on the back of your card. American Express cards have a 4-digit code located on the front.
+                                </span>
+                                <span data-cvv-tooltip="amex" class="hidden">
+                                    4-digit security code on the front of your card
+                                </span>
+                                <span data-cvv-tooltip="other" class="hidden">
+                                    3-digit security code on the back of your card
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+
+                    <% } %>
+                    <div class="col-lg-2">
+
+                    </div>
+                </div>
+
+                <%
+                    var m = 0;
+                for(var h = 0; h < quotations.length; h++ ){
+                    var company_id = quotations.company_id;
+                %>
+
+                <%
+                if(m != company_id){
+                    m = company_id;
+                %>
+                <div class="row quoteColor table-align-verticle <%= quotations[h].graphic_info == 'sdfsdfsdf' ? 'selected has-tooltip' : '' %>">
+                    <div class="col-lg-3">
+                        <img src="../../../images/<%= quotations[h].graphic_info %>" width="100%"/>
+                    </div>
+                    <% } else { %>
+
+                    <div class="col-lg-1">
+                        <%= quotations[h].insurance_feature %>
+                    </div>
+
+
+                <% } %>
+
+                <% } %>
+                </div>
+                <div class="col-lg-2">
+                    <a id="nextPage" class="nextPage" href="javascript:showVehicleDetail()">
+
+                        <div class="Plan-cardRate-fixed">20,000</div>
+                    </a>
+
+                    <div class="successful_charge">Per successful card charge</div>
+                </div>
+
+                <div class="row insuranceButtonMarginTop">
+                    <div style="float: left;width: 100%;" class="row step__footer">
+                        <a class="step__footer__previous-link" href="insurance.html">
+                            <svg viewBox="0 0 6.7 11.3" height="11.3" width="6.7" xmlns="http://www.w3.org/2000/svg"
+                                 class="previous-link__icon icon--chevron icon">
+                                <path d="M6.7 1.1l-1-1.1-4.6 4.6-1.1 1.1 1.1 1 4.6 4.6 1-1-4.6-4.6z"/>
+                            </svg>
+                            Return to Previous Page
+                        </a>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+        <% } %>
+        <!--->
     </div>
 </div>
 
@@ -393,10 +494,16 @@
 <script type="text/javascript" src="../../../js/css3-animate-it.js"></script>
 <script type="text/javascript" src="../../../js/jquery.validate.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+
+<script type="text/javascript" src="../../../js/moment-with-locales.js"></script>
+<script type="text/javascript" src="../../../js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="../../../js/jquery.flexslider.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
 <script type="text/javascript" src="../../../js/script.js"></script>
+
 <script type="text/javascript">
     $(document).ready(function () {
-
 
         $('#make').change(function () {
             var form = {

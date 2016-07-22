@@ -37,7 +37,7 @@ var vehicleRegRouter = require('./src/routes/vehicleRegRouter');
 var vehicleDetailsRouter = require('./src/routes/vehicleDetailsRouter');
 var personalDetailsRouter = require('./src/routes/personalDetailsRouter');
 var insuranceDetailsRouter = require('./src/routes/insuranceDetailsRouter');
-
+var insuranceQuotationRouter = require('./src/routes/insuranceQuotationRouter');
 
 app.use(express.static('public'));
 app.set('views', './src/views');
@@ -92,7 +92,9 @@ app.get('/vehicle/car/insuranceDetails/delete/:id', insuranceDetailsRouter.delet
 app.get('/vehicle/car/insuranceDetails/edit/:id', insuranceDetailsRouter.edit);
 app.post('/vehicle/car/insuranceDetails/edit/:id',insuranceDetailsRouter.saveEdit);
 
-
+//Vehicle Router - Quotation
+app.get('/vehicle/car/insurance/quotation', insuranceQuotationRouter.get);
+//app.post('/vehicle/car/insurance/quotation/create', insuranceQuotationRouter.save);
 
 //Index
 app.get('/', function (req, res) {

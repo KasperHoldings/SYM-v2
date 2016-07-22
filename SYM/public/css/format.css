@@ -1310,7 +1310,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
     left: -63px !important;
     top: -68px !important;
 }
-.investment-bg {
+.investment-bg, .term-bg{
     margin-top: -38px;
 }
 .health-bg .countryCode_formobile {
@@ -1326,12 +1326,6 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
 }
 .health-bg .select30_per {
     width: 30%;
-}
-.health-bg .input_field {
-    margin: 10px 0 !important;
-}
-.health-bg .input_field:first-child {
-    margin: 10px 0 !important;
 }
 .health-bg .input_field:last-child {
     margin: 0 0 10px !important;
@@ -1407,7 +1401,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
 .travel-bg .dates, .health-bg .dates, .healthMember_add .dates {
     width: 22% !important;
 }
-.travel-bg .dates label, .health-bg .dates label, .healthMember_add .dates label {
+.travel-bg .dates label, .health-bg .dates label, .healthMember_add .dates label, .investmentBox_second .dates label {
     color: #d0d0d0;
     font-size: 11px;
     font-weight: 400;
@@ -1415,7 +1409,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
     position: absolute;
     top: 10px;
 }
-.travel-bg .dates input, .health-bg .dates input, .healthMember_add .dates input {
+.travel-bg .dates input, .health-bg .dates input, .healthMember_add .dates input, .investmentBox_second .dates input {
     font: 400 12px/16px "SYM";
     height: 20px !important;
     margin-top: 21px;
@@ -1729,9 +1723,6 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
 }
 .landingScreen .formarea .rightTab .box_value, .disForm .rightContent .box_value {
     background: #eeeeee;
-    left: 0;
-    padding: 0 45px;
-    position: absolute;
     width: 100%;
     z-index: 999;
 }
@@ -1817,7 +1808,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
     position: relative;
     width: 55%;
 }
-.landingScreen .formarea .rightTab .input_field .inputBox input, .disForm .rightContent .input_field .inputBox input {
+.landingScreen .formarea .rightTab .input_field .inputBox input, .disForm .rightContent .input_field .inputBox input,.investmentBox_second .inputBox input {
     border: medium none;
     box-sizing: border-box;
     display: table-cell;
@@ -2119,7 +2110,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
     width: 90px;
 }
 .made_easy {
-    background: #ffffff !important;
+    /*background: #ffffff !important;*/
     height: auto;
     /*padding: 40px 0 0;*/
     position: relative;
@@ -2402,7 +2393,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
     border: 7px solid rgba(255, 255, 255, 0.5);
 }
 .testimonials {
-    background: #62caf4 url("../images/peoplebg.png") no-repeat scroll center bottom / 60% auto;
+    /*background: #62caf4 url("../images/peoplebg.png") no-repeat scroll center bottom / 60% auto;*/
     height: auto;
     padding: 0;
 }

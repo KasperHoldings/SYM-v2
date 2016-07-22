@@ -63,7 +63,9 @@ exports.save = function(req,res){
 
         var data = {
 
-            name    : input.title + ' ' + input.first_name + ' ' + input.last_name,
+            title    : input.title,
+            first_name : input.first_name,
+            last_name: input.last_name,
             email   : input.email,
             mobile  : input.mobile,
             nic   : input.nic

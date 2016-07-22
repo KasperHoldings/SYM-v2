@@ -1,4 +1,26 @@
 jQuery(document).ready(function () {
+    jQuery('.flexslider').flexslider({
+        animation: "slide",
+        controlsContainer: jQuery(".custom-controls-container"),
+        customDirectionNav: jQuery(".custom-navigation a")
+    });
+    jQuery("#showdateofarrivallabel .input-group-addon").click(function () {
+        jQuery('#showdateofarrivallabel').addClass('field--show-floating-label');
+    });
+    jQuery("#showdateofdeplabel .input-group-addon").click(function () {
+        jQuery('#showdateofdeplabel').addClass('field--show-floating-label');
+    }); 
+    
+    
+    jQuery("#valueInput").keypress(function () {
+        jQuery('#showValuelabel').addClass('field--show-floating-label');
+    });
+    jQuery("#startDateInsurance").keypress(function () {
+        jQuery('#showstartdatelabel').addClass('field--show-floating-label');
+    });
+    jQuery("#showstartdatelabel .input-group-addon").click(function () {
+        jQuery('#showstartdatelabel').addClass('field--show-floating-label');
+    });
     jQuery("#firstname").keypress(function () {
         jQuery('#showfirstnamelabel').addClass('field--show-floating-label');
     });
@@ -8,13 +30,19 @@ jQuery(document).ready(function () {
     jQuery("#email").keypress(function () {
         jQuery('#showemaillabel').addClass('field--show-floating-label');
     });
+    jQuery("#maximumConsecutiveDays").keypress(function () {
+        jQuery('#maximumConsecutiveDayslabel').addClass('field--show-floating-label');
+    });
     jQuery("#mobile").keypress(function () {
         jQuery('#showmobilelabel').addClass('field--show-floating-label');
+    });
+    jQuery("#passport").keypress(function () {
+        jQuery('#showpassportlabel').addClass('field--show-floating-label');
     });
     jQuery("#nic").keypress(function () {
         jQuery('#showniclabel').addClass('field--show-floating-label');
     });
-    
+
     jQuery("#company").keypress(function () {
         jQuery('#showcompanylabel').addClass('field--show-floating-label');
     });
@@ -32,23 +60,23 @@ jQuery(document).ready(function () {
     });
     jQuery("#checkout_reduction_code").keyup(function () {
         var inp = jQuery("#checkout_reduction_code").val();
-        if(jQuery.trim(inp).length > 0)
+        if (jQuery.trim(inp).length > 0)
         {
-           jQuery('#checkout_reduction_code_id button').removeClass('btn--disabled');
-        }else{
+            jQuery('#checkout_reduction_code_id button').removeClass('btn--disabled');
+        } else {
             jQuery('#checkout_reduction_code_id button').addClass('btn--disabled');
-        }        
+        }
     });
     jQuery('input:radio[name="checkout"]').change(
-        function(){
-            if (this.checked && this.value == '18551425') {
-                jQuery('#payment-gateway-subfields-18551425').removeClass('hidden');
-                jQuery('#payment-gateway-subfields-6692801').addClass('hidden');
-            }else if(this.checked && this.value == '6692801'){
-                jQuery('#payment-gateway-subfields-18551425').addClass('hidden');
-                jQuery('#payment-gateway-subfields-6692801').removeClass('hidden');
-            }
-    });
+            function () {
+                if (this.checked && this.value == '18551425') {
+                    jQuery('#payment-gateway-subfields-18551425').removeClass('hidden');
+                    jQuery('#payment-gateway-subfields-6692801').addClass('hidden');
+                } else if (this.checked && this.value == '6692801') {
+                    jQuery('#payment-gateway-subfields-18551425').addClass('hidden');
+                    jQuery('#payment-gateway-subfields-6692801').removeClass('hidden');
+                }
+            });
     jQuery('#nav-full-toggle').click(function () {
         jQuery('#nav-full').toggle();
         if (jQuery('#nav-full:visible').size() != 0)
@@ -60,6 +88,66 @@ jQuery(document).ready(function () {
             jQuery('#nav-full-toggle').removeClass('active');
             jQuery('#nav-full').removeClass('active');
         }
+    });
+    jQuery('.familyTravel_second .travelproceed').click(function () {
+        var val=jQuery( "#typeOfCover" ).val();
+        if(val==1){
+            window.location.href = "singletrip.html";
+        }else if(val==2){
+            window.location.href = "multitrip.html";
+        }
+    });
+    jQuery('.investment_first').click(function () {
+        jQuery('.investmentBox_first').show();
+        jQuery('.investmentBox_second').hide();
+    });
+    jQuery('.investment_second').click(function () {
+        jQuery('.investmentBox_second').show();
+        jQuery('.investmentBox_first').hide();
+    });
+    jQuery('.term_first').click(function () {
+        jQuery('.termBox_first').show();
+        jQuery('.termBox_second').hide();
+    });
+    jQuery('.term_second').click(function () {
+        jQuery('.termBox_second').show();
+        jQuery('.termBox_first').hide();
+    });
+    jQuery('.familyTravel').click(function () {
+        jQuery('.familyTravel_first').show();
+        jQuery('.familyTravel_second').hide();
+    });
+    jQuery('.singleTravel').click(function () {
+        jQuery('.familyTravel_second').show();
+        jQuery('.familyTravel_first').hide();
+    });
+
+    jQuery('#dateOfDepartureDatePicker').datetimepicker({
+        format: 'DD/MM/YYYY'
+    });
+    jQuery('#dateOfArrivalDatePicker').datetimepicker({
+        format: 'DD/MM/YYYY'
+    });
+    jQuery('#insuranceDetailDatePicker').datetimepicker({
+        format: 'DD/MM/YYYY'
+    });
+    jQuery('#startdate').datetimepicker({
+        format: 'DD/MM/YYYY'
+    });
+    jQuery('#enddate').datetimepicker({
+        format: 'DD/MM/YYYY'
+    });
+    jQuery('#startdate1').datetimepicker({
+        format: 'DD/MM/YYYY'
+    });
+    jQuery('#enddate1').datetimepicker({
+        format: 'DD/MM/YYYY'
+    });
+    jQuery('#fromDate').datetimepicker({
+        format: 'DD/MM/YYYY'
+    });
+    jQuery('#toDate').datetimepicker({
+        format: 'DD/MM/YYYY'
     });
     jQuery('#fullpage').fullpage({
         afterLoad: function (anchorLink, index) {
@@ -128,7 +216,7 @@ jQuery(document).ready(function () {
                 });
             }
         },
-        sectionsColor: ['#1bbc9b', '#5ADBB5', '#1f1f1f', '#ffffff', '#ececec', '#fff'],
+        sectionsColor: ['#1bbc9b', '#f5f5f5', '#1f1f1f', '#f5f5f5', '#f5f5f5', '#fff'],
         anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
         menu: '#menu',
         css3: true,
@@ -267,37 +355,37 @@ jQuery(document).ready(function () {
 
     jQuery("#vehicle_detail_id").validate({
         submitHandler: function (form) {
-            if (jQuery(form).valid()){
+            if (jQuery(form).valid()) {
                 showPersonalDetail();
                 return false; // prevent normal form posting
-            }else{
+            } else {
                 return false; // prevent normal form posting
             }
         }
     });
-    
+
     jQuery("#personal_detail_id").validate({
         submitHandler: function (form) {
-            if (jQuery(form).valid()){
+            if (jQuery(form).valid()) {
                 showInsuranceDetail();
                 return false; // prevent normal form posting
-            }else{
+            } else {
                 return false; // prevent normal form posting
             }
         }
     });
-    
+
     jQuery("#insurance_detail_id").validate({
         submitHandler: function (form) {
-            if (jQuery(form).valid()){
+            if (jQuery(form).valid()) {
                 showQuotationDetail();
                 return false; // prevent normal form posting
-            }else{
+            } else {
                 return false; // prevent normal form posting
             }
         }
     });
-    
+
     jQuery("#further_vehicle_information_id").validate({
         submitHandler: function (form) {
             if (jQuery(form).valid())
@@ -305,19 +393,58 @@ jQuery(document).ready(function () {
             return false; // prevent normal form posting
         }
     });
-    
-     jQuery("#shipping_detail_id").validate({
+
+    jQuery("#shipping_detail_id").validate({
         submitHandler: function (form) {
             if (jQuery(form).valid())
                 form.submit();
             return false; // prevent normal form posting
         }
     });
+    
+    
+    jQuery("#single_trip_travel_info_id").validate({
+        submitHandler: function (form) {
+            if (jQuery(form).valid()) {
+                showSingleTripPersonalInfo();
+                return false; // prevent normal form posting
+            } else {
+                return false; // prevent normal form posting
+            }
+        },
+        errorPlacement: function(error, element) {
+            if (element.attr("name") == "dateOfDepartureSingleTrip" )
+                error.appendTo('#showdateofdeplabel');
+            else if  (element.attr("name") == "dateOfArrivalSingleTrip" )
+                error.appendTo('#showdateofarrivallabel');
+            else
+                error.insertAfter(element);
+            
+          }
+    });
 
+
+    jQuery("#single_trip_personal_info_id").validate({
+        submitHandler: function (form) {
+            if (jQuery(form).valid()) {
+                showSingleTripQuotationInfo();
+                return false; // prevent normal form posting
+            } else {
+                return false; // prevent normal form posting
+            }
+        }
+    });
 });
 
 
-
+function showSingleTripPersonalInfo() {
+    jQuery('#single_trip_travel_information').hide();
+    jQuery('#single_trip_personal_detail').show();
+}
+function showSingleTripQuotationInfo() {
+    jQuery('#single_trip_personal_detail').hide();
+    jQuery('#single_trip_quotation_detail').show();
+}
 function showPersonalDetail() {
     jQuery('#vehicle_detail').hide();
     jQuery('#personal_detail').show();
