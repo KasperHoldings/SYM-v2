@@ -353,56 +353,40 @@
                     </div>
 
                     <% } %>
-                    <div class="col-lg-2">
 
-                    </div>
                 </div>
 
-                <%
-                    var count = 0
+                <% var count = 0
                     var m = 0;
                 for(var h = 0; h < quotations.length; h++ ){
                     var company_id = quotations[h].company_id;
                 %>
 
-                <%
-                if(m != company_id){%>
-
-                <!--Fix the div tag-->
-                <div class="col-lg-2">
-                    <%= quotations[h].insurance_feature %>
+                <% if(m != company_id){ %>
+                <% if(m != 0){ %>
                 </div>
-                <%
-                if(m != 0){
-                %>
-        </div>
-        <%
-        }
-            m = company_id;
-        %>
+                <% } %>
+                <!--Fix the div tag-->
 
-        <div class="row quoteColor table-align-verticle <%= quotations[h].graphic_info == 'sdfsdfsdf' ? 'selected has-tooltip' : '' %>">
-            <div class="col-lg-3">
-                <img src="../../../images/<%= quotations[h].graphic_info %>" width="100%"/>
-            </div>
 
-            <% } else { %>
-            <div class="col-lg-2">
-                <%= quotations[h].insurance_feature %>
-            </div>
+                <% m = company_id; %>
 
-            <% } %>
+                <div class="row quoteColor table-align-verticle <%= quotations[h].graphic_info == 'sdfsdfsdf' ? 'selected has-tooltip' : '' %>">
+                    <div class="col-lg-3">
+                        <img src="../../../images/<%= quotations[h].graphic_info %>" width="100%"/>
+                    </div>
+                    <div class="col-lg-2">
+                        <%= quotations[h].insurance_feature %>
+                    </div>
 
-            <!--<div class="col-lg-2">-->
-            <!--<a id="nextPage" class="nextPage" href="javascript:showVehicleDetail()">-->
+                    <% } else { %>
+                    <div class="col-lg-2">
+                        <%= quotations[h].insurance_feature %>
+                    </div>
 
-            <!--<div class="Plan-cardRate-fixed">20,000</div>-->
-            <!--</a>-->
+                    <% } %>
 
-            <!--<div class="successful_charge">Per successful card charge</div>-->
-            <!--</div>-->
-
-            <% } %>
+                <% } %>
 
         </div>
         <div class="row insuranceButtonMarginTop">
@@ -423,7 +407,7 @@
     <% } %>
     <!--->
 </div>
-</div>
+
 
 <div id="te">
     <div class="section animatedParent">
