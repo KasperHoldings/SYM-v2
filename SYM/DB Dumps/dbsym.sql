@@ -68,6 +68,31 @@ LOCK TABLES `cover_types` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `equation_keys`
+--
+
+DROP TABLE IF EXISTS `equation_keys`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `equation_keys` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `variable` varchar(45) DEFAULT NULL,
+  `title` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `equation_keys`
+--
+
+LOCK TABLES `equation_keys` WRITE;
+/*!40000 ALTER TABLE `equation_keys` DISABLE KEYS */;
+/*!40000 ALTER TABLE `equation_keys` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `graphic_info`
 --
 
@@ -176,6 +201,7 @@ CREATE TABLE `insurance_purpose_value` (
   `purpose` int(11) NOT NULL,
   `value` double DEFAULT NULL,
   `status` int(11) DEFAULT '0',
+  `equation` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`),
   KEY `insurance_purpose_value_fk1_idx` (`insurance_type`),
@@ -489,6 +515,36 @@ LOCK TABLES `value_added_service` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `variable_value`
+--
+
+DROP TABLE IF EXISTS `variable_value`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `variable_value` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `purpose_id` int(11) NOT NULL,
+  `variable` int(11) NOT NULL,
+  `variable_value` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`),
+  KEY `variable_ value_fk2_idx` (`variable`),
+  KEY `variable_ value_fk1_idx` (`purpose_id`),
+  CONSTRAINT `variable_ value_fk1` FOREIGN KEY (`purpose_id`) REFERENCES `insurance_purpose_value` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `variable_ value_fk2` FOREIGN KEY (`variable`) REFERENCES `equation_keys` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `variable_value`
+--
+
+LOCK TABLES `variable_value` WRITE;
+/*!40000 ALTER TABLE `variable_value` DISABLE KEYS */;
+/*!40000 ALTER TABLE `variable_value` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `vehicle_make`
 --
 
@@ -597,4 +653,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-07-27 17:46:55
+-- Dump completed on 2016-07-27 19:31:19
