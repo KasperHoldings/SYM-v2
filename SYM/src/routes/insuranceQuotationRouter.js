@@ -14,7 +14,12 @@ exports.get = function (req, res) {
             "Inner Join graphic_info ON graphic_info.insurance_type_id = insurance_types.id "
 
             , function (err, quotationRows) {
-                res.render('forms', {form: 'quotation', quotations: quotationRows});
+
+                var graphicInfoQuery = connection.query('SELECT * FROM graphic_info WHERE insurance_type_id = ?', [1] , function (err, graphicInfoRows) {
+                        res.render('forms', {form: 'quotation', quotations: quotationRows, graphicInfo: graphicInfoRows });
+                    });
+
+
                 //console.log(quotationRows);
 
                 //var qObj = [];

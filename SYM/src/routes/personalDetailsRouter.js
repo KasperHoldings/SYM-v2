@@ -77,7 +77,7 @@ exports.save = function(req,res){
             if (err) {
                 console.log('Error Selecting : %s ', err);
             }
-            res.redirect('/vehicle/car/personalDetails/create');
+            res.redirect('/vehicle/car/insurance/quotation');
 
         });
 

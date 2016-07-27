@@ -332,15 +332,15 @@
                         </select>
                     </div>
 
-                    <% for(var q = 0 ; q < quotations.length; q++) { %>
+                    <% for(var q = 0 ; q < graphicInfo.length; q++) { %>
 
                     <div class="col-lg-1">
                         <span id="credit_card_verification_value_tooltip" tabindex="0"
                               class="field__icon icon icon--question has-tooltip" role="tooltip">
-                            <img src="../../../images/<%= quotations[q].graphic_info %>"/>
+                            <img src="../../../images/<%= graphicInfo[q].graphic_info %>"/>
                             <span class="tooltip">
                                 <span data-cvv-tooltip="unknown">
-                                    3-digit security code usually found on the back of your card. American Express cards have a 4-digit code located on the front.
+                                    <%=graphicInfo[q].tooltip_msg %>
                                 </span>
                                 <span data-cvv-tooltip="amex" class="hidden">
                                     4-digit security code on the front of your card
@@ -364,29 +364,28 @@
 
                 <% if(m != company_id){ %>
                 <% if(m != 0){ %>
-                </div>
-                <% } %>
-                <!--Fix the div tag-->
+        </div>
+        <% } %>
+        <!--Fix the div tag-->
 
+        <% m = company_id; %>
 
-                <% m = company_id; %>
+        <div class="row quoteColor table-align-verticle <%= quotations[h].graphic_info == 'sdfsdfsdf' ? 'selected has-tooltip' : '' %>">
+            <div class="col-lg-3">
+                <img src="../../../images/<%= quotations[h].graphic_info %>" width="100%"/>
+            </div>
+            <div class="col-lg-2">
+                <%= quotations[h].insurance_feature %>
+            </div>
 
-                <div class="row quoteColor table-align-verticle <%= quotations[h].graphic_info == 'sdfsdfsdf' ? 'selected has-tooltip' : '' %>">
-                    <div class="col-lg-3">
-                        <img src="../../../images/<%= quotations[h].graphic_info %>" width="100%"/>
-                    </div>
-                    <div class="col-lg-2">
-                        <%= quotations[h].insurance_feature %>
-                    </div>
+            <% } else { %>
+            <div class="col-lg-2">
+                <%= quotations[h].insurance_feature %>
+            </div>
 
-                    <% } else { %>
-                    <div class="col-lg-2">
-                        <%= quotations[h].insurance_feature %>
-                    </div>
+            <% } %>
 
-                    <% } %>
-
-                <% } %>
+            <% } %>
 
         </div>
         <div class="row insuranceButtonMarginTop">
