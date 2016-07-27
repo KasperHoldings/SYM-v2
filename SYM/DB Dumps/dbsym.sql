@@ -163,6 +163,39 @@ INSERT INTO `insurance_features` VALUES (3,1,'Taxi allowance of Rs.2000/= per da
 UNLOCK TABLES;
 
 --
+-- Table structure for table `insurance_purpose_value`
+--
+
+DROP TABLE IF EXISTS `insurance_purpose_value`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `insurance_purpose_value` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `insurance_type` int(11) NOT NULL,
+  `insurance_company` int(11) NOT NULL,
+  `purpose` int(11) NOT NULL,
+  `value` double DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`),
+  KEY `insurance_purpose_value_fk1_idx` (`insurance_type`),
+  KEY `insurance_purpose_value_fk2_idx` (`insurance_company`),
+  KEY `insurance_purpose_value_fk3_idx` (`purpose`),
+  CONSTRAINT `insurance_purpose_value_fk1` FOREIGN KEY (`insurance_type`) REFERENCES `insurance_types` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `insurance_purpose_value_fk2` FOREIGN KEY (`insurance_company`) REFERENCES `insurance_companies` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `insurance_purpose_value_fk3` FOREIGN KEY (`purpose`) REFERENCES `purpose` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `insurance_purpose_value`
+--
+
+LOCK TABLES `insurance_purpose_value` WRITE;
+/*!40000 ALTER TABLE `insurance_purpose_value` DISABLE KEYS */;
+/*!40000 ALTER TABLE `insurance_purpose_value` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `insurance_quotation`
 --
 
@@ -563,4 +596,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-07-27 12:36:38
+-- Dump completed on 2016-07-27 14:47:01
