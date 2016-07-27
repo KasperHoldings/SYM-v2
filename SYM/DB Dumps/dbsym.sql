@@ -109,6 +109,15 @@ CREATE TABLE `insurance_companies` (
   `calculation` varchar(100) DEFAULT NULL,
   `status` int(11) DEFAULT '1',
   `path` varchar(5000) DEFAULT NULL,
+  `motor_vehicle` int(11) DEFAULT '0',
+  `motor_bike` int(11) DEFAULT '0',
+  `three_wheeler` int(11) DEFAULT '0',
+  `travel_single` int(11) DEFAULT '0',
+  `travel_family` int(11) DEFAULT '0',
+  `investment_fd` int(11) DEFAULT '0',
+  `investments_savings` int(11) DEFAULT '0',
+  `lease_housing` int(11) DEFAULT '0',
+  `lease_vehicles` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -119,7 +128,7 @@ CREATE TABLE `insurance_companies` (
 
 LOCK TABLES `insurance_companies` WRITE;
 /*!40000 ALTER TABLE `insurance_companies` DISABLE KEYS */;
-INSERT INTO `insurance_companies` VALUES (1,'Asian Alliance','2.25',1,NULL),(2,'Janashakthi','2.35',1,NULL),(3,'Sri Lanka Insurance','2.30',1,NULL),(4,'Allianz','2.20',1,NULL),(5,'Continental Insurance','2.25',0,NULL),(6,'AIG','3.22',0,NULL),(7,'Amana','2.86',0,NULL),(8,'Coop','2.34',0,NULL),(9,'HNB','2.30',0,NULL),(10,'LOLC','2.34',0,NULL),(11,'MBSL','2.23',0,NULL),(12,'NITF','2.45',0,NULL),(13,'Orient','2.44',0,NULL),(14,'People\'s Insurance','2.32',0,NULL),(15,'Union Assurance','2.12',0,NULL);
+INSERT INTO `insurance_companies` VALUES (1,'Asian Alliance','2.25',1,NULL,0,0,0,0,0,0,0,0,0),(2,'Janashakthi','2.35',1,NULL,0,0,0,0,0,0,0,0,0),(3,'Sri Lanka Insurance','2.30',1,NULL,0,0,0,0,0,0,0,0,0),(4,'Allianz','2.20',1,NULL,0,0,0,0,0,0,0,0,0),(5,'Continental Insurance','2.25',0,NULL,0,0,0,0,0,0,0,0,0),(6,'AIG','3.22',0,NULL,0,0,0,0,0,0,0,0,0),(7,'Amana','2.86',0,NULL,0,0,0,0,0,0,0,0,0),(8,'Coop','2.34',0,NULL,0,0,0,0,0,0,0,0,0),(9,'HNB','2.30',0,NULL,0,0,0,0,0,0,0,0,0),(10,'LOLC','2.34',0,NULL,0,0,0,0,0,0,0,0,0),(11,'MBSL','2.23',0,NULL,0,0,0,0,0,0,0,0,0),(12,'NITF','2.45',0,NULL,0,0,0,0,0,0,0,0,0),(13,'Orient','2.44',0,NULL,0,0,0,0,0,0,0,0,0),(14,'People\'s Insurance','2.32',0,NULL,0,0,0,0,0,0,0,0,0),(15,'Union Assurance','2.12',0,NULL,0,0,0,0,0,0,0,0,0);
 /*!40000 ALTER TABLE `insurance_companies` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -138,8 +147,8 @@ CREATE TABLE `insurance_features` (
   PRIMARY KEY (`id`),
   KEY `insurance_features_fk1_idx` (`insurance_id`),
   KEY `insurance_features_fk2_idx` (`insurance_type`),
-  CONSTRAINT `insurance_features_fk2` FOREIGN KEY (`insurance_type`) REFERENCES `insurance_types` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `insurance_features_fk1` FOREIGN KEY (`insurance_id`) REFERENCES `insurance_companies` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT `insurance_features_fk1` FOREIGN KEY (`insurance_id`) REFERENCES `insurance_companies` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `insurance_features_fk2` FOREIGN KEY (`insurance_type`) REFERENCES `insurance_types` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -554,4 +563,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-07-22 19:07:51
+-- Dump completed on 2016-07-27 12:36:38
