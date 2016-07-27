@@ -15,8 +15,19 @@ exports.get = function (req, res) {
 
             , function (err, quotationRows) {
 
-                var graphicInfoQuery = connection.query('SELECT * FROM graphic_info WHERE insurance_type_id = ?', [1] , function (err, graphicInfoRows) {
-                        res.render('forms', {form: 'quotation', quotations: quotationRows, graphicInfo: graphicInfoRows });
+                var graphicInfoQuery = connection.query('SELECT * FROM graphic_info WHERE insurance_type_id = ?', [1]
+                    , function (err, graphicInfoRows) {
+                        var insuranceCompaniesQuery = connection.query('SELECT * FROM insurance_companies'
+                            , function (err, insuranceCompanyRows) {
+
+
+                                res.render('forms', {
+                                    form: 'quotation',
+                                    quotations: quotationRows,
+                                    graphicInfo: graphicInfoRows,
+                                    companies: insuranceCompanyRows
+                                });
+                            });
                     });
 
 
