@@ -5,13 +5,12 @@ exports.get = function (req, res) {
             "insurance_companies.insurance_name AS company_name, " +
             "insurance_types.insurance_type, " +
             "insurance_features.feature AS insurance_feature, " +
-            "graphic_info.graphic_info, " +
+            //"graphic_info.graphic_info, " +
             "insurance_companies.id AS company_id " +
             "FROM " +
             "insurance_companies " +
             "Inner Join insurance_features ON insurance_companies.id = insurance_features.insurance_id " +
-            "Inner Join insurance_types ON insurance_types.id = insurance_features.insurance_type " +
-            "Inner Join graphic_info ON graphic_info.insurance_type_id = insurance_types.id "
+            "Inner Join insurance_types ON insurance_types.id = insurance_features.insurance_type "
 
             , function (err, quotationRows) {
 
@@ -19,7 +18,6 @@ exports.get = function (req, res) {
                     , function (err, graphicInfoRows) {
                         var insuranceCompaniesQuery = connection.query('SELECT * FROM insurance_companies'
                             , function (err, insuranceCompanyRows) {
-
 
                                 res.render('forms', {
                                     form: 'quotation',

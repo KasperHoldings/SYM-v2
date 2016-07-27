@@ -63,9 +63,9 @@ exports.save = function (req, res) {
         var data = {
 
             v_province: input.v_province,
-            v_letters : input.v_letters,
-            v_number  : input.v_number,
-            insurance_quotation_id : vehicle_quotation.id
+            v_letters: input.v_letters,
+            v_number: input.v_number,
+            insurance_quotation_id: vehicle_quotation.id
 
         };
 
