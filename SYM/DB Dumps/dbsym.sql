@@ -175,6 +175,7 @@ CREATE TABLE `insurance_purpose_value` (
   `insurance_company` int(11) NOT NULL,
   `purpose` int(11) NOT NULL,
   `value` double DEFAULT NULL,
+  `status` int(11) DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`),
   KEY `insurance_purpose_value_fk1_idx` (`insurance_type`),
@@ -596,4 +597,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-07-27 14:47:01
+-- Dump completed on 2016-07-27 17:46:55
