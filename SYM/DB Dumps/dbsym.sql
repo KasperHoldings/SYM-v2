@@ -247,9 +247,9 @@ CREATE TABLE `insurance_quotation` (
   `value` double DEFAULT NULL,
   `no_claim_bonous` double DEFAULT NULL,
   `current_insurer` varchar(45) DEFAULT NULL,
-  `cover_type_required` int(11) NOT NULL,
+  `cover_type_required` int(11) DEFAULT NULL,
   `start_date` date DEFAULT NULL,
-  `voluntary_excess` int(11) NOT NULL,
+  `voluntary_excess` int(11) DEFAULT NULL,
   `purpose` int(11) DEFAULT NULL,
   `authorise_agent_repair` int(11) DEFAULT NULL,
   `engine_no` varchar(45) DEFAULT NULL,
@@ -653,4 +653,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-07-27 19:31:19
+-- Dump completed on 2016-07-28 15:04:07
