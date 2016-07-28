@@ -26,7 +26,7 @@ exports.list = function(req, res){
 exports.add = function(req, res){
     res.render('forms',{
         form:'personalDetails',
-        hidden: req.session.id
+        hidden: 'asdasdasdasd'
     });
 };
 
