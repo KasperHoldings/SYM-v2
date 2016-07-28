@@ -340,7 +340,7 @@
                             <img src="../../../images/globe@2x.png"/>
                             <span class="tooltip">
                                 <span data-cvv-tooltip="unknown">
-                                    <%=graphicInfo[q].tooltip_msg %>
+                                    <%= graphicInfo[q].tooltip_msg %>
                                 </span>
                                 <span data-cvv-tooltip="amex" class="hidden">
                                     4-digit security code on the front of your card
@@ -385,6 +385,11 @@
 
             <% } %>
 
+            <% if() { %>
+            <div class="col-lg-2">
+                <%= quotations[h].insurance_feature %>
+            </div>
+            <% } %>
             <% } %>
 
         </div>
