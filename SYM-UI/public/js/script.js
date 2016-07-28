@@ -1,4 +1,11 @@
 jQuery(document).ready(function () {
+    jQuery("#sameAsRegistered").change(function(){
+        if(this.checked){
+            jQuery('#sameAsRegisteredDiv').hide();
+        }else{
+            jQuery('#sameAsRegisteredDiv').show();
+        }
+    });
     jQuery('.flexslider').flexslider({
         animation: "slide",
         controlsContainer: jQuery(".custom-controls-container"),
