@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="53c7c294-451c-447e-b739-72a3303b12a7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/routes/insuranceQuotationRouter.js" afterPath="$PROJECT_DIR$/SYM/src/routes/insuranceQuotationRouter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/views/forms.ejs" afterPath="$PROJECT_DIR$/SYM/src/views/forms.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/DB Dumps/dbsym.sql" afterPath="$PROJECT_DIR$/SYM/DB Dumps/dbsym.sql" />
     </list>
     <ignored path="SYM-v2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,11 +88,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="insuranceQuotationRouter.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="insuranceQuotationRouter.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/SYM/src/routes/insuranceQuotationRouter.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.64986736">
-                  <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="dbsym.sql" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/SYM/DB Dumps/dbsym.sql">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.2254642">
+                  <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
@@ -231,9 +240,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="x" value="-10" />
+    <option name="y" value="24" />
+    <option name="width" value="1370" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -469,19 +478,19 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Node Projects\SYM-v2\SYM\DB Dumps" />
+      <recent name="D:\Node Projects\SYM-v2\SYM\public\front-end" />
+      <recent name="D:\Node Projects\SYM-v2\SYM\public" />
+      <recent name="D:\Node Projects\SYM-v2\SYM\src\routes" />
+      <recent name="D:\Node Projects\SYM-v2\SYM\public\lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Node Projects\SYM-v2\SYM\src\views" />
       <recent name="D:\Node Projects\SYM-v2\SYM\src\views\layout\forms" />
       <recent name="D:\Node Projects\SYM-v2\SYM\public\css" />
       <recent name="D:\Node Projects\SYM-v2\SYM\src\views\userRegistrations" />
       <recent name="D:\Node Projects\SYM-v2\SYM\src\lib" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Node Projects\SYM-v2\SYM\public\front-end" />
-      <recent name="D:\Node Projects\SYM-v2\SYM\public" />
-      <recent name="D:\Node Projects\SYM-v2\SYM\src\routes" />
-      <recent name="D:\Node Projects\SYM-v2\SYM\public\lib" />
-      <recent name="D:\Node Projects\SYM-v2\SYM\src\views" />
     </key>
   </component>
   <component name="RunManager">
@@ -719,14 +728,20 @@
       <option name="project" value="LOCAL" />
       <updated>1470121757791</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="quotation ammendments">
+      <created>1470125764797</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1470125764797</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-10" y="24" width="1370" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24925596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2515015" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -801,13 +816,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SYM/src/views/layout/forms/cars/form3.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/views/userRegistrations/create.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.036876354">
@@ -990,13 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/DB Dumps/dbsym.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SYM/public/images/logos/logo_cisco.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1159,8 +1160,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/routes/insuranceQuotationRouter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64986736">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/DB Dumps/dbsym.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2254642">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
           <folding />
         </state>
       </provider>
