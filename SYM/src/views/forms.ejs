@@ -221,7 +221,7 @@
                     <div class="field field--required field--three-eights field--show-floating-label">
                         <div class="field__input-wrapper field__input-wrapper--select">
                             <label for="checkout_shipping_address_country" class="field__label">No Claims Bonus</label>
-                            <select name="noclaim_bonus" class="field__input field__input--select" required>
+                            <select name="no_claim_bonus" class="field__input field__input--select" required>
                                 <option value="">Select No Claims Bonus</option>
                                 <% for(var x = 1; x < 5; x++) { %>
                                 <option value="<%= x %>"><%= x %> year</option>
@@ -360,13 +360,13 @@
                     var m = 0;
                 for(var h = 0; h < quotations.length; h++ ){
                     var company_id = quotations[h].company_id;
+                    count++;
                 %>
 
                 <% if(m != company_id){ %>
                 <% if(m != 0){ %>
         </div>
         <% } %>
-        <!--Fix the div tag-->
 
         <% m = company_id; %>
 
@@ -383,9 +383,12 @@
                 <%= quotations[h].insurance_feature %>
             </div>
 
+            <% } if(count == 3 && insuranceCompanyValues[quotations[h].company_id] != null) { %>
+            <div class="col-lg-2">
+                <%= insuranceCompanyValues[quotations[h].company_id] %>
+            </div>
+            <% count = 0; %>
             <% } %>
-
-
             <% } %>
 
         </div>

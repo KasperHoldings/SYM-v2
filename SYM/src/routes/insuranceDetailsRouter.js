@@ -20,6 +20,26 @@ exports.list = function (req, res) {
 
 };
 
+
+exports.adasdasdd = function(req, res) {
+    req.getConnection(function (err, connector) {
+
+        var query = connector.query('SELECT * FROM vehicle_make', function (err, rows) {
+            if (err) {
+                console.log('Error Selecting : %s ', err);
+            }
+            //console.log(rows);
+            res.render('forms', {
+                form: "insuranceDetails",
+                hidden: req.session.id,
+                make: rows
+            });
+        });
+
+    });
+};
+
+// this needs to be edited
 exports.add = function (req, res) {
 
 
@@ -121,20 +141,23 @@ exports.save = function (req, res) {
 
         var data = {
 
-            noclaim_bonus : input.noclaim_bonus,
-            insurance_company : input.insurance_company,
-            cover_type : input.cover_type,
+            no_claim_bonus : input.no_claim_bonus,
+            current_insurer : input.insurance_company,
+            cover_type_required : input.cover_type,
             start_date : input.start_date,
             voluntary_excess : input.voluntary_excess,
             purpose : input.purpose
         };
 
-        var query = connector.query('INSERT INTO user set ? ', data, function (err, rows) {
+
+        //console.log(data);
+
+        var query = connector.query('UPDATE insurance_quotation set ? ', data, function (err, rows) {
 
             if (err) {
                 console.log('Error Selecting : %s ', err);
             }
-            res.redirect('/list');
+            res.redirect('/vehicle/car/insurance/quotation');
 
         });
 

@@ -26,7 +26,7 @@ exports.list = function(req, res){
 exports.add = function(req, res){
     res.render('forms',{
         form:'personalDetails',
-        hidden: 'asdasdasdasd'
+        hidden: req.session.id
     });
 };
 
@@ -77,7 +77,7 @@ exports.save = function(req,res){
             if (err) {
                 console.log('Error Selecting : %s ', err);
             }
-            res.redirect('/vehicle/car/insurance/quotation');
+            res.redirect('/vehicle/car/insuranceDetails/create');
 
         });
 
