@@ -210,7 +210,7 @@ CREATE TABLE `insurance_purpose_value` (
   CONSTRAINT `insurance_purpose_value_fk1` FOREIGN KEY (`insurance_type`) REFERENCES `insurance_types` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `insurance_purpose_value_fk2` FOREIGN KEY (`insurance_company`) REFERENCES `insurance_companies` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `insurance_purpose_value_fk3` FOREIGN KEY (`purpose`) REFERENCES `purpose` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -219,6 +219,7 @@ CREATE TABLE `insurance_purpose_value` (
 
 LOCK TABLES `insurance_purpose_value` WRITE;
 /*!40000 ALTER TABLE `insurance_purpose_value` DISABLE KEYS */;
+INSERT INTO `insurance_purpose_value` VALUES (1,1,2,1,500,1,'xy'),(2,1,1,1,400,1,'xy'),(3,1,3,1,600,1,'xy'),(4,1,4,1,480,1,'xy'),(5,1,5,1,350,1,'xy'),(6,1,6,1,100,1,'xy'),(7,1,7,1,500,1,'xy'),(8,1,8,1,200,1,'xy'),(9,1,9,1,700,1,'xy'),(10,1,10,1,900,1,'xy');
 /*!40000 ALTER TABLE `insurance_purpose_value` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -653,4 +654,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-08-01 13:40:30
+-- Dump completed on 2016-08-02 11:43:33
