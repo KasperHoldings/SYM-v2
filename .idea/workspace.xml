@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53c7c294-451c-447e-b739-72a3303b12a7" name="Default" comment="quotation working">
+    <list default="true" id="53c7c294-451c-447e-b739-72a3303b12a7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/routes/insuranceDetailsRouter.js" afterPath="$PROJECT_DIR$/SYM/src/routes/insuranceDetailsRouter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/routes/insuranceQuotationRouter.js" afterPath="$PROJECT_DIR$/SYM/src/routes/insuranceQuotationRouter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/routes/personalDetailsRouter.js" afterPath="$PROJECT_DIR$/SYM/src/routes/personalDetailsRouter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/views/forms.ejs" afterPath="$PROJECT_DIR$/SYM/src/views/forms.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/views/index.ejs" afterPath="$PROJECT_DIR$/SYM/src/views/index.ejs" />
     </list>
     <ignored path="SYM-v2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +27,8 @@
             <file leaf-file-name="forms.ejs" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/SYM/src/views/forms.ejs">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.30366492">
-                    <caret line="387" column="57" selection-start-line="387" selection-start-column="57" selection-end-line="387" selection-end-column="57" />
+                  <state vertical-scroll-proportion="0.65275145">
+                    <caret line="387" column="19" selection-start-line="387" selection-start-column="19" selection-end-line="387" selection-end-column="19" />
                     <folding>
                       <element signature="n#style#0;n#div#0;n#div#6;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     </folding>
@@ -49,14 +46,14 @@
     <favorites_list name="SYM-v2" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.8084228">
+    <splitter split-orientation="horizontal" split-proportion="0.6580773">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-1259.3077">
-                  <caret line="1926" column="13" selection-start-line="1926" selection-start-column="13" selection-end-line="1926" selection-end-column="13" />
+                <state vertical-scroll-proportion="-4.576923">
+                  <caret line="1932" column="55" selection-start-line="1932" selection-start-column="55" selection-end-line="1932" selection-end-column="55" />
                   <folding />
                 </state>
               </provider>
@@ -65,7 +62,7 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
+                <state vertical-scroll-proportion="-0.65384614">
                   <caret line="49" column="75" selection-start-line="49" selection-start-column="75" selection-end-line="49" selection-end-column="75" />
                   <folding />
                 </state>
@@ -95,8 +92,8 @@
           <file leaf-file-name="insuranceQuotationRouter.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/SYM/src/routes/insuranceQuotationRouter.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.37965262">
-                  <caret line="69" column="69" selection-start-line="69" selection-start-column="69" selection-end-line="69" selection-end-column="69" />
+                <state vertical-scroll-proportion="0.64986736">
+                  <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -121,8 +118,8 @@
           <file leaf-file-name="insuranceDetailsRouter.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/SYM/src/routes/insuranceDetailsRouter.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.52605456">
-                  <caret line="155" column="0" selection-start-line="152" selection-start-column="28" selection-end-line="155" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.42705572">
+                  <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="28" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -439,6 +436,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SYM-v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SYM-v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SYM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DB Dumps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -450,7 +465,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="forms&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/views/forms.ejs&#10;router/&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/node_modules/express/lib/router&#10;Quot&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/insuranceQuotationRouter.js&#10;vehi&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/vehicleRegRouter.js&#10;vehicleROut&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/vehicleDetailsRouter.js&#10;form&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/views/forms/forms.ejs&#10;insuran&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/insuranceQuotationRouter.js&#10;app.&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/app.js&#10;app&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/app.js&#10;routes/&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes&#10;termina&#9;ACTION&#9;ActivateTerminalToolWindow" />
+    <property name="SearchEverywhereHistoryKey" value="insuran&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/insuranceQuotationRouter.js&#10;forms&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/views/forms.ejs&#10;router/&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/node_modules/express/lib/router&#10;Quot&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/insuranceQuotationRouter.js&#10;vehi&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/vehicleRegRouter.js&#10;vehicleROut&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/vehicleDetailsRouter.js&#10;form&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/views/forms/forms.ejs&#10;app.&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/app.js&#10;app&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/app.js&#10;routes/&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes&#10;termina&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
@@ -698,24 +713,30 @@
       <option name="project" value="LOCAL" />
       <updated>1469699221908</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="quotation ammendments">
+      <created>1470121757791</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1470121757791</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.098958336" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24925596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.400982" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29459903" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-1382" y="449" width="1344" height="311" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3371522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-1382" y="449" width="1344" height="311" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -772,7 +793,8 @@
     <MESSAGE value="quotation" />
     <MESSAGE value="quotation fixed errors" />
     <MESSAGE value="quotation working" />
-    <option name="LAST_COMMIT_MESSAGE" value="quotation working" />
+    <MESSAGE value="quotation ammendments" />
+    <option name="LAST_COMMIT_MESSAGE" value="quotation ammendments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1035,42 +1057,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/routes/vehicleRegRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="106" column="13" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/routes/userRouter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="0" selection-start-line="14" selection-start-column="2" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="75" selection-start-line="49" selection-start-column="75" selection-end-line="49" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1259.3077">
-          <caret line="1926" column="13" selection-start-line="1926" selection-start-column="13" selection-end-line="1926" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/routes/personalDetailsRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1109,8 +1099,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/routes/insuranceDetailsRouter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52605456">
-          <caret line="155" column="0" selection-start-line="152" selection-start-column="28" selection-end-line="155" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.42705572">
+          <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="28" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -1125,10 +1115,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/routes/vehicleRegRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="106" column="13" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/routes/personalDetailsRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="49" column="75" selection-start-line="49" selection-start-column="75" selection-end-line="49" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="1932" column="55" selection-start-line="1932" selection-start-column="55" selection-end-line="1932" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/views/forms.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30366492">
-          <caret line="387" column="57" selection-start-line="387" selection-start-column="57" selection-end-line="387" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.65275145">
+          <caret line="387" column="19" selection-start-line="387" selection-start-column="19" selection-end-line="387" selection-end-column="19" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#6;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1137,8 +1159,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/routes/insuranceQuotationRouter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37965262">
-          <caret line="69" column="69" selection-start-line="69" selection-start-column="69" selection-end-line="69" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.64986736">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding />
         </state>
       </provider>

@@ -383,9 +383,9 @@
                 <%= quotations[h].insurance_feature %>
             </div>
 
-            <% } if(count == 3 && insuranceCompanyValues[quotations[h].company_id] != null) { %>
+            <% } if(count == 3) { %>
             <div class="col-lg-2">
-                <%= insuranceCompanyValues[quotations[h].company_id] %>
+                LKR <%= insuranceCompanyValues[quotations[h].company_id] %>
             </div>
             <% count = 0; %>
             <% } %>

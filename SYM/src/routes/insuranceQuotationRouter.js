@@ -8,16 +8,12 @@ exports.get = function (req, res) {
                 var data = null;
                 var quotationValue = connection.query("SELECT * FROM insurance_purpose_value WHERE insurance_type='1' AND purpose='1'", function (err, equationRows) {
 
-                    var insuranceCompanyValues = [];
-
-
+                    var insuranceCompanyValues = {};
                     for (var j = 0; j < equationRows.length; j++) {
                         //var equation = equationRows[j].equation;
-                        insuranceCompanyValues[equationRows[j].insurance_company] = (100+equationRows[j].value) * insuranceValue /100;
+
+                        insuranceCompanyValues[equationRows[j].insurance_company] = (100 + equationRows[j].value) * insuranceValue / 100;
                     }
-
-                    console.log(insuranceCompanyValues);
-
                     //for (var j = 0; j < equationRows.length; j++) {
                     //    var equation = equationRows[j].equation;
                     //    for (var index = 0 in variableValuesResult) {
@@ -61,36 +57,36 @@ exports.get = function (req, res) {
                     //            console.log(err);
                     //        }
 
-                            //console.log(eval(equation));
+                    //console.log(eval(equation));
 
-                            var listQuery = connection.query("SELECT " +
-                                "insurance_companies.insurance_name AS company_name, " +
-                                "insurance_types.insurance_type, " +
-                                "insurance_features.feature AS insurance_feature, " +
-                                "insurance_companies.id AS company_id " +
-                                "FROM " +
-                                "insurance_companies " +
-                                "Inner Join insurance_features ON insurance_companies.id = insurance_features.insurance_id " +
-                                "Inner Join insurance_types ON insurance_types.id = insurance_features.insurance_type "
+                    var listQuery = connection.query("SELECT " +
+                        "insurance_companies.insurance_name AS company_name, " +
+                        "insurance_types.insurance_type, " +
+                        "insurance_features.feature AS insurance_feature, " +
+                        "insurance_companies.id AS company_id " +
+                        "FROM " +
+                        "insurance_companies " +
+                        "Inner Join insurance_features ON insurance_companies.id = insurance_features.insurance_id " +
+                        "Inner Join insurance_types ON insurance_types.id = insurance_features.insurance_type "
 
-                                , function (err, quotationRows) {
+                        , function (err, quotationRows) {
 
-                                    var graphicInfoQuery = connection.query('SELECT * FROM graphic_info WHERE insurance_type_id = ?', [1]
-                                        , function (err, graphicInfoRows) {
-                                            var insuranceCompaniesQuery = connection.query('SELECT * FROM insurance_companies'
-                                                , function (err, insuranceCompanyRows) {
+                            var graphicInfoQuery = connection.query('SELECT * FROM graphic_info WHERE insurance_type_id = ?', [1]
+                                , function (err, graphicInfoRows) {
+                                    var insuranceCompaniesQuery = connection.query('SELECT * FROM insurance_companies'
+                                        , function (err, insuranceCompanyRows) {
 
-                                                    res.render('forms', {
-                                                        form: 'quotation',
-                                                        quotations: quotationRows,
-                                                        graphicInfo: graphicInfoRows,
-                                                        companies: insuranceCompanyRows,
-                                                        insuranceCompanyValues: insuranceCompanyRows
-                                                    });
-                                                });
+                                            res.render('forms', {
+                                                form: 'quotation',
+                                                quotations: quotationRows,
+                                                graphicInfo: graphicInfoRows,
+                                                companies: insuranceCompanyRows,
+                                                insuranceCompanyValues: insuranceCompanyValues
+                                            });
                                         });
                                 });
-                        //});
+                        });
+                    //});
 
                 });
             });
