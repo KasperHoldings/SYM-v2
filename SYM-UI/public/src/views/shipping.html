@@ -71,139 +71,27 @@
                 <div id="shipping_detail" class="vehicle_detail_bg">
                     <form id="shipping_detail_id" name="vehicle_detail" action="checkout.html">
                         <div class="row">
-                            <div class="order-summary__section order-summary__section--product-list">
-                                <table class="product-table">
-                                    <caption class="visually-hidden">Shopping cart</caption>
-                                    <thead>
-                                        <tr>
-                                            <th scope="col"><span class="visually-hidden">Product image</span></th>
-                                            <th scope="col"><span class="visually-hidden">Description</span></th>
-                                            <th scope="col"><span class="visually-hidden">Quantity</span></th>
-                                            <th scope="col"><span class="visually-hidden">Price</span></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr data-product-type="Clothing" data-variant-id="22897477895" data-product-id="7203460999" class="product">
-                                            <td class="product__image">
-                                                <div class="product-thumbnail">
-                                                    <div class="product-thumbnail__wrapper">
-                                                        <img src="../../images/aialogo.png" class="product-thumbnail__image" alt="Sri Lanka Insurance">
-                                                    </div>
-                                                </div>
-
-                                            </td>
-                                            <td class="product__description">
-                                                <span class="product__description__name order-summary__emphasis">Sri Lanka Insurance</span>
-                                                <span class="product__description__variant order-summary__small-text"></span>
-
-                                            </td>
-                                            <td class="product__quantity visually-hidden">
-                                                1
-                                            </td>
-                                            <td class="product__price">
-                                                <span class="order-summary__emphasis">$45.00</span>
-                                            </td>
-                                        </tr>                                        
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="order-summary__section order-summary__section--discount">
-                                <div class="fieldset flexbox">
-                                    <div id="checkout_reduction_code_id" class="field">
-                                        <div class="field__input-btn-wrapper">
-                                            <div class="field__input-wrapper"><label for="checkout_reduction_code" class="field__label">Gift card or discount code</label>
-                                                <input type="text" id="checkout_reduction_code" name="checkout[reduction_code]" size="30" aria-labelledby="error-for-reduction_code" autocomplete="off" data-discount-field="true" class="field__input" placeholder="Gift card or discount code">
-                                            </div>
-
-                                            <button class="field__input-btn btn btn--default btn--disabled" type="submit">
-                                                <span class="btn__content visually-hidden-on-mobile">Apply</span>
-                                                <i class="btn__content shown-on-mobile icon icon--arrow"></i>
-                                                <i class="btn__spinner icon icon--button-spinner"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-order-summary-section="payment-lines" class="order-summary__section order-summary__section--total-lines">
-                                <table class="total-line-table">
-                                    <caption class="visually-hidden">Cost summary</caption>
-                                    <thead>
-                                        <tr>
-                                            <th scope="col"><span class="visually-hidden">Description</span></th>
-                                            <th scope="col"><span class="visually-hidden">Price</span></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="total-line total-line--subtotal">
-                                            <td class="total-line__name">Subtotal</td>
-                                            <td class="total-line__price">
-                                                <span data-checkout-subtotal-price-target="20800" class="order-summary__emphasis">$208.00</span>
-                                            </td>
-                                        </tr>
 
 
-                                        <tr class="total-line total-line--shipping">
-                                            <td class="total-line__name">Shipping</td>
-                                            <td class="total-line__price">
-                                                <span data-checkout-total-shipping-target="4900" class="order-summary__emphasis">$49.00</span>
-                                            </td>
-                                        </tr>
 
 
-                                    </tbody>
-                                    <tfoot class="total-line-table__footer">
-                                        <tr class="total-line">
-                                            <td class="total-line__name payment-due-label">
-                                                <span class="payment-due-label__total">Total</span>
-                                                <span data-checkout-taxes="" class="payment-due-label__taxes hidden">
-                                                    Including <span data-checkout-total-taxes-target="0">$0.00</span> in taxes
-                                                </span>
-                                            </td>
-                                            <td class="total-line__price payment-due">
-                                                <span class="payment-due__currency">USD</span>
-                                                <span data-checkout-payment-due-target="25700" class="payment-due__price">$257.00</span>
-                                            </td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
+
+
+
                             <div class="section section--shipping-method">
                                 <div class="section__header">
                                     <h2 class="section__title">Shipping method</h2>
                                 </div>
                                 <div class="section__content">
-                                    <div data-shipping-methods="" class="content-box">
-                                        <div class="content-box__row">
-                                            <div class="radio-wrapper">
-                                                <div class="radio__input">
-                                                    <label class="radio">
-                                                        <input type="radio" value="1" name="termSmoke" class="rad">
-                                                        <span class="outer"><span class="inner"></span></span>                                                         
-                                                    </label>
-                                                </div>
-                                                <label for="checkout_shipping_rate_id_shopify-usps20first20class20international-4900">
-                                                    <span class="radio__label">
-                                                        USPS First Class International
-                                                    </span>
-                                                    <span class="radio__accessory content-box__emphasis">$49.00</span>
-                                                </label>        
-                                            </div> <!-- /radio-wrapper-->
-                                        </div>
-
-                                        <div class="content-box__row">
-                                            <div class="radio-wrapper">
-                                                <div class="radio__input">
-                                                    <label class="radio">
-                                                        <input type="radio" value="1" name="termSmoke" class="rad">
-                                                        <span class="outer"><span class="inner"></span></span> 
-                                                    </label>
-                                                </div>
-                                                <label for="checkout_shipping_rate_id_shopify-usps20priority20mail20international-5000">
-                                                    <span class="radio__label">
-                                                        USPS Priority Mail International
-                                                    </span>
-                                                    <span class="radio__accessory content-box__emphasis">$50.00</span>
-                                                </label>        
+                                    <div class="row">
+                                        <div class="field field--required field--three-eights field--show-floating-label">
+                                            <div class="field__input-wrapper field__input-wrapper--select">
+                                                <label for="checkout_shipping_address_country" class="field__label shippDropdown">Make</label>
+                                                <select name="make" class="field__input field__input--select" required>
+                                                    <option value="">Select Shipping method</option>
+                                                    <option value="USPS First Class International">USPS First Class International</option>
+                                                    <option value="USPS Priority Mail International">USPS Priority Mail International</option>
+                                                </select>
                                             </div> <!-- /radio-wrapper-->
                                         </div>
                                     </div>
@@ -212,7 +100,7 @@
                             <div class="section section--shipping-address">
                                 <div class="section__header">
                                     <h2 class="section__title">
-                                        Shipping address
+                                        Registered Address
                                     </h2>
                                 </div>
                                 <div class="col-md-6 paddleftzero">
@@ -275,6 +163,105 @@
                                         <input id="phone" name="phone" type="text" placeholder="Phone" class="field__input" required />
                                     </div>
                                 </div>
+                            </div>
+                            <div class="section section--shipping-address" style="float:left;">
+                                <div class="section__header">
+                                    <h2 class="section__title">
+                                        Shpping Address
+                                    </h2>
+                                </div>
+                                <table class="product-table-terms">                                
+                                    <tbody>
+                                        <tr class="product" data-product-id="7203460999" data-variant-id="22897477895" data-product-type="Clothing">
+                                            <td class="product__image">                                            
+                                                <input id="sameAsRegistered" type="checkbox"  name="sameAsRegistered" value="">
+                                                <label for="tripfrequency"><span></span></label>
+                                                <span>Same as Registered</span>                                      
+                                            </td>                                        
+                                        </tr>                                         
+                                    </tbody>
+                                </table>
+                                <div id="sameAsRegisteredDiv">
+                                    <div class="col-md-6 paddleftzero">
+                                        <div id="showfirstnamelabel" class="field__input-wrapper">
+                                            <label for="checkout_name" class="field__label">First Name</label>
+                                            <input id="firstname" name="first_name" type="text" placeholder="First Name" class="field__input" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 paddrightzero">
+                                        <div id="showlastnamelabel" class="field__input-wrapper">
+                                            <label for="checkout_name" class="field__label">Last Name</label>
+                                            <input id="lastname" name="last_name" type="text" placeholder="Last Name" class="field__input" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 paddrightzero paddleftzero">
+                                        <div id="showcompanylabel" class="field__input-wrapper">
+                                            <label for="checkout_name" class="field__label">Company</label>
+                                            <input id="company" name="company" type="text" placeholder="Company" class="field__input" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 paddleftzero">
+                                        <div id="showaddresslabel" class="field__input-wrapper">
+                                            <label for="checkout_name" class="field__label">Address</label>
+                                            <input id="address" name="address" type="text" placeholder="Address" class="field__input" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 paddrightzero">
+                                        <div id="showaptsuitlabel" class="field__input-wrapper">
+                                            <label for="checkout_name" class="field__label">Apt, Suit etc</label>
+                                            <input id="altsuit" name="alt_suit" type="text" placeholder="Apt, Suit etc" class="field__input" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 paddrightzero paddleftzero">
+                                        <div id="showcitylabel" class="field__input-wrapper">
+                                            <label for="checkout_name" class="field__label">City</label>
+                                            <input id="city" name="city" type="text" placeholder="City" class="field__input" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 paddleftzero mobilecountry">
+                                        <div class="field field--required field--three-eights field--show-floating-label paddzero">
+                                            <div class="field__input-wrapper field__input-wrapper--select">
+                                                <label for="checkout_shipping_address_country" class="field__label">Country</label>
+                                                <select name="country" class="field__input field__input--select" required>
+                                                    <option value="">Select Country</option>
+                                                    <option value="Ketchup">US</option>
+                                                    <option value="Relish">Mrs</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 paddrightzero">
+                                        <div id="showpostalcodelabel" class="field__input-wrapper">
+                                            <label for="checkout_name" class="field__label">Postal Code</label>
+                                            <input id="postalcode" name="postal_code" type="text" placeholder="Postal Code" class="field__input" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 paddrightzero paddleftzero">
+                                        <div id="showphonelabel" class="field__input-wrapper">
+                                            <label for="checkout_name" class="field__label">Phone</label>
+                                            <input id="phone" name="phone" type="text" placeholder="Phone" class="field__input" required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-summary__section order-summary__section--total-lines checkout_shiiping_cost" data-order-summary-section="payment-lines" style="float: left;">
+                                <table class="total-line-table">
+                                    
+                                    <tfoot class="total-line-table__footer">
+                                        <tr class="total-line">
+                                            <td class="total-line__name payment-due-label">
+                                                <span class="payment-due-label__total">Total Sipping Cost</span>
+                                                <span class="payment-due-label__taxes hidden" data-checkout-taxes="">
+                                                    Including <span data-checkout-total-taxes-target="0">$0.00</span> in taxes
+                                                </span>
+                                            </td>
+                                            <td class="total-line__price payment-due">
+                                                <span class="payment-due__currency"></span>
+                                                <span class="payment-due__price" data-checkout-payment-due-target="25700">108400.00</span>
+                                            </td>
+                                        </tr>
+                                    </tfoot>                                   
+                                </table>
                             </div>
                             <div data-payment-method="" class="section section--payment-method">
                                 <div class="section__header">
@@ -404,6 +391,36 @@
                                                     <i class="blank-slate__icon icon icon--offsite"></i>
                                                     <p>You will be redirected to PayPal to complete your purchase securely.</p>
                                                 </div>
+                                            </div>
+                                            <div data-select-gateway="6692801" data-gateway-group="express" class="radio-wrapper content-box__row ">
+                                                <div class="radio__input">
+                                                    <label class="radio">
+                                                        <input type="radio" name="checkout" value="6692802" id="checkout_payment_gateway_6692801" class="rad">
+                                                        <span class="outer"><span class="inner"></span></span>                                                         
+                                                    </label>
+                                                </div>
+                                                <label for="checkout_payment_gateway_6692801" class="radio__label content-box__emphasis ">
+                                                    <div class="radio-wrapper">
+                                                        <div class="checkbox__label">
+                                                            Payment On Delivery
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div data-select-gateway="6692801" data-gateway-group="express" class="radio-wrapper content-box__row ">
+                                                <div class="radio__input">
+                                                    <label class="radio">
+                                                        <input type="radio" name="checkout" value="6692803" id="checkout_payment_gateway_6692801" class="rad">
+                                                        <span class="outer"><span class="inner"></span></span>                                                         
+                                                    </label>
+                                                </div>
+                                                <label for="checkout_payment_gateway_6692801" class="radio__label content-box__emphasis ">
+                                                    <div class="radio-wrapper">
+                                                        <div class="checkbox__label">
+                                                            Bank Transfer
+                                                        </div>
+                                                    </div>
+                                                </label>
                                             </div>
                                         </div>
                                     </div>                                     

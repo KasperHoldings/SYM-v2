@@ -1339,10 +1339,7 @@ select.error,input.error {
     border-top: medium none;
 }
 .order-summary__section {
-    border-color: #e1e1e1;
-    border-top: 1px solid #e1e1e1;
     padding-bottom: 1.5em;
-    padding-top: 1.5em;
 }
 #shipping_detail table {
     width: 100%;
@@ -1372,11 +1369,23 @@ select.error,input.error {
 #shipping_detail th {
     font-weight: 600;
 }
-#shipping_detail .product:first-child td {
-    padding-top: 0;
+.shippDropdown{
+    text-align: left;
+}
+.checkout_shiiping_cost{
+     float: left;
+    padding-bottom: 0 !important;
+    width: 100%;
+}
+.checkout_shiiping_cost td, .checkout_shiiping_cost th{
+    padding-bottom: 0px !important;
 }
 #shipping_detail .product td {
     padding-top: 1em;
+    width:33% !important;
+}
+#shipping_detail .product-table th:last-child{
+    text-align: right !important;
 }
 #shipping_detail td:first-child, #shipping_detail th:first-child {
     padding-left: 0;
@@ -1449,7 +1458,7 @@ select.error,input.error {
     z-index: 2;
 }
 #shipping_detail td, #shipping_detail th {
-    padding-left: 1em;
+    padding-bottom: 1em;
 }
 #shipping_detail .fieldset::after, #shipping_detail .fieldset::before {
     content: "";
@@ -1503,10 +1512,8 @@ select.error,input.error {
     transition: all 0.2s ease-out 0s;
 }
 .order-summary__section {
-    border-color: #e1e1e1;
-    border-top: 1px solid #e1e1e1;
     padding-bottom: 1.5em;
-    padding-top: 1.5em;
+    margin-top:1.5em;
 }
 .order-summary__section table {
     width: 100%;
@@ -1515,6 +1522,38 @@ select.error,input.error {
     border-collapse: collapse;
     border-spacing: 0;
     font-size: 1em;
+}
+#vehicle_detail_id .product-table thead tr {
+    background-color: #eee;
+    padding: 5px;
+}
+#vehicle_detail_id .product-table thead tr th{
+    padding-top: 1em;
+    color: #333333;
+    font-weight: bold;
+}
+#vehicle_detail_id .product-table tr:nth-child(even) {
+    background-color: #eee;
+    padding: 5px;
+}
+#vehicle_detail_id .product-table td:first-child{
+    padding-left: 5px;
+}
+#vehicle_detail_id .product-table td:last-child{
+    padding-right: 5px;
+}
+#vehicle_detail_id .product-table th:first-child{
+    padding-left: 5px;
+}
+#vehicle_detail_id .product-table th:last-child{
+    padding-right: 5px;
+}
+.product-table-terms tr{
+    background: none;
+}
+.product-table-terms tr td{
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
 }
 .total-line:first-child td {
     padding-top: 0;
