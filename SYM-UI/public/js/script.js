@@ -445,6 +445,16 @@ jQuery(document).ready(function () {
     jQuery("#travel_group_travel_info_id").validate({
         submitHandler: function (form) {
             if (jQuery(form).valid()) {
+                showTravelGroupPersonalInfo();
+                return false; // prevent normal form posting
+            } else {
+                return false; // prevent normal form posting
+            }
+        }
+    });
+    jQuery("#travel_group_personal_info_id").validate({
+        submitHandler: function (form) {
+            if (jQuery(form).valid()) {
                 showTravelGroupQuotationInfo();
                 return false; // prevent normal form posting
             } else {
@@ -463,8 +473,12 @@ function showSingleTripQuotationInfo() {
     jQuery('#single_trip_personal_detail').hide();
     jQuery('#single_trip_quotation_detail').show();
 }
-function showTravelGroupQuotationInfo() {
+function showTravelGroupPersonalInfo() {
     jQuery('#travel_group_travel_information').hide();
+    jQuery('#travel_group_personal_detail').show();
+}
+function showTravelGroupQuotationInfo() {
+    jQuery('#travel_group_personal_detail').hide();
     jQuery('#travel_group_quotation_detail').show();
 }
 function showPersonalDetail() {
