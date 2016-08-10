@@ -923,7 +923,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
 }
 .landingScreen .formarea, .disForm {
     background: #eeeeee none repeat scroll 0 0;
-    height: 400px;
+    height: auto;
     margin-bottom: 15px;
     position: relative;
     z-index: 10;
@@ -962,6 +962,7 @@ input[type="checkbox"]:checked:not(old) + label > span::before {
     position: relative;
     width: 50%;
     z-index: 1001;
+    background-color: #fff;
 }
 .landingScreen .formarea .leftTab ul, .disForm .leftContent ul {
     display: table-cell;
@@ -3303,7 +3304,7 @@ img.investors {
 }
 .landingScreen .formarea, .disForm, .landingScreen .formarea .leftTab .content_box {
     box-sizing: border-box;
-    height: 519px;
+    height: auto;
 }
 .landingScreen .formarea .leftTab ul li a, .disForm .leftContent ul li a {
     padding: 33.1% 15px 4.6%;
@@ -3474,7 +3475,7 @@ img.investors {
     width: 100%;
 }
 .car-bg {
-    margin-top: 75px;
+    margin-top: 0px;
 }
 .radio {
     font-size: 16px;
@@ -3663,7 +3664,7 @@ div.play-button {
 }
 .landingScreen .formarea, .disForm, .landingScreen .formarea .leftTab .content_box {
     box-sizing: border-box;
-    height: 428px;
+    height: auto;
 }
 .category ul.cate li a {
     height: 90px;
@@ -5590,4 +5591,15 @@ a.mobile {
     position: absolute;
     top: 22px;
     width: 22px;
+}
+@media(min-width : 768px) {
+    .landingScreen .formarea, .disForm{
+        display: flex;
+    }
+}
+@media(max-width : 768px) {
+    img{
+        max-width: 100% !important;
+        width:auto !important;
+    }
 }
