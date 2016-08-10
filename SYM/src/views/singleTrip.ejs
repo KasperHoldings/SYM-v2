@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SYM</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-select.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/animations.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/uikit.min.css" />
+    <!--<link rel="stylesheet" type="text/css" href="../../css/videobackground.css" />-->
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/format.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/flexslider.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-datetimepicker.css" />
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="fix_hd">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="../../images/mainlogo.png"/></a>
+            </div>
+            <a id="nav-full-toggle" class="nav-hamburger" href="#">
+                <span></span>
+            </a>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul id="menu" class="nav navbar-nav">
+                    <li class="active" data-menuanchor="firstPage">
+                        <a href="#firstPage">
+                            <i class="icon icon-block icon-48 first-section-image"></i>
+                            <span>First</span>
+                        </a>
+                    </li>
+                    <li data-menuanchor="secondPage"><a href="#secondPage"><i class="icon icon-block icon-48 first-section-image"></i><span>Second</span></a></li>
+                    <li data-menuanchor="3rdPage"><a href="#3rdPage"><i class="icon icon-block icon-48 first-section1-image"></i><span>Third</span></a></li>
+                    <li data-menuanchor="4thPage"><a href="#4thPage"><i class="icon icon-block icon-48 first-section2-image"></i><span>Fourth</span></a></li>
+                    <li data-menuanchor="5thPage"><a href="#5thPage"><i class="icon icon-block icon-48 first-section-image"></i><span>Fifth</span></a></li>
+                    <li data-menuanchor="6thPage"><a href="#6thPage"><i class="icon icon-block icon-48 first-section1-image"></i><span>Sixth</span></a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+    <nav id="nav-full" class="layer-change" style="display: none;">
+        <ul style="margin-top: 90px;">
+            <li class="mobile-tablet-true" data-menuanchor="firstPage">
+                <a href="#firstPage">
+                    <i class="icon icon-block icon-48 first-section-image"></i>
+                    <span>First</span>
+                </a>
+            </li>
+            <li class="mobile-tablet-true" data-menuanchor="secondPage"><a href="#secondPage"><i class="icon icon-block icon-48 first-section-image"></i><span>Second</span></a></li>
+            <li class="mobile-tablet-true" data-menuanchor="3rdPage"><a href="#3rdPage"><i class="icon icon-block icon-48 first-section1-image"></i><span>Third</span></a></li>
+            <li class="mobile-tablet-true" data-menuanchor="4thPage"><a href="#4thPage"><i class="icon icon-block icon-48 first-section2-image"></i><span>Fourth</span></a></li>
+            <li class="mobile-tablet-true" data-menuanchor="5thPage"><a href="#5thPage"><i class="icon icon-block icon-48 first-section-image"></i><span>Fifth</span></a></li>
+            <li class="mobile-tablet-true" data-menuanchor="6thPage"><a href="#6thPage"><i class="icon icon-block icon-48 first-section1-image"></i><span>Sixth</span></a></li>
+        </ul>
+    </nav>
+    <div class="insurance_info topMainPadding">
+        <div class="insurance_text">
+            Single Trip
+        </div>
+        <ul class="breadcrumbc">
+            <li class="breadcrumb__item breadcrumb__item--current">
+                Travel Information
+            </li>
+            <li class="breadcrumb__item breadcrumb__item--blank">
+                Personal Information
+            </li>
+            <li class="breadcrumb__item breadcrumb__item--blank">
+                Quotation
+            </li>
+        </ul>
+        <div id="single_trip_travel_information" class="vehicle_detail_bg">
+            <form id="single_trip_travel_info_id" name="single_trip" action="checkout.html">
+                <div class="row">
+                    <div class="section section--shipping-address">
+                        <div class="col-md-6 paddleftzero">
+                            <div id="showdateofdeplabel" class="field__input-wrapper">
+                                <label for="checkout_shipping_address_country" class="field__label">Date of Departure</label>
+                                <div class='input-group date' id='dateOfDepartureDatePicker'>
+                                    <input id="dateOfDepartureSingleTrip" name="dateOfDepartureSingleTrip" type='text' class="field__input" placeholder="Date of Departure" required/>
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 paddrightzero">
+                            <div id="showdateofarrivallabel" class="field__input-wrapper">
+                                <label for="checkout_shipping_address_country" class="field__label">Date of Arrival</label>
+                                <div class='input-group date' id='dateOfArrivalDatePicker'>
+                                    <input id="dateOfArrivalSingleTrip" name="dateOfArrivalSingleTrip" type='text' class="field__input" placeholder="Date of Arrival" required/>
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 paddleftzero paddrightzero marginBottom10 mobilecountry1">
+                            <div class="field field--required field--three-eights field--show-floating-label paddzero">
+                                <div class="field__input-wrapper field__input-wrapper--select">
+                                    <label for="checkout_shipping_address_country" class="field__label">Region</label>
+                                    <select name="country" class="field__input field__input--select" required>
+                                        <option value="">World wide excluding US/Asia </option>
+                                        <option value="Ketchup">US</option>
+                                        <option value="Relish">Mrs</option>
+                                    </select>
+                                </div>
+                                <div class="verysmall">*All Regions Excluding Sri Lanka</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 paddleftzero mobilecountry marginBottom10">
+                            <div class="field field--required field--three-eights field--show-floating-label paddzero">
+                                <div class="field__input-wrapper field__input-wrapper--select">
+                                    <label for="checkout_shipping_address_country" class="field__label">Medical</label>
+                                    <select name="medical" class="field__input field__input--select" required>
+                                        <option value="">Select Medical</option>
+                                        <option value="Ketchup">500</option>
+                                        <option value="Relish">1000</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 paddrightzero mobilecountry marginBottom10">
+                            <div class="field field--required field--three-eights field--show-floating-label paddzero">
+                                <div class="field__input-wrapper field__input-wrapper--select">
+                                    <label for="checkout_shipping_address_country" class="field__label">Goods</label>
+                                    <select name="goods" class="field__input field__input--select" required>
+                                        <option value="">Select Goods</option>
+                                        <option value="Ketchup">500</option>
+                                        <option value="Relish">1000</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div style="float: left;width: 100%;" class="row step__footer">
+                        <button class="step__footer__continue-btn btn " type="submit" name="button">
+                            <span class="btn__content">Proceed</span>
+                        </button>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="single_trip_personal_detail" class="vehicle_detail_bg" style="display: none;">
+            <form id="single_trip_personal_info_id" name="personal_detail" action="">
+                <div class="row">
+                    <div class="marginBottom10 field field--required field--three-eights field--show-floating-label paddleftzero paddrightzero">
+                        <div class="field__input-wrapper field__input-wrapper--select">
+                            <label for="checkout_shipping_address_country" class="field__label">Title</label>
+                            <select name="title" class="field__input field__input--select" required>
+                                <option value="">Select Title</option>
+                                <option value="Ketchup">Mr</option>
+                                <option value="Relish">Mrs</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="showfirstnamelabel" class="field__input-wrapper">
+                        <label for="checkout_name" class="field__label">First Name</label>
+                        <input id="firstname" name="first_name" type="text" placeholder="First Name" class="field__input" required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="showlastnamelabel" class="field__input-wrapper">
+                        <label for="checkout_name" class="field__label">Last Name</label>
+                        <input id="lastname" name="last_name" type="text" placeholder="Last Name" class="field__input" required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="showmobilelabel" class="field__input-wrapper">
+                        <label for="checkout_mobile" class="field__label">Mobile</label>
+                        <input id="mobile" name="mobile" type="text" placeholder="Mobile" class="field__input" required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="showpassportlabel" class="field__input-wrapper">
+                        <label for="checkout_nic" class="field__label">Passport</label>
+                        <input id="passport" name="passport" type="text" placeholder="Passport" class="field__input" required />
+                    </div>
+                </div>
+                <div class="row insuranceButtonMarginTop">
+                    <div style="float: left;width: 100%;" class="row step__footer">
+
+                        <button class="step__footer__continue-btn btn " type="submit" name="button">
+                            <span class="btn__content">Process</span>
+                        </button>
+                        <a class="step__footer__previous-link" href="insurance.html">
+                            <svg viewBox="0 0 6.7 11.3" height="11.3" width="6.7" xmlns="http://www.w3.org/2000/svg" class="previous-link__icon icon--chevron icon">
+                                <path d="M6.7 1.1l-1-1.1-4.6 4.6-1.1 1.1 1.1 1 4.6 4.6 1-1-4.6-4.6z"/>
+                            </svg>
+                            Return to Previous Page
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="single_trip_quotation_detail" class="vehicle_detail_bg" style="display: none;">
+            <form id="single_trip_quation_info_id" name="personal_detail" action="">
+                <div class="row quoteColor">
+                    <div class="col-lg-3 quoteColor_wrapper">
+                        <select name="">
+                            <option selected="">Select Insurance ...</option>
+                            <option>Company 1</option>
+                            <option>Company 2</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-1">
+                                <span id="credit_card_verification_value_tooltip" tabindex="0" class="field__icon icon icon--question has-tooltip" role="tooltip">
+                                    <img src="../../images/globe@2x.png"/>
+                                    <span class="tooltip">
+                                        <span data-cvv-tooltip="unknown">
+                                            3-digit security code usually found on the back of your card. American Express cards have a 4-digit code located on the front.
+                                        </span>
+                                        <span data-cvv-tooltip="amex" class="hidden">
+                                            4-digit security code on the front of your card
+                                        </span>
+                                        <span data-cvv-tooltip="other" class="hidden">
+                                            3-digit security code on the back of your card
+                                        </span>
+                                    </span>
+                                </span>
+                    </div>
+                    <div class="col-lg-1">
+                                <span id="credit_card_verification_value_tooltip" tabindex="0" class="field__icon icon icon--question has-tooltip" role="tooltip">
+                                    <img src="../../images/ecosystem@2x.png"/>
+                                    <span class="tooltip">
+                                        <span data-cvv-tooltip="unknown">
+                                            3-digit security code usually found on the back of your card. American Express cards have a 4-digit code located on the front.
+                                        </span>
+                                        <span data-cvv-tooltip="amex" class="hidden">
+                                            4-digit security code on the front of your card
+                                        </span>
+                                        <span data-cvv-tooltip="other" class="hidden">
+                                            3-digit security code on the back of your card
+                                        </span>
+                                    </span>
+                                </span>
+
+                    </div>
+                    <div class="col-lg-1">
+                                <span id="credit_card_verification_value_tooltip" tabindex="0" class="field__icon icon icon--question has-tooltip" role="tooltip">
+                                    <img src="../../images/cards@2x.png"/>
+                                    <span class="tooltip">
+                                        <span data-cvv-tooltip="unknown">
+                                            3-digit security code usually found on the back of your card. American Express cards have a 4-digit code located on the front.
+                                        </span>
+                                        <span data-cvv-tooltip="amex" class="hidden">
+                                            4-digit security code on the front of your card
+                                        </span>
+                                        <span data-cvv-tooltip="other" class="hidden">
+                                            3-digit security code on the back of your card
+                                        </span>
+                                    </span>
+                                </span>
+
+                    </div>
+                    <div class="col-lg-1">
+                                <span id="credit_card_verification_value_tooltip" tabindex="0" class="field__icon icon icon--question has-tooltip" role="tooltip">
+                                    <img src="../../images/powerful@2x.png"/>
+                                    <span class="tooltip">
+                                        <span data-cvv-tooltip="unknown">
+                                            3-digit security code usually found on the back of your card. American Express cards have a 4-digit code located on the front.
+                                        </span>
+                                        <span data-cvv-tooltip="amex" class="hidden">
+                                            4-digit security code on the front of your card
+                                        </span>
+                                        <span data-cvv-tooltip="other" class="hidden">
+                                            3-digit security code on the back of your card
+                                        </span>
+                                    </span>
+                                </span>
+
+                    </div>
+                    <div class="col-lg-1">
+                                <span id="credit_card_verification_value_tooltip" tabindex="0" class="field__icon icon icon--question has-tooltip" role="tooltip">
+                                    <img src="../../images/accounting@2x.png"/>
+                                    <span class="tooltip">
+                                        <span data-cvv-tooltip="unknown">
+                                            3-digit security code usually found on the back of your card. American Express cards have a 4-digit code located on the front.
+                                        </span>
+                                        <span data-cvv-tooltip="amex" class="hidden">
+                                            4-digit security code on the front of your card
+                                        </span>
+                                        <span data-cvv-tooltip="other" class="hidden">
+                                            3-digit security code on the back of your card
+                                        </span>
+                                    </span>
+                                </span>
+                    </div>
+                    <div class="col-lg-2">
+
+                    </div>
+                </div>
+                <div class="row quoteColor table-align-verticle">
+                    <div class="col-lg-3">
+                        <img src="../../images/aia-logo.png" width="100%"/>
+                    </div>
+                    <div class="col-lg-1">
+                        Free
+                    </div>
+                    <div class="col-lg-1">
+                        50%
+                    </div>
+                    <div class="col-lg-1">
+                        Upto 100,000
+                    </div>
+                    <div class="col-lg-1">
+                        Upto 3000
+                    </div>
+                    <div class="col-lg-1">
+                        4 People 100,000
+                    </div>
+                    <div class="col-lg-2">
+                        <a id="nextPage" class="nextPage" href="javascript:showVehicleDetail()">
+
+                            <div class="Plan-cardRate-fixed">20,000</div>
+                        </a>
+                        <div class="successful_charge">Per successful card charge</div>
+                    </div>
+                </div>
+                <div class="row quoteColor table-align-verticle selected has-tooltip">
+                    <div class="col-lg-3">
+                        <img src="../../images/aia-logo.png" width="100%"/>
+                    </div>
+                    <div class="col-lg-1">
+                        Free
+                    </div>
+                    <div class="col-lg-1">
+                        80%
+                    </div>
+                    <div class="col-lg-1">
+                        Upto 100,000
+                    </div>
+                    <div class="col-lg-1">
+                        Upto 3000
+                    </div>
+                    <div class="col-lg-1">
+                        4 People 100,000
+                    </div>
+                    <div class="col-lg-2">
+                        <a id="nextPage" class="nextPage" href="javascript:showVehicleDetail()">
+
+                            <div class="Plan-cardRate-fixed">25,000</div>
+                        </a>
+                        <div class="successful_charge">Per successful card charge</div>
+                    </div>
+                            <span class="tooltip">
+                                <span data-cvv-tooltip="unknown">
+                                    Save Your Monkey Recommendation. Enjoy 15% OFF Vehicle Ins. & 10% OFF Life Ins.
+                                </span>
+                            </span>
+                </div>
+                <div class="row quoteColor table-align-verticle">
+                    <div class="col-lg-3">
+                        <img src="../../images/aia-logo.png" width="100%"/>
+                    </div>
+                    <div class="col-lg-1">
+                        Free
+                    </div>
+                    <div class="col-lg-1">
+                        50%
+                    </div>
+                    <div class="col-lg-1">
+                        Upto 100,000
+                    </div>
+                    <div class="col-lg-1">
+                        Upto 3000
+                    </div>
+                    <div class="col-lg-1">
+                        4 People 100,000
+                    </div>
+                    <div class="col-lg-2">
+                        <a id="nextPage" class="nextPage" href="javascript:showVehicleDetail()">
+
+                            <div class="Plan-cardRate-fixed">11,7000</div>
+                        </a>
+                        <div class="successful_charge">Per successful card charge</div>
+                    </div>
+                </div>
+                <div class="row quoteColor table-align-verticle">
+                    <div class="col-lg-3">
+                        <img src="../../images/aia-logo.png" width="100%"/>
+                    </div>
+                    <div class="col-lg-1">
+                        Free
+                    </div>
+                    <div class="col-lg-1">
+                        80%
+                    </div>
+                    <div class="col-lg-1">
+                        Upto 100,000
+                    </div>
+                    <div class="col-lg-1">
+                        Upto 3000
+                    </div>
+                    <div class="col-lg-1">
+                        4 People 100,000
+                    </div>
+                    <div class="col-lg-2">
+                        <a id="nextPage" class="nextPage" href="javascript:showVehicleDetail()">
+
+                            <div class="Plan-cardRate-fixed">22,000</div>
+                        </a>
+                        <div class="successful_charge">Per successful card charge</div>
+                    </div>
+                </div>
+                <div class="row quoteColor table-align-verticle">
+                    <div class="col-lg-3">
+                        <img src="../../images/aia-logo.png" width="100%"/>
+                    </div>
+                    <div class="col-lg-1">
+                        Free
+                    </div>
+                    <div class="col-lg-1">
+                        50%
+                    </div>
+                    <div class="col-lg-1">
+                        Upto 100,000
+                    </div>
+                    <div class="col-lg-1">
+                        Upto 3000
+                    </div>
+                    <div class="col-lg-1">
+                        4 People 100,000
+                    </div>
+                    <div class="col-lg-2">
+                        <a id="nextPage" class="nextPage" href="javascript:showVehicleDetail()">
+
+                            <div class="Plan-cardRate-fixed">14,000</div>
+                        </a>
+                        <div class="successful_charge">Per successful card charge</div>
+                    </div>
+                </div>
+                <div class="row insuranceButtonMarginTop">
+                    <div style="float: left;width: 100%;" class="row step__footer">
+                        <a class="step__footer__previous-link" href="insurance.html">
+                            <svg viewBox="0 0 6.7 11.3" height="11.3" width="6.7" xmlns="http://www.w3.org/2000/svg" class="previous-link__icon icon--chevron icon">
+                                <path d="M6.7 1.1l-1-1.1-4.6 4.6-1.1 1.1 1.1 1 4.6 4.6 1-1-4.6-4.6z"/>
+                            </svg>
+                            Return to Previous Page
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="shipping_footer">
+        <div class="section animatedParent">
+            <div class="container-fluid">
+                <div class="site-footer ">
+                    <div class="grid-row">
+                        <header class="col-md-4">
+                            <div class="site-footer__logo">
+                                <img style='' src="../../images/logo-footer.png"/>
+                            </div>
+                        </header>
+
+                        <div class="col-md-2">
+                            <h3 class="site-footer__block-title">Company</h3>
+
+                            <nav class="nav nav--secondary">
+                                <ul class="nav__items">
+                                    <li class="nav__item"><a href="#">Who We Are</a></li>
+                                    <li class="nav__item"><a href="#">What We Do</a></li>
+                                    <li class="nav__item"><a href="#">Our Journal</a></li>
+                                    <li class="nav__item"><a href="#">Get In Touch</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-2">
+                            <h3 class="site-footer__block-title">Our Work</h3>
+
+                            <nav class="nav nav--secondary">
+                                <ul class="nav__items">
+                                    <li class="nav__item"><a href="#">Motion Array</a></li>
+                                    <li class="nav__item"><a href="#">Herself</a></li>
+                                    <li class="nav__item"><a href="#">Five Simple Steps</a></li>
+                                    <li class="nav__item"><a href="#">Tribal</a></li>
+                                    <li class="nav__item"><a href="#">oozled</a></li>
+                                    <li class="nav__item"><a href="#">PH Museum</a></li>
+                                    <li class="nav__item"><a href="#">Charity Bank</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-2 add_cmn">
+                            <h3 class="site-footer__block-title">Our Details</h3>
+                            <p class="site-footer__contact-details">
+
+                                        <span id="sproutencodeemail-5763af77a11b4-1"><a href="mailto:info@saveyourmonkey.com
+                                                                                        ">info@saveyourmonkey.com
+                                            </a></span>
+                                +94 (011) 438 6230
+                            </p>
+
+                            <p><span class="icon icon--location"></span> Save Your Monkey<br/>1st Floor <br/>Liberty Arcade<br/>R A Demel Mawatha <br/>Colombo 3</p>
+                        </div>
+                        <div class="col-md-4">
+
+                            <ul class="social">
+                                <li class="social__item"><a title="Follow on Twitter" target="_blank" href="#"><span class="icon icon--twitter"></span></a></li>
+                                <li class="social__item"><a title="Like on Facebook" target="_blank" href="#"><span class="icon icon--facebook"></span></a></li>
+                                <li class="social__item"><a title="Design snippets on Dribbble" target="_blank" href="#"><span class="icon icon--dribbble"></span></a></li>
+                                <li class="social__item"><a title="Photos on Instagram" target="_blank" href="#"><span class="icon icon--instagram"></span></a></li>
+                            </ul>
+                            <!--<a href="#" class="js-hidden">Google +</a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="site-footer__company-info">
+                    <p>&copy; Copyright 2015 - 2016 All Right Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../../js/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../js/uikit.min.js"></script>
+<!--<script type="text/javascript" src="../../js/videobackground.js"></script>-->
+<script type="text/javascript" src="../../js/jquery.fullPage.js"></script>
+<script type="text/javascript" src="../../js/css3-animate-it.js"></script>
+<script type="text/javascript" src="../../js/jquery.validate.js"></script>
+<script type="text/javascript" src="../../js/moment-with-locales.js"></script>
+<script type="text/javascript" src="../../js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="../../js/jquery.flexslider.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="../../js/script.js"></script>
+<script>
+    $('.selectpicker').selectpicker();
+</script>
+</body>
+</html>

@@ -11,9 +11,9 @@ exports.get = function (req, res) {
                     var insuranceCompanyValues = {};
                     for (var j = 0; j < equationRows.length; j++) {
                         //var equation = equationRows[j].equation;
-
                         insuranceCompanyValues[equationRows[j].insurance_company] = (100 + equationRows[j].value) * insuranceValue / 100;
                     }
+
                     //for (var j = 0; j < equationRows.length; j++) {
                     //    var equation = equationRows[j].equation;
                     //    for (var index = 0 in variableValuesResult) {

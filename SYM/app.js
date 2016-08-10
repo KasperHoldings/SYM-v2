@@ -28,6 +28,7 @@ var nav = [{
     }
 ];
 
+var Promise = require('bluebird');
 
 //Routers
 var insuranceRouter = require('./src/routes/insuranceRouter')(nav);
@@ -38,6 +39,8 @@ var vehicleDetailsRouter = require('./src/routes/vehicleDetailsRouter');
 var personalDetailsRouter = require('./src/routes/personalDetailsRouter');
 var insuranceDetailsRouter = require('./src/routes/insuranceDetailsRouter');
 var insuranceQuotationRouter = require('./src/routes/insuranceQuotationRouter');
+var testRouter = require('./src/routes/testRouter');
+var singleTripRouter = require('./src/routes/singleTripRouter');
 
 app.use(express.static('public'));
 app.set('views', './src/views');
@@ -54,6 +57,8 @@ app.use(connection);
 
 //app.use('/', insuranceRouter);
 //app.use('/', sampleForm);
+
+app.get('/test', testRouter.get);
 
 app.get('/list', userRouter.list);
 app.get('/users/create', userRouter.add);
@@ -95,6 +100,23 @@ app.post('/vehicle/car/insuranceDetails/edit/:id',insuranceDetailsRouter.saveEdi
 //Vehicle Router - Quotation
 app.get('/vehicle/car/insurance/quotation', insuranceQuotationRouter.get);
 //app.post('/vehicle/car/insurance/quotation/create', insuranceQuotationRouter.save);
+
+
+
+
+
+
+/**
+ * Trip Start
+ */
+
+//Travel Single
+app.get('trip/single/tripDetails', singleTripRouter.get);
+
+
+/**
+ * Trip End
+ */
 
 //Index
 app.get('/', function (req, res) {
