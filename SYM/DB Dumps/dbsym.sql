@@ -399,12 +399,14 @@ CREATE TABLE `persona_info_single` (
   `mobile` varchar(45) DEFAULT NULL,
   `last_name` varchar(100) DEFAULT NULL,
   `first_name` varchar(100) DEFAULT NULL,
-  `type` varchar(45) DEFAULT NULL,
+  `type` int(11) NOT NULL,
   `title` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`),
   KEY `persona_info_single_fk1_idx` (`single_basic_info_id`),
-  CONSTRAINT `persona_info_single_fk1` FOREIGN KEY (`single_basic_info_id`) REFERENCES `single_basic_info` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+  KEY `persona_info_single_fk2_idx` (`type`),
+  CONSTRAINT `persona_info_single_fk1` FOREIGN KEY (`single_basic_info_id`) REFERENCES `single_basic_info` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `persona_info_single_fk2` FOREIGN KEY (`type`) REFERENCES `travel_type` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -578,8 +580,8 @@ DROP TABLE IF EXISTS `single_travel_info`;
 CREATE TABLE `single_travel_info` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `single_basic_info_if` int(11) NOT NULL,
-  `good` double DEFAULT NULL,
-  `medical` double DEFAULT NULL,
+  `goods_id` int(11) NOT NULL,
+  `medical_id` int(11) NOT NULL,
   `region_id` int(11) NOT NULL,
   `date_of_arrival` date DEFAULT NULL,
   `date_of_departure` date DEFAULT NULL,
@@ -587,8 +589,12 @@ CREATE TABLE `single_travel_info` (
   UNIQUE KEY `id_UNIQUE` (`id`),
   KEY `single_travel_info_fk1_idx` (`single_basic_info_if`),
   KEY `single_travel_info_fk2_idx` (`region_id`),
+  KEY `single_travel_info_fk3_idx` (`goods_id`),
+  KEY `single_travel_info_fk4_idx` (`medical_id`),
   CONSTRAINT `single_travel_info_fk1` FOREIGN KEY (`single_basic_info_if`) REFERENCES `single_basic_info` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `single_travel_info_fk2` FOREIGN KEY (`region_id`) REFERENCES `regions` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT `single_travel_info_fk2` FOREIGN KEY (`region_id`) REFERENCES `regions` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `single_travel_info_fk3` FOREIGN KEY (`goods_id`) REFERENCES `travel_goods` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `single_travel_info_fk4` FOREIGN KEY (`medical_id`) REFERENCES `travel_medical` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -599,6 +605,109 @@ CREATE TABLE `single_travel_info` (
 LOCK TABLES `single_travel_info` WRITE;
 /*!40000 ALTER TABLE `single_travel_info` DISABLE KEYS */;
 /*!40000 ALTER TABLE `single_travel_info` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `travel_goods`
+--
+
+DROP TABLE IF EXISTS `travel_goods`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `travel_goods` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `travel_goods` double DEFAULT NULL,
+  `travel_type` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`),
+  KEY `travel_goods_fk1_idx` (`travel_type`),
+  CONSTRAINT `travel_goods_fk1` FOREIGN KEY (`travel_type`) REFERENCES `travel_type` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `travel_goods`
+--
+
+LOCK TABLES `travel_goods` WRITE;
+/*!40000 ALTER TABLE `travel_goods` DISABLE KEYS */;
+/*!40000 ALTER TABLE `travel_goods` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `travel_medical`
+--
+
+DROP TABLE IF EXISTS `travel_medical`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `travel_medical` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `medical` double DEFAULT NULL,
+  `travel_type` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`),
+  KEY `travel_medical_fk1_idx` (`travel_type`),
+  CONSTRAINT `travel_medical_fk1` FOREIGN KEY (`travel_type`) REFERENCES `travel_type` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `travel_medical`
+--
+
+LOCK TABLES `travel_medical` WRITE;
+/*!40000 ALTER TABLE `travel_medical` DISABLE KEYS */;
+/*!40000 ALTER TABLE `travel_medical` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `travel_type`
+--
+
+DROP TABLE IF EXISTS `travel_type`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `travel_type` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `travel_type` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `travel_type`
+--
+
+LOCK TABLES `travel_type` WRITE;
+/*!40000 ALTER TABLE `travel_type` DISABLE KEYS */;
+/*!40000 ALTER TABLE `travel_type` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `travel_values`
+--
+
+DROP TABLE IF EXISTS `travel_values`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `travel_values` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `medicals` double DEFAULT NULL,
+  `goods` double DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `travel_values`
+--
+
+LOCK TABLES `travel_values` WRITE;
+/*!40000 ALTER TABLE `travel_values` DISABLE KEYS */;
+/*!40000 ALTER TABLE `travel_values` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -794,4 +903,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-08-11 13:39:49
+-- Dump completed on 2016-08-11 14:37:37
