@@ -2,7 +2,7 @@
  * GET users listing.
  */
 exports.get = function (req, res) {
-    req.getConnection(function(){
+    req.getConnection(function () {
 
     });
 };
@@ -46,7 +46,7 @@ exports.add = function (req, res) {
                         res.render('forms', {
                             form: 'insuranceDetails',
                             insurance_companies: insurance_company_rows,
-                            cover_types : cover_type_rows,
+                            cover_types: cover_type_rows,
                             voluntary_excess: voluntary_excess_rows,
                             purposes: purpose_rows
 
@@ -55,7 +55,6 @@ exports.add = function (req, res) {
                     });
 
                 });
-
 
 
                 //    var cover_types= connector.query('SELECT * FROM cover_type', function (err, cover_type_rows) {
@@ -109,24 +108,22 @@ exports.save = function (req, res) {
 
         var data = {
 
-            date_of_departure: req.date_of_departure,
-            date_of_arrival: req.date_of_arrival,
-            region: req.region_id,
-            medical: req.mdedical,
-            goods: req.goods,
+            dob: req.date + " " + req.month + " " + req.year,
+            email: req.email,
+            cover_type: req.cover_type
         };
 
 
         //console.log(data);
 
-        var query = connector.query('INSERT into single_travel  _info set ? ', data, function (err, rows) {
+        var query = connector.query('INSERT into single_travel_basic_info set ? ', data, function (err, rows) {
 
             if (err) {
                 console.log('Error Selecting : %s ', err);
             }
 
 
-            res.redirect('travel/single/personalInfo');
+            res.redirect('travel/single/travel-info');
 
         });
 

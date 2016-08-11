@@ -41,6 +41,8 @@ var insuranceDetailsRouter = require('./src/routes/insuranceDetailsRouter');
 var insuranceQuotationRouter = require('./src/routes/insuranceQuotationRouter');
 var testRouter = require('./src/routes/testRouter');
 var singleTripRouter = require('./src/routes/singleTripRouter');
+var singleTripDetailsRouter = require('./src/routes/singleTripDetailsRouter');
+var singleTripPersonalInfoRouter = require('./src/routes/singleTripPersonalInfoRouter');
 
 app.use(express.static('public'));
 app.set('views', './src/views');
@@ -111,7 +113,10 @@ app.get('/vehicle/car/insurance/quotation', insuranceQuotationRouter.get);
  */
 
 //Travel Single
-app.get('trip/single/tripDetails', singleTripRouter.get);
+app.get('strip/single/tripDetails', singleTripRouter.get);
+
+app.get('travel/single/travelInfo', singleTripDetailsRouter.get);
+app.get('travel/single/personalInfo', singleTripPersonalRouter.get);
 
 
 /**
