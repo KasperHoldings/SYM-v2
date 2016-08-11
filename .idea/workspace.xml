@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53c7c294-451c-447e-b739-72a3303b12a7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/routes/singleTripDetailsRouter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/routes/singleTripPersonalInfoRouter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/routes/singleTripBasicDetailsRouter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM-UI/public/src/views/index.html" afterPath="$PROJECT_DIR$/SYM-UI/public/src/views/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/app.js" afterPath="$PROJECT_DIR$/SYM/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/routes/singleTripRouter.js" afterPath="$PROJECT_DIR$/SYM/src/routes/singleTripRouter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/views/index.ejs" afterPath="$PROJECT_DIR$/SYM/src/views/index.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/views/singleTrip.ejs" afterPath="$PROJECT_DIR$/SYM/src/views/singleTrip.ejs" />
     </list>
     <ignored path="SYM-v2.iws" />
@@ -27,15 +28,28 @@
     <favorites_list name="SYM-v2" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.60347825">
+    <splitter split-orientation="horizontal" split-proportion="0.66032845">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="702" column="28" selection-start-line="702" selection-start-column="28" selection-end-line="702" selection-end-column="28" />
-                  <folding />
+                <state vertical-scroll-proportion="0.1875">
+                  <caret line="818" column="71" selection-start-line="818" selection-start-column="71" selection-end-line="818" selection-end-column="71" />
+                  <folding>
+                    <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#1;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#select#0;n#div#2;n#div#0;n#form#0;n#div#2;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#select#1;n#div#2;n#div#0;n#form#0;n#div#2;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#4;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#0;n#div#5;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -50,27 +64,15 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="singleTrip.ejs" pinned="false" current-in-tab="true">
+          <file leaf-file-name="singleTrip.ejs" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/SYM/src/views/singleTrip.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="3.3102725">
-                  <caret line="167" column="47" selection-start-line="167" selection-start-column="47" selection-end-line="167" selection-end-column="47" />
+                <state vertical-scroll-proportion="-2.4578314">
+                  <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
                   <folding>
                     <element signature="n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="singleTripRouter.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripRouter.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="128" column="40" selection-start-line="128" selection-start-column="40" selection-end-line="128" selection-end-column="52" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -133,10 +135,12 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+                <state vertical-scroll-proportion="-0.8181818">
+                  <caret line="320" column="72" selection-start-line="320" selection-start-column="72" selection-end-line="320" selection-end-column="72" />
                   <folding>
-                    <marker date="1470834607556" expanded="true" signature="80905:80943" placeholder="..." />
+                    <element signature="n#style#0;n#div#1;n#form#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#div#1;n#form#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <marker date="1470918939227" expanded="true" signature="79044:79082" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -181,8 +185,8 @@
           <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/SYM/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.29821074">
-                  <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+                <state vertical-scroll-proportion="0.6069869">
+                  <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -193,6 +197,28 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="singleTripRouter.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripRouter.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="singleTripBasicDetailsRouter.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripBasicDetailsRouter.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -222,8 +248,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SYM/src/lib/main.jsx" />
-        <option value="$PROJECT_DIR$/SYM/src/components/SampleFormEdit.jsx" />
         <option value="$PROJECT_DIR$/SYM/src/views/userRegistrations/create.ejs" />
         <option value="$PROJECT_DIR$/SYM/src/views/userRegistrations/edit.ejs" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -266,13 +290,15 @@
         <option value="$PROJECT_DIR$/SYM/src/routes/personalDetailsRouter.js" />
         <option value="$PROJECT_DIR$/SYM/src/config/dbconfig.js" />
         <option value="$PROJECT_DIR$/SYM/src/views/forms.ejs" />
-        <option value="$PROJECT_DIR$/SYM-UI/public/src/views/index.html" />
-        <option value="$PROJECT_DIR$/SYM/src/views/index.ejs" />
         <option value="$PROJECT_DIR$/SYM-UI/public/src/views/singletrip.html" />
-        <option value="$PROJECT_DIR$/SYM/src/routes/singleTripRouter.js" />
-        <option value="$PROJECT_DIR$/SYM/app.js" />
         <option value="$PROJECT_DIR$/SYM/src/routes/singleTripPersonalInfoRouter.js" />
         <option value="$PROJECT_DIR$/SYM/src/views/singleTrip.ejs" />
+        <option value="$PROJECT_DIR$/SYM/src/routes/singleTriptripBasicDetailsRouter.js" />
+        <option value="$PROJECT_DIR$/SYM/src/routes/singleTripRouter.js" />
+        <option value="$PROJECT_DIR$/SYM-UI/public/src/views/index.html" />
+        <option value="$PROJECT_DIR$/SYM/src/routes/singleTripBasicDetailsRouter.js" />
+        <option value="$PROJECT_DIR$/SYM/app.js" />
+        <option value="$PROJECT_DIR$/SYM/src/views/index.ejs" />
       </list>
     </option>
   </component>
@@ -556,23 +582,23 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="in&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/views/index.ejs&#10;app&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/app.js&#10;app.js&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/app.js&#10;routes/&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes&#10;insuran&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/insuranceQuotationRouter.js&#10;forms&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/views/forms.ejs&#10;router/&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/node_modules/express/lib/router&#10;Quot&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/insuranceQuotationRouter.js&#10;vehi&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/vehicleRegRouter.js&#10;vehicleROut&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/vehicleDetailsRouter.js&#10;form&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/views/forms/forms.ejs&#10;app.&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/app.js&#10;termina&#9;ACTION&#9;ActivateTerminalToolWindow" />
+    <property name="SearchEverywhereHistoryKey" value="index&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/views/index.ejs&#10;in&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/views/index.ejs&#10;app&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/app.js&#10;app.js&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/app.js&#10;routes/&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes&#10;insuran&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/insuranceQuotationRouter.js&#10;forms&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/views/forms.ejs&#10;router/&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/node_modules/express/lib/router&#10;Quot&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/insuranceQuotationRouter.js&#10;vehi&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/vehicleRegRouter.js&#10;vehicleROut&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/vehicleDetailsRouter.js&#10;form&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/views/forms/forms.ejs&#10;app.&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/app.js&#10;termina&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Node Projects\SYM-v2\SYM\src\routes" />
-      <recent name="D:\Node Projects\SYM-v2\SYM\public" />
-      <recent name="D:\Node Projects\SYM-v2\SYM\DB Dumps" />
-      <recent name="D:\Node Projects\SYM-v2\SYM\public\front-end" />
-      <recent name="D:\Node Projects\SYM-v2\SYM\public\lib" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Node Projects\SYM-v2\SYM\src\views" />
       <recent name="D:\Node Projects\SYM-v2\SYM\src\views\layout\forms" />
       <recent name="D:\Node Projects\SYM-v2\SYM\public\css" />
       <recent name="D:\Node Projects\SYM-v2\SYM\src\views\userRegistrations" />
       <recent name="D:\Node Projects\SYM-v2\SYM\src\lib" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Node Projects\SYM-v2\SYM\src\routes" />
+      <recent name="D:\Node Projects\SYM-v2\SYM\public" />
+      <recent name="D:\Node Projects\SYM-v2\SYM\DB Dumps" />
+      <recent name="D:\Node Projects\SYM-v2\SYM\public\front-end" />
+      <recent name="D:\Node Projects\SYM-v2\SYM\public\lib" />
     </key>
   </component>
   <component name="RunManager">
@@ -828,24 +854,30 @@
       <option name="project" value="LOCAL" />
       <updated>1470834555618</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="added new routes and views">
+      <created>1470907949104</created>
+      <option name="number" value="00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1470907949104</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18154761" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13913691" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.039215688" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25204584" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12648809" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.006546645" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-1382" y="449" width="1344" height="311" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20458265" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-1382" y="449" width="1344" height="311" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -903,7 +935,8 @@
     <MESSAGE value="quotation fixed errors" />
     <MESSAGE value="quotation working" />
     <MESSAGE value="quotation ammendments" />
-    <option name="LAST_COMMIT_MESSAGE" value="quotation ammendments" />
+    <MESSAGE value="added new routes and views" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new routes and views" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -912,13 +945,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SYM/src/views/layout/section2.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="47" selection-start-line="0" selection-start-column="47" selection-end-line="0" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/views/layout/section3.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -1182,24 +1208,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
-          <folding>
-            <marker date="1470834607556" expanded="true" signature="80905:80943" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="702" column="28" selection-start-line="702" selection-start-column="28" selection-end-line="702" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/shipping.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1244,24 +1252,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="128" column="40" selection-start-line="128" selection-start-column="40" selection-end-line="128" selection-end-column="52" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripDetailsRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripPersonalInfoRouter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1280,22 +1270,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29821074">
-          <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/views/singleTrip.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.3102725">
-          <caret line="167" column="47" selection-start-line="167" selection-start-column="47" selection-end-line="167" selection-end-column="47" />
+        <state vertical-scroll-proportion="-2.4578314">
+          <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
           <folding>
             <element signature="n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8181818">
+          <caret line="320" column="72" selection-start-line="320" selection-start-column="72" selection-end-line="320" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#form#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#form#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1470918939227" expanded="true" signature="79044:79082" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripDetailsRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripBasicDetailsRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6069869">
+          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1875">
+          <caret line="818" column="71" selection-start-line="818" selection-start-column="71" selection-end-line="818" selection-end-column="71" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#select#0;n#div#2;n#div#0;n#form#0;n#div#2;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#select#1;n#div#2;n#div#0;n#form#0;n#div#2;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#5;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
