@@ -323,9 +323,7 @@
                             <option selected="">Select Insurance ...</option>
                             <% if(typeof companies !== 'undefined'){ %>
                             <% for(var j = 0; j < companies.length; j++) { %>
-
                             <option value="<%= companies[j].id %>"><%= companies[j].insurance_name %></option>
-
                             <% } %>
                             <% } %>
 
@@ -337,10 +335,10 @@
                     <div class="col-lg-1">
                         <span id="credit_card_verification_value_tooltip" tabindex="0"
                               class="field__icon icon icon--question has-tooltip" role="tooltip">
-                            <img src="../../../images/globe@2x.png"/>
+                            <img src="../../../images/<%=graphicInfo[q].graphic_info %>"/>
                             <span class="tooltip">
                                 <span data-cvv-tooltip="unknown">
-                                    <%= graphicInfo[q].tooltip_msg %>
+                                    <%=graphicInfo[q].tooltip_msg %>
                                 </span>
                                 <span data-cvv-tooltip="amex" class="hidden">
                                     4-digit security code on the front of your card
@@ -372,7 +370,7 @@
 
         <div class="row quoteColor table-align-verticle <%= quotations[h].graphic_info == 'sdfsdfsdf' ? 'selected has-tooltip' : '' %>">
             <div class="col-lg-3">
-                <img src="../../../images/<%= quotations[h].graphic_info %>" width="100%"/>
+                <img src="../../../images/<%='aia-logo.png' /*quotations[h].graphic_info*/ %>" width="100%"/>
             </div>
             <div class="col-lg-2">
                 <%= quotations[h].insurance_feature %>
