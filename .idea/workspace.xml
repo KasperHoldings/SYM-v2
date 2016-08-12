@@ -1,14 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53c7c294-451c-447e-b739-72a3303b12a7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/routes/singleTripBasicDetailsRouter.js" />
+    <list default="true" id="53c7c294-451c-447e-b739-72a3303b12a7" name="Default" comment="added new routes and views">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/fonts/footable.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/fonts/footable.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/fonts/footable.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/FAQ.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/address.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/age.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/airbag_cover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/calendar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/destination.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/email.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/facebook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/flood.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/handshake.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/income.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/instagram.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/mobile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/name.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/number_plate.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/personal_accident_cover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/pinterest.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/rebates.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/riots_civil_commotion.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/smoke.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/term.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/terrorism_cover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/theft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/towing_cover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/travellers.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/twitter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/video.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/accident_service.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/ambulance_service.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/car_grooming.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/lubricants.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/mobile_battery_service.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/repair.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/towing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/tyres.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/fancybox_loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/fancybox_loading@2x.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/fancybox_overlay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/fancybox_sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/fancybox_sprite@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/footer_monkey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/SYM_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/big_car_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/calculator.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/cheat_sheet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/danger_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/no_claims_bonus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/SYM.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/calculator.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/fantastic_sign.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/faq_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/users.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/video_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/portfolio/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/portfolio/2.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/portfolio/3.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/portfolio/4.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/portfolio/5.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/portfolio/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/portfolio/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/car_vehicle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/investment.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/lease.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/motorcycle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/three_wheeler.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/travel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/fonts/footable.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/footable.core.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/footable.standalone.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/jquery.fancybox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/js/footable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/js/footable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/js/jquery.fancybox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/js/masonry.pkgd.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM-UI/public/src/views/index.html" afterPath="$PROJECT_DIR$/SYM-UI/public/src/views/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/app.js" afterPath="$PROJECT_DIR$/SYM/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/css/custom.css" afterPath="$PROJECT_DIR$/SYM/public/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/css/format.css" afterPath="$PROJECT_DIR$/SYM/public/css/format.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/js/script.js" afterPath="$PROJECT_DIR$/SYM/public/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/routes/singleTripBasicDetailsRouter.js" afterPath="$PROJECT_DIR$/SYM/src/routes/singleTripBasicDetailsRouter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/routes/singleTripRouter.js" afterPath="$PROJECT_DIR$/SYM/src/routes/singleTripRouter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/views/index.ejs" afterPath="$PROJECT_DIR$/SYM/src/views/index.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/views/singleTrip.ejs" afterPath="$PROJECT_DIR$/SYM/src/views/singleTrip.ejs" />
     </list>
     <ignored path="SYM-v2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,27 +107,17 @@
     <favorites_list name="SYM-v2" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.66032845">
+    <splitter split-orientation="horizontal" split-proportion="0.53810835">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.1875">
-                  <caret line="818" column="71" selection-start-line="818" selection-start-column="71" selection-end-line="818" selection-end-column="71" />
+                <state vertical-scroll-proportion="0.2842377">
+                  <caret line="118" column="39" selection-start-line="118" selection-start-column="39" selection-end-line="118" selection-end-column="39" />
                   <folding>
-                    <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#1;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#select#0;n#div#2;n#div#0;n#form#0;n#div#2;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#select#1;n#div#2;n#div#0;n#form#0;n#div#2;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#4;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#0;n#div#5;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -57,8 +126,8 @@
           <file leaf-file-name="forms.ejs" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/SYM/src/views/forms.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+                <state vertical-scroll-proportion="-0.65384614">
+                  <caret line="315" column="15" selection-start-line="315" selection-start-column="15" selection-end-line="315" selection-end-column="15" />
                   <folding />
                 </state>
               </provider>
@@ -67,13 +136,9 @@
           <file leaf-file-name="singleTrip.ejs" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/SYM/src/views/singleTrip.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-2.4578314">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
-                  <folding>
-                    <element signature="n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -102,32 +167,8 @@
             <entry file="file://$PROJECT_DIR$/SYM/src/routes/testRouter.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+                  <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="singletrip.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/singletrip.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-22.23077">
-                  <caret line="122" column="38" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="38" />
-                  <folding>
-                    <marker date="1470834584428" expanded="true" signature="35914:35952" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="shipping.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/shipping.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-                  <folding>
-                    <marker date="1470834584382" expanded="true" signature="43763:43801" placeholder="..." />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -135,9 +176,11 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.8181818">
-                  <caret line="320" column="72" selection-start-line="320" selection-start-column="72" selection-end-line="320" selection-end-column="72" />
+                <state vertical-scroll-proportion="-15.038462">
+                  <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
                   <folding>
+                    <element signature="n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#style#0;n#div#1;n#form#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#div#1;n#form#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <marker date="1470918939227" expanded="true" signature="79044:79082" placeholder="..." />
@@ -154,7 +197,7 @@
             <entry file="file://$PROJECT_DIR$/SYM/src/routes/insuranceDetailsRouter.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+                  <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -182,11 +225,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/SYM/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6069869">
-                  <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="117" column="46" selection-start-line="117" selection-start-column="46" selection-end-line="117" selection-end-column="46" />
                   <folding />
                 </state>
               </provider>
@@ -196,17 +239,17 @@
             <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripDetailsRouter.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+                  <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="singleTripRouter.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="singleTripRouter.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripRouter.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.63680387">
+                  <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -218,7 +261,7 @@
             <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripBasicDetailsRouter.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+                  <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -294,11 +337,11 @@
         <option value="$PROJECT_DIR$/SYM/src/routes/singleTripPersonalInfoRouter.js" />
         <option value="$PROJECT_DIR$/SYM/src/views/singleTrip.ejs" />
         <option value="$PROJECT_DIR$/SYM/src/routes/singleTriptripBasicDetailsRouter.js" />
-        <option value="$PROJECT_DIR$/SYM/src/routes/singleTripRouter.js" />
         <option value="$PROJECT_DIR$/SYM-UI/public/src/views/index.html" />
         <option value="$PROJECT_DIR$/SYM/src/routes/singleTripBasicDetailsRouter.js" />
         <option value="$PROJECT_DIR$/SYM/app.js" />
         <option value="$PROJECT_DIR$/SYM/src/views/index.ejs" />
+        <option value="$PROJECT_DIR$/SYM/src/routes/singleTripRouter.js" />
       </list>
     </option>
   </component>
@@ -338,6 +381,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -357,223 +401,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UI-Sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UI-Sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-UI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-UI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-UI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM-v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SYM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DB Dumps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -582,23 +411,23 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="index&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/views/index.ejs&#10;in&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/views/index.ejs&#10;app&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/app.js&#10;app.js&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/app.js&#10;routes/&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes&#10;insuran&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/insuranceQuotationRouter.js&#10;forms&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/views/forms.ejs&#10;router/&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/node_modules/express/lib/router&#10;Quot&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/insuranceQuotationRouter.js&#10;vehi&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/vehicleRegRouter.js&#10;vehicleROut&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/vehicleDetailsRouter.js&#10;form&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/views/forms/forms.ejs&#10;app.&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/app.js&#10;termina&#9;ACTION&#9;ActivateTerminalToolWindow" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM-UI/public/src/views/index.html&#10;app&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/app.js&#10;index&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/views/index.ejs&#10;in&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/views/index.ejs&#10;app.js&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/app.js&#10;routes/&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes&#10;insuran&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/insuranceQuotationRouter.js&#10;forms&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/views/forms.ejs&#10;router/&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/node_modules/express/lib/router&#10;Quot&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/insuranceQuotationRouter.js&#10;vehi&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/vehicleRegRouter.js&#10;vehicleROut&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/routes/vehicleDetailsRouter.js&#10;form&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/src/views/forms/forms.ejs&#10;app.&#9;FILE&#9;file://D:/Node Projects/SYM-v2/SYM/app.js&#10;termina&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Node Projects\SYM-v2\SYM\public" />
+      <recent name="D:\Node Projects\SYM-v2\SYM\src\routes" />
+      <recent name="D:\Node Projects\SYM-v2\SYM\DB Dumps" />
+      <recent name="D:\Node Projects\SYM-v2\SYM\public\front-end" />
+      <recent name="D:\Node Projects\SYM-v2\SYM\public\lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Node Projects\SYM-v2\SYM\src\views" />
       <recent name="D:\Node Projects\SYM-v2\SYM\src\views\layout\forms" />
       <recent name="D:\Node Projects\SYM-v2\SYM\public\css" />
       <recent name="D:\Node Projects\SYM-v2\SYM\src\views\userRegistrations" />
       <recent name="D:\Node Projects\SYM-v2\SYM\src\lib" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Node Projects\SYM-v2\SYM\src\routes" />
-      <recent name="D:\Node Projects\SYM-v2\SYM\public" />
-      <recent name="D:\Node Projects\SYM-v2\SYM\DB Dumps" />
-      <recent name="D:\Node Projects\SYM-v2\SYM\public\front-end" />
-      <recent name="D:\Node Projects\SYM-v2\SYM\public\lib" />
     </key>
   </component>
   <component name="RunManager">
@@ -860,30 +689,36 @@
       <option name="project" value="LOCAL" />
       <updated>1470907949104</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="added new routes and views">
+      <created>1470922114414</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1470922114414</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13913691" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18973215" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25204584" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12648809" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20458265" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-1382" y="449" width="1344" height="311" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27941176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-1382" y="449" width="1344" height="311" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.627451" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -945,13 +780,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SYM/src/views/layout/section3.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/views/layout/section5.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1078,13 +906,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/public/js/core/nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03219697">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SYM/public/front-end/css/plugins/animate.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7064935">
@@ -1118,9 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <marker date="1467360047306" expanded="true" signature="1263:1306" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1157,15 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/config/dbconfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1173,7 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1203,37 +1011,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/public/images/mainlogo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/shipping.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-          <folding>
-            <marker date="1470834584382" expanded="true" signature="43763:43801" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/views/forms.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/routes/testRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/routes/insuranceQuotationRouter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1242,13 +1019,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/routes/insuranceDetailsRouter.js">
+    <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/singletrip.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+          <caret line="122" column="38" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="38" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1470834584428" expanded="true" signature="35914:35952" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/views/singleTrip.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1260,33 +1045,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/singletrip.html">
+    <entry file="file://$PROJECT_DIR$/SYM/src/config/dbconfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.23077">
-          <caret line="122" column="38" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripDetailsRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripBasicDetailsRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/routes/insuranceDetailsRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding>
-            <marker date="1470834584428" expanded="true" signature="35914:35952" placeholder="..." />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/views/singleTrip.ejs">
+    <entry file="file://$PROJECT_DIR$/SYM/src/views/forms.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4578314">
-          <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="315" column="15" selection-start-line="315" selection-start-column="15" selection-end-line="315" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/shipping.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.044736844">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
           <folding>
-            <element signature="n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1470834584382" expanded="true" signature="43763:43801" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/routes/testRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3469388">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8181818">
-          <caret line="320" column="72" selection-start-line="320" selection-start-column="72" selection-end-line="320" selection-end-column="72" />
+        <state vertical-scroll-proportion="-15.038462">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding>
+            <element signature="n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#1;n#form#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#form#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <marker date="1470918939227" expanded="true" signature="79044:79082" placeholder="..." />
@@ -1294,57 +1127,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripDetailsRouter.js">
+    <entry file="file://$PROJECT_DIR$/SYM/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="117" column="46" selection-start-line="117" selection-start-column="46" selection-end-line="117" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripRouter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.63680387">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripBasicDetailsRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6069869">
-          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1875">
-          <caret line="818" column="71" selection-start-line="818" selection-start-column="71" selection-end-line="818" selection-end-column="71" />
+        <state vertical-scroll-proportion="0.2842377">
+          <caret line="118" column="39" selection-start-line="118" selection-start-column="39" selection-end-line="118" selection-end-column="39" />
           <folding>
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#select#0;n#div#2;n#div#0;n#form#0;n#div#2;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#select#1;n#div#2;n#div#0;n#form#0;n#div#2;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#5;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

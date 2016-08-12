@@ -10,7 +10,7 @@ exports.save = function (req, res) {
 
         var data = {
 
-            dob: input.single_travel_date + "/" + input.single_travel_month + "/" + input.single_travel_year,
+            dob: input.single_travel_year + ":" + input.single_travel_month + ":" + input.single_travel_date,
             email: input.email,
             cover_type: input.cover_type
         };

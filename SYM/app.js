@@ -115,7 +115,7 @@ app.get('/vehicle/car/insurance/quotation', insuranceQuotationRouter.get);
 //Travel Single
 app.post('trip/single/basicDetails/create', singleTripBasicDetailsRouter.save);
 
-app.get('trip/single/iInfo', singleTripRouter.get);
+app.get('trip/single/Info', singleTripRouter.get);
 
 app.get('travel/single/travelInfo', singleTripDetailsRouter.get);
 //app.get('travel/single/personalInfo', singleTripPersonalRouter.get);
