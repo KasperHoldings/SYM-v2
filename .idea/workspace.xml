@@ -1,93 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53c7c294-451c-447e-b739-72a3303b12a7" name="Default" comment="added new routes and views">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/fonts/footable.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/fonts/footable.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/fonts/footable.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/FAQ.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/address.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/age.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/airbag_cover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/calendar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/destination.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/email.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/facebook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/flood.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/handshake.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/income.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/instagram.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/mobile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/name.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/number_plate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/personal_accident_cover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/pinterest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/rebates.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/riots_civil_commotion.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/smoke.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/term.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/terrorism_cover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/theft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/towing_cover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/travellers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/twitter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/video.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/accident_service.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/ambulance_service.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/car_grooming.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/lubricants.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/mobile_battery_service.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/repair.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/towing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/tyres.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/fancybox_loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/fancybox_loading@2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/fancybox_overlay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/fancybox_sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/fancybox_sprite@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/footer_monkey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/SYM_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/big_car_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/calculator.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/cheat_sheet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/danger_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/no_claims_bonus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/SYM.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/calculator.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/fantastic_sign.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/faq_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/users.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/video_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/portfolio/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/portfolio/2.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/portfolio/3.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/portfolio/4.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/portfolio/5.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/portfolio/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/portfolio/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/car_vehicle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/investment.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/lease.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/motorcycle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/three_wheeler.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/travel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/fonts/footable.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/footable.core.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/footable.standalone.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/css/jquery.fancybox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/js/footable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/js/footable.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/js/jquery.fancybox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/js/masonry.pkgd.min.js" />
+    <list default="true" id="53c7c294-451c-447e-b739-72a3303b12a7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/app.js" afterPath="$PROJECT_DIR$/SYM/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/css/custom.css" afterPath="$PROJECT_DIR$/SYM/public/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/css/format.css" afterPath="$PROJECT_DIR$/SYM/public/css/format.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/js/script.js" afterPath="$PROJECT_DIR$/SYM/public/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/routes/singleTripBasicDetailsRouter.js" afterPath="$PROJECT_DIR$/SYM/src/routes/singleTripBasicDetailsRouter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/routes/singleTripRouter.js" afterPath="$PROJECT_DIR$/SYM/src/routes/singleTripRouter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/views/index.ejs" afterPath="$PROJECT_DIR$/SYM/src/views/index.ejs" />
     </list>
     <ignored path="SYM-v2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -107,14 +23,14 @@
     <favorites_list name="SYM-v2" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.53810835">
+    <splitter split-orientation="horizontal" split-proportion="0.495">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.2842377">
-                  <caret line="118" column="39" selection-start-line="118" selection-start-column="39" selection-end-line="118" selection-end-column="39" />
+                <state vertical-scroll-proportion="-4.8223233">
+                  <caret line="137" column="34" selection-start-line="137" selection-start-column="34" selection-end-line="137" selection-end-column="34" />
                   <folding>
                     <element signature="n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -248,8 +164,8 @@
           <file leaf-file-name="singleTripRouter.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripRouter.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.63680387">
-                  <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.70752686">
+                  <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -695,22 +611,28 @@
       <option name="project" value="LOCAL" />
       <updated>1470922114414</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="completed car function">
+      <created>1470983722354</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1470983722354</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18973215" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10714286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25204584" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12648809" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27941176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-1382" y="449" width="1344" height="311" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19312602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-1382" y="449" width="1344" height="311" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -771,7 +693,8 @@
     <MESSAGE value="quotation working" />
     <MESSAGE value="quotation ammendments" />
     <MESSAGE value="added new routes and views" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new routes and views" />
+    <MESSAGE value="completed car function" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed car function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1135,23 +1058,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripRouter.js">
+    <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63680387">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state vertical-scroll-proportion="-4.8223233">
+          <caret line="137" column="34" selection-start-line="137" selection-start-column="34" selection-end-line="137" selection-end-column="34" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs">
+    <entry file="file://$PROJECT_DIR$/SYM/src/routes/singleTripRouter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2842377">
-          <caret line="118" column="39" selection-start-line="118" selection-start-column="39" selection-end-line="118" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.70752686">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
           <folding>
-            <element signature="n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

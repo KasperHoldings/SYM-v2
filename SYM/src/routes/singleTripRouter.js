@@ -18,8 +18,6 @@ exports.get = function (req, res) {
                         console.log('Error Selecting : %s ', err);
                     }
 
-
-
                 });
 
             });
