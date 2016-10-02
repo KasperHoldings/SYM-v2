@@ -108,12 +108,12 @@
                         </div>
                         <div class="leftTab">
                             <ul>
-                                <li><a class="car active" href="#"><i class="fa fa-car" aria-hidden="true"></i><span
+                                <li onclick="changeFun(1)"><a class="theTab car active"  href="#"><i class="fa fa-car" aria-hidden="true"></i><span
                                                 class="ul_lft">Motor Vehicle</span></a></li>
-                                <li><a class="twowheeler" href="#"><i class="fa fa-motorcycle"
+                                <li onclick="changeFun(2)"><a class="theTab twowheeler" href="#"><i class="fa fa-motorcycle"
                                                                       aria-hidden="true"></i><span class="ul_lft">Motor bike</span></a>
                                 </li>
-                                <li><a class="health" href="#"><i class="fa fa-medkit" aria-hidden="true"></i><span
+                                <li onclick="changeFun(3)"><a class="theTab health" href="#"><i class="fa fa-medkit" aria-hidden="true"></i><span
                                                 class="ul_lft">Three Wheeler</span></a></li>
                                 <li><a class="travel" href="#"><i class="fa fa-plane" aria-hidden="true"></i><span
                                                 class="ul_lft">Travel</span></a></li>
@@ -924,7 +924,7 @@
                             </div>
                             <!--==========================-->
                             <div class="car-bg">
-                                <form action="/vehicle/car/vehicleReg/create" method="post">
+                                <form action="/vehicleReg" method="post">
                                     <div class="input_field">
                                         <div class="lable"><i class="fa fa-motorcycle iconpos "></i></div>
                                         <div class="info"><span class="b">Reg No.</span></div>
@@ -933,6 +933,8 @@
                                             <input type="text" name="v_letters" placeholder="CAD"/>
                                             <input type="text" name="v_number" placeholder="1234"/>
                                         </div>
+
+                                        <input type="hidden" value="1" name="type_of_v" id="type_of_v">
 
                                     </div>
                                     <div class="rush"><span>OR</span></div>
@@ -1300,6 +1302,8 @@
     </div>
 </div>
 
+
+
 <script type="text/javascript" src="../../js/jquery.min.js"></script>
 <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
@@ -1313,5 +1317,20 @@
 <script type="text/javascript" src="../../js/jquery.flexslider.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
 <script type="text/javascript" src="../../js/script.js"></script>
+
+
+<script type="text/javascript">
+
+function changeFun(id){
+    if(id==1){
+        document.getElementById("type_of_v").value=1;
+    }else if(id==2){
+        document.getElementById("type_of_v").value=2;
+    }else{
+        document.getElementById("type_of_v").value=3;
+    }
+}
+</script>
+
 </body>
 </html>

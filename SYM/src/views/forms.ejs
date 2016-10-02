@@ -7,25 +7,25 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>SYM</title>
-    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../../../css/jquery.fullPage.css"/>
-    <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-select.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../../../css/animations.css"/>
-    <link rel="stylesheet" type="text/css" href="../../../css/font-awesome.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../../../css/uikit.min.css"/>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/jquery.fullPage.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-select.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/animations.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/uikit.min.css"/>
     <!--<link rel="stylesheet" type="text/css" href="../../css/videobackground.css" />-->
-    <link rel="stylesheet" type="text/css" href="../../../css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="../../../css/format.css"/>
-    <link rel="stylesheet" type="text/css" href="../../../css/custom.css"/>
-    <link rel="stylesheet" type="text/css" href="../../../css/flexslider.css"/>
-    <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-datetimepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/format.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/custom.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/flexslider.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-datetimepicker.css"/>
 </head>
 <body>
 <div class="container-fluid">
     <div class="fix_hd">
         <nav class="navbar navbar-default">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#"><img src="../../../images/logo.svg"/></a>
+                <a class="navbar-brand" href="#"><img src="/images/logo.svg"/></a>
             </div>
             <a id="nav-full-toggle" class="nav-hamburger" href="#">
                 <span></span>
@@ -99,7 +99,7 @@
         </ul>
         <% if(form == "vehicleDetails") { %>
         <div class="vehicle_detail_bg">
-            <form name="vehicle_detail" action="/vehicle/car/vehicleDetails/create" method="post">
+            <form name="vehicle_detail" action="/vehicleDetails" method="post">
                 <div class="row">
                     <div class="field field--required field--three-eights field--show-floating-label">
                         <div class="field__input-wrapper field__input-wrapper--select">
@@ -158,7 +158,7 @@
         </div>
         <% } else if (form == "personalDetails") { %>
         <div class="vehicle_detail_bg">
-            <form action="/vehicle/car/personalDetails/create" method="post">
+            <form action="/personalDetails" method="post">
                 <div class="row">
                     <div class="field field--required field--three-eights field--show-floating-label">
                         <div class="field__input-wrapper field__input-wrapper--select">
@@ -314,13 +314,533 @@
             </form>
         </div>
         <% } %>
+
+        <% if (form === 'shippingReg') { %>
+
+        <form name="insurance_detail" action="" method="post">
+
+            <div class="vehicle_detail_bg">
+
+                <div class="section__header">
+                    <h2 class="section__title">Shipping method </h2>
+                </div>
+
+                <div class="row">
+                    <div class="field field--required field--three-eights field--show-floating-label">
+                        <input type="hidden" value="<%= hidden %>" name="insurance_quotation">
+                        <input type="hidden" value="<%= company_value %>" name="insurance_value">
+                        <div class="field__input-wrapper field__input-wrapper--select">
+                            <label for="checkout_shipping_address_country" class="field__label">Shipping method</label>
+                            <select name="shipping_method" class="field__input field__input--select" required>
+                                <option value="">Select Shipping method</option>
+                                <% for(var y = 0; y < shipping_methods.length; y++) { %>
+                                <option value="<%= shipping_methods[y].id %>"><%= shipping_methods[y].shipping_method %></option>
+                                <% } %>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="vehicle_detail_bg">
+                <div class="section__header">
+                    <h2 class="section__title">
+                        Registered Address
+                    </h2>
+                </div>
+
+                <div class="row">
+                    <div class="field field--required field--three-eights field--show-floating-label">
+
+
+                        <div class="col-md-6 paddleftzero">
+                            <div id="showfirstnamelabel" class="field__input-wrapper">
+                                <label for="checkout_name" class="field__label">First Name</label>
+                                <input id="firstname" name="first_name" type="text" placeholder="First Name" class="field__input" required />
+                            </div>
+                        </div>
+                        <div class="col-md-6 paddrightzero">
+                            <div id="showlastnamelabel" class="field__input-wrapper">
+                                <label for="checkout_name" class="field__label">Last Name</label>
+                                <input id="lastname" name="last_name" type="text" placeholder="Last Name" class="field__input" required />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="field field--required field--three-eights field--show-floating-label">
+
+
+                        <div class="col-md-12 paddrightzero paddleftzero">
+                            <div id="showcompanylabel" class="field__input-wrapper">
+                                <label for="checkout_name" class="field__label">Company</label>
+                                <input id="company" name="company" type="text" placeholder="Company" class="field__input" required />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="field field--required field--three-eights field--show-floating-label">
+
+
+                        <div class="col-md-8 paddleftzero">
+                            <div id="showaddresslabel" class="field__input-wrapper">
+                                <label for="checkout_name" class="field__label">Address</label>
+                                <input id="address" name="address" type="text" placeholder="Address" class="field__input" required />
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 paddrightzero">
+                            <div id="showaptsuitlabel" class="field__input-wrapper">
+                                <label for="checkout_name" class="field__label">Apt, Suit etc</label>
+                                <input id="altsuit" name="alt_suit" type="text" placeholder="Apt, Suit etc" class="field__input" required />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="field field--required field--three-eights field--show-floating-label">
+
+
+                        <div class="col-md-12 paddrightzero paddleftzero">
+                            <div id="showcitylabel" class="field__input-wrapper">
+                                <label for="checkout_name" class="field__label">City</label>
+                                <input id="city" name="city" type="text" placeholder="City" class="field__input" required />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="field field--required field--three-eights field--show-floating-label">
+
+
+                        <div class="col-md-6 paddleftzero mobilecountry">
+                            <div class="field field--required field--three-eights field--show-floating-label paddzero">
+                                <div class="field__input-wrapper field__input-wrapper--select">
+                                    <label for="checkout_shipping_address_country" class="field__label">Country</label>
+                                    <select name="country" class="field__input field__input--select" required>
+                                        <option value="">Select Country</option>
+                                        <option value="US">US</option>
+                                        <option value="other">other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6 paddrightzero">
+                            <div id="showpostalcodelabel" class="field__input-wrapper">
+                                <label for="checkout_name" class="field__label">Postal Code</label>
+                                <input id="postalcode" name="postal_code" type="text" placeholder="Postal Code" class="field__input" required />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="field field--required field--three-eights field--show-floating-label">
+
+
+                        <div class="col-md-12 paddrightzero paddleftzero">
+                            <div id="showphonelabel" class="field__input-wrapper">
+                                <label for="checkout_name" class="field__label">Phone</label>
+                                <input id="phone" name="phone" type="text" placeholder="Phone" class="field__input" required />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="row">
+                <button class="step__footer__continue-btn btn " type="submit" name="button">
+                    <span class="btn__content">Process</span>
+                </button>
+            </div>
+        </form>
+
+
+
+
+
+        <% } %>
+
+        <% if (form === 'shippingInfo') { %>
+
+        <form name="insurance_detail" action="" method="post">
+
+
+
+
+            <div class="vehicle_detail_bg">
+                <div class="section__header">
+                    <h2 class="section__title">
+                        Shpping Address
+                    </h2>
+                </div>
+                <table class="product-table-terms">
+                    <tbody>
+                    <tr class="product" data-product-id="7203460999" data-variant-id="22897477895" data-product-type="Clothing">
+                        <td class="product__image">
+                            <input id="sameAsRegistered" type="checkbox"  name="sameAsRegistered" value="checked">
+                            <label for="tripfrequency"><span></span></label>
+                            <span>Same as Registered</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div id="sameAsRegisteredDiv">
+                    <div  class="row">
+                        <div class="field field--required field--three-eights field--show-floating-label">
+
+
+                            <div class="col-md-6 paddleftzero">
+                                <div id="showfirstnamelabel" class="field__input-wrapper">
+                                    <label for="checkout_name" class="field__label">First Name</label>
+                                    <input id="firstname" name="first_name" type="text" placeholder="First Name" class="field__input"  />
+                                </div>
+                            </div>
+                            <div class="col-md-6 paddrightzero">
+                                <div id="showlastnamelabel" class="field__input-wrapper">
+                                    <label for="checkout_name" class="field__label">Last Name</label>
+                                    <input id="lastname" name="last_name" type="text" placeholder="Last Name" class="field__input"  />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="field field--required field--three-eights field--show-floating-label">
+
+
+                            <div class="col-md-12 paddrightzero paddleftzero">
+                                <div id="showcompanylabel" class="field__input-wrapper">
+                                    <label for="checkout_name" class="field__label">Company</label>
+                                    <input id="company" name="company" type="text" placeholder="Company" class="field__input"  />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="field field--required field--three-eights field--show-floating-label">
+
+
+                            <div class="col-md-8 paddleftzero">
+                                <div id="showaddresslabel" class="field__input-wrapper">
+                                    <label for="checkout_name" class="field__label">Address</label>
+                                    <input id="address" name="address" type="text" placeholder="Address" class="field__input"  />
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 paddrightzero">
+                                <div id="showaptsuitlabel" class="field__input-wrapper">
+                                    <label for="checkout_name" class="field__label">Apt, Suit etc</label>
+                                    <input id="altsuit" name="alt_suit" type="text" placeholder="Apt, Suit etc" class="field__input"  />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="field field--required field--three-eights field--show-floating-label">
+
+
+                            <div class="col-md-12 paddrightzero paddleftzero">
+                                <div id="showcitylabel" class="field__input-wrapper">
+                                    <label for="checkout_name" class="field__label">City</label>
+                                    <input id="city" name="city" type="text" placeholder="City" class="field__input"  />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="field field--required field--three-eights field--show-floating-label">
+
+
+                            <div class="col-md-6 paddleftzero mobilecountry">
+                                <div class="field field--required field--three-eights field--show-floating-label paddzero">
+                                    <div class="field__input-wrapper field__input-wrapper--select">
+                                        <label for="checkout_shipping_address_country" class="field__label">Country</label>
+                                        <select name="country" class="field__input field__input--select" >
+                                            <option value="">Select Country</option>
+                                            <option value="US">US</option>
+                                            <option value="other">other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6 paddrightzero">
+                                <div id="showpostalcodelabel" class="field__input-wrapper">
+                                    <label for="checkout_name" class="field__label">Postal Code</label>
+                                    <input id="postalcode" name="postal_code" type="text" placeholder="Postal Code" class="field__input"  />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="field field--required field--three-eights field--show-floating-label">
+
+
+                            <div class="col-md-12 paddrightzero paddleftzero">
+                                <div id="showphonelabel" class="field__input-wrapper">
+                                    <label for="checkout_name" class="field__label">Phone</label>
+                                    <input id="phone" name="phone" type="text" placeholder="Phone" class="field__input"  />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="row">
+                <button class="step__footer__continue-btn btn " type="submit" name="button">
+                    <span class="btn__content">Process</span>
+                </button>
+            </div>
+        </form>
+
+
+
+
+
+        <% } %>
+
+        <% if (form === 'paymentDetails') { %>
+
+        <form name="insurance_detail" action="" method="post">
+
+
+            <div class="order-summary__section order-summary__section--total-lines checkout_shiiping_cost" data-order-summary-section="payment-lines" style="float: left;">
+                <table class="total-line-table">
+
+                    <tfoot class="total-line-table__footer">
+                    <tr class="total-line">
+                        <td class="total-line__name payment-due-label">
+                            <span class="payment-due-label__total">Total Sipping Cost</span>
+                                                <span class="payment-due-label__taxes hidden" data-checkout-taxes="">
+                                                    Including <span data-checkout-total-taxes-target="0">$0.00</span> in taxes
+                                                </span>
+                        </td>
+                        <td class="total-line__price payment-due">
+                            <span class="payment-due__currency"></span>
+                            <span class="payment-due__price" data-checkout-payment-due-target="25700"><%= payment %>.00</span>
+                        </td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div data-payment-method="" class="section section--payment-method">
+                <div class="section__header">
+                    <h2 class="section__title">Payment method</h2>
+                    <p class="section__text">
+                        All transactions are secure and encrypted. Credit card information is never stored.
+                    </p>
+                </div>
+
+                <div class="section__content">
+                    <div data-payment-subform="required">
+                        <div class="content-box">
+                            <div data-select-gateway="18551425" data-gateway-group="direct" class="radio-wrapper content-box__row ">
+                                <div class="radio__input">
+                                    <label class="radio">
+                                        <input type="radio" name="checkout" checked="checked" value="18551425" id="checkout_payment_gateway_18551425" class="rad">
+                                        <span class="outer"><span class="inner"></span></span>
+                                    </label>
+                                </div>
+                                <label for="checkout_payment_gateway_18551425" class="radio__label content-box__emphasis payment-method-wrapper">
+                                    <div class="radio-wrapper">
+                                        <div class="checkbox__label">
+                                            Credit card
+                                        </div>
+                                        <div class="radio__accessory">
+                                            <span class="visually-hidden">Pay with:</span>
+                                            <ul data-brand-icons-for-gateway="18551425">
+                                                <li class="payment-icon payment-icon--visa" data-payment-icon="visa">
+                                                    <span class="visually-hidden">Visa</span>
+                                                </li>
+                                                <li class="payment-icon payment-icon--master" data-payment-icon="master">
+                                                    <span class="visually-hidden">MasterCard</span>
+                                                </li>
+                                                <li class="payment-icon payment-icon--american-express" data-payment-icon="american-express">
+                                                    <span class="visually-hidden">American Express</span>
+                                                </li>
+                                                <li class="payment-icon payment-icon--discover" data-payment-icon="discover">
+                                                    <span class="visually-hidden">Discover</span>
+                                                </li>
+                                                <li class="payment-icon-list__more">
+                                                                    <span class="content-box__small-text">
+                                                                        and more…
+                                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div id="payment-gateway-subfields-18551425" data-subfields-for-gateway="18551425" class="radio-wrapper content-box__row content-box__row--secondary">
+                                <div dir="ltr" data-credit-card-fields="" class="fieldset ">
+                                    <div class="field field--required">
+                                        <div id="showcardnumberlabel" class="field__input-wrapper">
+                                            <label for="checkout_name" class="field__label">Card number</label>
+                                            <input id="cardnumber" name="card_number" type="text" placeholder="Card number" class="field__input" required />
+                                                            <span class="field__icon icon icon--lock" id="credit_card_number_tooltip">
+                                                                <span class="visually-hidden">Secure field</span>
+                                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 paddleftzero">
+                                        <div data-credit-card-name="true" class="field--half field field--required">
+                                            <div id="shownameoncardlabel" class="field__input-wrapper">
+                                                <label for="checkout_name" class="field__label">Name on card</label>
+                                                <input id="nameoncard" name="name_on_card" type="text" placeholder="Name on card" class="field__input" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 paddleftzero">
+                                        <div data-debit-card-alternative-text="Expiry (MM / YY)" class="field--quarter field field--required">
+                                            <div id="showmmyylabel" class="field__input-wrapper">
+                                                <label for="checkout_name" class="field__label">MM / YY</label>
+                                                <input id="mmyy" name="mm_yy" type="text" placeholder="MM / YY" class="field__input" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 paddrightzero paddleftzero">
+                                        <div class="field--quarter field field--required">
+                                            <div id="showcvvlabel" class="field__input-wrapper">
+                                                <label for="checkout_name" class="field__label">CVV</label>
+                                                <input id="cvv" name="cvv" type="text" placeholder="CVV" class="field__input" required />
+                                                                <span role="tooltip" class="field__icon icon icon--question has-tooltip" tabindex="0" id="credit_card_verification_value_tooltip">
+                                                                    <span class="tooltip">
+                                                                        <span data-cvv-tooltip="unknown">
+                                                                            3-digit security code usually found on the back of your card. American Express cards have a 4-digit code located on the front.
+                                                                        </span>
+                                                                        <span class="hidden" data-cvv-tooltip="amex">
+                                                                            4-digit security code on the front of your card
+                                                                        </span>
+                                                                        <span class="hidden" data-cvv-tooltip="other">
+                                                                            3-digit security code on the back of your card
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-select-gateway="6692801" data-gateway-group="express" class="radio-wrapper content-box__row ">
+                                <div class="radio__input">
+                                    <label class="radio">
+                                        <input type="radio" name="checkout" value="6692801" id="checkout_payment_gateway_6692801" class="rad">
+                                        <span class="outer"><span class="inner"></span></span>
+                                    </label>
+                                </div>
+                                <label for="checkout_payment_gateway_6692801" class="radio__label content-box__emphasis ">
+                                    <div class="radio-wrapper">
+                                        <div class="checkbox__label">
+                                            <img src="//cdn.shopify.com/s/assets/checkout_v2/offsite-gateway-logos/paypal@2x-2cabd13111981089fdf7f9faee0ef21550690cd2d380dede9fb7bc8c1253b3c6.png" class="offsite-payment-gateway-logo" alt="PayPal">
+                                            <span class="visually-hidden">PayPal</span>
+                                        </div>
+
+                                        <div class="radio__accessory">
+                                            <span class="visually-hidden">Pay with:</span>
+
+                                            <ul data-brand-icons-for-gateway="6692801">
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div id="payment-gateway-subfields-6692801" data-subfields-for-gateway="6692801" class="radio-wrapper content-box__row content-box__row--secondary hidden">
+                                <div class="blank-slate">
+                                    <i class="blank-slate__icon icon icon--offsite"></i>
+                                    <p>You will be redirected to PayPal to complete your purchase securely.</p>
+                                </div>
+                            </div>
+                            <div data-select-gateway="6692801" data-gateway-group="express" class="radio-wrapper content-box__row ">
+                                <div class="radio__input">
+                                    <label class="radio">
+                                        <input type="radio" name="checkout" value="6692802" id="checkout_payment_gateway_6692801" class="rad">
+                                        <span class="outer"><span class="inner"></span></span>
+                                    </label>
+                                </div>
+                                <label for="checkout_payment_gateway_6692801" class="radio__label content-box__emphasis ">
+                                    <div class="radio-wrapper">
+                                        <div class="checkbox__label">
+                                            Payment On Delivery
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div data-select-gateway="6692801" data-gateway-group="express" class="radio-wrapper content-box__row ">
+                                <div class="radio__input">
+                                    <label class="radio">
+                                        <input type="radio" name="checkout" value="6692803" id="checkout_payment_gateway_6692801" class="rad">
+                                        <span class="outer"><span class="inner"></span></span>
+                                    </label>
+                                </div>
+                                <label for="checkout_payment_gateway_6692801" class="radio__label content-box__emphasis ">
+                                    <div class="radio-wrapper">
+                                        <div class="checkbox__label">
+                                            Bank Transfer
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+
+
+
+        <% } %>
+
         <% if (form === 'quotation') { %>
         <div id="quotation_detail" class="vehicle_detail_bg">
             <form id="quotation_detail_id" name="personal_detail" action="">
                 <div class="row quoteColor">
                     <div class="col-lg-3 quoteColor_wrapper">
                         <select name="">
-                            <option selected="">Select Insurance ...</option>
+                            <option selected="">Select Insurance ... </option>
                             <% if(typeof companies !== 'undefined'){ %>
                             <% for(var j = 0; j < companies.length; j++) { %>
                             <option value="<%= companies[j].id %>"><%= companies[j].insurance_name %></option>
@@ -368,28 +888,35 @@
 
         <% m = company_id; %>
 
-        <div class="row quoteColor table-align-verticle <%= quotations[h].graphic_info == 'sdfsdfsdf' ? 'selected has-tooltip' : '' %>">
-            <div class="col-lg-3">
-                <img src="../../../images/<%='aia-logo.png' /*quotations[h].graphic_info*/ %>" width="100%"/>
-            </div>
-            <div class="col-lg-2">
-                <%= quotations[h].insurance_feature %>
+        <a class="" href="/shippingDetails/<%= quotations[h].company_id%>">
+            <div class="row quoteColor table-align-verticle <%= quotations[h].graphic_info == 'sdfsdfsdf' ? 'selected has-tooltip' : '' %>">
+                <div class="col-lg-3">
+
+                    <img src="../../../images/<%='aia-logo.png' /*quotations[h].graphic_info*/ %>" width="100%"/>
+                </div>
+                <div class="col-lg-2">
+                    <%= quotations[h].insurance_feature %>
+                </div>
+
+                <% } else { %>
+                <div class="col-lg-2">
+                    <%= quotations[h].insurance_feature %>
+                </div>
+
+                <% } if(count == 3) { %>
+                <div class="col-lg-2">
+                    LKR <%= insuranceCompanyValues[quotations[h].company_id] %>
+                </div>
+                <% count = 0; %>
+                <% } %>
+                <% } %>
+
             </div>
 
-            <% } else { %>
-            <div class="col-lg-2">
-                <%= quotations[h].insurance_feature %>
-            </div>
+        </a>
 
-            <% } if(count == 3) { %>
-            <div class="col-lg-2">
-                LKR <%= insuranceCompanyValues[quotations[h].company_id] %>
-            </div>
-            <% count = 0; %>
-            <% } %>
-            <% } %>
 
-        </div>
+
         <div class="row insuranceButtonMarginTop">
             <div style="float: left;width: 100%;" class="row step__footer">
                 <a class="step__footer__previous-link" href="insurance.html">
@@ -406,6 +933,8 @@
         </form>
     </div>
     <% } %>
+
+
     <!--->
 </div>
 
@@ -417,7 +946,7 @@
                 <div class="grid-row">
                     <header class="col-md-4">
                         <div class="site-footer__logo">
-                            <img style='' src="../../../images/logo-footer.png"/>
+                            <img style='' src="/images/logo-footer.png"/>
                         </div>
                     </header>
 
@@ -483,22 +1012,22 @@
 </div>
 
 
-<script type="text/javascript" src="../../../js/jquery.min.js"></script>
-<script type="text/javascript" src="../../../js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../../../js/uikit.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/uikit.min.js"></script>
 <!--<script type="text/javascript" src="../../js/videobackground.js"></script>-->
-<script type="text/javascript" src="../../../js/jquery.fullPage.js"></script>
-<script type="text/javascript" src="../../../js/css3-animate-it.js"></script>
-<script type="text/javascript" src="../../../js/jquery.validate.js"></script>
+<script type="text/javascript" src="/js/jquery.fullPage.js"></script>
+<script type="text/javascript" src="/js/css3-animate-it.js"></script>
+<script type="text/javascript" src="/js/jquery.validate.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
 
 
-<script type="text/javascript" src="../../../js/moment-with-locales.js"></script>
-<script type="text/javascript" src="../../../js/bootstrap-datetimepicker.js"></script>
-<script type="text/javascript" src="../../../js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="/js/moment-with-locales.js"></script>
+<script type="text/javascript" src="/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="/js/jquery.flexslider.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
-<script type="text/javascript" src="../../../js/script.js"></script>
+<script type="text/javascript" src="/js/script.js"></script>
 
 <script type="text/javascript">
     $(document).ready(function () {
@@ -507,7 +1036,7 @@
             var form = {
                 v_make: $(this).val()
             }
-            var url = 'http://' + window.location.host + '/vehicle/car/vehicleDetails/getVehicleModel';
+            var url = 'http://' + window.location.host + '/vehicleDetails/getVehicleModel';
             $.ajax({
                 type: 'post',
                 url: url,

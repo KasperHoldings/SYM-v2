@@ -2,6 +2,45 @@
  * GET users listing.
  */
 
+module.exports = function(router){
+
+    //localhost:3000/auth
+    router.post('/', function(req, res){
+
+        var input = JSON.parse(JSON.stringify(req.body));
+
+        req.getConnection(function (err, connector) {
+            var vehicle_quotation;
+            vehicle_quotation = req.session;
+            vehicle_quotation.id = Math.random();
+            var data = {
+
+                v_province: input.v_province,
+                v_letters: input.v_letters,
+                v_number: input.v_number,
+                insurance_quotation_id: vehicle_quotation.id,
+                type_v:input.type_of_v
+
+            };
+
+            var query = connector.query('INSERT INTO insurance_quotation set ? ', data, function (err, rows) {
+
+                if (err) {
+                    console.log('Error Selecting : %s ', err);
+                }
+
+                res.redirect('/vehicleDetails');
+
+            });
+
+            // console.log(query.sql); get raw query
+
+        });
+
+    });
+
+}
+
 exports.list = function (req, res) {
 
     res.render('layout/forms/cars/form1');
