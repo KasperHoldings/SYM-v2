@@ -43,7 +43,7 @@
                 <div class="col-lg-1">
                         <span id="credit_card_verification_value_tooltip" tabindex="0"
                               class="field__icon icon icon--question has-tooltip" role="tooltip">
-                            <img src="../../../images/<%=graphicInfo[q].graphic_info %>"/>
+                            <img src="/static/images/<%=graphicInfo[q].graphic_info %>"/>
                             <span class="tooltip">
                                 <span data-cvv-tooltip="unknown">
                                     <%=graphicInfo[q].tooltip_msg %>
@@ -76,11 +76,11 @@
 
     <% m = company_id; %>
 
-    <a class="" href="/shippingDetails/<%= quotations[h].company_id%>">
+    <a class="" href="/furtherVehicleDetails/<%= quotations[h].company_id%>">
         <div class="row quoteColor table-align-verticle <%= quotations[h].graphic_info == 'sdfsdfsdf' ? 'selected has-tooltip' : '' %>">
             <div class="col-lg-3">
 
-                <img src="../../../images/<%='aia-logo.png' /*quotations[h].graphic_info*/ %>" width="100%"/>
+                <img src="/static/images/<%='aia-logo.png' /*quotations[h].graphic_info*/ %>" width="100%"/>
             </div>
             <div class="col-lg-2">
                 <%= quotations[h].insurance_feature %>

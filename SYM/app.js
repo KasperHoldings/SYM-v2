@@ -51,8 +51,7 @@ var singleTripBasicDetailsRouter = require('./src/routes/singleTripBasicDetailsR
 //var shippingDetailsRouter=require('./src/routes/shippingDetailsRouter');
 
 
-
-app.use(express.static(path.resolve(__dirname,'public')));
+app.use('/static',express.static(path.resolve(__dirname,'public')));
 app.set('views', './src/views');
 
 app.engine('ejs', engine);
@@ -178,6 +177,10 @@ app.use('/insuranceQuotation',insuranceQuotationRouter);
 var shippingDetailsRouter=express.Router();
 require('./src/routes/shippingDetailsRouter.js')(shippingDetailsRouter);
 app.use('/shippingDetails',shippingDetailsRouter);
+
+var furtherVehicleDetailsRouter=express.Router();
+require('./src/routes/furtherVehicleDetailsRouter.js')(furtherVehicleDetailsRouter);
+app.use('/furtherVehicleDetails',furtherVehicleDetailsRouter);
 
 var shippingInfoRouter=express.Router();
 require('./src/routes/shippingInfoRouter.js')(shippingInfoRouter);
