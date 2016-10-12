@@ -2,13 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53c7c294-451c-447e-b739-72a3303b12a7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/index2.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SYM-v2.iml" afterPath="$PROJECT_DIR$/.idea/SYM-v2.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/NIC.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/Rs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/dependants.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/dob.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/down_payment.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/house_hold_income.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/length_lease.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/length_of_lease.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/living_expenses.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/no_of_dependants.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/period.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/type_of_cover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/value_vehicale.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/globe@2x2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/Contact.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/templates/footer.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/templates/head.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/templates/header.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SYM/src/views/templates/jsLibs.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/facebook.png" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/facebook.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/instagram.png" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/instagram.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/number_plate.png" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/number_plate.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/pinterest.png" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/pinterest.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/travellers.png" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/travellers.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/twitter.png" afterPath="$PROJECT_DIR$/SYM/public/images/Section_one_inner_tab_icon/twitter.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/accident_service.png" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/accident_service.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/ambulance_service.png" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/ambulance_service.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/car_grooming.png" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/car_grooming.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/lubricants.png" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/lubricants.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/mobile_battery_service.png" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/mobile_battery_service.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/repair.png" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/repair.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/towing.png" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/towing.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/tyres.png" afterPath="$PROJECT_DIR$/SYM/public/images/Value_added_services_icon/tyres.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/family1.jpg" afterPath="$PROJECT_DIR$/SYM/public/images/family1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/footer_monkey.png" afterPath="$PROJECT_DIR$/SYM/public/images/footer_monkey.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/girl-with-father.jpg" afterPath="$PROJECT_DIR$/SYM/public/images/girl-with-father.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/globe@2x.png" afterPath="$PROJECT_DIR$/SYM/public/images/globe@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/SYM_icon.png" afterPath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/SYM_icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/big_car_icon.png" afterPath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/big_car_icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/calculator.png" afterPath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/calculator.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/cheat_sheet.png" afterPath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/cheat_sheet.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/danger_icon.png" afterPath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/danger_icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/no_claims_bonus.png" afterPath="$PROJECT_DIR$/SYM/public/images/insurance_made_easy_icon/no_claims_bonus.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/logos/logo_anchorfree1.png" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_anchorfree1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/logos/logo_cisco.png" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_cisco.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/logos/logo_delonghi.png" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_delonghi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/logos/logo_fastweb.png" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_fastweb.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/logos/logo_federated_media.png" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_federated_media.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/logos/logo_fineco1.png" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_fineco1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/logos/logo_intesa_sanpaolo1.png" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_intesa_sanpaolo1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/logos/logo_parmalat.png" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_parmalat.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/logos/logo_swatch1.png" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_swatch1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/logos/logo_theneeds1.png" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_theneeds1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/logos/logo_valentino.png" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_valentino.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/logos/logo_vodafone1.png" afterPath="$PROJECT_DIR$/SYM/public/images/logos/logo_vodafone1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/SYM.png" afterPath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/SYM.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/calculator.png" afterPath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/calculator.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/fantastic_sign.png" afterPath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/fantastic_sign.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/faq_icon.png" afterPath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/faq_icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/users.png" afterPath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/users.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/video_icon.png" afterPath="$PROJECT_DIR$/SYM/public/images/menu_icon_size/video_icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/car_vehicle.png" afterPath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/car_vehicle.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/investment.png" afterPath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/investment.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/lease.png" afterPath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/lease.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/motorcycle.png" afterPath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/motorcycle.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/three_wheeler.png" afterPath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/three_wheeler.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/travel.png" afterPath="$PROJECT_DIR$/SYM/public/images/section_one_sidebar_tab_icon/travel.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/so1.png" afterPath="$PROJECT_DIR$/SYM/public/images/so1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/so11.png" afterPath="$PROJECT_DIR$/SYM/public/images/so11.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/so2.png" afterPath="$PROJECT_DIR$/SYM/public/images/so2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/so22.png" afterPath="$PROJECT_DIR$/SYM/public/images/so22.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/so3.png" afterPath="$PROJECT_DIR$/SYM/public/images/so3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/so33.png" afterPath="$PROJECT_DIR$/SYM/public/images/so33.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/so4.png" afterPath="$PROJECT_DIR$/SYM/public/images/so4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/so44.png" afterPath="$PROJECT_DIR$/SYM/public/images/so44.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/social.png" afterPath="$PROJECT_DIR$/SYM/public/images/social.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/images/sprite_img.png" afterPath="$PROJECT_DIR$/SYM/public/images/sprite_img.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/package.json" afterPath="$PROJECT_DIR$/SYM/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/config/dbconfig.js" afterPath="$PROJECT_DIR$/SYM/src/config/dbconfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/routes/paymentDetailsRouter.js" afterPath="$PROJECT_DIR$/SYM/src/routes/paymentDetailsRouter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/views/forms.ejs" afterPath="$PROJECT_DIR$/SYM/src/views/forms.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/app.js" afterPath="$PROJECT_DIR$/SYM/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/SYM/public/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/SYM/public/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/public/lib/bootstrap/grunt/change-version.js" afterPath="$PROJECT_DIR$/SYM/public/lib/bootstrap/grunt/change-version.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SYM/src/views/index.ejs" afterPath="$PROJECT_DIR$/SYM/src/views/index.ejs" />
     </list>
     <ignored path="SYM-v2.iws" />
@@ -28,110 +104,157 @@
     <favorites_list name="SYM-v2" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="forms.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SYM/src/views/forms.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2670">
-              <caret line="178" column="45" selection-start-line="178" selection-start-column="45" selection-end-line="178" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13275">
-              <caret line="885" column="79" selection-start-line="885" selection-start-column="79" selection-end-line="885" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index2.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SYM/src/views/index2.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19890">
-              <caret line="1326" column="0" selection-start-line="1326" selection-start-column="0" selection-end-line="1326" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vehicleRegRouter.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SYM/src/routes/vehicleRegRouter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="25" column="110" selection-start-line="25" selection-start-column="110" selection-end-line="25" selection-end-column="110" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="multitrip.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/multitrip.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="travelgroup.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/travelgroup.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SYM/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2790">
-              <caret line="186" column="50" selection-start-line="186" selection-start-column="4" selection-end-line="186" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".bowerrc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SYM/.bowerrc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bower.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SYM/bower.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="insuranceDetailsRouter.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SYM/src/routes/insuranceDetailsRouter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-              <folding>
-                <element signature="e#4338#6333#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.46756056">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="index2.ejs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/SYM/src/views/index2.ejs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="413">
+                  <caret line="955" column="104" selection-start-line="955" selection-start-column="40" selection-end-line="955" selection-end-column="104" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding>
+                    <marker date="1476248333000" expanded="true" signature="42:94" ph="..." />
+                    <marker date="1476248333000" expanded="true" signature="105:73735" ph="..." />
+                    <marker date="1476248333000" expanded="true" signature="143:73679" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/SYM/app.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="555">
+                  <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="header.ejs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/SYM/src/views/templates/header.ejs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="330">
+                  <caret line="66" column="6" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
+                  <folding>
+                    <element signature="n#div#0;n#!!top" expanded="false" />
+                    <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#ul#0;n#nav#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="footer.ejs" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/SYM/src/views/templates/footer.ejs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
+                  <folding>
+                    <element signature="n#div#0;n#!!top" expanded="false" />
+                    <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#input#0;n#li#5;n#ul#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="e#4135#4141#0#HTML" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="head.ejs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/SYM/src/views/templates/head.ejs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="700">
+                  <caret line="840" column="39" selection-start-line="840" selection-start-column="39" selection-end-line="840" selection-end-column="39" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="e#3170#3176#1#HTML" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="e#3548#3553#0#HTML" expanded="true" />
+                    <element signature="e#3970#3975#0#HTML" expanded="true" />
+                    <element signature="e#4117#4122#0#HTML" expanded="true" />
+                    <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="e#4808#4813#0#HTML" expanded="true" />
+                    <element signature="e#4914#4919#0#HTML" expanded="true" />
+                    <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="e#5975#5981#1#HTML" expanded="true" />
+                    <element signature="n#style#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="e#6546#6553#0#HTML" expanded="true" />
+                    <element signature="e#6768#6774#1#HTML" expanded="true" />
+                    <element signature="n#style#0;n#div#5;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="e#7807#7813#1#HTML" expanded="true" />
+                    <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#form#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#form#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#2;n#form#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#form#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#form#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#form#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#2;n#form#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#form#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#form#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#form#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#form#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#a#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#video#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#style#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#a#0;n#li#4;n#ul#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="jsLibs.ejs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/SYM/src/views/templates/jsLibs.ejs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -153,10 +276,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SYM/src/views/layout/section2.ejs" />
-        <option value="$PROJECT_DIR$/SYM/src/views/layout/section3.ejs" />
-        <option value="$PROJECT_DIR$/SYM/src/views/layout/section4.ejs" />
-        <option value="$PROJECT_DIR$/SYM/src/views/layout/section5.ejs" />
         <option value="$PROJECT_DIR$/SYM/src/views/layout/nav.ejs" />
         <option value="$PROJECT_DIR$/SYM/src/views/layout/forms.ejs" />
         <option value="$PROJECT_DIR$/SYM/src/views/layout/forms/cars/form2.ejs" />
@@ -195,15 +314,19 @@
         <option value="$PROJECT_DIR$/SYM-UI/public/src/views/shipping.html" />
         <option value="$PROJECT_DIR$/SYM/src/routes/shippingDetailsRouter.js" />
         <option value="$PROJECT_DIR$/SYM/src/routes/shippingInfoRouter.js" />
-        <option value="$PROJECT_DIR$/SYM/app.js" />
         <option value="$PROJECT_DIR$/SYM/src/routes/vehicleRegRouter.js" />
         <option value="$PROJECT_DIR$/SYM/package.json" />
         <option value="$PROJECT_DIR$/SYM/src/config/dbconfig.js" />
         <option value="$PROJECT_DIR$/SYM/src/routes/paymentDetailsRouter.js" />
         <option value="$PROJECT_DIR$/SYM/public/css/custom.css" />
         <option value="$PROJECT_DIR$/SYM/src/views/forms.ejs" />
-        <option value="$PROJECT_DIR$/SYM/src/views/index.ejs" />
         <option value="$PROJECT_DIR$/SYM/src/routes/insuranceDetailsRouter.js" />
+        <option value="$PROJECT_DIR$/SYM/app.js" />
+        <option value="$PROJECT_DIR$/SYM/src/views/templates/head.ejs" />
+        <option value="$PROJECT_DIR$/SYM/src/views/templates/header.ejs" />
+        <option value="$PROJECT_DIR$/SYM/src/views/templates/footer.ejs" />
+        <option value="$PROJECT_DIR$/SYM/src/views/templates/jsLibs.ejs" />
+        <option value="$PROJECT_DIR$/SYM/src/views/index.ejs" />
       </list>
     </option>
   </component>
@@ -335,7 +458,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -354,6 +481,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SYM-v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SYM-v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SYM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -413,11 +558,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SYM/public" />
+      <recent name="$PROJECT_DIR$/SYM/public/images" />
       <recent name="$PROJECT_DIR$/SYM/src/views" />
       <recent name="D:\Node Projects\SYM-v2\SYM\src\views" />
       <recent name="D:\Node Projects\SYM-v2\SYM\src\views\layout\forms" />
-      <recent name="D:\Node Projects\SYM-v2\SYM\public\css" />
-      <recent name="D:\Node Projects\SYM-v2\SYM\src\views\userRegistrations" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/SYM/src/routes" />
@@ -499,7 +644,7 @@
       <workItem from="1476073920826" duration="7907000" />
       <workItem from="1476083425812" duration="5839000" />
       <workItem from="1476093975033" duration="3222000" />
-      <workItem from="1476243535932" duration="172000" />
+      <workItem from="1476243535932" duration="4710000" />
     </task>
     <task id="LOCAL-00001" summary="react dependencies and necessary files added">
       <created>1465210678564</created>
@@ -788,11 +933,18 @@
       <option name="project" value="LOCAL" />
       <updated>1475403456658</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="oct/12 with new UI update integration">
+      <created>1476243791630</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1476243791630</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17140000" />
+    <option name="totallyTimeSpent" value="21678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1337" extended-state="6" />
@@ -873,7 +1025,8 @@
     <MESSAGE value="updated index.ejs" />
     <MESSAGE value="updated icons" />
     <MESSAGE value="vehicle complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="vehicle complete" />
+    <MESSAGE value="oct/12 with new UI update integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="oct/12 with new UI update integration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -882,36 +1035,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SYM/public/images/aia-logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM-UI/public/images/fancybox_sprite@2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM-UI/public/images/fancybox_loading@2x.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM-UI/public/images/cards@2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/public/images/accounting@2x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM-UI/public/images/dT67p6GT9.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SYM-UI/public/images/ecosystem@2x.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1132,7 +1255,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/public/css/custom.css">
+    <entry file="file://$USER_HOME$/Desktop/untitled folder/SYM/public/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19200">
           <caret line="1280" column="46" selection-start-line="1280" selection-start-column="40" selection-end-line="1280" selection-end-column="46" />
@@ -1161,22 +1284,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13275">
-          <caret line="885" column="79" selection-start-line="885" selection-start-column="79" selection-end-line="885" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/views/index2.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19890">
-          <caret line="1326" column="0" selection-start-line="1326" selection-start-column="0" selection-end-line="1326" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SYM/src/routes/insuranceDetailsRouter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1184,14 +1291,6 @@
           <folding>
             <element signature="e#4338#6333#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/src/routes/vehicleRegRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="110" selection-start-line="25" selection-start-column="110" selection-end-line="25" selection-end-column="110" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1211,14 +1310,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SYM/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2790">
-          <caret line="186" column="50" selection-start-line="186" selection-start-column="4" selection-end-line="186" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SYM/.bowerrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1232,6 +1323,99 @@
         <state relative-caret-position="450">
           <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/views/listUsers.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM-UI/public/src/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="885" column="79" selection-start-line="885" selection-start-column="79" selection-end-line="885" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/routes/vehicleRegRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" column="110" selection-start-line="25" selection-start-column="110" selection-end-line="25" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/views/index2.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="955" column="104" selection-start-line="955" selection-start-column="40" selection-end-line="955" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/views/templates/head.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/views/templates/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="66" column="6" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#nav#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/views/templates/jsLibs.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1476248333000" expanded="true" signature="42:94" ph="..." />
+            <marker date="1476248333000" expanded="true" signature="105:73735" ph="..." />
+            <marker date="1476248333000" expanded="true" signature="143:73679" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYM/src/views/templates/footer.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
+          <folding>
+            <element signature="n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#li#5;n#ul#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#4135#4141#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

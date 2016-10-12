@@ -15,6 +15,9 @@ var session = require('express-session');
 
 var path=require('path');
 
+var engine = require('ejs-locals');
+
+
 var nav = [{
     Link: '/Bike',
     Text: 'Bike'
@@ -51,7 +54,8 @@ var singleTripBasicDetailsRouter = require('./src/routes/singleTripBasicDetailsR
 
 app.use(express.static(path.resolve(__dirname,'public')));
 app.set('views', './src/views');
-//app.set('views', './src/views/userRegistrations');
+
+app.engine('ejs', engine);
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.json());
