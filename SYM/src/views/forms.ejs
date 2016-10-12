@@ -160,10 +160,10 @@
         <div class="vehicle_detail_bg">
             <form action="/personalDetails" method="post">
                 <div class="row">
-                    <div class="field field--required field--three-eights field--show-floating-label">
+                    <div class=" field--required field--three-eights field--show-floating-label" style="padding-bottom: 10px">
                         <div class="field__input-wrapper field__input-wrapper--select">
                             <label for="checkout_shipping_address_country" class="field__label">Title</label>
-                            <select name="title" class="field__input field__input--select" required>
+                            <select name="title" class="field__input field__input--select" required >
                                 <option value="">Select Title</option>
                                 <option value="Mr">Mr</option>
                                 <option value="Mrs">Mrs</option>
@@ -640,17 +640,18 @@
 
         <% if (form === 'paymentDetails') { %>
 
-        <form name="insurance_detail" action="" method="post">
 
 
-            <div class="order-summary__section order-summary__section--total-lines checkout_shiiping_cost" data-order-summary-section="payment-lines" style="float: left;">
+
+        <div class="row">
+            <div class="order-summary__section order-summary__section--total-lines checkout_shiiping_cost " data-order-summary-section="payment-lines" style="float: left;">
                 <table class="total-line-table">
 
                     <tfoot class="total-line-table__footer">
                     <tr class="total-line">
                         <td class="total-line__name payment-due-label">
                             <span class="payment-due-label__total">Total Sipping Cost</span>
-                                                <span class="payment-due-label__taxes hidden" data-checkout-taxes="">
+                            <span class="payment-due-label__taxes hidden" data-checkout-taxes="">
                                                     Including <span data-checkout-total-taxes-target="0">$0.00</span> in taxes
                                                 </span>
                         </td>
@@ -662,6 +663,7 @@
                     </tfoot>
                 </table>
             </div>
+
             <div data-payment-method="" class="section section--payment-method">
                 <div class="section__header">
                     <h2 class="section__title">Payment method</h2>
@@ -717,7 +719,7 @@
                                         <div id="showcardnumberlabel" class="field__input-wrapper">
                                             <label for="checkout_name" class="field__label">Card number</label>
                                             <input id="cardnumber" name="card_number" type="text" placeholder="Card number" class="field__input" required />
-                                                            <span class="field__icon icon icon--lock" id="credit_card_number_tooltip">
+                                            <span class="field__icon icon icon--lock" id="credit_card_number_tooltip">
                                                                 <span class="visually-hidden">Secure field</span>
                                                             </span>
                                         </div>
@@ -743,7 +745,7 @@
                                             <div id="showcvvlabel" class="field__input-wrapper">
                                                 <label for="checkout_name" class="field__label">CVV</label>
                                                 <input id="cvv" name="cvv" type="text" placeholder="CVV" class="field__input" required />
-                                                                <span role="tooltip" class="field__icon icon icon--question has-tooltip" tabindex="0" id="credit_card_verification_value_tooltip">
+                                                <span role="tooltip" class="field__icon icon icon--question has-tooltip" tabindex="0" id="credit_card_verification_value_tooltip">
                                                                     <span class="tooltip">
                                                                         <span data-cvv-tooltip="unknown">
                                                                             3-digit security code usually found on the back of your card. American Express cards have a 4-digit code located on the front.
@@ -826,7 +828,13 @@
                     </div>
                 </div>
             </div>
-        </form>
+
+        </div>
+
+
+
+
+
 
 
 

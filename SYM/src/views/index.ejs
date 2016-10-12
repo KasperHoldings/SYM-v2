@@ -1,1336 +1,1002 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>SYM</title>
-    <link href="../../css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../../css/jquery.fullPage.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/animations.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/uikit.min.css" />
-    <!--<link rel="stylesheet" type="text/css" href="../../css/videobackground.css" />-->
-    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/format.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/flexslider.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-datetimepicker.css" />
-</head>
-<body>
-<div class="container-fluid">
-    <div class="fix_hd">
-        <nav class="navbar navbar-default">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#"><img src="../../images/mainlogo.png"/></a>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" type="image/x-icon" href="../../../../Desktop/untitled%20folder/SYM/public/images/favicon.ico" />
+        <title>SYM</title>
+        <link href="../../../../Desktop/untitled%20folder/SYM/public/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../../../../Desktop/untitled%20folder/SYM/public/css/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../Desktop/untitled%20folder/SYM/public/css/animations.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../Desktop/untitled%20folder/SYM/public/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../Desktop/untitled%20folder/SYM/public/css/uikit.min.css" />
+        <!--<link rel="stylesheet" type="text/css" href="../../css/videobackground.css" />-->
+        <link rel="stylesheet" type="text/css" href="../../../../Desktop/untitled%20folder/SYM/public/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../Desktop/untitled%20folder/SYM/public/css/format.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../Desktop/untitled%20folder/SYM/public/css/custom.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../Desktop/untitled%20folder/SYM/public/css/flexslider.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../Desktop/untitled%20folder/SYM/public/css/bootstrap-datetimepicker.css" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="fix_hd">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/mainlogo.png"/></a>
+                    </div>
+                    <a id="nav-full-toggle" class="nav-hamburger" href="#">
+                        <span></span>
+                    </a>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul id="menu" class="nav navbar-nav">
+                            <li class="active" data-menuanchor="firstPage">                                
+                                <a href="#firstPage">
+                                    <img src="../../../../Desktop/untitled%20folder/SYM/public/images/menu_icon_size/calculator.png" /><br>
+                                    <span>Quote</span>
+                                </a>
+                            </li>
+                            <li data-menuanchor="secondPage"><a href="#secondPage">
+                                    <img src="../../../../Desktop/untitled%20folder/SYM/public/images/menu_icon_size/faq_icon.png" /><br>
+                                    <span>FAQ</span>
+                                </a></li>
+                            <li data-menuanchor="3rdPage"><a href="#3rdPage">
+                                    <img src="../../../../Desktop/untitled%20folder/SYM/public/images/menu_icon_size/video_icon.png" /><br>
+                                    <span>MEDIA</span>
+                                </a></li>
+                            <li data-menuanchor="4thPage"><a href="#4thPage">
+                                    <img src="../../../../Desktop/untitled%20folder/SYM/public/images/menu_icon_size/users.png" /><br>
+                                    <span>USERS</span>
+                                </a></li>
+                            <li data-menuanchor="5thPage"><a href="#5thPage">
+                                    <img src="../../../../Desktop/untitled%20folder/SYM/public/images/menu_icon_size/fantastic_sign.png" /><br>
+                                    <span>Value</span>
+                                </a></li>
+                            <li data-menuanchor="6thPage"><a href="#6thPage">
+                                    <img src="../../../../Desktop/untitled%20folder/SYM/public/images/menu_icon_size/Contact.png" /><br>
+                                    <span>CONTACT</span>
+                                </a></li>
+                            <li data-menuanchor=""><a href="#">
+                                    <img src="../../../../Desktop/untitled%20folder/SYM/public/images/menu_icon_size/SYM.png" /><br>
+                                    <span>LOGIN</span>
+                                </a></li>
+                        </ul>                        
+                    </div>
+
+                </nav>
             </div>
-            <a id="nav-full-toggle" class="nav-hamburger" href="#">
-                <span></span>
-            </a>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul id="menu" class="nav navbar-nav">
-                    <li class="active" data-menuanchor="firstPage">
+            <nav id="nav-full" class="layer-change" style="display: none;">
+                <ul style="margin-top: 90px;">
+                    <li class="mobile-tablet-true" data-menuanchor="firstPage">                                
                         <a href="#firstPage">
-                            <img src="../../images/menu_icon_size/calculator.png" /><br>
+                            <img src="../../../../Desktop/untitled%20folder/SYM/public/images/menu_icon_size/calculator.png" /><br>
                             <span>Quote</span>
                         </a>
                     </li>
-                    <li data-menuanchor="secondPage"><a href="#secondPage">
-                            <img src="../../images/menu_icon_size/faq_icon.png" /><br>
-                            <span>FAQ</span>
-                        </a></li>
-                    <li data-menuanchor="3rdPage"><a href="#3rdPage">
-                            <img src="../../images/menu_icon_size/video_icon.png" /><br>
-                            <span>MEDIA</span>
-                        </a></li>
-                    <li data-menuanchor="4thPage"><a href="#4thPage">
-                            <img src="../../images/menu_icon_size/users.png" /><br>
-                            <span>USERS</span>
-                        </a></li>
-                    <li data-menuanchor="5thPage"><a href="#5thPage">
-                            <img src="../../images/menu_icon_size/fantastic_sign.png" /><br>
-                            <span>Value</span>
-                        </a></li>
-                    <li data-menuanchor="6thPage"><a href="#6thPage">
-                            <img src="../../images/menu_icon_size/SYM.png" /><br>
-                            <span>CONTACT</span>
-                        </a></li>
-                    <li data-menuanchor=""><a href="#">
-                            <img src="../../images/menu_icon_size/SYM.png" /><br>
-                            <span>LOGIN</span>
-                        </a></li>
+                    <li class="mobile-tablet-true" data-menuanchor="secondPage"><a href="#secondPage"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/menu_icon_size/faq_icon.png" /><br>
+                            <span>FAQ</span></a></li>
+                    <li class="mobile-tablet-true" data-menuanchor="3rdPage"><a href="#3rdPage"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/menu_icon_size/video_icon.png" /><br>
+                            <span>MEDIA</span></a></li>
+                    <li class="mobile-tablet-true" data-menuanchor="4thPage"><a href="#4thPage"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/menu_icon_size/users.png" /><br>
+                            <span>USERS</span></a></li>
+                    <li class="mobile-tablet-true" data-menuanchor="5thPage"><a href="#5thPage"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/menu_icon_size/fantastic_sign.png" /><br>
+                            <span>Value</span></a></li>
+                    <li class="mobile-tablet-true" data-menuanchor="6thPage"><a href="#6thPage"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/menu_icon_size/Contact.png" /><br>
+                            <span>CONTACT</span></a></li>
+                    <li class="mobile-tablet-true" data-menuanchor="6thPage"><a href="#6thPage"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/menu_icon_size/SYM.png" /><br>
+                            <span>LOGIN</span></a></li>
                 </ul>
-            </div>
+            </nav>
+            <div id="fullpage">
+                <div class="section landingScreen active" id="section0"> 
+                    <div class="op_blue"></div>
+                    <div class="row">
+                        <div class="container">
+                            <div class="col-md-12 mrnone">
 
-        </nav>
-    </div>
-    <nav id="nav-full" class="layer-change" style="display: none;">
-        <ul style="margin-top: 90px;">
-            <li class="mobile-tablet-true" data-menuanchor="firstPage">
-                <a href="#firstPage">
-                    <img src="../../images/menu_icon_size/calculator.png" /><br>
-                    <span>Quote</span>
-                </a>
-            </li>
-            <li class="mobile-tablet-true" data-menuanchor="secondPage"><img src="../../images/menu_icon_size/faq_icon.png" /><br>
-                <span>FAQ</span></li>
-            <li class="mobile-tablet-true" data-menuanchor="3rdPage"><a href="#3rdPage"><img src="../../images/menu_icon_size/video_icon.png" /><br>
-                    <span>MEDIA</span></a></li>
-            <li class="mobile-tablet-true" data-menuanchor="4thPage"><a href="#4thPage"><img src="../../images/menu_icon_size/users.png" /><br>
-                    <span>USERS</span></a></li>
-            <li class="mobile-tablet-true" data-menuanchor="5thPage"><a href="#5thPage"><img src="../../images/menu_icon_size/fantastic_sign.png" /><br>
-                    <span>Value</span></a></li>
-            <li class="mobile-tablet-true" data-menuanchor="6thPage"><a href="#6thPage"><img src="../../images/menu_icon_size/SYM.png" /><br>
-                    <span>CONTACT</span></a></li>
-            <li class="mobile-tablet-true" data-menuanchor="6thPage"><a href="#6thPage"><img src="../../images/menu_icon_size/SYM.png" /><br>
-                    <span>LOGIN</span></a></li>
-        </ul>
-    </nav>
-
-    <div id="fullpage">
-        <div class="section landingScreen active" id="section0">
-            <div class="op_blue"></div>
-            <div class="row">
-                <div class="container">
-                    <div class="col-md-12 mrnone">
-
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="hidden_loder animatedParent">
-                <div class="container">
-                    <div class="formarea repeat0 animated fadeInUp">
-                        <div class="indicator">
-                            <div class="moscot"></div>
-                            <div class="moscot_hand"></div>
-                        </div>
-                        <div class="leftTab">
-                            <ul>
-                                <li onclick="changeFun(1)"><a class="theTab car active"  href="#"><i class="fa fa-car" aria-hidden="true"></i><span
-                                                class="ul_lft">Motor Vehicle</span></a></li>
-                                <li onclick="changeFun(2)"><a class="theTab twowheeler" href="#"><i class="fa fa-motorcycle"
-                                                                      aria-hidden="true"></i><span class="ul_lft">Motor bike</span></a>
-                                </li>
-                                <li onclick="changeFun(3)"><a class="theTab health" href="#"><i class="fa fa-medkit" aria-hidden="true"></i><span
-                                                class="ul_lft">Three Wheeler</span></a></li>
-                                <li><a class="travel" href="#"><i class="fa fa-plane" aria-hidden="true"></i><span
-                                                class="ul_lft">Travel</span></a></li>
-                                <li><a class="investment" href="#"><i class="fa fa-inr" aria-hidden="true"></i><span
-                                                class="ul_lft">Investment <div>(Growth, Child, Tax, Retirement)
-                                            </div></span></a></li>
-                                <li><a class="term" href="#"><i class="fa fa-umbrella" aria-hidden="true"></i><span
-                                                class="ul_lft">Lease/Loans</span></a></li>
-                            </ul>
-                            <div class="content_box health_bg" style="display: none;">
-                                <div class="arrow"></div>
-                                <h3 class="text-center"><strong>Three</strong> Wheeler</h3>
-                                <ul class="info_list">
-                                    <li>Widest choice of insurers</li>
-                                    <li>Best prices</li>
-                                    <li>Experienced relationship manager</li>
-                                    <li>Dedicated claims assistance</li>
-                                    <li>Cashless settlement at nearest garage</li>
-                                    <li>Free road side assistance *</li>
-                                </ul>
-                                <div class="tc text-right">&nbsp;</div>
-                            </div>
-                            <div class="content_box term_bg" style="display: none;">
-                                <div class="arrow"></div>
-                                <h3 class="text-center"><strong>Term Life</strong> Insurance</h3>
-                                <h6 class="text-center">Compare 34 plans from 16 insurers &amp; save up to 50%</h6>
-                                <ul class="info_list">
-                                    <li>Awarded India's #1 financial website*</li>
-                                    <li>Over 12,12,535 families secured</li>
-                                    <li>Free 365 day support</li>
-                                    <li>1500+ advisors helping you compare &amp; buy</li>
-                                </ul>
-                                <div class="tc text-right">* By IAMAI in 2013 &amp; 2014</div>
-                            </div>
-                            <div class="content_box investment_bg" style="display: none;">
-                                <div class="arrow"></div>
-                                <h3 class="text-center invlblhead"><strong>Investment </strong> Plans</h3>
-                                <h6 class="text-center invlblsubhead">Get the best investment options to maximize your
-                                    wealth.</h6>
-                                <ul class="info_list">
-                                    <li>Avail tax benefits on your investments.</li>
-                                    <li> Get the dual advantage of return on investment &amp; protection.</li>
-                                    <li>1500+ advisors to help you compare &amp; buy.</li>
-                                    <li>365 days customer support</li>
-                                </ul>
-                            </div>
-                            <div class="content_box car_bg" style="display: block;">
-                                <div class="arrow"></div>
-                                <h3 class="text-center"><strong>Car</strong> Insurance</h3>
-                                <ul class="info_list">
-                                    <li>Widest choice of insurers</li>
-                                    <li>Best prices</li>
-                                    <li>Experienced relationship manager</li>
-                                    <li>Dedicated claims assistance</li>
-                                    <li>Cashless settlement at nearest garage</li>
-                                    <li>Free road side assistance *</li>
-                                </ul>
-                                <div class="tc text-right">&nbsp;</div>
-                            </div>
-                            <div class="content_box travel_bg" style="display: none;">
-                                <div class="arrow"></div>
-                                <h3 class="text-center"><strong>Travel</strong> Insurance</h3>
-                                <ul class="info_list">
-                                    <li>Cashless hospitalization</li>
-                                    <li>Coverage for baggage loss</li>
-                                    <li>Wide range of cover &ndash; up to $1 million</li>
-                                    <li>Cover starting from 260*</li>
-                                </ul>
-                                <div class="tc text-right">&nbsp;</div>
-                            </div>
-                            <div class="content_box twowheeler_bg" style="display: none;">
-                                <div class="arrow"></div>
-                                <h3 class="text-center"><strong>Two Wheeler</strong> Insurance</h3>
-                                <ul class="info_list">
-                                    <li>Renew expired policy online, instantly</li>
-                                    <li>Widest choice of insurers</li>
-                                    <li>Best prices</li>
-                                    <li>Experienced relationship manager</li>
-                                    <li>Dedicated claims assistance</li>
-                                    <li>Cashless settlement at nearest garage</li>
-                                    <li>Free road side assistance *</li>
-                                </ul>
-                                <div class="tc text-right">&nbsp;</div>
-                            </div>
-                        </div>
-                        <div class="rightTab" style="display: block;">
-                            <div class="box_value">
-                                <div class="health-bg active">
-                                    <div class="input_field">
-                                        <div class="lable"><i class="fa fa-car iconpos "></i></div>
-                                        <div class="info"><span class="b">Reg No.</span></div>
-                                        <div class="inputBox">
-                                            <input type="text" id="twoWheelerRegistrationNumber" placeholder="WP"/>
-                                            <input type="text" id="twoWheelerRegistrationNumber" placeholder="CAD"/>
-                                            <input type="text" id="twoWheelerRegistrationNumber" placeholder="1234"/>
-                                        </div>
-
+                    <div class="hidden_loder animatedParent">
+                        <div class="container">
+                            <div class="formarea repeat0 animated fadeInUp">
+                                <div class="indicator">
+                                    <div class="moscot"></div>
+                                    <div class="moscot_hand"></div>
+                                </div>
+                                <div class="leftTab">
+                                    <ul>
+                                        <li><a class="car active" href="#"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/section_one_sidebar_tab_icon/car_vehicle.png" /><br><span class="ul_lft">Motor Vehicle</span></a></li>
+                                        <li><a class="twowheeler" href="#" ><img src="../../../../Desktop/untitled%20folder/SYM/public/images/section_one_sidebar_tab_icon/motorcycle.png" /><br><span class="ul_lft">Motor bike</span></a></li>
+                                        <li><a class="health" href="#"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/section_one_sidebar_tab_icon/three_wheeler.png" /><br><span class="ul_lft">Three Wheeler</span></a></li>
+                                        <li><a class="travel" href="#"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/section_one_sidebar_tab_icon/travel.png" /><br><span class="ul_lft">Travel</span></a></li>
+                                        <li><a class="investment" href="#"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/section_one_sidebar_tab_icon/investment.png" /><br><span class="ul_lft">Investment <div>(FD & Savings)</div></span></a></li>
+                                        <li><a class="term" href="#"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/section_one_sidebar_tab_icon/lease.png" /><br><span class="ul_lft">Lease/Loans</span></a></li>
+                                    </ul>
+                                    <div class="content_box health_bg" style="display: none;"><div class="arrow"></div>
+                                        <h3 class="text-center"><strong>Three</strong> Wheeler</h3>
+                                        <ul class="info_list">
+                                            <li>Widest choice of insurers</li>
+                                            <li>Best prices</li>
+                                            <li>Experienced relationship manager</li>
+                                            <li>Dedicated claims assistance</li>
+                                            <li>Cashless settlement at nearest garage</li>
+                                            <li>Free road side assistance *</li>
+                                        </ul>
+                                        <div class="tc text-right">&nbsp;</div>                                        
                                     </div>
-                                    <div class="rush"><span>OR</span></div>
-                                    <div class="inrush"><span>In a Rush ?</span></div>
-                                    <div class="upload-drop-zone has-tooltip" id="drop-zone">
-                                        Just drag and drop files here
+                                    <div class="content_box term_bg" style="display: none;"><div class="arrow"></div>
+                                        <h3 class="text-center"><strong>Term Life</strong> Insurance</h3>
+                                        <h6 class="text-center">Compare 34 plans from 16 insurers &amp; save up to 50%</h6>
+                                        <ul class="info_list">
+                                            <li>Awarded India's #1 financial website*</li>
+                                            <li>Over 12,12,535 families secured</li>
+                                            <li>Free 365 day support</li>
+                                            <li>1500+ advisors helping you compare &amp; buy</li>
+                                        </ul>
+                                        <div class="tc text-right">* By IAMAI in 2013 &amp; 2014</div>                                        
+                                    </div>
+                                    <div class="content_box investment_bg" style="display: none;"><div class="arrow"></div>
+                                        <h3 class="text-center invlblhead"><strong>Investment </strong> Plans</h3>
+                                        <h6 class="text-center invlblsubhead">Get the best investment options to maximize your wealth.</h6>
+                                        <ul class="info_list">
+                                            <li>Avail tax benefits on your investments.</li>
+                                            <li> Get the dual advantage of return on investment &amp; protection.</li>
+                                            <li>1500+ advisors to help you compare &amp; buy.</li>
+                                            <li>365 days customer support</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content_box car_bg" style="display: block;"><div class="arrow"></div>
+                                        <h3 class="text-center"><strong>Car</strong> Insurance</h3>
+                                        <ul class="info_list">
+                                            <li>Widest choice of insurers</li>
+                                            <li>Best prices</li>
+                                            <li>Experienced relationship manager</li>
+                                            <li>Dedicated claims assistance</li>
+                                            <li>Cashless settlement at nearest garage</li>
+                                            <li>Free road side assistance *</li>
+                                        </ul>
+                                        <div class="tc text-right">&nbsp;</div></div>
+                                    <div class="content_box travel_bg" style="display: none;">
+                                        <div class="arrow"></div>
+                                        <h3 class="text-center"><strong>Travel</strong> Insurance</h3>
+                                        <ul class="info_list">
+                                            <li>Cashless hospitalization</li>
+                                            <li>Coverage for baggage loss</li>
+                                            <li>Wide range of cover &ndash; up to $1 million </li>
+                                            <li>Cover starting from 260*</li>
+                                        </ul>
+                                        <div class="tc text-right">&nbsp;</div>                                        
+                                    </div>
+                                    <div class="content_box twowheeler_bg" style="display: none;"><div class="arrow"></div>
+                                        <h3 class="text-center"><strong>Two Wheeler</strong> Insurance</h3>
+                                        <ul class="info_list">
+                                            <li>Renew expired policy online, instantly</li>	
+                                            <li>Widest choice of insurers</li>
+                                            <li>Best prices</li>
+                                            <li>Experienced relationship manager</li>
+                                            <li>Dedicated claims assistance</li>
+                                            <li>Cashless settlement at nearest garage</li>
+                                            <li>Free road side assistance *</li>                                            
+                                        </ul>
+                                        <div class="tc text-right">&nbsp;</div>                        
+                                    </div>
+                                </div>
+                                <div class="rightTab" style="display: block;">
+                                    <div class="box_value">
+                                        <div class="health-bg active">
+                                            <div class="input_field">
+                                                <div class="lable"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/number_plate.png" /></div>
+                                                <div class="info"><span class="b">Reg No.</span></div>
+                                                <div class="inputBox">
+                                                    <input type="text" id="twoWheelerRegistrationNumber" placeholder="WP"/>
+                                                    <input type="text" id="twoWheelerRegistrationNumber" placeholder="CAD"/>
+                                                    <input type="text" id="twoWheelerRegistrationNumber" placeholder="1234"/>
+                                                </div>                                          
+
+                                            </div>                                        
+                                            <div class="rush"><span>OR</span></div>
+                                            <div class="inrush"><span>In a Rush ?</span></div>
+                                            <div class="upload-drop-zone has-tooltip" id="drop-zone">
+                                                Just drag and drop files here
                                                 <span class="tooltip">
                                                     <span data-cvv-tooltip="unknown">
                                                         Upload a scanned image or a photograph of document requested
-                                                    </span>
+                                                    </span>                                    
                                                 </span>
-                                    </div>
-
-                                    <!-- Upload Finished -->
-                                    <div class="js-upload-finished">
-                                        <ul class="list-group">
-                                            <li><img src="../../images/home_warp-logo.svg"/></li>
-                                            <li><img src="../../images/home_warp-logo.svg"/></li>
-                                            <li><img src="../../images/home_warp-logo.svg"/></li>
-                                            <li><img src="../../images/home_warp-logo.svg"/></li>
-                                        </ul>
-                                    </div>
-                                    <div class="input_field pro">
-                                        <a href="insurance.html" class="proceed" id="btnSubmitTerm">Proceed</a>
-
-                                        <div class="process">
-                                            <span class="loading style-1"></span>
-                                        </div>
-                                        <div class="err"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--==========================-->
-                            <div class="term-bg">
-                                <form name="frmTerm" id="frmTerm">
-                                    <div class="tabs">
-                                        <div class="tab term_first">
-                                            <input type="radio" checked="" value="1" name="tab-group-1" id="tab-1">
-                                            <label for="tab-1">Housing</label>
-                                        </div>
-
-                                        <div class="tab term_second">
-                                            <input type="radio" value="3" name="tab-group-1" id="tab-3">
-                                            <label for="tab-3">Vehicle</label>
-                                        </div>
-                                    </div>
-                                    <div class="termBox_first">
-                                        <div class="input_field growth_f invForm">
-                                            <div class="lable cover"><i class="fa fa-inr iconpos "></i></div>
-                                            <div id="invLabel" class="info"><span
-                                                        class="b">Household Income</span><span> (Rs)</span></div>
-                                            <div class="inputBox householdIncome">
-                                                <input type="text" maxlength="11" value="" placeholder="Income"
-                                                       data-msg="Amount should be between " data-max="200000"
-                                                       data-min="10000" id="invamount" name="invamount"> <span
-                                                        class="fig_lbl none" id="inv_lbl"></span>
-                                                <select id="invTerm" name="invTerm">
-                                                    <option value="">Per Month</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
-                                                    <option value="12">12</option>
-                                                    <option value="13">13</option>
-                                                    <option value="14">14</option>
-                                                    <option value="15">15</option>
-                                                    <option value="16">16</option>
-                                                    <option value="17">17</option>
-                                                    <option value="18">18</option>
-                                                    <option value="19">19</option>
-                                                    <option value="20">20</option>
-                                                    <option value="25">25</option>
-                                                    <option value="30">30</option>
-                                                </select>
-
                                             </div>
-                                            <div id="inverr" class="err"></div>
-                                        </div>
 
-                                        <div class="input_field invForm" id="invTermSelect">
-                                            <div class="lable dob"><i class="fa fa-calendar iconpos "></i></div>
-                                            <div class="info"><span class="b">No Of Dependants</span></div>
-                                            <div class="inputBox">
-                                                <select id="invTerm" name="invTerm">
-                                                    <option value="">No Of Dependants</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
-                                                    <option value="12">12</option>
-                                                    <option value="13">13</option>
-                                                    <option value="14">14</option>
-                                                    <option value="15">15</option>
-                                                    <option value="16">16</option>
-                                                    <option value="17">17</option>
-                                                    <option value="18">18</option>
-                                                    <option value="19">19</option>
-                                                    <option value="20">20</option>
-                                                    <option value="25">25</option>
-                                                    <option value="30">30</option>
-                                                </select>
+                                            <!-- Upload Finished -->
+                                            <div class="js-upload-finished">
+                                                <ul class="list-group">
+                                                    <li class="has-tooltip">
+                                                        <img src="../../../../Desktop/untitled%20folder/SYM/public/images/home_warp-logo.svg"/>
+                                                        <span class="tooltip">
+                                                            <span data-cvv-tooltip="unknown">
+                                                                Upload a scanned image or a photograph of document requested
+                                                            </span>                                    
+                                                        </span>
+                                                    </li>
+                                                    <li class="has-tooltip">
+                                                        <img src="../../../../Desktop/untitled%20folder/SYM/public/images/home_warp-logo.svg"/>
+                                                        <span class="tooltip">
+                                                            <span data-cvv-tooltip="unknown">
+                                                                Upload a scanned image or a photograph of document requested
+                                                            </span>                                    
+                                                        </span>
+                                                    </li>
+                                                    <li class="has-tooltip">
+                                                        <img src="../../../../Desktop/untitled%20folder/SYM/public/images/home_warp-logo.svg"/>
+                                                        <span class="tooltip">
+                                                            <span data-cvv-tooltip="unknown">
+                                                                Upload a scanned image or a photograph of document requested
+                                                            </span>                                    
+                                                        </span>
+                                                    </li>
+                                                    <li class="has-tooltip">
+                                                        <img src="../../../../Desktop/untitled%20folder/SYM/public/images/home_warp-logo.svg"/>
+                                                        <span class="tooltip">
+                                                            <span data-cvv-tooltip="unknown">
+                                                                Upload a scanned image or a photograph of document requested
+                                                            </span>                                    
+                                                        </span>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <div id="invdoberr" class="err"></div>
-                                        </div>
-
-                                        <div class="input_field growth_f invForm">
-                                            <div class="lable cover"><i class="fa fa-inr iconpos "></i></div>
-                                            <div id="invLabel" class="info"><span class="b">Living Expenses</span><span> (Rs)</span>
-                                            </div>
-                                            <div class="inputBox householdIncome">
-                                                <input type="text" maxlength="11" value="" placeholder="Income"
-                                                       data-msg="Amount should be between " data-max="200000"
-                                                       data-min="10000" id="invamount" name="invamount"> <span
-                                                        class="fig_lbl none" id="inv_lbl"></span>
-                                                <select id="invTerm" name="invTerm">
-                                                    <option value="">Per Month</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
-                                                    <option value="12">12</option>
-                                                    <option value="13">13</option>
-                                                    <option value="14">14</option>
-                                                    <option value="15">15</option>
-                                                    <option value="16">16</option>
-                                                    <option value="17">17</option>
-                                                    <option value="18">18</option>
-                                                    <option value="19">19</option>
-                                                    <option value="20">20</option>
-                                                    <option value="25">25</option>
-                                                    <option value="30">30</option>
-                                                </select>
-
-                                            </div>
-                                            <div id="inverr" class="err"></div>
-                                        </div>
-
-                                        <div class="lable need-amount"></div>
-                                        <input type="hidden" value="1" id="investmentType" name="investmentType">
-                                        <input type="hidden" value="" id="invneedgrowthamt" name="invneedgrowthamt">
-
-                                        <div class="input_field pro"><a class="invproceed proceed"
-                                                                        href="javascript:void(0);">Proceed</a>
-
-                                            <div class="process"><span class="loading style-1"></span><span>Please Wait...</span>
+                                            <div class="input_field pro"> 
+                                                <a href="../../../../Desktop/untitled%20folder/SYM/public/src/views/insurance.html" class="proceed" id="btnSubmitTerm">Proceed</a>
+                                                <div class="process">
+                                                    <span class="loading style-1"></span>
+                                                </div>
+                                                <div class="err"></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="termBox_second" style="display: none;">
-                                        <div class="input_field growth_f invForm">
-                                            <div class="lable cover"><i class="fa fa-inr iconpos "></i></div>
-                                            <div id="invLabel" class="info"><span class="b">Vehicle Value</span><span> (Rs)</span>
-                                            </div>
-                                            <div class="inputBox"><input type="text" maxlength="11" value=""
-                                                                         placeholder="Amount"
-                                                                         data-msg="Amount should be between "
-                                                                         data-max="200000" data-min="10000"
-                                                                         id="invamount" name="invamount"> <span
-                                                        class="fig_lbl none" id="inv_lbl"></span></div>
-                                            <div id="inverr" class="err"></div>
-                                        </div>
 
-                                        <div class="input_field growth_f invForm">
-                                            <div class="lable cover"><i class="fa fa-inr iconpos "></i></div>
-                                            <div id="invLabel" class="info"><span class="b">Down Payment</span><span> (Rs)</span>
+                                    <!--==========================-->
+                                    <div class="term-bg">
+                                        <form name="frmTerm" id="frmTerm">  
+                                            <div class="tabs">    
+                                                <div class="tab term_first">
+                                                    <input type="radio" checked="" value="1" name="tab-group-1" id="tab-1">
+                                                    <label for="tab-1">Housing</label>
+                                                </div>
+
+                                                <div class="tab term_second">
+                                                    <input type="radio" value="3" name="tab-group-1" id="tab-3">
+                                                    <label for="tab-3">Vehicle</label>
+                                                </div>
                                             </div>
-                                            <div class="inputBox has-tooltip">
-                                                <input type="text" maxlength="11" value="" placeholder="Amount"
-                                                       data-msg="Amount should be between " data-max="200000"
-                                                       data-min="10000" id="invamount" name="invamount"> <span
-                                                        class="fig_lbl none" id="inv_lbl"></span>
+                                            <div class="termBox_first">                        
+                                                <div class="input_field growth_f invForm">
+                                                    <div class="lable cover" style="vertical-align: middle;"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/house_hold_income.png" /></div>
+                                                    <div id="invLabel" class="info"><span class="b">Household Income</span> </div>
+                                                    <div class="inputBox householdIncome">
+                                                        <input type="text" maxlength="11" value="" placeholder="Income" data-msg="Amount should be between " data-max="200000" data-min="10000" id="invamount" name="invamount"> <span class="fig_lbl none" id="inv_lbl"></span>
+                                                        <select id="invTerm" name="invTerm"><option value="">Per Month</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+
+                                                    </div>
+                                                    <div id="inverr" class="err"></div>
+                                                </div>
+
+                                                <div class="input_field invForm" id="invTermSelect">
+                                                    <div class="lable dob" style="vertical-align: middle;"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/dependants.png" /></div>
+                                                    <div class="info"><span class="b">No Of Dependants</span></div>
+                                                    <div class="inputBox">                                	
+                                                        <select id="invTerm" name="invTerm"><option value="">No Of Dependants</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+                                                    </div>
+                                                    <div id="invdoberr" class="err"></div>
+                                                </div>
+
+                                                <div class="input_field growth_f invForm">
+                                                    <div class="lable cover" style="vertical-align: middle;"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/living_expenses.png" /></div>
+                                                    <div id="invLabel" class="info"><span class="b">Living Expenses</span></div>
+                                                    <div class="inputBox householdIncome">
+                                                        <input type="text" maxlength="11" value="" placeholder="Income" data-msg="Amount should be between " data-max="200000" data-min="10000" id="invamount" name="invamount"> <span class="fig_lbl none" id="inv_lbl"></span>
+                                                        <select id="invTerm" name="invTerm"><option value="">Per Month</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+
+                                                    </div>
+                                                    <div id="inverr" class="err"></div>
+                                                </div>
+
+                                                <div class="lable need-amount"></div> 
+                                                <input type="hidden" value="1" id="investmentType" name="investmentType"> 
+                                                <input type="hidden" value="" id="invneedgrowthamt" name="invneedgrowthamt">
+                                                <div class="input_field pro"><a class="invproceed proceed" href="javascript:void(0);">Proceed</a><div class="process"><span class="loading style-1"></span><span>Please Wait...</span></div></div>
+                                            </div>
+                                            <div class="termBox_second" style="display: none;">                        
+                                                <div class="input_field growth_f invForm">
+                                                    <div class="lable cover" style="vertical-align: middle;"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/value_vehicale.png" /></div>
+                                                    <div id="invLabel" class="info"><span class="b">Vehicle Value</span> </div>
+                                                    <div class="inputBox"><input type="text" maxlength="11" value="" placeholder="Amount" data-msg="Amount should be between " data-max="200000" data-min="10000" id="invamount" name="invamount"> <span class="fig_lbl none" id="inv_lbl"></span></div>
+                                                    <div id="inverr" class="err"></div>
+                                                </div>
+
+                                                <div class="input_field growth_f invForm">
+                                                    <div class="lable cover"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/down_payment.png" /></div>
+                                                    <div id="invLabel" class="info"><span class="b">Down Payment</span> </div>
+                                                    <div class="inputBox has-tooltip">
+                                                        <input type="text" maxlength="11" value="" placeholder="Amount" data-msg="Amount should be between " data-max="200000" data-min="10000" id="invamount" name="invamount"> <span class="fig_lbl none" id="inv_lbl"></span>
                                                         <span class="tooltip">
                                                             <span data-cvv-tooltip="unknown">
                                                                 30% of value
-                                                            </span>
+                                                            </span>                                    
                                                         </span>
+                                                    </div>
+                                                    <div id="inverr" class="err"></div>
+                                                </div>
+
+                                                <div class="input_field invForm" id="invTermSelect">
+                                                    <div class="lable dob" style="vertical-align: middle;"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/length_lease.png" /></div>
+                                                    <div class="info"><span class="b">Length of Lease</span></div>
+                                                    <div class="inputBox">                                	
+                                                        <select id="invTerm" name="invTerm"><option value="">Months</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+                                                    </div>
+                                                    <div id="invdoberr" class="err"></div>
+                                                </div>                                               
+
+
+                                                <div class="lable need-amount"></div> 
+                                                <input type="hidden" value="1" id="investmentType" name="investmentType"> 
+                                                <input type="hidden" value="" id="invneedgrowthamt" name="invneedgrowthamt">
+                                                <div class="input_field pro"><a class="invproceed proceed" href="javascript:void(0);">Proceed</a><div class="process"><span class="loading style-1"></span><span>Please Wait...</span></div></div>
                                             </div>
-                                            <div id="inverr" class="err"></div>
-                                        </div>
-
-                                        <div class="input_field invForm" id="invTermSelect">
-                                            <div class="lable dob"><i class="fa fa-calendar iconpos "></i></div>
-                                            <div class="info"><span class="b">Length of Lease</span></div>
-                                            <div class="inputBox">
-                                                <select id="invTerm" name="invTerm">
-                                                    <option value="">Months</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
-                                                    <option value="12">12</option>
-                                                    <option value="13">13</option>
-                                                    <option value="14">14</option>
-                                                    <option value="15">15</option>
-                                                    <option value="16">16</option>
-                                                    <option value="17">17</option>
-                                                    <option value="18">18</option>
-                                                    <option value="19">19</option>
-                                                    <option value="20">20</option>
-                                                    <option value="25">25</option>
-                                                    <option value="30">30</option>
-                                                </select>
-                                            </div>
-                                            <div id="invdoberr" class="err"></div>
-                                        </div>
-
-
-                                        <div class="lable need-amount"></div>
-                                        <input type="hidden" value="1" id="investmentType" name="investmentType">
-                                        <input type="hidden" value="" id="invneedgrowthamt" name="invneedgrowthamt">
-
-                                        <div class="input_field pro"><a class="invproceed proceed"
-                                                                        href="javascript:void(0);">Proceed</a>
-
-                                            <div class="process"><span class="loading style-1"></span><span>Please Wait...</span>
-                                            </div>
-                                        </div>
+                                        </form>
                                     </div>
-                                </form>
-                            </div>
-                            <!--==========================-->
-                            <div class="investment-bg growth">
-                                <form name="frmInv" id="frmInv">
-                                    <div class="tabs">
-                                        <div class="tab investment_first">
-                                            <input type="radio" checked="" value="1" name="investmentType1"
-                                                   id="investmentType1">
-                                            <label for="investmentType1">FD</label>
-                                        </div>
+                                    <!--==========================-->
+                                    <div class="investment-bg growth">
+                                        <form name="frmInv" id="frmInv">  
+                                            <div class="tabs">    
+                                                <div class="tab investment_first">
+                                                    <input type="radio" checked="" value="1" name="investmentType1" id="investmentType1">
+                                                    <label for="investmentType1">FD</label>
+                                                </div>
 
-                                        <div class="tab investment_second">
-                                            <input type="radio" value="3" name="investmentType1" id="investmentType2">
-                                            <label for="investmentType2">Savings</label>
-                                        </div>
-                                    </div>
-                                    <div class="investmentBox_first">
-                                        <div class="input_field growth_f invForm">
-                                            <div class="lable cover"><i class="fa fa-inr iconpos "></i></div>
-                                            <div id="invLabel" class="info"><span
-                                                        class="b">Amount</span><span> (Rs)</span></div>
-                                            <div class="inputBox"><input type="text" maxlength="11" value=""
-                                                                         placeholder="Amount"
-                                                                         data-msg="Amount should be between "
-                                                                         data-max="200000" data-min="10000"
-                                                                         id="invamount" name="invamount"> <span
-                                                        class="fig_lbl none" id="inv_lbl"></span></div>
-                                            <div id="inverr" class="err"></div>
-                                        </div>
-
-                                        <div class="input_field invForm" id="invTermSelect">
-                                            <div class="lable dob"><i class="fa fa-calendar iconpos "></i></div>
-                                            <div class="info"><span class="b">Period</span></div>
-                                            <div class="inputBox">
-                                                <select id="invTerm" name="invTerm">
-                                                    <option value="">Years you want to invest</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
-                                                    <option value="12">12</option>
-                                                    <option value="13">13</option>
-                                                    <option value="14">14</option>
-                                                    <option value="15">15</option>
-                                                    <option value="16">16</option>
-                                                    <option value="17">17</option>
-                                                    <option value="18">18</option>
-                                                    <option value="19">19</option>
-                                                    <option value="20">20</option>
-                                                    <option value="25">25</option>
-                                                    <option value="30">30</option>
-                                                </select>
+                                                <div class="tab investment_second">
+                                                    <input type="radio" value="3" name="investmentType1" id="investmentType2">
+                                                    <label for="investmentType2">Savings</label>
+                                                </div>
                                             </div>
-                                            <div id="invdoberr" class="err"></div>
-                                        </div>
+                                            <div class="investmentBox_first">                        
+                                                <div class="input_field growth_f invForm">
+                                                    <div class="lable cover"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/Rs.png" /></div>
+                                                    <div id="invLabel" class="info"><span class="b">Amount</span> </div>
+                                                    <div class="inputBox"><input type="text" maxlength="11" value="" placeholder="Amount" data-msg="Amount should be between " data-max="200000" data-min="10000" id="invamount" name="invamount"> <span class="fig_lbl none" id="inv_lbl"></span></div>
+                                                    <div id="inverr" class="err"></div>
+                                                </div>
 
-                                        <div class="input_field invForm">
-                                            <div class="lable dob"><i class="fa fa-birthday-cake iconpos "></i></div>
-                                            <div class="info"><span class="b">DOB</span></div>
-                                            <div class="inputBox dobBox">
-                                                <select id="invTerm" name="invTerm">
-                                                    <option value="">Date</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
-                                                    <option value="12">12</option>
-                                                    <option value="13">13</option>
-                                                    <option value="14">14</option>
-                                                    <option value="15">15</option>
-                                                    <option value="16">16</option>
-                                                    <option value="17">17</option>
-                                                    <option value="18">18</option>
-                                                    <option value="19">19</option>
-                                                    <option value="20">20</option>
-                                                    <option value="25">25</option>
-                                                    <option value="30">30</option>
-                                                </select>
-                                                <select id="invTerm" name="invTerm">
-                                                    <option value="">Month</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
-                                                    <option value="12">12</option>
-                                                    <option value="13">13</option>
-                                                    <option value="14">14</option>
-                                                    <option value="15">15</option>
-                                                    <option value="16">16</option>
-                                                    <option value="17">17</option>
-                                                    <option value="18">18</option>
-                                                    <option value="19">19</option>
-                                                    <option value="20">20</option>
-                                                    <option value="25">25</option>
-                                                    <option value="30">30</option>
-                                                </select>
-                                                <select id="invTerm" name="invTerm">
-                                                    <option value="">Year</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
-                                                    <option value="12">12</option>
-                                                    <option value="13">13</option>
-                                                    <option value="14">14</option>
-                                                    <option value="15">15</option>
-                                                    <option value="16">16</option>
-                                                    <option value="17">17</option>
-                                                    <option value="18">18</option>
-                                                    <option value="19">19</option>
-                                                    <option value="20">20</option>
-                                                    <option value="25">25</option>
-                                                    <option value="30">30</option>
-                                                </select>
+                                                <div class="input_field invForm" id="invTermSelect">
+                                                    <div class="lable dob" style="vertical-align: middle;"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/period.png" /></div>
+                                                    <div class="info"><span class="b">Period</span></div>
+                                                    <div class="inputBox">                                	
+                                                        <select id="invTerm" name="invTerm"><option value="">Years you want to invest</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+                                                    </div>
+                                                    <div id="invdoberr" class="err"></div>
+                                                </div>
 
+                                                <div class="input_field invForm">
+                                                    <div class="lable dob" style="vertical-align: middle;"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/dob.png" /></div>
+                                                    <div class="info"><span class="b">DOB</span></div>
+                                                    <div class="inputBox dobBox">                                	
+                                                        <select id="invTerm" name="invTerm"><option value="">Date</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+                                                        <select id="invTerm" name="invTerm"><option value="">Month</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+                                                        <select id="invTerm" name="invTerm"><option value="">Year</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+
+                                                    </div>
+                                                    <div class="err"></div>
+                                                </div>                                                
+
+                                                <div class="input_field growth_f invForm">
+                                                    <div class="lable cover"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/NIC.png" /></div>
+                                                    <div id="invLabel" class="info"><span class="b">NIC</span></div>
+                                                    <div class="inputBox"><input type="text" maxlength="11" value="" placeholder="NIC" data-msg="Amount should be between " data-max="200000" data-min="10000" id="invamount" name="invamount"> <span class="fig_lbl none" id="inv_lbl"></span></div>
+                                                    <div id="inverr" class="err"></div>
+                                                </div>
+                                                <div class="lable need-amount"></div> 
+                                                <input type="hidden" value="1" id="investmentType" name="investmentType"> 
+                                                <input type="hidden" value="" id="invneedgrowthamt" name="invneedgrowthamt">
+                                                <div class="input_field pro"><a class="invproceed proceed" href="javascript:void(0);">Proceed</a><div class="process"><span class="loading style-1"></span><span>Please Wait...</span></div></div>
                                             </div>
-                                            <div class="err"></div>
-                                        </div>
+                                            <div class="investmentBox_second" style="display: none;">                        
+                                                <div class="input_field growth_f invForm">
+                                                    <div class="lable cover" style="vertical-align: middle;"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/Rs.png" /></div>
+                                                    <div id="invLabel" class="info"><span class="b">Amount</span> </div>
+                                                    <div class="inputBox"><input type="text" maxlength="11" value="" placeholder="Amount" data-msg="Amount should be between " data-max="200000" data-min="10000" id="invamount" name="invamount"> <span class="fig_lbl none" id="inv_lbl"></span></div>
+                                                    <div id="inverr" class="err"></div>
+                                                </div>
 
-                                        <div class="input_field growth_f invForm">
-                                            <div class="lable cover"><i class="fa fa-inr iconpos "></i></div>
-                                            <div id="invLabel" class="info"><span class="b">NIC</span></div>
-                                            <div class="inputBox"><input type="text" maxlength="11" value=""
-                                                                         placeholder="NIC"
-                                                                         data-msg="Amount should be between "
-                                                                         data-max="200000" data-min="10000"
-                                                                         id="invamount" name="invamount"> <span
-                                                        class="fig_lbl none" id="inv_lbl"></span></div>
-                                            <div id="inverr" class="err"></div>
-                                        </div>
-                                        <div class="lable need-amount"></div>
-                                        <input type="hidden" value="1" id="investmentType" name="investmentType">
-                                        <input type="hidden" value="" id="invneedgrowthamt" name="invneedgrowthamt">
+                                                <div class="input_field invForm periodbox" id="invTermSelect">
+                                                    <div class="lable dob" style="vertical-align: middle;"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/period.png" /></div>
+                                                    <div class="info"><span class="b">Period</span></div>
+                                                    <div class="inputBox dates">  
+                                                        <label>From</label>
+                                                        <input id="fromDate" name="fromDate" type='text' placeholder="From" required/>    
 
-                                        <div class="input_field pro"><a class="invproceed proceed"
-                                                                        href="javascript:void(0);">Proceed</a>
+                                                    </div>
+                                                    <div class="inputBox dates">      
+                                                        <label>To</label>
+                                                        <input id="toDate" name="toDate" type='text' placeholder="To" required/>
 
-                                            <div class="process"><span class="loading style-1"></span><span>Please Wait...</span>
+                                                    </div>
+                                                    <div id="invdoberr" class="err"></div>
+                                                </div>
+
+
+
+                                                <div class="lable need-amount"></div> 
+                                                <input type="hidden" value="1" id="investmentType" name="investmentType"> 
+                                                <input type="hidden" value="" id="invneedgrowthamt" name="invneedgrowthamt">
+                                                <div class="input_field pro"><a class="invproceed proceed" href="javascript:void(0);">Proceed</a><div class="process"><span class="loading style-1"></span><span>Please Wait...</span></div></div>
                                             </div>
+                                        </form>
+                                        <!--<div class="nextBox_sec">
+                                        <a href="javascript:void(0);" class="back_to"><i class="fa fa-long-arrow-left"></i> Click Here for Previous Screen</a>
+                                                
+                                        <div class="input_field changeMargin">
+                                          <div class="lable cover"><i class="fa fa-user-plus iconpos "></i></div>
+                                          <div class="info" id="invLabel"><span class="b">Name</span></div>
+                                          <div class="inputBox">
+                                                <select name="invgender" id="invgender" class="select30_per"><option value="1">Mr.</option><option value="2">Ms.</option></select>
+                                                <input type="text" class="input60_per" name="invname" id="invname" data-msg="Please enter your name" placeholder="Name">
+                                                </div>
+                                          <div class="err"></div>
                                         </div>
-                                    </div>
-                                    <div class="investmentBox_second" style="display: none;">
-                                        <div class="input_field growth_f invForm">
-                                            <div class="lable cover"><i class="fa fa-inr iconpos "></i></div>
-                                            <div id="invLabel" class="info"><span
-                                                        class="b">Amount</span><span> (Rs)</span></div>
-                                            <div class="inputBox"><input type="text" maxlength="11" value=""
-                                                                         placeholder="Amount"
-                                                                         data-msg="Amount should be between "
-                                                                         data-max="200000" data-min="10000"
-                                                                         id="invamount" name="invamount"> <span
-                                                        class="fig_lbl none" id="inv_lbl"></span></div>
-                                            <div id="inverr" class="err"></div>
-                                        </div>
-
-                                        <div class="input_field invForm periodbox" id="invTermSelect">
-                                            <div class="lable dob"><i class="fa fa-calendar iconpos "></i></div>
-                                            <div class="info"><span class="b">Period</span></div>
-                                            <div class="inputBox dates">
-                                                <label>From</label>
-                                                <input id="fromDate" name="fromDate" type='text' placeholder="From"
-                                                       required/>
-
-                                            </div>
-                                            <div class="inputBox dates">
-                                                <label>To</label>
-                                                <input id="toDate" name="toDate" type='text' placeholder="To" required/>
-
-                                            </div>
-                                            <div id="invdoberr" class="err"></div>
-                                        </div>
-
-
-                                        <div class="lable need-amount"></div>
-                                        <input type="hidden" value="1" id="investmentType" name="investmentType">
-                                        <input type="hidden" value="" id="invneedgrowthamt" name="invneedgrowthamt">
-
-                                        <div class="input_field pro"><a class="invproceed proceed"
-                                                                        href="javascript:void(0);">Proceed</a>
-
-                                            <div class="process"><span class="loading style-1"></span><span>Please Wait...</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                                <!--<div class="nextBox_sec">
-                                <a href="javascript:void(0);" class="back_to"><i class="fa fa-long-arrow-left"></i> Click Here for Previous Screen</a>
-
-                                <div class="input_field changeMargin">
-                                  <div class="lable cover"><i class="fa fa-user-plus iconpos "></i></div>
-                                  <div class="info" id="invLabel"><span class="b">Name</span></div>
-                                  <div class="inputBox">
-                                        <select name="invgender" id="invgender" class="select30_per"><option value="1">Mr.</option><option value="2">Ms.</option></select>
-                                        <input type="text" class="input60_per" name="invname" id="invname" data-msg="Please enter your name" placeholder="Name">
-                                        </div>
-                                  <div class="err"></div>
-                                </div>
-                                <div class="input_field changeMargin ">
-                                <div class="lable cover"><i class="fa fa-envelope-o iconpos"></i></div>
-                                <div class="info" id="invLabel"><span class="b">Email</span></div>
-                                <div class="inputBox">
-                                  <input type="text" name="invemail" id="invemail" data-msg="Please enter your email address" placeholder="Amount" value="50,000" >
-                                  </div>
-                                <div class="err"></div>
-                              </div>
-
-                                <div class="input_field changeMargin">
-                                  <div class="lable dob"><i class="fa fa-globe iconpos "></i></div>
-                                  <div class="info"><span class="b">Country</span></div>
-                                  <div class="inputBox">
-                                        <select name="invcountrycode"  id="invcountrycode" class="select40_per"><option>India</option></select>
-                                        <input type="text" class="input60_per" name="invcity" id="invcity" placeholder="City">
-                                  </div>
-                                  <div class="err"></div>
-                                </div>
-                                <div id="invAge" class="input_field changeMargin dis_none">
-                                  <div class="lable cover"><i class="fa fa-calendar iconpos "></i></div>
-                                  <div class="info" id="invDobAge"><i class="fa fa-child iconpos "></i></div>
-                                  <div class="inputBox">
-                                        <input type="text" name="invage" id="invage" placeholder="Age" onkeyup="ageValidation(this);" >
-                                  </div>
-                                  <div id="invageerr" class="err"></div>
-                                </div>
-
-                                <div class="input_field changeMargin">
-
-                                  <div class="lable cover"><i class="fa fa-mobile-phone fa-2x iconpos"></i></div>
-                                    <div class="info" id="invLabel"><span class="b">Mobile</span></div>
-                                    <div class="inputBox">
-                                    <span class="countryCode_formobile select30_per">+999</span>
-                                      <input type="text" name="invamount" id="invamount" data-min="10000" data-max="200000" data-msg="Allowed total investment from" placeholder="Amount" value="50,000" class="input60_per" >
-                                    </div>
-                                    <div class="err" id="inverr"></div>
-
-                                </div>
-                                <input type="hidden" name="cityId" id="cityId" value="" />
-                                <input type="hidden" name="stateId" id="stateId" value="" />
-                                <div class="input_field pro"> <a href="javascript:void(0);" class="invproceed proceed">Get Free Quotes</a><div class="process"><span class="loading style-1"></span><span>Please Wait...</span></div></div>
-                        </div>-->
-                            </div>
-                            <!--==========================-->
-                            <div class="travel-bg group">
-
-                                <div class="tabs">
-
-
-                                    <div class="tab singleTravel">
-                                        <input type="radio" checked="" value="2" id="travellerType2"
-                                               name="travellerType">
-                                        <label for="travellerType2">Single Person</label>
-                                    </div>
-
-                                    <div class="tab familyTravel">
-                                        <input type="radio" value="1" id="travellerType1" name="travellerType">
-                                        <label for="travellerType1">Family or Group</label>
-
-                                    </div>
-                                </div>
-                                <div class="familyTravel_first" style="display: none;">
-                                    <div class="input_field invForm" id="invTermSelect">
-                                        <div class="lable dob"><i class="fa fa-calendar iconpos "></i></div>
-                                        <div class="info"><span class="b">No of People </span></div>
+                                        <div class="input_field changeMargin ">
+                                        <div class="lable cover"><i class="fa fa-envelope-o iconpos"></i></div>
+                                        <div class="info" id="invLabel"><span class="b">Email</span></div>
                                         <div class="inputBox">
-                                            <select id="invTerm" name="invTerm">
-                                                <option value="">No of People</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                                <option value="13">13</option>
-                                                <option value="14">14</option>
-                                                <option value="15">15</option>
-                                                <option value="16">16</option>
-                                                <option value="17">17</option>
-                                                <option value="18">18</option>
-                                                <option value="19">19</option>
-                                                <option value="20">20</option>
-                                                <option value="25">25</option>
-                                                <option value="30">30</option>
-                                            </select>
-                                        </div>
-                                        <div id="invdoberr" class="err"></div>
-                                    </div>
-                                    <div class="input_field invForm" id="invTermSelect">
-                                        <div class="lable dob"><i class="fa fa-globe iconpos"></i></div>
-                                        <div class="info"><span class="b">Email</span></div>
-                                        <div class="inputBox">
-                                            <input id="email" name="email" type='text' placeholder="Email"
-                                                   required/>
-                                        </div>
-                                        <div id="invdoberr" class="err"></div>
-                                    </div>
-                                    <div class="input_field ">
-                                        <div class="lable"><i class="fa fa-calendar iconpos"></i></div>
-                                        <div class="info"><span class="b">Length of travel</span></div>
-                                        <div class="inputBox dates">
-                                            <label>Departure</label>
-                                            <input id="startdate" name="startdate" type='text'
-                                                   placeholder="Departure" required/>
-                                        </div>
-                                        <div class="inputBox dates">
-                                            <label>Arrival</label>
-                                            <input id="enddate" name="enddate" type='text' placeholder="Arrival"
-                                                   required/>
-                                            <span class="fig_lbl days" id="traveldate_lbl">10<p>Days</p></span>
-                                        </div>
-                                        <div id="invdoberr" class="err"></div>
-                                    </div>
-
-                                    <div class="input_field growth_f invForm">
-                                        <div class="lable cover"><i class="fa fa-inr iconpos "></i></div>
-                                        <div id="invLabel" class="info"><span class="b">Sum insured</span></div>
-                                        <div class="inputBox sumassured">
-                                            <label>Medical</label>
-                                            <select required="" name="country" aria-required="true">
-                                                <option value="">Select</option>
-                                                <option value="Ketchup">US</option>
-                                                <option value="Relish">Mrs</option>
-                                            </select>
-                                        </div>
-                                        <div class="inputBox sumassured">
-                                            <label>Goods</label>
-                                            <select required="" name="country" aria-required="true">
-                                                <option value="">Select</option>
-                                                <option value="Ketchup">US</option>
-                                                <option value="Relish">Mrs</option>
-                                            </select>
-                                        </div>
-                                        <div id="inverr" class="err"></div>
-                                    </div>
-                                    <div class="input_field ">
-                                        <div class="lable"><i class="fa fa-globe iconpos"></i></div>
-                                        <div class="info"><span class="b">Regions</span></div>
-                                        <div class="inputBox travel_region">
-                                            <div class="inputBox">
-                                                <select id="invTerm" name="invTerm">
-                                                    <option value="">World Wide Excluding US/Asia</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
-                                                    <option value="12">12</option>
-                                                    <option value="13">13</option>
-                                                    <option value="14">14</option>
-                                                    <option value="15">15</option>
-                                                    <option value="16">16</option>
-                                                    <option value="17">17</option>
-                                                    <option value="18">18</option>
-                                                    <option value="19">19</option>
-                                                    <option value="20">20</option>
-                                                    <option value="25">25</option>
-                                                    <option value="30">30</option>
-                                                </select>
-
-                                                <div class="verysmall">*All Regions Excluding Sri Lanka</div>
-                                            </div>
-                                        </div>
+                                          <input type="text" name="invemail" id="invemail" data-msg="Please enter your email address" placeholder="Amount" value="50,000" >
+                                          </div>
                                         <div class="err"></div>
-                                    </div>
-                                    <div class="input_field pro">
-                                        <button type="submit" class="travelproceed proceed">Proceed</button>
+                                      </div>
 
-                                        <div class="process">
-                                            <span class="loading style-1"></span><span>Please Wait...</span>
+                                        <div class="input_field changeMargin">
+                                          <div class="lable dob"><i class="fa fa-globe iconpos "></i></div>
+                                          <div class="info"><span class="b">Country</span></div>
+                                          <div class="inputBox">
+                                                <select name="invcountrycode"  id="invcountrycode" class="select40_per"><option>India</option></select>
+                                                <input type="text" class="input60_per" name="invcity" id="invcity" placeholder="City">
+                                          </div>
+                                          <div class="err"></div>
                                         </div>
-                                    </div>
-
-                                </div>
-                                <div class="familyTravel_second">
-                                    <form action="trip/single/basicDetails/create" method="post">
-                                        <div class="input_field invForm">
-                                            <div class="lable dob">
-                                                <i class="fa fa-birthday-cake iconpos"></i>
-                                            </div>
-                                            <div class="info"><span class="b">DOB</span></div>
-                                            <div class="inputBox dobBox">
-                                                <select name="single_travel_month">
-                                                    <option value="">Date</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
-                                                    <option value="12">12</option>
-                                                    <option value="13">13</option>
-                                                    <option value="14">14</option>
-                                                    <option value="15">15</option>
-                                                    <option value="16">16</option>
-                                                    <option value="17">17</option>
-                                                    <option value="18">18</option>
-                                                    <option value="19">19</option>
-                                                    <option value="20">20</option>
-                                                    <option value="25">25</option>
-                                                    <option value="30">30</option>
-                                                </select>
-                                                <select name="single_travel_year">
-                                                    <option value="">Month</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
-                                                    <option value="12">12</option>
-                                                </select>
-                                                <select name="single_travel_day">
-                                                    <% for(var year = 1950; year < 2016; year++) { %>
-                                                    <option value="<%= year %>"><%= year %></option>
-                                                    <% } %>
-                                                </select>
-                                            </div>
-                                            <div class="err"></div>
+                                        <div id="invAge" class="input_field changeMargin dis_none">
+                                          <div class="lable cover"><i class="fa fa-calendar iconpos "></i></div>
+                                          <div class="info" id="invDobAge"><i class="fa fa-child iconpos "></i></div>
+                                          <div class="inputBox">
+                                                <input type="text" name="invage" id="invage" placeholder="Age" onkeyup="ageValidation(this);" >
+                                          </div>
+                                          <div id="invageerr" class="err"></div>
                                         </div>
-
-                                        <div class="input_field invForm">
-                                            <div class="lable dob"><img
-                                                        src="../../../images/Section_one_inner_tab_icon/email.png"/></div>
-                                            <div class="info"><span class="b">Email</span></div>
+                                                                        
+                                        <div class="input_field changeMargin">
+                                         
+                                          <div class="lable cover"><i class="fa fa-mobile-phone fa-2x iconpos"></i></div>
+                                            <div class="info" id="invLabel"><span class="b">Mobile</span></div>
                                             <div class="inputBox">
-                                                <input name="email" type='text' placeholder="Email"
-                                                       required/>
+                                            <span class="countryCode_formobile select30_per">+999</span>
+                                              <input type="text" name="invamount" id="invamount" data-min="10000" data-max="200000" data-msg="Allowed total investment from" placeholder="Amount" value="50,000" class="input60_per" >
                                             </div>
-                                            <div  class="err"></div>
+                                            <div class="err" id="inverr"></div>
+                                        
                                         </div>
+                                        <input type="hidden" name="cityId" id="cityId" value="" />
+                                        <input type="hidden" name="stateId" id="stateId" value="" />
+                                        <div class="input_field pro"> <a href="javascript:void(0);" class="invproceed proceed">Get Free Quotes</a><div class="process"><span class="loading style-1"></span><span>Please Wait...</span></div></div>							
+                                </div>-->				
+                                    </div>
+                                    <!--==========================-->
+                                    <div class="travel-bg group">
 
-                                        <div class="input_field invForm">
-                                            <div class="lable dob"><i class="fa fa-calendar iconpos "></i></div>
-                                            <div class="info"><span class="b">Type of Cover</span></div>
+                                        <form name="frmTravel" id="frmTravel">  
+                                            <div class="tabs">  
+
+
+                                                <div class="tab singleTravel">
+                                                    <input type="radio" checked="" value="2" id="travellerType2" name="travellerType">
+                                                    <label for="travellerType2">Single Person</label> 
+                                                </div>  
+
+                                                <div class="tab familyTravel">
+                                                    <input type="radio" value="1" id="travellerType1" name="travellerType">
+                                                    <label for="travellerType1">Family or Group</label> 
+
+                                                </div>
+                                            </div>
+                                            <div class="familyTravel_first" style="display: none;">
+                                                <div class="input_field invForm" id="invTermSelect">
+                                                    <div class="lable dob" style="vertical-align: middle;"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/travellers.png" /></div>
+                                                    <div class="info"><span class="b">No of People </span></div>
+                                                    <div class="inputBox">                                	
+                                                        <select id="invTerm" name="invTerm"><option value="">No of People</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+                                                    </div>
+                                                    <div id="invdoberr" class="err"></div>
+                                                </div>                                                
+                                                <div class="input_field invForm" id="invTermSelect">
+                                                    <div class="lable dob"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/email.png" /></div>
+                                                    <div class="info"><span class="b">Email</span></div>
+                                                    <div class="inputBox">                                	
+                                                        <input id="email" name="email" type='text' placeholder="Email" required/> 
+                                                    </div>
+                                                    <div id="invdoberr" class="err"></div>
+                                                </div>
+                                                <div class="input_field ">
+                                                    <div class="lable" style="vertical-align: middle;"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/calendar.png" /></div>
+                                                    <div class="info"><span class="b">Length of travel</span></div>
+                                                    <div class="inputBox dates"> 
+                                                        <label>Departure</label>    
+                                                        <input id="startdate" name="startdate" type='text' placeholder="Departure" required/>                                                                                                               
+                                                    </div>
+                                                    <div class="inputBox dates"> 
+                                                        <label>Arrival</label>            
+                                                        <input id="enddate" name="enddate" type='text' placeholder="Arrival" required/>
+                                                        <span class="fig_lbl days" id="traveldate_lbl">10<p>Days</p></span> 
+                                                    </div>
+                                                    <div id="invdoberr" class="err"></div>
+                                                </div> 
+
+                                                <div class="input_field pro"> <a class="travelproceed proceed" href="../../../../Desktop/untitled%20folder/SYM/public/src/views/travelgroup.html">Proceed</a><div class="process"><span class="loading style-1"></span><span>Please Wait...</span></div></div>
+
+                                            </div>
+                                            <div class="familyTravel_second" >
+                                                <div class="input_field invForm">
+                                                    <div class="lable dob" style="vertical-align: middle;"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/dob.png" /></div>
+                                                    <div class="info"><span class="b">DOB</span></div>
+                                                    <div class="inputBox dobBox">                                	
+                                                        <select id="invTerm" name="invTerm"><option value="">Date</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+                                                        <select id="invTerm" name="invTerm"><option value="">Month</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+                                                        <select id="invTerm" name="invTerm"><option value="">Year</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+
+                                                    </div>
+                                                    <div class="err"></div>
+                                                </div>
+                                                <div class="input_field invForm" id="invTermSelect">
+                                                    <div class="lable dob"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/email.png" /></div>
+                                                    <div class="info"><span class="b">Email</span></div>
+                                                    <div class="inputBox">                                	
+                                                        <input id="email" name="email" type='text' placeholder="Email" required/> 
+                                                    </div>
+                                                    <div id="invdoberr" class="err"></div>
+                                                </div>
+
+                                                <div class="input_field invForm" id="invTermSelect">
+                                                    <div class="lable dob" style="vertical-align: middle;"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/type_of_cover.png" /></div>
+                                                    <div class="info"><span class="b">Type of Cover</span></div>
+                                                    <div class="inputBox">                                	
+                                                        <select id="typeOfCover" name="typeOfCover" required="">
+                                                            <option value="">Type of Cover</option>
+                                                            <option value="1">Single Trip</option>
+                                                            <option value="2">Multi Trip</option>
+                                                        </select>
+                                                    </div>
+                                                    <div id="invdoberr" class="err"></div>
+                                                </div>
+
+                                                <div class="input_field pro"> <a class="travelproceed proceed" href="javascript:void(0);">Proceed</a><div class="process"><span class="loading style-1"></span><span>Please Wait...</span></div></div>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!--==========================-->
+                                    <div class="car-bg">
+                                        <div class="input_field">
+                                            <div class="lable"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/number_plate.png" /></div>
+                                            <div class="info"><span class="b">Reg No.</span></div>
                                             <div class="inputBox">
-                                                <select name="cover_type" required="">
-                                                    <option value="">Type of Cover</option>
-                                                    <option value="1">Single Trip</option>
-                                                    <option value="2">Multi Trip</option>
-                                                </select>
-                                            </div>
-                                            <div id="invdoberr" class="err"></div>
+                                                <input type="text" id="twoWheelerRegistrationNumber" placeholder="WP"/>
+                                                <input type="text" id="twoWheelerRegistrationNumber" placeholder="CAD"/>
+                                                <input type="text" id="twoWheelerRegistrationNumber" placeholder="1234"/>
+                                            </div>                                          
+
+                                        </div>                                        
+                                        <div class="rush"><span>OR</span></div>
+                                        <div class="inrush"><span>In a Rush ?</span></div>
+                                        <div class="upload-drop-zone has-tooltip" id="drop-zone">
+                                            Just drag and drop files here
+                                            <span class="tooltip">
+                                                <span data-cvv-tooltip="unknown">
+                                                    Upload a scanned image or a photograph of document requested
+                                                </span>                                    
+                                            </span>
                                         </div>
 
-                                        <div class="input_field pro">
-                                            <button class="travelproceed proceed" type="submit">Proceed</button>
-
+                                        <!-- Upload Finished -->
+                                        <div class="js-upload-finished">
+                                            <ul class="list-group">
+                                                <li class="has-tooltip">
+                                                        <img src="../../../../Desktop/untitled%20folder/SYM/public/images/home_warp-logo.svg"/>
+                                                        <span class="tooltip">
+                                                            <span data-cvv-tooltip="unknown">
+                                                                Upload a scanned image or a photograph of document requested
+                                                            </span>                                    
+                                                        </span>
+                                                    </li>
+                                                    <li class="has-tooltip">
+                                                        <img src="../../../../Desktop/untitled%20folder/SYM/public/images/home_warp-logo.svg"/>
+                                                        <span class="tooltip">
+                                                            <span data-cvv-tooltip="unknown">
+                                                                Upload a scanned image or a photograph of document requested
+                                                            </span>                                    
+                                                        </span>
+                                                    </li>
+                                                    <li class="has-tooltip">
+                                                        <img src="../../../../Desktop/untitled%20folder/SYM/public/images/home_warp-logo.svg"/>
+                                                        <span class="tooltip">
+                                                            <span data-cvv-tooltip="unknown">
+                                                                Upload a scanned image or a photograph of document requested
+                                                            </span>                                    
+                                                        </span>
+                                                    </li>
+                                                    <li class="has-tooltip">
+                                                        <img src="../../../../Desktop/untitled%20folder/SYM/public/images/home_warp-logo.svg"/>
+                                                        <span class="tooltip">
+                                                            <span data-cvv-tooltip="unknown">
+                                                                Upload a scanned image or a photograph of document requested
+                                                            </span>                                    
+                                                        </span>
+                                                    </li>
+                                            </ul>
+                                        </div>
+                                        <div class="input_field pro"> 
+                                            <a href="../../../../Desktop/untitled%20folder/SYM/public/src/views/insurance.html" class="proceed" id="btnSubmitTerm">Proceed</a>
                                             <div class="process">
                                                 <span class="loading style-1"></span>
-                                                <span>Please Wait...</span>
+                                            </div>
+                                            <div class="err"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <ul class="cate">                                   
+                            <li><a class="cc" href="#" ><span>Cancer Insurance</span></a></li>
+                            <li><a class="hi" href="#"><span>Home Insurance</span></a></li>
+                            <li><a class="ci" href="#"><span>Critical Illness</span></a></li>
+                            <li><a class="tx" href="#"><span>Tax Saving</span></a></li>   
+                            <li><a class="re" href="#"><span>Retirement</span></a></li>
+                            <li><a class="ch" href="#"><span>Child</span></a></li>                                      
+                        </ul>
+                    </div>
+                </div>
+                <div class="section made_easy" id="section1">
+                    <div class='container'>
+                        <div class="col-md-12 text-center animatedParent topMainPadding">
+                            <h1 id="made_easy" class="repeatl animated fadeInLeft block">Insurance Made Easy</h1>
+                            <h4 class="repeatll animated fadeInRight block">Save Your Monkey</h4>
+                            <ul class="core-cards animatedParent" id="core-card-hp">
+                                <li class="card">
+                                    <a href="#" class='comp'>
+                                        <div class="repeat animated growIn slow"  data-id='1' style="display: block;">
+                                            <img src="../../../../Desktop/untitled%20folder/SYM/public/images/insurance_made_easy_icon/big_car_icon.png">
+                                        </div>
+                                        <h3 class="repeat  animated fadeIn slow"  data-id='1'> Compare 250+ plans </h3>
+                                        <p class="repeat animated fadeIn slow"  data-id='1'>to save upto 30%</p>                                   
+                                    </a>
+                                </li> 
+                                <li class="card">
+                                    <a href="#"  class='supp'>
+                                        <div class="repeat animated growIn slow"  data-id='2' style="display: block;">
+                                            <img src="../../../../Desktop/untitled%20folder/SYM/public/images/insurance_made_easy_icon/calculator.png">
+                                        </div>
+                                        <h3 class="repeat animated fadeIn slow"  data-id='2'>Always at your service</h3>
+                                        <p class="repeat animated fadeIn slow"  data-id='2'>Toll Free - 1800-103-3999</p>                                   
+                                    </a>
+                                </li> 
+                                <li class="card">
+                                    <a href="#" class='target'>
+                                        <div class="repeat animated growIn slow"  data-id='3' style="display: block;">
+                                            <img src="../../../../Desktop/untitled%20folder/SYM/public/images/insurance_made_easy_icon/cheat_sheet.png">
+                                        </div>
+                                        <h3 class="repeat animated fadeIn slow"  data-id='3'>Over 10L Crore</h3>
+                                        <p class="repeat animated fadeIn slow"  data-id='3'> Cover provided.</p>                                   
+                                    </a>
+                                </li> 
+                                <li class="card">
+                                    <a href="#" class='moneyback'>
+                                        <div class="repeat animated growIn slow" data-id='4' style="display: block;">
+                                            <img src="../../../../Desktop/untitled%20folder/SYM/public/images/insurance_made_easy_icon/danger_icon.png">
+                                        </div>
+                                        <h3 class="repeat animated fadeIn slow" data-id='4' >Cancellation Support</h3>
+                                        <p class="repeat animated fadeIn slow" data-id='4' >Full support for cancellations and endorsements</p>                                  
+                                    </a>
+                                </li> 
+                                <li class="card">
+                                    <a href="#" class='people'>
+                                        <div class="repeat animated growIn slow" data-id='5'  style="display: block;">
+                                            <img src="../../../../Desktop/untitled%20folder/SYM/public/images/insurance_made_easy_icon/no_claims_bonus.png">
+                                        </div>
+                                        <h3 class="repeat animated fadeIn slow"  data-id='5' >962 People</h3>
+                                        <p class="repeat animated fadeIn slow"  data-id='5' >Currently comparing online</p>                                   
+                                    </a>
+                                </li> 
+                                <li class="card">
+                                    <a href="#" class='finance'>
+                                        <div class="repeat animated growIn slow"  data-id='6' >
+                                            <img src="../../../../Desktop/untitled%20folder/SYM/public/images/insurance_made_easy_icon/SYM_icon.png">
+                                        </div>
+                                        <h3 class="repeat animated fadeIn slow"  data-id='6' >IAMAI'S best financial </h3>
+                                        <p class="repeat animated fadeIn slow"  data-id='6' >Website award, 2013-14</p>                                   
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <div aria-hidden="false" class="uk-text-center uk-margin-large">
+                                <a class="uk-button uk-button-primary uk-button-large brandbuttonlarge" href="../../../../Desktop/untitled%20folder/SYM/public/src/views/brand.html">
+                                    More FAQs
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section animatedParent" id="section2">
+                    <div class="topMainPaddingVideo">
+                        <video class="repeatv animated fadeInDownShort" poster="https://www.paypalobjects.com/webstatic/mktg/wright/videos/home-signup.jpg" muted="muted" autoplay style="width: 1583px; height: auto; visibility: visible;">
+                            <source type="video/mp4" data-src="https://www.paypalobjects.com/webstatic/mktg/wright/videos/home-signup.mp4"></source>
+                            <source type="video/webm" data-src="https://www.paypalobjects.com/webstatic/mktg/wright/videos/home-signup.webm"></source>
+                        </video>
+                        <a class="btn-circle" href="../../../../Desktop/untitled%20folder/SYM/public/src/views/portfolio.html">
+                            view<br>
+                            work
+                            <hr>
+                        </a>
+                    </div>
+                </div>
+                <div class="section" id="section3">
+                    <div class="testimonials animatedParent topMainPadding">
+                        <div class="grid-container">
+                            <div class="marginBottomTest">
+                                <div class="uk-text-center">
+                                    <h1 class="repeatl2 animated fadeInLeft block">
+                                        What Our Users Say
+                                    </h1>
+                                    <h4 class="repeatl21 animated fadeInRight block">Save Your Monkey</h4>
+                                </div>
+                            </div>
+                            <div class="flexslider">
+                                <ul class="slides">
+                                    <li>
+                            <div class="col-md-12" style="margin-bottom: 20px;">
+                                <div class="col-md-6 testimonialPaddingBottom repeatl6 animated fadeInLeft">
+                                    <div class="col-sm-12" style="clear:both;">
+                                        <div class="col-sm-3">
+                                            <div class="testimonial-avatar">
+                                                <img src="https://atomic.io/assets/images/avatars/vijay.fadd496c.jpg" class="testimonial-image">
                                             </div>
                                         </div>
-                                    </form>
-
-                                </div>
-                            </div>
-                            <!--==========================-->
-                            <div class="car-bg">
-                                <form action="/vehicleReg" method="post">
-                                    <div class="input_field">
-                                        <div class="lable"><i class="fa fa-motorcycle iconpos "></i></div>
-                                        <div class="info"><span class="b">Reg No.</span></div>
-                                        <div class="inputBox">
-                                            <input type="text" name="v_province" placeholder="WP"/>
-                                            <input type="text" name="v_letters" placeholder="CAD"/>
-                                            <input type="text" name="v_number" placeholder="1234"/>
+                                        <div class="col-sm-9">
+                                            <h4 class="uk-text-primary uk-text-center-small"> Charles Bitton </h4>
+                                            <p class="uk-text-muted uk-text-small uk-text-center-small"> Head of Marketplace User Experience <br/> IBM</p>
                                         </div>
-
-                                        <input type="hidden" value="1" name="type_of_v" id="type_of_v">
-
                                     </div>
-                                    <div class="rush"><span>OR</span></div>
-                                    <div class="inrush"><span>In a Rush ?</span></div>
-                                    <div class="upload-drop-zone" id="drop-zone">
-                                        Just drag and drop files here
+                                    <div class="col-md-12">
+                                        <p class="uk-text-large uk-text-center-small">
+                                            <i class="uk-icon-quote-left uk-text-primary"></i> 
+                                            I love how quickly I can design an interface and automatically create intelligent animated transitions.
+                                        </p>
                                     </div>
-
-                                    <!-- Upload Finished -->
-                                    <div class="js-upload-finished">
-                                        <ul class="list-group">
-                                            <li><img src="../../images/home_warp-logo.svg"/></li>
-                                            <li><img src="../../images/home_warp-logo.svg"/></li>
-                                            <li><img src="../../images/home_warp-logo.svg"/></li>
-                                            <li><img src="../../images/home_warp-logo.svg"/></li>
-                                        </ul>
-                                    </div>
-                                    <div class="input_field pro">
-                                        <button type class="proceed" id="btnSubmitTerm">Proceed</button>
-
-                                        <div class="process">
-                                            <span class="loading style-1"></span>
+                                </div>
+                                <div class="col-md-6 testimonialPaddingBottom repeatl7 animated fadeInRight">
+                                    <div class="col-sm-12">
+                                        <div class="col-sm-3">
+                                            <div class="testimonial-avatar">
+                                                <img src="https://atomic.io/assets/images/avatars/davidbuck.4c473e6f.jpg" class="testimonial-image">
+                                            </div>
                                         </div>
-                                        <div class="err"></div>
+                                        <div class="col-sm-9">
+                                            <h4 class="uk-text-primary uk-text-center-small"> David Buck </h4>
+                                            <p class="uk-text-muted uk-text-small uk-text-center-small"> Design Director <br/> BNZ</p>
+                                        </div>
                                     </div>
-                                </form>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="category">
-                <ul class="cate">
-                    <li><a class="cc" href="#"><span>Cancer Insurance</span></a></li>
-                    <li><a class="hi" href="#"><span>Home Insurance</span></a></li>
-                    <li><a class="ci" href="#"><span>Critical Illness</span></a></li>
-                    <li><a class="tx" href="#"><span>Tax Saving</span></a></li>
-                    <li><a class="re" href="#"><span>Retirement</span></a></li>
-                    <li><a class="ch" href="#"><span>Child</span></a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section made_easy" id="section1">
-            <div class='container'>
-                <div class="col-md-12 text-center animatedParent topMainPadding">
-                    <h1 id="made_easy" class="repeatl animated fadeInLeft block">Insurance Made Easy</h1>
-                    <h4 class="repeatll animated fadeInRight block">Save Your Monkey</h4>
-                    <ul class="core-cards animatedParent" id="core-card-hp">
-                        <li class="card">
-                            <a href="#" class='comp'>
-                                <div class="repeat animated growIn slow"  data-id='1' style="display: block;">
-                                    <img src="../../images/insurance_made_easy_icon/big_car_icon.png">
-                                </div>
-                                <h3 class="repeat  animated fadeIn slow"  data-id='1'> Compare 250+ plans </h3>
-                                <p class="repeat animated fadeIn slow"  data-id='1'>to save upto 30%</p>
-                            </a>
-                        </li>
-                        <li class="card">
-                            <a href="#"  class='supp'>
-                                <div class="repeat animated growIn slow"  data-id='2' style="display: block;">
-                                    <img src="../../images/insurance_made_easy_icon/calculator.png">
-                                </div>
-                                <h3 class="repeat animated fadeIn slow"  data-id='2'>Always at your service</h3>
-                                <p class="repeat animated fadeIn slow"  data-id='2'>Toll Free - 1800-103-3999</p>
-                            </a>
-                        </li>
-                        <li class="card">
-                            <a href="#" class='target'>
-                                <div class="repeat animated growIn slow"  data-id='3' style="display: block;">
-                                    <img src="../../images/insurance_made_easy_icon/cheat_sheet.png">
-                                </div>
-                                <h3 class="repeat animated fadeIn slow"  data-id='3'>Over 10L Crore</h3>
-                                <p class="repeat animated fadeIn slow"  data-id='3'> Cover provided.</p>
-                            </a>
-                        </li>
-                        <li class="card">
-                            <a href="#" class='moneyback'>
-                                <div class="repeat animated growIn slow" data-id='4' style="display: block;">
-                                    <img src="../../images/insurance_made_easy_icon/danger_icon.png">
-                                </div>
-                                <h3 class="repeat animated fadeIn slow" data-id='4' >Cancellation Support</h3>
-                                <p class="repeat animated fadeIn slow" data-id='4' >Full support for cancellations and endorsements</p>
-                            </a>
-                        </li>
-                        <li class="card">
-                            <a href="#" class='people'>
-                                <div class="repeat animated growIn slow" data-id='5'  style="display: block;">
-                                    <img src="../../images/insurance_made_easy_icon/no_claims_bonus.png">
-                                </div>
-                                <h3 class="repeat animated fadeIn slow"  data-id='5' >962 People</h3>
-                                <p class="repeat animated fadeIn slow"  data-id='5' >Currently comparing online</p>
-                            </a>
-                        </li>
-                        <li class="card">
-                            <a href="#" class='finance'>
-                                <div class="repeat animated growIn slow"  data-id='6' >
-                                    <img src="../../images/insurance_made_easy_icon/SYM_icon.png">
-                                </div>
-                                <h3 class="repeat animated fadeIn slow"  data-id='6' >IAMAI'S best financial </h3>
-                                <p class="repeat animated fadeIn slow"  data-id='6' >Website award, 2013-14</p>
-                            </a>
-                        </li>
-
-                    </ul>
-                    <div aria-hidden="false" class="uk-text-center uk-margin-large">
-                        <a class="uk-button uk-button-primary uk-button-large brandbuttonlarge" href="brand.html">
-                            More FAQs
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section animatedParent" id="section2">
-            <div class="topMainPaddingVideo">
-                <video class="repeatv animated fadeInDownShort" poster="https://www.paypalobjects.com/webstatic/mktg/wright/videos/home-signup.jpg" muted="muted" autoplay style="width: 1583px; height: auto; visibility: visible;">
-                    <source type="video/mp4" data-src="https://www.paypalobjects.com/webstatic/mktg/wright/videos/home-signup.mp4"></source>
-                    <source type="video/webm" data-src="https://www.paypalobjects.com/webstatic/mktg/wright/videos/home-signup.webm"></source>
-                </video>
-            </div>
-        </div>
-        <div class="section" id="section3">
-            <div class="testimonials animatedParent topMainPadding">
-                <div class="grid-container">
-                    <div class="col-md-12 marginBottomTest">
-                        <div class="uk-text-center">
-                            <h1 class="repeatl2 animated fadeInLeft block">
-                                What Our Users Say
-                            </h1>
-                            <h4 class="repeatl21 animated fadeInRight block">Save Your Monkey</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-12" style="margin-bottom: 20px;">
-                        <div class="col-md-6 testimonialPaddingBottom repeatl6 animated fadeInLeft">
-                            <div class="col-sm-12" style="clear:both;">
-                                <div class="col-sm-3">
-                                    <div class="testimonial-avatar">
-                                        <img src="https://atomic.io/assets/images/avatars/vijay.fadd496c.jpg" class="testimonial-image">
+                                    <div class="col-md-12">
+                                        <p class="uk-text-large uk-text-center-small">
+                                            <i class="uk-icon-quote-left uk-text-primary"></i> Having prototyping that is so fast and easy changed my design process. I could experiment with more ideas, spot problems quickly, and ultimately produce better results, faster.
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="col-sm-9">
-                                    <h4 class="uk-text-primary uk-text-center-small"> Charles Bitton </h4>
-                                    <p class="uk-text-muted uk-text-small uk-text-center-small"> Head of Marketplace User Experience <br/> IBM</p>
-                                </div>
                             </div>
-                            <div class="col-md-12">
-                                <p class="uk-text-large uk-text-center-small">
-                                    <i class="uk-icon-quote-left uk-text-primary"></i>
-                                    I love how quickly I can design an interface and automatically create intelligent animated transitions.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 testimonialPaddingBottom repeatl7 animated fadeInRight">
-                            <div class="col-sm-12">
-                                <div class="col-sm-3">
-                                    <div class="testimonial-avatar">
-                                        <img src="https://atomic.io/assets/images/avatars/davidbuck.4c473e6f.jpg" class="testimonial-image">
+                                    </li>
+                                    <li>
+                                        <div class="col-md-12" aria-hidden="true">
+                                <div class="col-md-6 testimonialPaddingBottom">
+                                    <div class="col-sm-12">
+                                        <div class="col-sm-3">
+                                            <div class="testimonial-avatar">
+                                                <img src="https://atomic.io/assets/images/avatars/vijay.fadd496c.jpg" class="testimonial-image">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <h4 class="uk-text-primary uk-text-center-small"> Vijay Prabhakar </h4>
+                                            <p class="uk-text-muted uk-text-small uk-text-center-small"> Interaction Designer <br/> IDEO</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p class="uk-text-large uk-text-center-small">
+                                            <i class="uk-icon-quote-left uk-text-primary"></i> 
+                                            Really impressive approach to a currently siloed and broken model of interactive prototyping. I can think of a bunch of projects that I could have used this on that might have saved me days of work!
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="col-sm-9">
-                                    <h4 class="uk-text-primary uk-text-center-small"> David Buck </h4>
-                                    <p class="uk-text-muted uk-text-small uk-text-center-small"> Design Director <br/> BNZ</p>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <p class="uk-text-large uk-text-center-small">
-                                    <i class="uk-icon-quote-left uk-text-primary"></i> Having prototyping that is so fast and easy changed my design process. I could experiment with more ideas, spot problems quickly, and ultimately produce better results, faster.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="home-more-user" class="col-md-12 uk-animation-fade uk-hidden" aria-hidden="true">
-                        <div class="col-md-6 testimonialPaddingBottom">
-                            <div class="col-sm-12">
-                                <div class="col-sm-3">
-                                    <div class="testimonial-avatar">
-                                        <img src="https://atomic.io/assets/images/avatars/vijay.fadd496c.jpg" class="testimonial-image">
+                                <div class="col-md-6 testimonialPaddingBottom">
+                                    <div class="col-sm-12">
+                                        <div class="col-sm-3">
+                                            <div class="testimonial-avatar">
+                                                <img src="https://atomic.io/assets/images/avatars/benjennings.59e4fcaf.jpg" class="testimonial-image">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <h4 class="uk-text-primary uk-text-center-small"> Ben Jennings </h4>
+                                            <p class="uk-text-muted uk-text-small uk-text-center-small"> Product Designer <br/> Coinbase</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p class="uk-text-large uk-text-center-small">
+                                            <i class="uk-icon-quote-left uk-text-primary"></i> Atomic allows me to explore and validate ideas quickly, and helps others to understand them more easily.
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="col-sm-9">
-                                    <h4 class="uk-text-primary uk-text-center-small"> Vijay Prabhakar </h4>
-                                    <p class="uk-text-muted uk-text-small uk-text-center-small"> Interaction Designer <br/> IDEO</p>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <p class="uk-text-large uk-text-center-small">
-                                    <i class="uk-icon-quote-left uk-text-primary"></i>
-                                    Really impressive approach to a currently siloed and broken model of interactive prototyping. I can think of a bunch of projects that I could have used this on that might have saved me days of work!
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 testimonialPaddingBottom">
-                            <div class="col-sm-12">
-                                <div class="col-sm-3">
-                                    <div class="testimonial-avatar">
-                                        <img src="https://atomic.io/assets/images/avatars/benjennings.59e4fcaf.jpg" class="testimonial-image">
                                     </div>
-                                </div>
-                                <div class="col-sm-9">
-                                    <h4 class="uk-text-primary uk-text-center-small"> Ben Jennings </h4>
-                                    <p class="uk-text-muted uk-text-small uk-text-center-small"> Product Designer <br/> Coinbase</p>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <p class="uk-text-large uk-text-center-small">
-                                    <i class="uk-icon-quote-left uk-text-primary"></i> Atomic allows me to explore and validate ideas quickly, and helps others to understand them more easily.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="uk-text-center" id="home-features-button">
-                                <button data-uk-toggle="{target:'#home-more-user,#home-more-button'}" class="uk-button uk-button-primary uk-button-large">
-                                    Show Less
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="uk-text-center uk-margin-large" aria-hidden="false">
-                        <button class="uk-button uk-button-primary uk-button-large brandbuttonlarge" style="display: inline-block;">
-                            Show More
-                        </button>
-                    </div>
-                </div>
-                <div class="grid-row span_h1"></div>
-            </div>
-        </div>
-        <div class="section animatedParent" id="section4">
-            <div class="container topMainPadding">
-                <h1 class="repeatl animated fadeInLeft block go" id="made_easy">Value Added Services</h1>
-                <h4 class="repeatll animated fadeInRight block go">Save Your Monkey</h4>
-                <ul id="core-card-hp" class="core-cards animatedParent">
-                    <li class="card">
-                        <a class="comp" href="#">
-                            <div style="display: block;" data-id="1" class="repeat animated growIn slow go">
-                                <img src="../../images/Value_added_services_icon/lubricants.png">
-                            </div>
-                            <h3 data-id="1" class="repeat  animated fadeIn slow go"> Lubricants </h3>
-                            <p data-id="6" class="repeat animated fadeIn slow go">Website award, 2013-14</p>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <a class="supp" href="#">
-                            <div style="display: block;" data-id="2" class="repeat animated growIn slow go">
-                                <img src="../../images/Value_added_services_icon/tyres.png">
-                            </div>
-                            <h3 data-id="2" class="repeat animated fadeIn slow go">Tyres</h3>
-                            <p data-id="6" class="repeat animated fadeIn slow go">Website award, 2013-14</p>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <a class="target" href="#">
-                            <div style="display: block;" data-id="3" class="repeat animated growIn slow go">
-                                <img src="../../images/Value_added_services_icon/repair.png">
-                            </div>
-                            <h3 data-id="3" class="repeat animated fadeIn slow go">Repair</h3>
-                            <p data-id="6" class="repeat animated fadeIn slow go">Website award, 2013-14</p>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <a class="moneyback" href="#">
-                            <div style="display: block;" data-id="4" class="repeat animated growIn slow go">
-                                <img src="../../images/Value_added_services_icon/mobile_battery_service.png">
-                            </div>
-                            <h3 data-id="4" class="repeat animated fadeIn slow go">Mobile Battery Service</h3>
-                            <p data-id="6" class="repeat animated fadeIn slow go">Website award, 2013-14</p>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <a class="people" href="#">
-                            <div style="display: block;" data-id="5" class="repeat animated growIn slow go">
-                                <img src="../../images/Value_added_services_icon/towing.png">
-                            </div>
-                            <h3 data-id="5" class="repeat animated fadeIn slow go">Towing</h3>
-                            <p data-id="6" class="repeat animated fadeIn slow go">Website award, 2013-14</p>
-                        </a>
-                    </li>
-                    <li class="card">
-                        <a class="finance" href="#">
-                            <div data-id="6" class="repeat animated growIn slow go">
-                                <img src="../../images/Value_added_services_icon/car_grooming.png">
-                            </div>
-                            <h3 data-id="6" class="repeat animated fadeIn slow go">Car grooming/ washing </h3>
-                            <p data-id="6" class="repeat animated fadeIn slow go">Website award, 2013-14</p>
-                        </a>
-                    </li>
-
-                </ul>
-                <div aria-hidden="false" class="uk-text-center uk-margin-large">
-                    <a class="uk-button uk-button-primary uk-button-large brandbuttonlarge" href="brand.html">
-                        View More
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="section animatedParent" id="section5">
-            <div class="container-fluid">
-                <div class="site-footer ">
-                    <div class="grid-row">
-                        <header class="col-md-3">
-                            <div class="site-footer__logo">
-                                <img style='' src="../../images/footer_monkey.png"/>
-                            </div>
-                        </header>
-                        <div class="col-md-2">
-                            <h3 class="site-footer__block-title">Our Work</h3>
-
-                            <nav class="nav nav--secondary">
-                                <ul class="nav__items">
-                                    <li class="nav__item"><a href="#">Motion Array</a></li>
-                                    <li class="nav__item"><a href="#">Herself</a></li>
-                                    <li class="nav__item"><a href="#">Five Simple Steps</a></li>
-                                    <li class="nav__item"><a href="#">Tribal</a></li>
-                                    <li class="nav__item"><a href="#">oozled</a></li>
-                                    <li class="nav__item"><a href="#">PH Museum</a></li>
-                                    <li class="nav__item"><a href="#">Charity Bank</a></li>
+                                    </li>
                                 </ul>
-                            </nav>
+                            </div>
                         </div>
-                        <div class="col-md-2 add_cmn">
-                            <h3 class="site-footer__block-title">Our Details</h3>
-                            <p class="site-footer__contact-details">
+                        <div class="grid-row span_h1"></div>
+                    </div>
+                </div>
+                <div class="section animatedParent" id="section4">
+                    <div class="container topMainPadding">
+                        <h1 class="repeatl animated fadeInLeft block go" id="made_easy">Value Added Services</h1>
+                        <h4 class="repeatll animated fadeInRight block go">Save Your Monkey</h4>
+                        <ul id="core-card-hp" class="core-cards animatedParent">
+                            <li class="card">
+                                <a class="comp" href="#">
+                                    <div style="display: block;" data-id="1" class="repeat animated growIn slow go">
+                                        <img src="../../../../Desktop/untitled%20folder/SYM/public/images/Value_added_services_icon/lubricants.png">
+                                    </div>
+                                    <h3 data-id="1" class="repeat  animated fadeIn slow go"> Lubricants </h3>  
+                                    <p data-id="6" class="repeat animated fadeIn slow go">Website award, 2013-14</p> 
+                                </a>
+                            </li> 
+                            <li class="card">
+                                <a class="supp" href="#">
+                                    <div style="display: block;" data-id="2" class="repeat animated growIn slow go">
+                                        <img src="../../../../Desktop/untitled%20folder/SYM/public/images/Value_added_services_icon/tyres.png">
+                                    </div>
+                                    <h3 data-id="2" class="repeat animated fadeIn slow go">Tyres</h3>
+                                    <p data-id="6" class="repeat animated fadeIn slow go">Website award, 2013-14</p> 
+                                </a>
+                            </li> 
+                            <li class="card">
+                                <a class="target" href="#">
+                                    <div style="display: block;" data-id="3" class="repeat animated growIn slow go">
+                                        <img src="../../../../Desktop/untitled%20folder/SYM/public/images/Value_added_services_icon/repair.png">
+                                    </div>
+                                    <h3 data-id="3" class="repeat animated fadeIn slow go">Repair</h3>
+                                    <p data-id="6" class="repeat animated fadeIn slow go">Website award, 2013-14</p> 
+                                </a>
+                            </li> 
+                            <li class="card">
+                                <a class="moneyback" href="#">
+                                    <div style="display: block;" data-id="4" class="repeat animated growIn slow go">
+                                        <img src="../../../../Desktop/untitled%20folder/SYM/public/images/Value_added_services_icon/mobile_battery_service.png">
+                                    </div>
+                                    <h3 data-id="4" class="repeat animated fadeIn slow go">Mobile Battery Service</h3>
+                                    <p data-id="6" class="repeat animated fadeIn slow go">Website award, 2013-14</p> 
+                                </a>
+                            </li> 
+                            <li class="card">
+                                <a class="people" href="#">
+                                    <div style="display: block;" data-id="5" class="repeat animated growIn slow go">
+                                        <img src="../../../../Desktop/untitled%20folder/SYM/public/images/Value_added_services_icon/towing.png">
+                                    </div>
+                                    <h3 data-id="5" class="repeat animated fadeIn slow go">Towing</h3>
+                                    <p data-id="6" class="repeat animated fadeIn slow go">Website award, 2013-14</p> 
+                                </a>
+                            </li> 
+                            <li class="card">
+                                <a class="finance" href="#">
+                                    <div data-id="6" class="repeat animated growIn slow go">
+                                        <img src="../../../../Desktop/untitled%20folder/SYM/public/images/Value_added_services_icon/car_grooming.png">
+                                    </div>
+                                    <h3 data-id="6" class="repeat animated fadeIn slow go">Car grooming/ washing </h3>
+                                    <p data-id="6" class="repeat animated fadeIn slow go">Website award, 2013-14</p>                                   
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div aria-hidden="false" class="uk-text-center uk-margin-large">
+                            <a class="uk-button uk-button-primary uk-button-large brandbuttonlarge" href="../../../../Desktop/untitled%20folder/SYM/public/src/views/brand.html">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="section5" class="section animatedParent homepage_footer">
+                    <div class="container-fluid">
+                        <div class="site-footer ">
+                            <div class="grid-row">
+                                <header class="col-md-3">
+                                    <div class="site-footer__logo">
+                                        <img style='' src="../../../../Desktop/untitled%20folder/SYM/public/images/footer_monkey.png"/>
+                                    </div>
+                                </header>                                
+                                <div class="col-md-2">
+                                    <h3 class="site-footer__block-title">Our Work</h3>
+
+                                    <nav class="nav nav--secondary">
+                                        <ul class="nav__items">
+                                            <li class="nav__item"><a href="#">Motion Array</a></li>
+                                            <li class="nav__item"><a href="#">Herself</a></li>
+                                            <li class="nav__item"><a href="#">Five Simple Steps</a></li>
+                                            <li class="nav__item"><a href="#">Tribal</a></li>
+                                            <li class="nav__item"><a href="#">oozled</a></li>
+                                            <li class="nav__item"><a href="#">PH Museum</a></li>
+                                            <li class="nav__item"><a href="#">Charity Bank</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-md-2 add_cmn">
+                                    <h3 class="site-footer__block-title">Our Details</h3>
+                                    <p class="site-footer__contact-details">
 
                                         <span id="sproutencodeemail-5763af77a11b4-1"><a href="mailto:info@saveyourmonkey.com
                                                                                         ">info@saveyourmonkey.com
                                             </a></span>
-                                +94 (011) 438 6230
-                            </p>
-                            <p style="margin-bottom: 10px;">Level 1, Liberty Arcade
-                                Colombo 03, Sri Lanka.</p>
-                            <p><img src="../../images/Section_one_inner_tab_icon/address.png" /> We're based in UK.</p>
-                            <ul class="social">
-                                <li class="social__item"><a title="Follow on Twitter" target="_blank" href="#"><img src="../../images/Section_one_inner_tab_icon/twitter.png" /></a></li>
-                                <li class="social__item"><a title="Like on Facebook" target="_blank" href="#"><img src="../../images/Section_one_inner_tab_icon/facebook.png" /></a></li>
-                                <li class="social__item"><a title="Design snippets on Dribbble" target="_blank" href="#"><img src="../../images/Section_one_inner_tab_icon/pinterest.png" /></a></li>
-                                <li class="social__item"><a title="Photos on Instagram" target="_blank" href="#"><img src="../../images/Section_one_inner_tab_icon/instagram.png" /></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4" id='contactid'>
-                            <form method="post">
-                                <ul>
-                                    <li>
-                                        <input type="text" id="nameH" name="nameH" class="required" placeholder="Name">
-                                    </li><li>
-                                        <input type="text" id="emailH" name="emailH" class="required" placeholder="Email">
-                                    </li><li>
-                                        <input type="text" id="website" name="website" placeholder="Website">
-                                    </li><li>
-                                        <input type="text" id="country" name="country" placeholder="Country/Location">
-                                    </li><li>
-                                        <textarea id="messageH" name="messageH" class="required" placeholder="Describe your project"></textarea>
-                                    </li><li>
-                                        <input type="button" style="cursor: pointer;" class="btn btn-blue big animated" onclick="submitProject()" value="Submit" id="projectSubmitButton">
-                                    </li></ul>
-                            </form>
+                                        +94 (011) 438 6230
+                                    </p>
+                                    <p class="two_line" style="margin-bottom: 10px;">Level 1, Liberty Arcade,
+Colombo 03, Sri Lanka.</p>
+                                    <p><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/address.png" /> We're based in UK.</p>
+                                    <ul class="social">
+                                        <li class="social__item"><a title="Follow on Twitter" target="_blank" href="#"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/twitter.png" /></a></li>
+                                        <li class="social__item"><a title="Like on Facebook" target="_blank" href="#"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/facebook.png" /></a></li>
+                                        <li class="social__item"><a title="Design snippets on Dribbble" target="_blank" href="#"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/pinterest.png" /></a></li>
+                                        <li class="social__item"><a title="Photos on Instagram" target="_blank" href="#"><img src="../../../../Desktop/untitled%20folder/SYM/public/images/Section_one_inner_tab_icon/instagram.png" /></a></li>
+                                    </ul>  
+                                </div>
+                                <div class="col-md-4" id='contactid'>
+                                    <form method="post">
+                                        <ul>
+                                            <li>
+                                                <input type="text" id="nameH" name="nameH" class="required" placeholder="Name">
+                                            </li><li>
+                                                <input type="text" id="emailH" name="emailH" class="required" placeholder="Email">
+                                            </li><li>
+                                                <input type="text" id="website" name="website" placeholder="Website">
+                                            </li><li>
+                                                <input type="text" id="country" name="country" placeholder="Country/Location">
+                                            </li><li>
+                                                <textarea id="messageH" name="messageH" class="required" placeholder="Describe your project"></textarea>
+                                            </li><li>
+                                                <input type="button" style="cursor: pointer;" class="btn btn-blue big animated" onclick="submitProject()" value="Submit" id="projectSubmitButton">
+                                            </li></ul>
+                                    </form>
 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="site-footer__company-info">
+                            <p>&copy; Copyright 2015 - 2016 All Right Reserved</p>
                         </div>
                     </div>
                 </div>
-                <div class="site-footer__company-info">
-                    <p>&copy; Copyright 2015 - 2016 All Right Reserved</p>
-                </div>
             </div>
         </div>
-    </div>
-</div>
 
-
-
-<script type="text/javascript" src="../../js/jquery.min.js"></script>
-<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../../js/uikit.min.js"></script>
-<!--<script type="text/javascript" src="../../js/videobackground.js"></script>-->
-<script type="text/javascript" src="../../js/jquery.fullPage.js"></script>
-<script type="text/javascript" src="../../js/jquery.validate.js"></script>
-<script type="text/javascript" src="../../js/css3-animate-it.js"></script>
-<script type="text/javascript" src="../../js/moment-with-locales.js"></script>
-<script type="text/javascript" src="../../js/bootstrap-datetimepicker.js"></script>
-<script type="text/javascript" src="../../js/jquery.flexslider.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
-<script type="text/javascript" src="../../js/script.js"></script>
-
-
-<script type="text/javascript">
-
-function changeFun(id){
-    if(id==1){
-        document.getElementById("type_of_v").value=1;
-    }else if(id==2){
-        document.getElementById("type_of_v").value=2;
-    }else{
-        document.getElementById("type_of_v").value=3;
-    }
-}
-</script>
-
-</body>
+        <script type="text/javascript" src="../../../../Desktop/untitled%20folder/SYM/public/js/jquery.min.js"></script>
+        <script type="text/javascript" src="../../../../Desktop/untitled%20folder/SYM/public/js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../../../../Desktop/untitled%20folder/SYM/public/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../../../../Desktop/untitled%20folder/SYM/public/js/uikit.min.js"></script>
+        <!--<script type="text/javascript" src="../../js/videobackground.js"></script>-->
+        <script type="text/javascript" src="../../../../Desktop/untitled%20folder/SYM/public/js/jquery.fullPage.js"></script>
+        <script type="text/javascript" src="../../../../Desktop/untitled%20folder/SYM/public/js/jquery.validate.js"></script>
+        <script type="text/javascript" src="../../../../Desktop/untitled%20folder/SYM/public/js/css3-animate-it.js"></script>
+        <script type="text/javascript" src="../../../../Desktop/untitled%20folder/SYM/public/js/moment-with-locales.js"></script>
+        <script type="text/javascript" src="../../../../Desktop/untitled%20folder/SYM/public/js/bootstrap-datetimepicker.js"></script>
+        <script type="text/javascript" src="../../../../Desktop/untitled%20folder/SYM/public/js/jquery.flexslider.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+        <script type="text/javascript" src="../../../../Desktop/untitled%20folder/SYM/public/js/script.js"></script>
+    </body>
 </html>
