@@ -503,10 +503,12 @@
                                                 <div class="lable"><img src="images/Section_one_inner_tab_icon/number_plate.png" /></div>
                                                 <div class="info"><span class="b">Reg No.</span></div>
                                                 <div class="inputBox">
-                                                    <input type="text" id="twoWheelerRegistrationNumber" name="carProvince" placeholder="WP"/>
-                                                    <input type="text" id="twoWheelerRegistrationNumber" name="carLetters" placeholder="CAD"/>
-                                                    <input type="text" id="twoWheelerRegistrationNumber" name="carNumber" placeholder="1234"/>
+                                                    <input type="text" id="twoWheelerRegistrationNumber" name="VProvince" placeholder="WP"/>
+                                                    <input type="text" id="twoWheelerRegistrationNumber" name="VLetters" placeholder="CAD"/>
+                                                    <input type="text" id="twoWheelerRegistrationNumber" name="VNumber" placeholder="1234"/>
                                                 </div>
+
+                                                <input type="hidden" value="1" name="VType" id="type_of_v">
 
                                             </div>
                                             <div class="rush"><span>OR</span></div>
@@ -834,7 +836,10 @@
                         </div>
                     </div>
                 </div>
-                <% include templates/footer.ejs%>
+                <div id="section5" class="section animatedParent homepage_footer">
+                    <% include templates/footer.ejs%>
+                </div>
+
             </div>
         </div>
 

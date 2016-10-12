@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include templates/head.ejs%>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css"/>
+
+
+</head>
+<body>
+<div class="container-fluid">
+    <% include templates/header.ejs%>
+    <%- body %>
+</div>
+<div id="te">
+    <div class="section animatedParent">
+        <% include templates/footer.ejs%>
+    </div>
+</div>
+</div>
+
+<% include templates/jsLibs.ejs %>
+<script>
+    $('.selectpicker').selectpicker();
+</script>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('#make').change(function () {
+            var form = {
+                v_make: $(this).val()
+            }
+            var url = 'http://' + window.location.host + '/vehicleDetails/getVehicleModel';
+            $.ajax({
+                type: 'post',
+                url: url,
+                data: form,
+                dataType: 'json',
+                cache: false,
+                success: function (data) {
+                    var rows = '';
+
+                    $.each(data, function (index, item) {
+                        rows += '<option value="' + item.id + '">' + item.vehicleModel + '</option>';
+                    });
+
+                    $('#model').html(rows).attr('disabled', false);
+                }
+
+
+            });
+        });
+
+        $('.selectpicker').selectpicker();
+
+
+    });
+</script>
+</body>
+</html>

@@ -1,6 +1,5 @@
-
-/*
- * GET users listing.
+/**
+ * Created by menakafernando on 12/10/2016.
  */
 
 
@@ -9,7 +8,7 @@ module.exports = function(router){
     //localhost:3000/auth
     router.get('/', function(req, res){
 
-        res.render('vehicle/personal_details',{
+        res.render('vehicle/further_vehicle_information',{
             form:'personalDetails',
             hidden: req.session.id
         });
