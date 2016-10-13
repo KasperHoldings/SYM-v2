@@ -1,0 +1,74 @@
+<%- layout('../form') %>
+
+<div class="insurance_info topMainPadding">
+    <div class="insurance_text">
+        Single Trip
+    </div>
+    <ul class="breadcrumbc">
+        <li class="breadcrumb__item breadcrumb__item--current">
+            Travel Information
+        </li>
+        <li class="breadcrumb__item breadcrumb__item--blank">
+            Personal Information
+        </li>
+        <li class="breadcrumb__item breadcrumb__item--blank">
+            Quotation
+        </li>
+    </ul>
+
+    <div id="single_trip_personal_detail" class="vehicle_detail_bg" style="display: none;">
+        <form id="single_trip_personal_info_id" name="personal_detail" action="">
+            <div class="row">
+                <div class="marginBottom10 field field--required field--three-eights field--show-floating-label paddleftzero paddrightzero">
+                    <div class="field__input-wrapper field__input-wrapper--select">
+                        <label for="checkout_shipping_address_country" class="field__label">Title</label>
+                        <select name="title" class="field__input field__input--select" required>
+                            <option value="">Select Title</option>
+                            <option value="Ketchup">Mr</option>
+                            <option value="Relish">Mrs</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="showfirstnamelabel" class="field__input-wrapper">
+                    <label for="checkout_name" class="field__label">First Name</label>
+                    <input id="firstname" name="first_name" type="text" placeholder="First Name" class="field__input" required />
+                </div>
+            </div>
+            <div class="row">
+                <div id="showlastnamelabel" class="field__input-wrapper">
+                    <label for="checkout_name" class="field__label">Last Name</label>
+                    <input id="lastname" name="last_name" type="text" placeholder="Last Name" class="field__input" required />
+                </div>
+            </div>
+            <div class="row">
+                <div id="showmobilelabel" class="field__input-wrapper">
+                    <label for="checkout_mobile" class="field__label">Mobile</label>
+                    <input id="mobile" name="mobile" type="text" placeholder="Mobile" class="field__input" required />
+                </div>
+            </div>
+            <div class="row">
+                <div id="showpassportlabel" class="field__input-wrapper">
+                    <label for="checkout_nic" class="field__label">Passport</label>
+                    <input id="passport" name="passport" type="text" placeholder="Passport" class="field__input" required />
+                </div>
+            </div>
+            <div class="row insuranceButtonMarginTop">
+                <div style="float: left;width: 100%;" class="row step__footer">
+
+                    <button class="step__footer__continue-btn btn " type="submit" name="button">
+                        <span class="btn__content">Process</span>
+                    </button>
+                    <a class="step__footer__previous-link" href="insurance.html">
+                        <svg viewBox="0 0 6.7 11.3" height="11.3" width="6.7" xmlns="http://www.w3.org/2000/svg" class="previous-link__icon icon--chevron icon">
+                            <path d="M6.7 1.1l-1-1.1-4.6 4.6-1.1 1.1 1.1 1 4.6 4.6 1-1-4.6-4.6z"/>
+                        </svg>
+                        Return to Previous Page
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>

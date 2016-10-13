@@ -83,12 +83,8 @@ module.exports = function(router){
 
             var data = {
 
-                title    : input.title,
-                first_name : input.first_name,
-                last_name: input.last_name,
-                email   : input.email,
-                mobile  : input.mobile,
-                nic   : input.nic
+                engine_no    : input.engine_number,
+                chassis_no : input.chassis_no
 
             };
 
@@ -97,7 +93,7 @@ module.exports = function(router){
                 if (err) {
                     console.log('Error Selecting : %s ', err);
                 }
-                res.redirect('/insuranceDetails');
+                res.redirect('/shippingDetails');
 
             });
 

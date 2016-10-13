@@ -1,0 +1,94 @@
+<%- layout('../form') %>
+
+<div class="insurance_info topMainPadding">
+    <div class="insurance_text">
+        Single Trip
+    </div>
+    <ul class="breadcrumbc">
+        <li class="breadcrumb__item breadcrumb__item--current">
+            Travel Information
+        </li>
+        <li class="breadcrumb__item breadcrumb__item--blank">
+            Personal Information
+        </li>
+        <li class="breadcrumb__item breadcrumb__item--blank">
+            Quotation
+        </li>
+    </ul>
+    <div id="single_trip_travel_information" class="vehicle_detail_bg">
+        <form id="single_trip_travel_info_id" name="single_trip" action="checkout.html">
+            <div class="row">
+                <div class="section section--shipping-address">
+                    <div class="col-md-6 paddleftzero">
+                        <div id="showdateofdeplabel" class="field__input-wrapper">
+                            <label for="checkout_shipping_address_country" class="field__label">Date of Departure</label>
+                            <div class='input-group date' id='dateOfDepartureDatePicker'>
+                                <input id="dateOfDepartureSingleTrip" name="dateOfDepartureSingleTrip" type='text' class="field__input" placeholder="Date of Departure" required/>
+                                <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 paddrightzero">
+                        <div id="showdateofarrivallabel" class="field__input-wrapper">
+                            <label for="checkout_shipping_address_country" class="field__label">Date of Arrival</label>
+                            <div class='input-group date' id='dateOfArrivalDatePicker'>
+                                <input id="dateOfArrivalSingleTrip" name="dateOfArrivalSingleTrip" type='text' class="field__input" placeholder="Date of Arrival" required/>
+                                <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 paddleftzero paddrightzero marginBottom10 mobilecountry1">
+                        <div class="field field--required field--three-eights field--show-floating-label paddzero">
+                            <div class="field__input-wrapper field__input-wrapper--select">
+                                <label for="checkout_shipping_address_country" class="field__label">Region</label>
+                                <select name="country" class="field__input field__input--select" required>
+                                    <option value="">World wide excluding US/Asia </option>
+                                    <option value="Ketchup">US</option>
+                                    <option value="Relish">Mrs</option>
+                                </select>
+                            </div>
+                            <div class="verysmall">*All Regions Excluding Sri Lanka</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 paddleftzero mobilecountry marginBottom10">
+                        <div class="field field--required field--three-eights field--show-floating-label paddzero">
+                            <div class="field__input-wrapper field__input-wrapper--select">
+                                <label for="checkout_shipping_address_country" class="field__label">Medical</label>
+                                <select name="medical" class="field__input field__input--select" required>
+                                    <option value="">Select Medical</option>
+                                    <option value="Ketchup">500</option>
+                                    <option value="Relish">1000</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 paddrightzero mobilecountry marginBottom10">
+                        <div class="field field--required field--three-eights field--show-floating-label paddzero">
+                            <div class="field__input-wrapper field__input-wrapper--select">
+                                <label for="checkout_shipping_address_country" class="field__label">Goods</label>
+                                <select name="goods" class="field__input field__input--select" required>
+                                    <option value="">Select Goods</option>
+                                    <option value="Ketchup">500</option>
+                                    <option value="Relish">1000</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div style="float: left;width: 100%;" class="row step__footer">
+                    <button class="step__footer__continue-btn btn " type="submit" name="button">
+                        <span class="btn__content">Proceed</span>
+                    </button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>

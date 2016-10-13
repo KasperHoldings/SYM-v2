@@ -35,21 +35,6 @@ var nav = [{
 
 var Promise = require('bluebird');
 
-//Routers
-var insuranceRouter = require('./src/routes/insuranceRouter')(nav);
-var sampleForm = require('./src/routes/sampleFormRouter')(nav);
-var userRouter = require('./src/routes/userRouter');
-//var vehicleRegRouter = require('./src/routes/vehicleRegRouter');
-//var vehicleDetailsRouter = require('./src/routes/vehicleDetailsRouter');
-//var personalDetailsRouter = require('./src/routes/personalDetailsRouter');
-//var insuranceDetailsRouter = require('./src/routes/insuranceDetailsRouter');
-//var insuranceQuotationRouter = require('./src/routes/insuranceQuotationRouter');
-var testRouter = require('./src/routes/testRouter');
-var singleTripRouter = require('./src/routes/singleTripRouter');
-var singleTripDetailsRouter = require('./src/routes/singleTripDetailsRouter');
-var singleTripBasicDetailsRouter = require('./src/routes/singleTripBasicDetailsRouter');
-//var shippingDetailsRouter=require('./src/routes/shippingDetailsRouter');
-
 
 app.use('/static',express.static(path.resolve(__dirname,'public')));
 app.set('views', './src/views');
@@ -65,76 +50,9 @@ app.use(session({secret: 'session'}));
 
 app.use(connection);
 
-//app.use('/', insuranceRouter);
-//app.use('/', sampleForm);
-
-app.get('/test', testRouter.get);
-
-app.get('/list', userRouter.list);
-app.get('/users/create', userRouter.add);
-app.post('/users/create', userRouter.save);
-app.get('/users/delete/:id', userRouter.delete);
-app.get('/users/edit/:id', userRouter.edit);
-app.post('/users/edit/:id',userRouter.saveEdit);
-
-////Vehicle Router - Vehicle Registration
-//app.get('/vehicle/car/vehicleReg/create', vehicleRegRouter.add);
-//app.post('/vehicle/car/vehicleReg/create', vehicleRegRouter.save);
-//app.get('/vehicle/car/vehicleReg/delete/:id', vehicleRegRouter.delete);
-//app.get('/vehicle/car/vehicleReg/edit/:id', vehicleRegRouter.edit);
-//app.post('/vehicle/car/vehicleReg/edit/:id',vehicleRegRouter.saveEdit);
-
-////Vehicle Router - Vehicle details
-//app.get('/vehicle/car/vehicleDetails/create', vehicleDetailsRouter.add);
-//app.post('/vehicle/car/vehicleDetails/create', vehicleDetailsRouter.save);
-//app.get('/vehicle/car/vehicleDetails/delete/:id', vehicleDetailsRouter.delete);
-//app.get('/vehicle/car/vehicleDetails/edit/:id', vehicleDetailsRouter.edit);
-//app.post('/vehicle/car/vehicleDetails/edit/:id',vehicleDetailsRouter.saveEdit);
-//app.post('/vehicle/car/vehicleDetails/getVehicleModel',vehicleDetailsRouter.getVehicleModel);
-
-
-////Vehicle Router - Personal Details
-//app.get('/vehicle/car/personalDetails/create', personalDetailsRouter.add);
-//app.post('/vehicle/car/personalDetails/create', personalDetailsRouter.save);
-//app.get('/vehicle/car/personalDetails/delete/:id', personalDetailsRouter.delete);
-//app.get('/vehicle/car/personalDetails/edit/:id', personalDetailsRouter.edit);
-//app.post('/vehicle/car/personalDetails/edit/:id',personalDetailsRouter.saveEdit);
-
-////Vehicle Router - Insurance Details
-//app.get('/vehicle/car/insuranceDetails/create', insuranceDetailsRouter.add);
-//app.post('/vehicle/car/insuranceDetails/create', insuranceDetailsRouter.save);
-//app.get('/vehicle/car/insuranceDetails/delete/:id', insuranceDetailsRouter.delete);
-//app.get('/vehicle/car/insuranceDetails/edit/:id', insuranceDetailsRouter.edit);
-//app.post('/vehicle/car/insuranceDetails/edit/:id',insuranceDetailsRouter.saveEdit);
-
-//Vehicle Router - Quotation
-//app.get('/vehicle/car/insurance/quotation', insuranceQuotationRouter.get);
-//app.post('/vehicle/car/insurance/quotation/create', insuranceQuotationRouter.save);
-
-//Shipping Router
-//app.get('/vehicle/car/insurance/shipping/create/:id', shippingDetailsRouter.add);
 
 
 
-
-
-
-/**
- * Trip Start
- */
-
-//Travel Single
-app.post('trip/single/basicDetails/create', singleTripBasicDetailsRouter.save);
-
-app.get('trip/single/Info', singleTripRouter.get);
-
-app.get('travel/single/travelInfo', singleTripDetailsRouter.get);
-//app.get('travel/single/personalInfo', singleTripPersonalRouter.get);
-
-
-/**
- * Trip End
- */
 
 //Index
 app.get('/', function (req, res) {
@@ -152,15 +70,16 @@ app.get('/userRegistration', function (req, res) {
     });
 });
 
+
+/** Vehicle **/
+
 var vehicleRegRouter=express.Router();
 require('./src/routes/vehicleRegRouter.js')(vehicleRegRouter);
 app.use('/vehicleReg',vehicleRegRouter);
 
-
 var vehicleDetailsRouter=express.Router();
 require('./src/routes/vehicleDetailsRouter.js')(vehicleDetailsRouter);
 app.use('/vehicleDetails',vehicleDetailsRouter);
-
 
 var personalDetailsRouter=express.Router();
 require('./src/routes/personalDetailsRouter.js')(personalDetailsRouter);
@@ -182,13 +101,26 @@ var furtherVehicleDetailsRouter=express.Router();
 require('./src/routes/furtherVehicleDetailsRouter.js')(furtherVehicleDetailsRouter);
 app.use('/furtherVehicleDetails',furtherVehicleDetailsRouter);
 
-var shippingInfoRouter=express.Router();
-require('./src/routes/shippingInfoRouter.js')(shippingInfoRouter);
-app.use('/shippingInfo',shippingInfoRouter);
 
-var paymentDetailsRouter=express.Router();
-require('./src/routes/paymentDetailsRouter.js')(paymentDetailsRouter);
-app.use('/paymentDetails',paymentDetailsRouter);
+
+/** Travel **/
+
+var singleTravelRouter=express.Router();
+require('./src/routes/singleTripRouter.js')(singleTravelRouter);
+app.use('/singleTravel',singleTravelRouter);
+
+var groupTravelRouter=express.Router();
+require('./src/routes/groupTripRouter.js')(groupTravelRouter);
+app.use('/groupTravel',groupTravelRouter);
+
+var tripInfoRouter=express.Router();
+require('./src/routes/tripInfoRouter.js')(tripInfoRouter);
+app.use('/tripInfo',tripInfoRouter);
+
+var tripPersonalDetailsRlouter=express.Router();
+require('./src/routes/singleTripPersonalInfoRouter.js')(tripPersonalDetailsRlouter);
+app.use('/singleTripPersonalInfo',tripPersonalDetailsRlouter);
+
 
 app.listen(port, function (err) {
     console.log('Running server on port ' + port);

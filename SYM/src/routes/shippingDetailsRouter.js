@@ -4,7 +4,7 @@
 module.exports = function(router){
 
     //localhost:3000/auth
-    router.get('/:id', function(req, res){
+    router.get('/', function(req, res){
 
         req.getConnection(function (err, connector) {
 
@@ -14,32 +14,19 @@ module.exports = function(router){
                     console.log('Error Selecting : %s ', err);
                 }
 
-                var insuranceQuotation = connector.query('SELECT * FROM insurance_quotation WHERE insurance_quotation_id=?', req.session.id, function (err, insuranceQuotationRow) {
-                    var insuranceValue = insuranceQuotationRow[0].value;
+                var shipping_query = connector.query('SELECT * FROM shipping WHERE quotation_id=?',req.session.id,  function (err, shipping_rows) {
 
-                    //console.log("param id =" +req.params.id);
+                    if (err) {
+                        console.log('Error Selecting : %s ', err);
+                    }
 
-                    var quotationValue = connector.query("SELECT * FROM insurance_purpose_value WHERE insurance_type='1' AND purpose='1' AND insurance_company="+req.params.id, function (err, equationRows) {
+                    res.render('vehicle/shipping_detail', {
+                        shipping_methods:shipping_method_rows,
+                        company_value:shipping_rows[0].cost
 
-                        var insuranceCompanyValue = (100 + equationRows[0].value) * insuranceValue / 100;
-
-                        //console.log(insuranceCompanyValue);
-
-                        res.render('forms', {
-                            form: 'shippingReg',
-                            hidden:req.session.id,
-                            shipping_methods:shipping_method_rows,
-                            company_value:insuranceCompanyValue
-
-                        });
                     });
 
-
-
                 });
-
-
-
 
             });
 
@@ -49,53 +36,68 @@ module.exports = function(router){
     });
 
 
-    router.post('/:id', function(req, res){
+    router.post('/', function(req, res){
 
         var input = JSON.parse(JSON.stringify(req.body));
 
         req.getConnection(function (err, connector) {
 
-            var data = {
+            var data;
 
-                quotation_id    : input.insurance_quotation,
-                shipping_method : input.shipping_method,
-                reg_first_name: input.first_name,
-                reg_last_name   : input.last_name,
-                reg_company  : input.company,
-                reg_address   : input.address,
-                reg_apt   : input.alt_suit,
-                reg_city   : input.city,
-                reg_country   : input.country,
-                reg_postal_code   : input.postal_code,
-                reg_phone   : input.phone,
-                cost   : input.insurance_value
 
-            };
+            if(input.sameAsRegistered){
+                data = {
 
-            var updateData = {
+                    quotation_id        : req.session.id,
+                    shipping_method     : input.shipping_method,
+                    reg_address         : input.address,
+                    reg_apt             : input.alt_suit,
+                    reg_city            : input.city,
+                    reg_country         : input.country,
+                    reg_postal_code     : input.postal_code,
+                    reg_phone           : input.phone,
+                    ship_address        : input.address,
+                    ship_apt            : input.alt_suit,
+                    ship_city           : input.city,
+                    ship_country        : input.country,
+                    ship_postal_code    : input.postal_code
 
-                shipping_method : input.shipping_method,
-                reg_first_name: input.first_name,
-                reg_last_name   : input.last_name,
-                reg_company  : input.company,
-                reg_address   : input.address,
-                reg_apt   : input.alt_suit,
-                reg_city   : input.city,
-                reg_country   : input.country,
-                reg_postal_code   : input.postal_code,
-                reg_phone   : input.phone,
-                cost   : input.insurance_value
-
-            };
+                };
 
 
 
-            var query = connector.query('INSERT INTO shipping set ? ON DUPLICATE KEY UPDATE ?', [data,updateData], function (err, rows) {
+            }else {
+                data = {
+
+                    quotation_id        : req.session.id,
+                    shipping_method     : input.shipping_method,
+                    reg_address         : input.address,
+                    reg_apt             : input.alt_suit,
+                    reg_city            : input.city,
+                    reg_country         : input.country,
+                    reg_postal_code     : input.postal_code,
+                    reg_phone           : input.phone,
+                    ship_address        : input.address2,
+                    ship_apt            : input.alt_suit2,
+                    ship_city           : input.city2,
+                    ship_country        : input.country2,
+                    ship_postal_code    : input.postal_code2
+
+                };
+
+
+            }
+
+
+
+
+
+            var query = connector.query('UPDATE shipping set ? WHERE quotation_id=?' , [data,req.session.id], function (err, rows) {
 
                 if (err) {
                     console.log('Error Selecting : %s ', err);
                 }
-                res.redirect('/shippingInfo');
+                res.redirect('/');
 
             });
 

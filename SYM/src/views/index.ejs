@@ -26,9 +26,9 @@
                                 </div>
                                 <div class="leftTab">
                                     <ul>
-                                        <li><a class="car active" href="#"><img src="/static/images/section_one_sidebar_tab_icon/car_vehicle.png" /><br><span class="ul_lft">Motor Vehicle</span></a></li>
-                                        <li><a class="twowheeler" href="#" ><img src="/static/images/section_one_sidebar_tab_icon/motorcycle.png" /><br><span class="ul_lft">Motor bike</span></a></li>
-                                        <li><a class="health" href="#"><img src="/static/images/section_one_sidebar_tab_icon/three_wheeler.png" /><br><span class="ul_lft">Three Wheeler</span></a></li>
+                                        <li onclick="changeFun(1)" ><a class="car active" href="#"><img src="/static/images/section_one_sidebar_tab_icon/car_vehicle.png" /><br><span class="ul_lft">Motor Vehicle</span></a></li>
+                                        <li onclick="changeFun(2)" ><a class="twowheeler"  href="#" ><img src="/static/images/section_one_sidebar_tab_icon/motorcycle.png" /><br><span class="ul_lft">Motor bike</span></a></li>
+                                        <li onclick="changeFun(3)" ><a class="health"  href="#"><img src="/static/images/section_one_sidebar_tab_icon/three_wheeler.png" /><br><span class="ul_lft">Three Wheeler</span></a></li>
                                         <li><a class="travel" href="#"><img src="/static/images/section_one_sidebar_tab_icon/travel.png" /><br><span class="ul_lft">Travel</span></a></li>
                                         <li><a class="investment" href="#"><img src="/static/images/section_one_sidebar_tab_icon/investment.png" /><br><span class="ul_lft">Investment <div>(FD & Savings)</div></span></a></li>
                                         <li><a class="term" href="#"><img src="/static/images/section_one_sidebar_tab_icon/lease.png" /><br><span class="ul_lft">Lease/Loans</span></a></li>
@@ -105,71 +105,75 @@
                                 <div class="rightTab" style="display: block;">
                                     <div class="box_value">
                                         <div class="health-bg active">
-                                            <div class="input_field">
-                                                <div class="lable"><img src="/static/images/Section_one_inner_tab_icon/number_plate.png" /></div>
-                                                <div class="info"><span class="b">Reg No.</span></div>
-                                                <div class="inputBox">
-                                                    <input type="text" id="twoWheelerRegistrationNumber" placeholder="WP"/>
-                                                    <input type="text" id="twoWheelerRegistrationNumber" placeholder="CAD"/>
-                                                    <input type="text" id="twoWheelerRegistrationNumber" placeholder="1234"/>
-                                                </div>
+                                            <form action="/vehicleReg" method="post">
+                                                <div class="input_field">
+                                                    <div class="lable"><img src="/static/images/Section_one_inner_tab_icon/number_plate.png" /></div>
+                                                    <div class="info"><span class="b">Reg No.</span></div>
+                                                    <div class="inputBox">
+                                                        <input type="text" id="twoWheelerRegistrationNumber" placeholder="WP"/>
+                                                        <input type="text" id="twoWheelerRegistrationNumber" placeholder="CAD"/>
+                                                        <input type="text" id="twoWheelerRegistrationNumber" placeholder="1234"/>
+                                                    </div>
 
-                                            </div>
-                                            <div class="rush"><span>OR</span></div>
-                                            <div class="inrush"><span>In a Rush ?</span></div>
-                                            <div class="upload-drop-zone has-tooltip" id="drop-zone">
-                                                Just drag and drop files here
-                                                <span class="tooltip">
-                                                    <span data-cvv-tooltip="unknown">
-                                                        Upload a scanned image or a photograph of document requested
+                                                    <input type="hidden" value="3" name="VType" id="type_of_v2">
+
+                                                </div>
+                                                <div class="rush"><span>OR</span></div>
+                                                <div class="inrush"><span>In a Rush ?</span></div>
+                                                <div class="upload-drop-zone has-tooltip" id="drop-zone">
+                                                    Just drag and drop files here
+                                                    <span class="tooltip">
+                                                        <span data-cvv-tooltip="unknown">
+                                                            Upload a scanned image or a photograph of document requested
+                                                        </span>
                                                     </span>
-                                                </span>
-                                            </div>
-
-                                            <!-- Upload Finished -->
-                                            <div class="js-upload-finished">
-                                                <ul class="list-group">
-                                                    <li class="has-tooltip">
-                                                        <img src="/static/images/home_warp-logo.svg"/>
-                                                        <span class="tooltip">
-                                                            <span data-cvv-tooltip="unknown">
-                                                                Upload a scanned image or a photograph of document requested
-                                                            </span>
-                                                        </span>
-                                                    </li>
-                                                    <li class="has-tooltip">
-                                                        <img src="/static/images/home_warp-logo.svg"/>
-                                                        <span class="tooltip">
-                                                            <span data-cvv-tooltip="unknown">
-                                                                Upload a scanned image or a photograph of document requested
-                                                            </span>
-                                                        </span>
-                                                    </li>
-                                                    <li class="has-tooltip">
-                                                        <img src="/static/images/home_warp-logo.svg"/>
-                                                        <span class="tooltip">
-                                                            <span data-cvv-tooltip="unknown">
-                                                                Upload a scanned image or a photograph of document requested
-                                                            </span>
-                                                        </span>
-                                                    </li>
-                                                    <li class="has-tooltip">
-                                                        <img src="/static/images/home_warp-logo.svg"/>
-                                                        <span class="tooltip">
-                                                            <span data-cvv-tooltip="unknown">
-                                                                Upload a scanned image or a photograph of document requested
-                                                            </span>
-                                                        </span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="input_field pro">
-                                                <a href="/static/src/views/insurance.html" class="proceed" id="btnSubmitTerm">Proceed</a>
-                                                <div class="process">
-                                                    <span class="loading style-1"></span>
                                                 </div>
-                                                <div class="err"></div>
-                                            </div>
+
+                                                <!-- Upload Finished -->
+                                                <div class="js-upload-finished">
+                                                    <ul class="list-group">
+                                                        <li class="has-tooltip">
+                                                            <img src="/static/images/home_warp-logo.svg"/>
+                                                            <span class="tooltip">
+                                                                <span data-cvv-tooltip="unknown">
+                                                                    Upload a scanned image or a photograph of document requested
+                                                                </span>
+                                                            </span>
+                                                        </li>
+                                                        <li class="has-tooltip">
+                                                            <img src="/static/images/home_warp-logo.svg"/>
+                                                            <span class="tooltip">
+                                                                <span data-cvv-tooltip="unknown">
+                                                                    Upload a scanned image or a photograph of document requested
+                                                                </span>
+                                                            </span>
+                                                        </li>
+                                                        <li class="has-tooltip">
+                                                            <img src="/static/images/home_warp-logo.svg"/>
+                                                            <span class="tooltip">
+                                                                <span data-cvv-tooltip="unknown">
+                                                                    Upload a scanned image or a photograph of document requested
+                                                                </span>
+                                                            </span>
+                                                        </li>
+                                                        <li class="has-tooltip">
+                                                            <img src="/static/images/home_warp-logo.svg"/>
+                                                            <span class="tooltip">
+                                                                <span data-cvv-tooltip="unknown">
+                                                                    Upload a scanned image or a photograph of document requested
+                                                                </span>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="input_field pro">
+                                                    <button type class="proceed" id="btnSubmitTerm">Proceed</button>
+                                                    <div class="process">
+                                                        <span class="loading style-1"></span>
+                                                    </div>
+                                                    <div class="err"></div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
 
@@ -407,7 +411,7 @@
                                     <!--==========================-->
                                     <div class="travel-bg group">
 
-                                        <form name="frmTravel" id="frmTravel">
+                                        <form action="/groupTravel" method="post">
                                             <div class="tabs">
 
 
@@ -454,47 +458,63 @@
                                                     <div id="invdoberr" class="err"></div>
                                                 </div>
 
-                                                <div class="input_field pro"> <a class="travelproceed proceed" href="/static/src/views/travelgroup.html">Proceed</a><div class="process"><span class="loading style-1"></span><span>Please Wait...</span></div></div>
+                                                <div class="input_field pro">
+                                                    <button type="submit" class="proceed" id="btnSubmitTerm">Proceed</button>
 
-                                            </div>
-                                            <div class="familyTravel_second" >
-                                                <div class="input_field invForm">
-                                                    <div class="lable dob" style="vertical-align: middle;"><img src="/static/images/Section_one_inner_tab_icon/dob.png" /></div>
-                                                    <div class="info"><span class="b">DOB</span></div>
-                                                    <div class="inputBox dobBox">
-                                                        <select id="invTerm" name="invTerm"><option value="">Date</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
-                                                        <select id="invTerm" name="invTerm"><option value="">Month</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
-                                                        <select id="invTerm" name="invTerm"><option value="">Year</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
-
+                                                    <div class="process">
+                                                        <span class="loading style-1"></span>
                                                     </div>
                                                     <div class="err"></div>
                                                 </div>
-                                                <div class="input_field invForm" id="invTermSelect">
-                                                    <div class="lable dob"><img src="/static/images/Section_one_inner_tab_icon/email.png" /></div>
-                                                    <div class="info"><span class="b">Email</span></div>
-                                                    <div class="inputBox">
-                                                        <input id="email" name="email" type='text' placeholder="Email" required/>
-                                                    </div>
-                                                    <div id="invdoberr" class="err"></div>
-                                                </div>
-
-                                                <div class="input_field invForm" id="invTermSelect">
-                                                    <div class="lable dob" style="vertical-align: middle;"><img src="/static/images/Section_one_inner_tab_icon/type_of_cover.png" /></div>
-                                                    <div class="info"><span class="b">Type of Cover</span></div>
-                                                    <div class="inputBox">
-                                                        <select id="typeOfCover" name="typeOfCover" required="">
-                                                            <option value="">Type of Cover</option>
-                                                            <option value="1">Single Trip</option>
-                                                            <option value="2">Multi Trip</option>
-                                                        </select>
-                                                    </div>
-                                                    <div id="invdoberr" class="err"></div>
-                                                </div>
-
-                                                <div class="input_field pro"> <a class="travelproceed proceed" href="javascript:void(0);">Proceed</a><div class="process"><span class="loading style-1"></span><span>Please Wait...</span></div></div>
-
                                             </div>
-                                        </form>
+
+                                            </form>
+                                            <div class="familyTravel_second" >
+                                                <form action="/singleTravel" method="post">
+                                                    <div class="input_field invForm">
+                                                        <div class="lable dob" style="vertical-align: middle;"><img src="/static/images/Section_one_inner_tab_icon/dob.png" /></div>
+                                                        <div class="info"><span class="b">DOB</span></div>
+                                                        <div class="inputBox dobBox">
+                                                            <select id="invTerm" name="invTerm"><option value="">Date</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+                                                            <select id="invTerm" name="invTerm"><option value="">Month</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+                                                            <select id="invTerm" name="invTerm"><option value="">Year</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="30">30</option></select>
+
+                                                        </div>
+                                                        <div class="err"></div>
+                                                    </div>
+                                                    <div class="input_field invForm" id="invTermSelect">
+                                                        <div class="lable dob"><img src="/static/images/Section_one_inner_tab_icon/email.png" /></div>
+                                                        <div class="info"><span class="b">Email</span></div>
+                                                        <div class="inputBox">
+                                                            <input id="email" name="email" type='text' placeholder="Email" required/>
+                                                        </div>
+                                                        <div id="invdoberr" class="err"></div>
+                                                    </div>
+
+                                                    <div class="input_field invForm" id="invTermSelect">
+                                                        <div class="lable dob" style="vertical-align: middle;"><img src="/static/images/Section_one_inner_tab_icon/type_of_cover.png" /></div>
+                                                        <div class="info"><span class="b">Type of Cover</span></div>
+                                                        <div class="inputBox">
+                                                            <select id="typeOfCover" name="typeOfCover" required="">
+                                                                <option value="">Type of Cover</option>
+                                                                <option value="1">Single Trip</option>
+                                                                <option value="2">Multi Trip</option>
+                                                            </select>
+                                                        </div>
+                                                        <div id="invdoberr" class="err"></div>
+                                                    </div>
+
+                                                    <div class="input_field pro">
+                                                        <button type="submit" class="proceed" id="btnSubmitTerm">Proceed</button>
+
+                                                        <div class="process">
+                                                            <span class="loading style-1"></span>
+                                                        </div>
+                                                        <div class="err"></div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
                                     </div>
                                     <!--==========================-->
                                     <div class="car-bg">
@@ -844,5 +864,22 @@
         </div>
 
         <% include templates/jsLibs.ejs %>
+
+        <script type="text/javascript">
+
+            function changeFun(id){
+                if(id==1){
+                    document.getElementById("type_of_v").value=1;
+
+                }else if(id==2){
+                    document.getElementById("type_of_v").value=2;
+
+                }else{
+                    document.getElementById("type_of_v").value=3;
+                }
+
+
+            }
+        </script>
     </body>
 </html>

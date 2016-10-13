@@ -108,7 +108,7 @@
                         </div>
                         <div class="leftTab">
                             <ul>
-                                <li onclick="changeFun(1)"><a class="theTab car active"  href="#"><i class="fa fa-car" aria-hidden="true"></i><span
+                                <li ><a class="theTab car active"  href="#"><i class="fa fa-car" aria-hidden="true"></i><span
                                                 class="ul_lft">Motor Vehicle</span></a></li>
                                 <li onclick="changeFun(2)"><a class="theTab twowheeler" href="#"><i class="fa fa-motorcycle"
                                                                       aria-hidden="true"></i><span class="ul_lft">Motor bike</span></a>
@@ -1328,7 +1328,11 @@ function changeFun(id){
     }else if(id==2){
         document.getElementById("type_of_v").value=2;
 
+    }else{
+        document.getElementById("type_of_v").value=3;
     }
+
+    alert(document.getElementById("type_of_v").value);
 }
 </script>
 

@@ -1,3 +1,6 @@
+/**
+ * Created by menakafernando on 13/10/2016.
+ */
 
 module.exports = function(router){
 
@@ -7,7 +10,7 @@ module.exports = function(router){
         var input = JSON.parse(JSON.stringify(req.body));
 
 
-                res.redirect('/tripInfo/1');
+        res.redirect('/tripInfo/2');
 
 
 
