@@ -17,7 +17,14 @@ module.exports = function(router){
     });
 
     router.post('/',function (req,res) {
-        res.redirect('/singleTripPersonalInfo');
+
+        if(req.body.travelType==1){
+            res.redirect('/singleTripPersonalInfo');
+        }else{
+            res.redirect('/singleTripPersonalInfo');
+        }
+
+
     });
 
 }

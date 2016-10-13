@@ -117,9 +117,13 @@ var tripInfoRouter=express.Router();
 require('./src/routes/tripInfoRouter.js')(tripInfoRouter);
 app.use('/tripInfo',tripInfoRouter);
 
-var tripPersonalDetailsRlouter=express.Router();
-require('./src/routes/singleTripPersonalInfoRouter.js')(tripPersonalDetailsRlouter);
-app.use('/singleTripPersonalInfo',tripPersonalDetailsRlouter);
+var tripPersonalDetailsRouter=express.Router();
+require('./src/routes/singleTripPersonalInfoRouter.js')(tripPersonalDetailsRouter);
+app.use('/singleTripPersonalInfo',tripPersonalDetailsRouter);
+
+var tripGroupDetailsRouter=express.Router();
+require('./src/routes/tripGroupDetailsRouter.js')(tripGroupDetailsRouter);
+app.use('/tripGroupDetails',tripGroupDetailsRouter);
 
 
 app.listen(port, function (err) {
