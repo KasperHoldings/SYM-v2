@@ -17,6 +17,8 @@ var path=require('path');
 
 var engine = require('ejs-locals');
 
+var validator = require('validator');
+
 
 var nav = [{
     Link: '/Bike',

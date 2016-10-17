@@ -13,6 +13,7 @@ module.exports = function(router){
             var vehicle_quotation;
             vehicle_quotation = req.session;
             vehicle_quotation.id = Math.random();
+
             var data = {
 
                 v_province: input.VProvince,
@@ -23,7 +24,15 @@ module.exports = function(router){
 
             };
 
-            var query = connector.query('INSERT INTO insurance_quotation set ? ', data, function (err, rows) {
+            var updateData={
+
+                v_province: input.VProvince,
+                v_letters: input.VLetters,
+                v_number: input.VNumber,
+                type_v:input.VType
+            };
+
+            var query = connector.query('INSERT INTO insurance_quotation set ? ON DUPLICATE KEY UPDATE ?', [data,updateData], function (err, rows) {
 
                 if (err) {
                     console.log('Error Selecting : %s ', err);

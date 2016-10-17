@@ -31,12 +31,15 @@ module.exports = function(router){
 
         req.getConnection(function (err, connector) {
 
+            var str=input.value;
+            str = str.replace( /,/g, "" );
+
             var data = {
 
-                make: input.make,
-                model: input.model,
-                year: input.year,
-                value: input.value
+                make    :   input.make,
+                model   :   input.model,
+                year    :   input.year,
+                value   :   str
 
             };
 

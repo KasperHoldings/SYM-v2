@@ -24,12 +24,12 @@
     </ul>
 
     <div id="personal_detail" class="vehicle_detail_bg" >
-        <form  action="/personalDetails" method="post">
+        <form  action="/personalDetails" method="post" onsubmit="return validateFormPersonalV()">
             <div class="row">
                 <div class=" field--required field--three-eights field--show-floating-label" style="padding-bottom: 10px">
                     <div class="field__input-wrapper field__input-wrapper--select">
                         <label for="checkout_shipping_address_country" class="field__label">Title</label>
-                        <select name="title" class="field__input field__input--select" required >
+                        <select name="title" id="title" class="field__input field__input--select" required >
                             <option value="">Select Title</option>
                             <option value="Mr">Mr</option>
                             <option value="Mrs">Mrs</option>
@@ -53,19 +53,19 @@
             <div class="row">
                 <div id="showemaillabel" class="field__input-wrapper">
                     <label for="checkout_email" class="field__label">Email</label>
-                    <input id="email" name="email" type="text" placeholder="Email" class="field__input" required/>
+                    <input id="email" name="email" type="email" placeholder="Email" class="field__input" required/>
                 </div>
             </div>
             <div class="row">
                 <div id="showmobilelabel" class="field__input-wrapper">
                     <label for="checkout_mobile" class="field__label">Mobile</label>
-                    <input id="mobile" name="mobile" type="text" placeholder="Mobile" class="field__input" required/>
+                    <input id="mobile" name="mobile" type="number" placeholder="Mobile" class="field__input" required/>
                 </div>
             </div>
             <div class="row">
                 <div id="showniclabel" class="field__input-wrapper">
                     <label for="checkout_nic" class="field__label">NIC</label>
-                    <input id="nic" name="nic" type="text" placeholder="NIC" class="field__input" required/>
+                    <input id="nic" name="nic" type="text" placeholder="NIC" pattern="[0-9]{9}[vVxX]" class="field__input" required/>
                 </div>
             </div>
             <div class="row insuranceButtonMarginTop">

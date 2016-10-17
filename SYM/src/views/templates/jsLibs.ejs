@@ -11,3 +11,124 @@
 <script type="text/javascript" src="/static/js/jquery.flexslider.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
 <script type="text/javascript" src="/static/js/script.js"></script>
+<script type="text/javascript" src="/static/lib/validator-js/validator.min.js"></script>
+
+
+<script type="text/javascript" >
+
+    (function (exports) {
+        function valOrFunction(val, ctx, args) {
+            if (typeof val == "function") {
+                return val.apply(ctx, args);
+            } else {
+                return val;
+            }
+        }
+
+        function InvalidInputHelper(input, options) {
+            input.setCustomValidity(valOrFunction(options.defaultText, window, [input]));
+
+            function changeOrInput() {
+                if (input.value == "") {
+                    input.setCustomValidity(valOrFunction(options.emptyText, window, [input]));
+                } else {
+                    input.setCustomValidity("");
+                }
+            }
+
+            function invalid() {
+                if (input.value == "") {
+                    input.setCustomValidity(valOrFunction(options.emptyText, window, [input]));
+                } else {
+                    input.setCustomValidity(valOrFunction(options.invalidText, window, [input]));
+                }
+            }
+
+            input.addEventListener("change", changeOrInput);
+            input.addEventListener("input", changeOrInput);
+            input.addEventListener("invalid", invalid);
+        }
+        exports.InvalidInputHelper = InvalidInputHelper;
+    })(window);
+
+
+
+    $(document).ready(function(){
+        $("input[data-type='number']").keyup(function(event){
+            // skip for arrow keys
+            if(event.which >= 37 && event.which <= 40){
+                event.preventDefault();
+            }
+            var $this = $(this);
+            var num = $this.val().replace(/,/gi, "");
+            var num2 = num.split(/(?=(?:\d{3})+$)/).join(",");
+            console.log(num2);
+            // the following line has been simplified. Revision history contains original.
+            $this.val(num2);
+        });
+    });
+
+    function validateFormDetailsV() {
+
+        var Make    =   document.getElementById('make');
+        var Model   =   document.getElementById("model");
+        var Year    =   document.getElementById("year");
+        var Value   =   $("input[data-type='number']").val();
+
+        Value = Value.replace( /,/g, "" );
+
+        return (
+                validator.isNumeric(Make.value)
+                &&  (Make.value>0)
+                &&  validator.isNumeric(Model.value)
+                &&  (Model.value>0)
+                &&  validator.isNumeric(Year.value)
+                &&  (Year.value>0)
+                &&  validator.isNumeric(Value)
+                &&  (Value>999)
+
+        );
+
+
+    }
+
+
+    function validateFormPersonalV() {
+
+
+
+        var Title       =   document.getElementById('title');
+        var FirstName   =   document.getElementById('firstname');
+        var LastName    =   document.getElementById("lastname");
+        var Email       =   document.getElementById("email");
+        var Mobile      =   document.getElementById("mobile");
+        var Nic         =   document.getElementById("nic");
+
+        var phonePattern=/^\d{10}$/;
+        var idPattern=/^[0-9]{9}[vVxX]$/;
+
+
+        return (
+                validator.isAlpha(Title.value)
+                &&  validator.isAlpha(FirstName.value)
+                &&  validator.isAlpha(LastName.value)
+                &&  validator.isEmail(Email.value)
+                &&  strMatch(Mobile.value,phonePattern)
+                &&  strMatch(Nic.value,idPattern)
+        );
+
+
+
+    }
+
+    function strMatch(str,pattern) {
+        if(str.match(pattern)){
+
+            return true;
+        }
+
+        return false;
+    }
+
+
+</script>

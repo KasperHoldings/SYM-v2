@@ -105,14 +105,20 @@
                                 <div class="rightTab" style="display: block;">
                                     <div class="box_value">
                                         <div class="health-bg active">
-                                            <form action="/vehicleReg" method="post">
+                                            <form action="/vehicleReg" method="post" id="vForm3">
                                                 <div class="input_field">
                                                     <div class="lable"><img src="/static/images/Section_one_inner_tab_icon/number_plate.png" /></div>
                                                     <div class="info"><span class="b">Reg No.</span></div>
-                                                    <div class="inputBox">
-                                                        <input type="text" id="twoWheelerRegistrationNumber" placeholder="WP"/>
-                                                        <input type="text" id="twoWheelerRegistrationNumber" placeholder="CAD"/>
-                                                        <input type="text" id="twoWheelerRegistrationNumber" placeholder="1234"/>
+                                                    <div class="inputBox dobBox">
+                                                        <select id="RegistrationNumberProvince2" name="VProvince" >
+                                                            <option value=""></option>
+                                                            <option value="WP">WP</option>
+                                                            <option value="NP">NP</option>
+                                                            <option value="SP">SP</option>
+
+                                                        </select>
+                                                        <input type="text" id="RegistrationNumberLetter2" name="VLetters" placeholder="CAD" pattern="[A-Z0-9]{1,3}" required maxlength="3" minlength="2" style="text-transform: uppercase"/>
+                                                        <input type="text" id="RegistrationNumberNumber2" name="VNumber" placeholder="1234" pattern="[0-9]{1,4}" required maxlength="4" minlength="4"/>
                                                     </div>
 
                                                     <input type="hidden" value="3" name="VType" id="type_of_v2">
@@ -518,14 +524,19 @@
                                     </div>
                                     <!--==========================-->
                                     <div class="car-bg">
-                                        <form action="/vehicleReg" method="post">
+                                        <form action="/vehicleReg" method="post" id="vForm">
                                             <div class="input_field">
                                                 <div class="lable"><img src="/static/images/Section_one_inner_tab_icon/number_plate.png" /></div>
                                                 <div class="info"><span class="b">Reg No.</span></div>
-                                                <div class="inputBox">
-                                                    <input type="text" id="twoWheelerRegistrationNumber" name="VProvince" placeholder="WP"/>
-                                                    <input type="text" id="twoWheelerRegistrationNumber" name="VLetters" placeholder="CAD"/>
-                                                    <input type="text" id="twoWheelerRegistrationNumber" name="VNumber" placeholder="1234"/>
+                                                <div class="inputBox dobBox">
+                                                    <select id="RegistrationNumberProvince" name="VProvince">
+                                                        <option value=""></option>
+                                                        <option value="WP">WP</option>
+                                                        <option value="NP">NP</option>
+                                                        <option value="SP">SP</option>
+                                                    </select>
+                                                    <input type="text" id="RegistrationNumberLetter" name="VLetters" placeholder="CAD" pattern="[a-zA-Z0-9]{1,3}" required maxlength="3" minlength="2" style="text-transform: uppercase"/>
+                                                    <input type="text" id="RegistrationNumberNumber" name="VNumber" placeholder="1234" pattern="[0-9]{1,4}" required maxlength="4" minlength="4"/>
                                                 </div>
 
                                                 <input type="hidden" value="1" name="VType" id="type_of_v">
@@ -580,7 +591,7 @@
                                                 </ul>
                                             </div>
                                             <div class="input_field pro">
-                                                <button type class="proceed" id="btnSubmitTerm">Proceed</button>
+                                                <button type class="proceed" id="btnSubmitTermCar">Proceed</button>
 
                                                 <div class="process">
                                                     <span class="loading style-1"></span>
@@ -867,6 +878,8 @@
 
         <script type="text/javascript">
 
+            //$('select').select2();
+
             function changeFun(id){
                 if(id==1){
                     document.getElementById("type_of_v").value=1;
@@ -880,6 +893,176 @@
 
 
             }
+
+
+
+
+
+            var Province    =   document.getElementById('RegistrationNumberProvince');
+            var Letter      =   document.getElementById("RegistrationNumberLetter");
+            var Number      =   document.getElementById("RegistrationNumberNumber");
+
+            var Province2   =   document.getElementById('RegistrationNumberProvince2');
+            var Letter2     =   document.getElementById("RegistrationNumberLetter2");
+            var Number2     =   document.getElementById("RegistrationNumberNumber2");
+
+            var formV   =   document.getElementById("vForm");
+            var form3w  =   document.getElementById("vForm3");
+
+            formV.onsubmit  =   validateFormCar;
+            form3w.onsubmit =   validateForm3W;
+
+            function validateFormCar() {
+
+                return (validator.isAlpha(Province.value)
+                        && validator.isByteLength(Province.value,{min:2,max:2})
+                        && validator.isUppercase(Province.value)
+                        && validator.isAlphanumeric(Letter.value)
+                        && validator.isByteLength(Letter.value,{min:2,max:3})
+                        && validator.isNumeric(Number.value)
+                        && validator.isByteLength(Number.value,{min:4,max:4})
+                );
+
+
+            }
+
+            function validateForm3W() {
+
+                return (validator.isAlpha(Province2.value)
+                        && validator.isByteLength(Province2.value,{min:2,max:2})
+                        && validator.isUppercase(Province2.value)
+                        && validator.isAlphanumeric(Letter2.value)
+                        && validator.isByteLength(Letter2.value,{min:2,max:3})
+                        && validator.isNumeric(Number2.value)
+                        && validator.isByteLength(Number2.value,{min:4,max:4})
+                );
+
+
+            }
+
+
+            InvalidInputHelper(Province, {
+                defaultText: "Please enter an province !",
+                emptyText: "Please enter an province !",
+                invalidText: function (input) {
+                    return 'The province "' + input.value + '" is invalid!';
+                }
+            });
+
+
+            InvalidInputHelper(Letter, {
+                defaultText: "Please enter an Letter !",
+                emptyText: "Please enter an Letter !",
+                invalidText: function (input) {
+                    return 'The Letter "' + input.value + '" is invalid!';
+                }
+            });
+
+            InvalidInputHelper(Number, {
+                defaultText: "Please enter an Number !",
+                emptyText: "Please enter an Number !",
+                invalidText: function (input) {
+                    return 'The Number "' + input.value + '" is invalid!';
+                }
+            });
+
+            InvalidInputHelper(Province2, {
+                defaultText: "Please enter an province !",
+                emptyText: "Please enter an province !",
+                invalidText: function (input) {
+                    return 'The province "' + input.value + '" is invalid!';
+                }
+            });
+
+
+            InvalidInputHelper(Letter2, {
+                defaultText: "Please enter an Letter !",
+                emptyText: "Please enter an Letter !",
+                invalidText: function (input) {
+                    return 'The Letter "' + input.value + '" is invalid!';
+                }
+            });
+
+            InvalidInputHelper(Number2, {
+                defaultText: "Please enter an Number !",
+                emptyText: "Please enter an Number !",
+                invalidText: function (input) {
+                    return 'The Number "' + input.value + '" is invalid!';
+                }
+            });
+
+
+
+
+            $('#RegistrationNumberProvince').bind('input propertychange ', function() {
+                //$('#output').html($(this).val());
+
+                if(validator.isByteLength($(this).val(),{min:2,max:2})){
+                    Letter.focus();
+                }
+
+            });
+
+
+            $('#RegistrationNumberLetter').bind('input propertychange ', function() {
+                //$('#output').html($(this).val());
+
+                if(validator.isByteLength($(this).val(),{min:3,max:3})){
+                    Number.focus();
+                }
+
+            });
+
+
+
+            $('#RegistrationNumberNumber').bind('input propertychange ', function() {
+                //$('#output').html($(this).val());
+
+                if(validator.isByteLength($(this).val(),{min:4,max:4})){
+                    carButton.focus();
+                }
+
+
+            });
+
+            $('#RegistrationNumberProvince2').bind('input propertychange ', function() {
+                //$('#output').html($(this).val());
+
+                if(validator.isByteLength($(this).val(),{min:2,max:2})){
+                    Letter.focus();
+                }
+
+            });
+
+
+            $('#RegistrationNumberLetter2').bind('input propertychange ', function() {
+                //$('#output').html($(this).val());
+
+                if(validator.isByteLength($(this).val(),{min:3,max:3})){
+                    Number.focus();
+                }
+
+            });
+
+
+
+            $('#RegistrationNumberNumber2').bind('input propertychange ', function() {
+                //$('#output').html($(this).val());
+
+                if(validator.isByteLength($(this).val(),{min:4,max:4})){
+                    carButton.focus();
+                }
+
+            });
+
+
+
+
+
+
         </script>
+
+
+
     </body>
 </html>
